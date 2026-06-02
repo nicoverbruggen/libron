@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394406
-ModificationTime: 1780429705
+ModificationTime: 1780430014
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3994,7 +3994,7 @@ NameList: AGL For New Fonts
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 15 15 6
+WinInfo: 26 13 10
 BeginPrivate: 0
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-5" "'mkmk' Mark to Mark in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable"
@@ -6305,125 +6305,7 @@ StartChar: C
 Encoding: 67 67 38
 Width: 1404
 GlyphClass: 2
-Flags: W
-TtInstrs:
-NPUSHB
- 10
- 39
- 1
- 0
- 4
- 0
- 1
- 6
- 0
- 2
- 76
-MPPEM
-PUSHB_1
- 42
-LT
-IF
-NPUSHB
- 41
- 0
- 6
- 0
- 2
- 0
- 6
- 2
- 128
- 0
- 2
- 1
- 0
- 2
- 1
- 126
- 0
- 5
- 5
- 17
- 77
- 0
- 0
- 0
- 4
- 97
- 0
- 4
- 4
- 17
- 77
- 0
- 1
- 1
- 3
- 97
- 0
- 3
- 3
- 27
- 3
- 78
-ELSE
-NPUSHB
- 39
- 0
- 5
- 4
- 5
- 133
- 0
- 6
- 0
- 2
- 0
- 6
- 2
- 128
- 0
- 2
- 1
- 0
- 2
- 1
- 126
- 0
- 4
- 0
- 0
- 6
- 4
- 0
- 105
- 0
- 1
- 1
- 3
- 97
- 0
- 3
- 3
- 27
- 3
- 78
-EIF
-NPUSHB
- 10
- 17
- 21
- 40
- 35
- 20
- 40
- 35
- 7
- 7
- 29
-CALL
-EndTTInstrs
+Flags: WO
 AnchorPoint: "Anchor-4" 684 0 basechar 0
 AnchorPoint: "Anchor-3" 1187 0 basechar 0
 LayerCount: 2
@@ -6455,13 +6337,13 @@ SplineSet
  386 1174 386 1174 495 1253 c 128,-1,32
  604 1332 604 1332 745 1374.5 c 128,-1,33
  886 1417 886 1417 1056 1417 c 0,34,35
- 1119 1417 1119 1417 1175 1410 c 128,-1,36
- 1231 1403 1231 1403 1282 1390 c 0,37,38
- 1308 1384 1308 1384 1331 1377 c 1,39,-1
- 1434 1465 l 1,40,-1
- 1520 1465 l 1,41,-1
- 1395 948 l 1,42,-1
- 1278 948 l 1,43,-1
+ 1119 1417 1119 1417 1175 1410 c 0,36,37
+ 1219 1404 1219 1404 1282 1390 c 0,38,39
+ 1308 1384 1308 1384 1331 1377 c 1,40,-1
+ 1376 1354 l 1,41,-1
+ 1473 1293 l 1,42,-1
+ 1395 948 l 1,43,-1
+ 1278 948 l 1,44,-1
  1274 1212 l 1,0,1
 EndSplineSet
 Kerns2: 645 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
