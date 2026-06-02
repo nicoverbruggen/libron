@@ -87,7 +87,7 @@ STYLE_MAP = {
 # this much thicker. For reference, Readerly's real Bold thickens the lowercase
 # stem by ~112 units, i.e. an offset of ~56. Lower for a lighter bold, raise
 # for a heavier one.
-EMBOLDEN_STROKE = 50
+EMBOLDEN_STROKE = 35
 
 # Vertical metrics / line spacing, mirrored from Readerly so Libron keeps the
 # same reading rhythm. Values are multiples of UPM.
