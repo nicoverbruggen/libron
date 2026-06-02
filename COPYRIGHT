@@ -3,5 +3,4 @@ Readerly (c) 2026 Nico Verbruggen (https://github.com/nicoverbruggen/readerly)
 Libron (c) 2026 Nico Verbruggen (https://github.com/nicoverbruggen/libron)
 
 Libron is a modified version of Readerly with reduced serifs.
-Bold and Bold Italic are synthesized from the Regular and Italic
-masters via FontForge outline expansion.
+Bold is synthesized from the Regular master via FontForge weight changing.

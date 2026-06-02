@@ -8602,7 +8602,7 @@ StartChar: T
 Encoding: 84 84 55
 Width: 1429
 GlyphClass: 2
-Flags: WO
+Flags: W
 AnchorPoint: "Anchor-4" 714 0 basechar 0
 LayerCount: 2
 Fore

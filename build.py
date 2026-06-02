@@ -5,18 +5,17 @@ Libron build script.
 Builds Libron from the static FontForge sources in ./src:
 
   src/Libron-Regular.sfd  ->  Libron-Regular, Libron-Bold
-  src/Libron-Italic.sfd   ->  Libron-Italic,  Libron-BoldItalic
+  src/Libron-Italic.sfd   ->  Libron-Italic
 
 Libron has no variable font. The Regular and Italic masters are exported
-as-is; the Bold and Bold Italic are synthesized from those same masters by
-outline expansion (a "fake bold"): every contour is offset outward with a
-circular nib so stems thicken while the straight serif edges stay straight.
-The offset is tuned to roughly match the stem weight of Readerly's real Bold.
+as-is; the Bold is synthesized from the upright master (a "fake bold") with
+FontForge's changeWeight, which reads the most like a drawn bold and handles
+the upright capitals cleanly. There is no Bold Italic.
 
 Pipeline:
 
   1. Open each master SFD with FontForge
-  2. For Bold styles: embolden by expanding the outlines
+  2. For the Bold style: embolden with changeWeight
   3. Remove overlaps / correct direction (outline cleanup)
   4. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
@@ -64,30 +63,28 @@ with open(os.path.join(ROOT_DIR, "COPYRIGHT")) as copyright_file:
 
 DEFAULT_FAMILY = "Libron"
 
-# (style_suffix, source_sfd, embolden)
-# Bold and BoldItalic reuse the upright/italic masters and are emboldened.
+# (style_suffix, source_sfd, embolden_method)
+# Bold reuses the upright master. The emboldening method per style:
+#   None           -> exported as-is (the Regular and Italic masters)
+#   "changeweight" -> FontForge's weight control. Looks the most like a drawn
+#                     bold and handles the upright capitals cleanly.
 SOURCE_STYLES = [
-    ("Regular", os.path.join(SRC_DIR, "Libron-Regular.sfd"), False),
-    ("Bold", os.path.join(SRC_DIR, "Libron-Regular.sfd"), True),
-    ("Italic", os.path.join(SRC_DIR, "Libron-Italic.sfd"), False),
-    ("BoldItalic", os.path.join(SRC_DIR, "Libron-Italic.sfd"), True),
+    ("Regular", os.path.join(SRC_DIR, "Libron-Regular.sfd"), None),
+    ("Bold", os.path.join(SRC_DIR, "Libron-Regular.sfd"), "changeweight"),
+    ("Italic", os.path.join(SRC_DIR, "Libron-Italic.sfd"), None),
 ]
 
 STYLE_MAP = {
     "Regular": ("Regular", "Book", 400),
     "Bold": ("Bold", "Bold", 700),
     "Italic": ("Italic", "Book", 400),
-    "BoldItalic": ("Bold Italic", "Bold", 700),
 }
 
 # Synthetic bold strength, in font units (the masters are 2000 UPM).
 #
-# Bold is produced by outline expansion: every edge is offset outward by this
-# many units (via a circular nib of 2x this diameter), so a stem ends up ~2x
-# this much thicker. For reference, Readerly's real Bold thickens the lowercase
-# stem by ~112 units, i.e. an offset of ~56. Lower for a lighter bold, raise
-# for a heavier one.
-EMBOLDEN_STROKE = 35
+# changeWeight thickens each stem by ~2x this value. Lower for a lighter bold,
+# raise for a heavier one.
+EMBOLDEN_STROKE = 40
 
 # Vertical metrics / line spacing, mirrored from Readerly so Libron keeps the
 # same reading rhythm. Values are multiples of UPM.
@@ -211,42 +208,20 @@ def build_per_font_script(open_path, save_path, steps):
     return "\n".join(parts)
 
 
-def ff_embolden_script():
+def ff_embolden_changeweight_script():
     return textwrap.dedent(
         f"""\
-        import psMat
-
-        OFFSET = {EMBOLDEN_STROKE}
-        WIDTH = 2 * OFFSET   # circular nib diameter; grows each edge by OFFSET
-
-        # Bold is made by outline expansion, not changeWeight. The masters are
-        # quadratic, straight-edged designs; changeWeight injects curve points
-        # that bow the serifs and round the corners (especially on the italic
-        # capitals). Offsetting every contour outward with a circular nib and
-        # miter joins pushes each edge out by OFFSET while keeping straight
-        # edges straight and corners sharp -- a clean fake bold. removeinternal
-        # discards the inner nib boundary so counters stay open and ink-correct.
-        #
-        # Expansion grows the glyph on every side but leaves the advance width
-        # alone, so the extra ink eats into the sidebearings and crowds the
-        # text. After expanding, restore each glyph's original sidebearings:
-        # shift it back so the left bearing matches the master, then widen the
-        # advance so the right bearing matches too. Bold then spaces like the
-        # regular (wider advances, same bearings) instead of running together.
-        count = 0
-        for g in f.glyphs():
-            if not g.isWorthOutputting():
-                continue
-            w0 = g.width
-            bb0 = g.boundingBox()                 # (xmin, ymin, xmax, ymax)
-            g.stroke("circular", WIDTH, "butt", "miter", ("removeinternal",))
-            if w0 > 0:
-                bb1 = g.boundingBox()
-                dx = bb0[0] - bb1[0]              # restore left sidebearing
-                g.transform(psMat.translate(dx, 0))
-                g.width = int(round((w0 - bb0[2]) + (bb1[2] + dx)))   # restore right sidebearing
-            count += 1
-        print(f"  Emboldened {{count}} glyphs by offset {{OFFSET}} (nib {{WIDTH}})")
+        # FontForge weight control. Works directly on the (straight, polygonal)
+        # upright master: convert to cubic first so changeWeight does not spew
+        # "Invalid 2nd order spline" warnings, then thicken every stem by
+        # ~2*STROKE. This reads the most like a genuine drawn bold. It is NOT
+        # used for the italic, where it notches the sheared-serif capitals.
+        STROKE = {EMBOLDEN_STROKE}
+        f.is_quadratic = 0
+        f.selection.all()
+        f.changeWeight(STROKE, "auto", 0, 0, "auto")
+        count = sum(1 for g in f.glyphs() if g.isWorthOutputting())
+        print(f"  Emboldened {{count}} glyphs (changeWeight {{STROKE}})")
         """
     )
 
@@ -577,25 +552,27 @@ def main():
 
 def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
     variants = [
-        (f"{family}-{style}", style, source_path, embolden)
-        for style, source_path, embolden in SOURCE_STYLES
+        (f"{family}-{style}", style, source_path, method)
+        for style, source_path, method in SOURCE_STYLES
     ]
     variant_names = [name for name, _, _, _ in variants]
 
     print("\n-- Step 1: Import masters (+ synthesize bold) --\n")
-    embolden_code = ff_embolden_script()
+    embolden_code = {
+        "changeweight": ff_embolden_changeweight_script(),
+    }
     overlap_code = ff_remove_overlaps_script()
 
-    for name, _style, source_path, embolden in variants:
+    for name, _style, source_path, method in variants:
         sfd_path = os.path.join(tmp_dir, f"{name}.sfd")
-        print(f"Processing: {name}{' (bold)' if embolden else ''}")
+        print(f"Processing: {name}{f' ({method})' if method else ''}")
 
         steps = []
-        if embolden:
-            steps.append(("Emboldening", embolden_code))
+        if method:
+            steps.append(("Emboldening", embolden_code[method]))
         # Emboldened outlines self-overlap, so always clean them up; for the
         # plain masters the cleanup is governed by the outline_fix flag.
-        if embolden or outline_fix:
+        if method or outline_fix:
             steps.append(("Removing overlaps", overlap_code))
 
         script = build_per_font_script(source_path, sfd_path, steps)
