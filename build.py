@@ -19,7 +19,7 @@ Pipeline:
   3. Remove overlaps / correct direction (outline cleanup)
   4. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
-  6. Post-process TTFs (style flags, version names)
+  6. Post-process TTFs (style flags, version names, autohinting)
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
@@ -97,6 +97,11 @@ ASCENDER_RATIO = 0.8
 
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.6/kobofix.py"
 
+# ttfautohint options, kept in sync with Readerly.
+AUTOHINT_OPTS = [
+    "--stem-width-mode=nss",
+]
+
 FONTFORGE_CMD: Optional[list] = None
 
 
@@ -114,6 +119,23 @@ def require_fonttools():
             file=sys.stderr,
         )
         sys.exit(1)
+
+
+def require_ttfautohint():
+    if shutil.which("ttfautohint"):
+        return
+    print(
+        "ERROR: ttfautohint not found.\n"
+        "\n"
+        "ttfautohint is required for proper rendering on Kobo e-readers.\n"
+        "Install it with:\n"
+        "  macOS/Bazzite:      brew install ttfautohint\n"
+        "  Debian/Ubuntu:      sudo apt install ttfautohint\n"
+        "  Fedora:             sudo dnf install ttfautohint\n"
+        "  Arch:               sudo pacman -S ttfautohint\n",
+        file=sys.stderr,
+    )
+    sys.exit(1)
 
 
 def find_fontforge():
@@ -470,6 +492,51 @@ def fix_ttf_version_names(ttf_path):
     print(f"  Normalized version names to {version_string}")
 
 
+def fix_maxp_instruction_limit(ttf_path):
+    """Sync maxp.maxSizeOfInstructions with the longest glyph bytecode."""
+    from fontTools.ttLib import TTFont
+
+    font = TTFont(ttf_path)
+    try:
+        if "maxp" not in font or "glyf" not in font:
+            return
+
+        max_size = 0
+        for glyph_name in font.getGlyphOrder():
+            glyph = font["glyf"][glyph_name]
+            program = getattr(glyph, "program", None)
+            if program is None:
+                continue
+            max_size = max(max_size, len(program.getBytecode()))
+
+        if getattr(font["maxp"], "maxSizeOfInstructions", 0) != max_size:
+            font["maxp"].maxSizeOfInstructions = max_size
+            font.save(ttf_path)
+    finally:
+        font.close()
+
+
+def autohint_ttf(ttf_path):
+    tmp_path = ttf_path + ".autohint.tmp"
+    result = subprocess.run(
+        ["ttfautohint"] + AUTOHINT_OPTS + [ttf_path, tmp_path],
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode != 0:
+        print("\nERROR: ttfautohint failed", file=sys.stderr)
+        if result.stderr:
+            print(result.stderr, file=sys.stderr)
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        sys.exit(1)
+
+    os.replace(tmp_path, ttf_path)
+    fix_maxp_instruction_limit(ttf_path)
+    print("  Autohinted with ttfautohint")
+
+
 def download_kobofix(dest_path):
     if os.path.isfile(dest_path):
         print("  Using cached kobofix.py")
@@ -514,6 +581,7 @@ def main():
     print("=" * 60)
 
     require_fonttools()
+    require_ttfautohint()
     ff_cmd = find_fontforge()
 
     family = DEFAULT_FAMILY
@@ -535,6 +603,7 @@ def main():
         outline_fix = outline_input not in ("n", "no")
 
     print(f"  FontForge: {' '.join(ff_cmd)}")
+    print(f"  ttfautohint: {shutil.which('ttfautohint')}")
     print(f"  Family: {family}")
     print(f"  Outline fix: {'yes' if outline_fix else 'no'}")
     print(f"  Embolden stroke: {EMBOLDEN_STROKE}")
@@ -619,6 +688,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
         run_fontforge_script(script)
         fix_ttf_style_flags(ttf_path, style)
         fix_ttf_version_names(ttf_path)
+        autohint_ttf(ttf_path)
 
     print("\n-- Step 4: Generate Kobo (KF) variants --\n")
     kobofix_path = os.path.join(tmp_dir, "kobofix.py")
