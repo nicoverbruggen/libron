@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394406
-ModificationTime: 1780430014
+ModificationTime: 1780430049
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3997,6 +3997,10 @@ FitToEm: 0
 WinInfo: 26 13 10
 BeginPrivate: 0
 EndPrivate
+Grid
+-2000 1396.5 m 0
+ 4000 1396.5 l 1024
+EndSplineSet
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-5" "'mkmk' Mark to Mark in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable"
 BeginChars: 65632 827
 
@@ -6305,7 +6309,7 @@ StartChar: C
 Encoding: 67 67 38
 Width: 1404
 GlyphClass: 2
-Flags: WO
+Flags: W
 AnchorPoint: "Anchor-4" 684 0 basechar 0
 AnchorPoint: "Anchor-3" 1187 0 basechar 0
 LayerCount: 2
@@ -6475,7 +6479,7 @@ StartChar: E
 Encoding: 69 69 40
 Width: 1332
 GlyphClass: 2
-Flags: W
+Flags: WO
 TtInstrs:
 PUSHB_7
  17
@@ -6954,8 +6958,8 @@ SplineSet
  898 139 l 1,5,-1
  1141 419 l 1,6,-1
  1250 414 l 1,7,-1
- 1009 -72 l 1,8,-1
- 916 -72 l 1,9,-1
+ 1038 0 l 1,8,-1
+ 928 0 l 1,9,-1
  866 0 l 1,10,-1
  332 0 l 1,11,-1
  213 0 l 1,12,-1
@@ -6968,8 +6972,8 @@ SplineSet
  618 1396 l 1,19,-1
  736 1396 l 1,20,-1
  1269 1396 l 1,21,-1
- 1374 1463 l 1,22,-1
- 1454 1463 l 1,23,-1
+ 1372 1396.5 l 1,22,-1
+ 1442 1396.5 l 1,23,-1
  1343 1016 l 1,24,-1
  1232 1016 l 1,25,-1
  1231 1256 l 1,26,-1
