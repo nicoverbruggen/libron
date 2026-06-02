@@ -1,0 +1,80 @@
+name: Build fonts
+
+on:
+  push:
+    branches: [main, develop]
+    tags: ["*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/nicoverbruggen/fntbld-oci:latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build fonts
+        run: python3 build.py
+
+      - name: Validate generated fonts with ots-sanitize
+        run: |
+          for font in out/ttf/*.ttf out/kf/*.ttf; do
+            echo "Validating ${font}"
+            ots-sanitize "${font}"
+          done
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Libron
+          path: out/ttf/*.ttf
+
+      - name: Upload Kobo artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KF_Libron
+          path: out/kf/*.ttf
+
+      - name: Zip TTFs for release
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          cd out/ttf && zip -j ../../Libron.zip *.ttf
+          cd ../../out/kf && zip -j ../../KF_Libron.zip *.ttf
+
+      - name: Upload release zips
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/upload-artifact@v4
+        with:
+          name: Libron-release
+          path: |
+            Libron.zip
+            KF_Libron.zip
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: Libron-release
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: false
+          name: ${{ github.ref_name }}
+          body: |
+            > [!TIP]
+            > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download KF_Libron.zip, which has fonts processed via `kobo-font-fix` for improved compatibility on Kobo devices.
+
+            ### Learn more
+
+            Libron is a modified version of Readerly with reduced serifs. For more information about the font and how it was built, please consult the repository README.
+          files: |
+            Libron.zip
+            KF_Libron.zip

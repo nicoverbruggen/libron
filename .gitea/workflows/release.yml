@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags: ["*"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/nicoverbruggen/fntbld-oci:latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build fonts
+        run: python3 build.py
+
+      - name: Validate generated fonts with ots-sanitize
+        run: |
+          for font in out/ttf/*.ttf out/kf/*.ttf; do
+            echo "Validating ${font}"
+            ots-sanitize "${font}"
+          done
+
+      - name: Create zip files
+        if: startsWith(gitea.ref, 'refs/tags/')
+        run: |
+          cd out/ttf && zip -j /tmp/Libron.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/kf  && zip -j /tmp/KF_Libron.zip *.ttf
+
+      - name: Create release
+        if: startsWith(gitea.ref, 'refs/tags/')
+        uses: akkuman/gitea-release-action@v1
+        with:
+          token: ${{ secrets.GITEA_TOKEN }}
+          draft: false
+          tag_name: ${{ gitea.ref_name }}
+          name: Libron (${{ gitea.ref_name }})
+          body: |
+            > [!TIP]
+            > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download KF_Libron.zip, which has fonts processed via `kobo-font-fix` for improved compatibility on Kobo devices.
+
+            ### Learn more
+
+            Libron is a modified version of Readerly with reduced serifs. For more information about the font and how it was built, please consult the repository README.
+          files: |
+            /tmp/Libron.zip
+            /tmp/KF_Libron.zip
