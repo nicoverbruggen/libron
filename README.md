@@ -5,4 +5,4 @@ Libron is a modified version of [Readerly](https://github.com/nicoverbruggen/rea
 This is an experimental modification, and I may roll these changes into Readerly 2.0 at some point. For now, this is a test font and I'm currently evaluating it.
 
 > [!WARNING]
-> Because the starting point of this font was Readerly Regular, there is currently no Bold or Italic version.
+> Because the starting point of this font was Readerly's static build (regular and italic), this repository generates a fake bold version (bold and bold italic), unlike Readerly.
