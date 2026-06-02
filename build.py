@@ -9,14 +9,14 @@ Builds Libron from the static FontForge sources in ./src:
 
 Libron has no variable font. The Regular and Italic masters are exported
 as-is; the Bold and Bold Italic are synthesized from those same masters by
-emboldening with FontForge's changeWeight (a "fake bold"). The stroke is
-tuned to reproduce the stem thickening of Readerly's real Bold (Newsreader
-instanced at wght=650) so the synthetic weight reads like a genuine bold.
+outline expansion (a "fake bold"): every contour is offset outward with a
+circular nib so stems thicken while the straight serif edges stay straight.
+The offset is tuned to roughly match the stem weight of Readerly's real Bold.
 
 Pipeline:
 
   1. Open each master SFD with FontForge
-  2. For Bold styles: embolden via changeWeight
+  2. For Bold styles: embolden by expanding the outlines
   3. Remove overlaps / correct direction (outline cleanup)
   4. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
@@ -82,13 +82,12 @@ STYLE_MAP = {
 
 # Synthetic bold strength, in font units (the masters are 2000 UPM).
 #
-# changeWeight pushes both sides of a stem out by this amount, so a stem ends
-# up ~2x STROKE thicker. For reference, Readerly's real Bold (Newsreader
-# instanced at wght=650) thickens the lowercase stem by ~112 units over the
-# wght=450 Regular, which corresponds to STROKE ~= 56. 70 sits a touch firmer
-# than that for a more decisive bold. Lower for a lighter bold, raise for a
-# heavier one.
-EMBOLDEN_STROKE = 70
+# Bold is produced by outline expansion: every edge is offset outward by this
+# many units (via a circular nib of 2x this diameter), so a stem ends up ~2x
+# this much thicker. For reference, Readerly's real Bold thickens the lowercase
+# stem by ~112 units, i.e. an offset of ~56. Lower for a lighter bold, raise
+# for a heavier one.
+EMBOLDEN_STROKE = 50
 
 # Vertical metrics / line spacing, mirrored from Readerly so Libron keeps the
 # same reading rhythm. Values are multiples of UPM.
@@ -175,7 +174,7 @@ def run_fontforge_script(script_text):
 
     if result.stderr:
         for line in result.stderr.splitlines():
-            # changeWeight on quadratic outlines emits a torrent of harmless
+            # Outline ops on quadratic masters can emit a torrent of harmless
             # "Invalid 2nd order spline" notices; filter those and the banner.
             if (
                 line.startswith("Copyright")
@@ -215,13 +214,39 @@ def build_per_font_script(open_path, save_path, steps):
 def ff_embolden_script():
     return textwrap.dedent(
         f"""\
-        STROKE = {EMBOLDEN_STROKE}
-        f.selection.all()
-        # type="auto", serif handling auto, counters auto -> emboldens stems
-        # while preserving serif shapes and opening counters like a real bold.
-        f.changeWeight(STROKE, "auto", 0, 0, "auto")
-        count = sum(1 for g in f.glyphs() if g.isWorthOutputting())
-        print(f"  Emboldened {{count}} glyphs by stroke {{STROKE}}")
+        import psMat
+
+        OFFSET = {EMBOLDEN_STROKE}
+        WIDTH = 2 * OFFSET   # circular nib diameter; grows each edge by OFFSET
+
+        # Bold is made by outline expansion, not changeWeight. The masters are
+        # quadratic, straight-edged designs; changeWeight injects curve points
+        # that bow the serifs and round the corners (especially on the italic
+        # capitals). Offsetting every contour outward with a circular nib and
+        # miter joins pushes each edge out by OFFSET while keeping straight
+        # edges straight and corners sharp -- a clean fake bold. removeinternal
+        # discards the inner nib boundary so counters stay open and ink-correct.
+        #
+        # Expansion grows the glyph on every side but leaves the advance width
+        # alone, so the extra ink eats into the sidebearings and crowds the
+        # text. After expanding, restore each glyph's original sidebearings:
+        # shift it back so the left bearing matches the master, then widen the
+        # advance so the right bearing matches too. Bold then spaces like the
+        # regular (wider advances, same bearings) instead of running together.
+        count = 0
+        for g in f.glyphs():
+            if not g.isWorthOutputting():
+                continue
+            w0 = g.width
+            bb0 = g.boundingBox()                 # (xmin, ymin, xmax, ymax)
+            g.stroke("circular", WIDTH, "butt", "miter", ("removeinternal",))
+            if w0 > 0:
+                bb1 = g.boundingBox()
+                dx = bb0[0] - bb1[0]              # restore left sidebearing
+                g.transform(psMat.translate(dx, 0))
+                g.width = int(round((w0 - bb0[2]) + (bb1[2] + dx)))   # restore right sidebearing
+            count += 1
+        print(f"  Emboldened {{count}} glyphs by offset {{OFFSET}} (nib {{WIDTH}})")
         """
     )
 
