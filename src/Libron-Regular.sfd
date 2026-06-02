@@ -15,14 +15,14 @@ sfntRevision: 0x00010000
 LayerCount: 2
 Layer: 0 1 "Back" 1
 Layer: 1 1 "Fore" 0
-XUID: [1021 6827 636237238 1602552119]
+XUID: [1021 1048843124 806278810 571616354]
 StyleMap: 0x0040
 FSType: 0
 OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1780428043
+ModificationTime: 1780429801
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -7152,7 +7152,7 @@ StartChar: G
 Encoding: 71 71 42
 Width: 1562
 GlyphClass: 2
-Flags: WO
+Flags: W
 AnchorPoint: "Anchor-4" 850 0 basechar 0
 LayerCount: 2
 Fore
