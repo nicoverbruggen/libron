@@ -19,7 +19,7 @@ jobs:
 
       - name: Validate generated fonts with ots-sanitize
         run: |
-          for font in out/ttf/*.ttf out/kf/*.ttf; do
+          for font in out/ttf/*.ttf out/kf/*.ttf out/web/*.woff2; do
             echo "Validating ${font}"
             ots-sanitize "${font}"
           done
@@ -29,6 +29,7 @@ jobs:
         run: |
           cd out/ttf && zip -j /tmp/Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/kf  && zip -j /tmp/KF_Libron.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/web && zip -j /tmp/Libron_Web.zip *.woff2
 
       - name: Create release
         if: startsWith(gitea.ref, 'refs/tags/')
@@ -48,3 +49,4 @@ jobs:
           files: |
             /tmp/Libron.zip
             /tmp/KF_Libron.zip
+            /tmp/Libron_Web.zip

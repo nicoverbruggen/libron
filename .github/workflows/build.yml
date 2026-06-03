@@ -19,37 +19,45 @@ jobs:
 
       - name: Validate generated fonts with ots-sanitize
         run: |
-          for font in out/ttf/*.ttf out/kf/*.ttf; do
+          for font in out/ttf/*.ttf out/kf/*.ttf out/web/*.woff2; do
             echo "Validating ${font}"
             ots-sanitize "${font}"
           done
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: Libron
           path: out/ttf/*.ttf
 
       - name: Upload Kobo artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: KF_Libron
           path: out/kf/*.ttf
 
-      - name: Zip TTFs for release
+      - name: Upload Web artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: Libron_Web
+          path: out/web/*.woff2
+
+      - name: Zip fonts for release
         if: startsWith(github.ref, 'refs/tags/')
         run: |
           cd out/ttf && zip -j ../../Libron.zip *.ttf
           cd ../../out/kf && zip -j ../../KF_Libron.zip *.ttf
+          cd ../../out/web && zip -j ../../Libron_Web.zip *.woff2
 
       - name: Upload release zips
         if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: Libron-release
           path: |
             Libron.zip
             KF_Libron.zip
+            Libron_Web.zip
 
   release:
     needs: build
@@ -59,7 +67,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: Libron-release
 
@@ -78,3 +86,4 @@ jobs:
           files: |
             Libron.zip
             KF_Libron.zip
+            Libron_Web.zip

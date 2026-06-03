@@ -21,6 +21,7 @@ Pipeline:
   5. Export TTFs to ./out/ttf/
   6. Post-process TTFs (style flags, version names, autohinting)
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
+  8. Generate WOFF2 webfonts in ./out/web/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
 are applied — the masters are already final. This is a straight export plus
@@ -54,6 +55,7 @@ SRC_DIR = os.path.join(ROOT_DIR, "src")
 OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_TTF_DIR = os.path.join(OUT_DIR, "ttf")
 OUT_KF_DIR = os.path.join(OUT_DIR, "kf")
+OUT_WEB_DIR = os.path.join(OUT_DIR, "web")
 
 with open(os.path.join(ROOT_DIR, "VERSION")) as version_file:
     FONT_VERSION = version_file.read().strip()
@@ -575,6 +577,30 @@ def run_kobofix(kobofix_path, variant_names):
     print(f"  Moved {moved} KF font(s) to {OUT_KF_DIR}/")
 
 
+def convert_to_woff2(ttf_path, woff2_path):
+    """Convert a TTF to WOFF2 using fontTools (requires `brotli`)."""
+    try:
+        from fontTools.ttLib import TTFont
+    except Exception:
+        print("  [warn] Skipping WOFF2: fontTools not available", file=sys.stderr)
+        return
+    try:
+        import brotli  # noqa: F401
+    except Exception:
+        print(
+            "  [warn] Skipping WOFF2: 'brotli' package not installed "
+            "(pip install brotli)",
+            file=sys.stderr,
+        )
+        return
+
+    font = TTFont(ttf_path)
+    font.flavor = "woff2"
+    font.save(woff2_path)
+    font.close()
+    print(f"  {os.path.basename(ttf_path)} -> {os.path.basename(woff2_path)}")
+
+
 def main():
     print("=" * 60)
     print("  Libron Build")
@@ -695,10 +721,18 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
     download_kobofix(kobofix_path)
     run_kobofix(kobofix_path, variant_names)
 
+    print("\n-- Step 5: Generate WOFF2 webfonts --\n")
+    os.makedirs(OUT_WEB_DIR, exist_ok=True)
+    for name in variant_names:
+        ttf_path = os.path.join(OUT_TTF_DIR, f"{name}.ttf")
+        woff2_path = os.path.join(OUT_WEB_DIR, f"{name}.woff2")
+        convert_to_woff2(ttf_path, woff2_path)
+
     print("\n" + "=" * 60)
     print("  Build complete!")
-    print(f"  TTF fonts are in: {OUT_TTF_DIR}/")
-    print(f"  KF fonts are in:  {OUT_KF_DIR}/")
+    print(f"  TTF fonts are in:  {OUT_TTF_DIR}/")
+    print(f"  KF fonts are in:   {OUT_KF_DIR}/")
+    print(f"  Web fonts are in:  {OUT_WEB_DIR}/")
     print("=" * 60)
 
 
