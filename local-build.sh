@@ -28,7 +28,7 @@ echo "Building Libron with ${IMAGE}"
 echo
 
 podman run --rm \
-  -v "${REPO_DIR}":/work \
+  -v "${REPO_DIR}":/work:z \
   -w /work \
   "${IMAGE}" \
   python3 build.py "$@"
