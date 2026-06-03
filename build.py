@@ -61,7 +61,7 @@ with open(os.path.join(ROOT_DIR, "VERSION")) as version_file:
 with open(os.path.join(ROOT_DIR, "COPYRIGHT")) as copyright_file:
     COPYRIGHT_TEXT = copyright_file.read().strip()
 
-DEFAULT_FAMILY = "Libron Proto II"
+DEFAULT_FAMILY = "Libron I"
 
 # (style_suffix, source_sfd, embolden_method)
 # Bold reuses the upright master. The emboldening method per style:
