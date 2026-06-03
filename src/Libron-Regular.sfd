@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1780487881
+ModificationTime: 1780489710
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -6119,7 +6119,7 @@ StartChar: b
 Encoding: 98 98 69
 Width: 1225
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 593 0 basechar 0
 LayerCount: 2
 Fore
@@ -6146,20 +6146,18 @@ SplineSet
  838 1084 838 1084 935.5 1022 c 128,-1,26
  1033 960 1033 960 1084 846 c 128,-1,27
  1135 732 1135 732 1135 576 c 0,28,29
- 1135 435 1135 435 1099.5 323.5 c 128,-1,30
- 1064 212 1064 212 999.5 134 c 0,31,32
- 945 68 945 68 825.173828125 6.0234375 c 0,33,34
- 808 -3 808 -3 650 -12 c 0,35,36
- 225 -37 225 -37 163 61 c 1,37,-1
- 161 297 l 1,38,-1
- 161 1335 l 1,39,40
- 148 1344 148 1344 116.5 1359.5 c 128,-1,41
- 85 1375 85 1375 74.5 1380.75 c 0,42,43
- 64 1386 64 1386 25 1403.5 c 1,44,-1
- 56 1520 l 5,45,-1
- 343 1587 l 1,46,-1
- 385 1587 l 1,47,-1
- 367 1366 l 1,48,-1
+ 1135 418.281553398 1135 418.281553398 1099.5 323.5 c 4,30,31
+ 1048 186 1048 186 999.5 134 c 4,32,33
+ 859.343536571 -8.51094105714 859.343536571 -8.51094105714 650 -12 c 0,34,35
+ 218.753301839 -27.1261867781 218.753301839 -27.1261867781 163 61 c 1,36,-1
+ 161 1335 l 1,37,38
+ 148 1344 148 1344 116.5 1359.5 c 128,-1,39
+ 85 1375 85 1375 74.5 1380.75 c 0,40,41
+ 64 1386 64 1386 25 1403.5 c 1,42,-1
+ 56 1520 l 1,43,-1
+ 343 1587 l 1,44,-1
+ 385 1587 l 1,45,-1
+ 367 1366 l 1,46,-1
  367 963 l 1,18,19
 EndSplineSet
 Kerns2: 552 -95 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -84 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -49 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -49 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -47 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -100 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -69 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -150 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -47 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -70 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 4 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
@@ -6215,7 +6213,7 @@ StartChar: d
 Encoding: 100 100 71
 Width: 1245
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 616 0 basechar 0
 AnchorPoint: "Anchor-3" 1034 1560 basechar 0
 AnchorPoint: "Anchor-1" 871 1240 basechar 0
