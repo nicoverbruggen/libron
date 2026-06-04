@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build fonts
-        run: python3 build.py
+        run: python3 build.py --with-kobofix
 
       - name: Validate generated fonts with ots-sanitize
         run: |

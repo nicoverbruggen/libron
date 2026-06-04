@@ -584,6 +584,7 @@ def main():
 
     family = DEFAULT_FAMILY
     outline_fix = True
+    with_kobofix = False
 
     if "--name" in sys.argv:
         idx = sys.argv.index("--name")
@@ -591,6 +592,9 @@ def main():
             print("ERROR: --name requires a value", file=sys.stderr)
             sys.exit(1)
         family = sys.argv[idx + 1]
+
+    if "--with-kobofix" in sys.argv:
+        with_kobofix = True
 
     if "--customize" in sys.argv:
         print()
@@ -604,6 +608,7 @@ def main():
     print(f"  ttfautohint: {shutil.which('ttfautohint')}")
     print(f"  Family: {family}")
     print(f"  Outline fix: {'yes' if outline_fix else 'no'}")
+    print(f"  Kobo fix: {'yes' if with_kobofix else 'no'}")
     print(f"  Sources: {len(SOURCE_STYLES)}")
 
     tmp_dir = os.path.join(ROOT_DIR, "tmp")
@@ -612,12 +617,12 @@ def main():
     os.makedirs(tmp_dir)
 
     try:
-        build(tmp_dir, family=family, outline_fix=outline_fix)
+        build(tmp_dir, family=family, outline_fix=outline_fix, with_kobofix=with_kobofix)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
-def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
+def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
     variants = [
         (f"{family}-{style}", style, source_path, method)
         for style, source_path, method in SOURCE_STYLES
@@ -681,10 +686,11 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
         fix_ttf_version_names(ttf_path)
         autohint_ttf(ttf_path)
 
-    print("\n-- Step 4: Generate Kobo (KF) variants --\n")
-    kobofix_path = os.path.join(tmp_dir, "kobofix.py")
-    download_kobofix(kobofix_path)
-    run_kobofix(kobofix_path, variant_names)
+    if with_kobofix:
+        print("\n-- Step 4: Generate Kobo (KF) variants --\n")
+        kobofix_path = os.path.join(tmp_dir, "kobofix.py")
+        download_kobofix(kobofix_path)
+        run_kobofix(kobofix_path, variant_names)
 
     print("\n-- Step 5: Generate WOFF2 webfonts --\n")
     os.makedirs(OUT_WEB_DIR, exist_ok=True)

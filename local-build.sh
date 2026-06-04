@@ -10,6 +10,7 @@
 # Usage:
 #   ./local-build.sh                 # full build
 #   ./local-build.sh --customize     # any build.py flags are passed through
+#   ./local-build.sh --kobofix       # also generate Kobo (KF) font variants
 #
 set -euo pipefail
 
@@ -26,6 +27,9 @@ fi
 
 echo "Building Libron with ${IMAGE}"
 echo
+
+# Translate --kobofix shorthand to --with-kobofix for build.py
+set -- "${@/--kobofix/--with-kobofix}"
 
 podman run --rm \
   -v "${REPO_DIR}":/work:z \
