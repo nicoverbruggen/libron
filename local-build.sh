@@ -36,8 +36,3 @@ podman run --rm \
   -w /work \
   "${IMAGE}" \
   python3 build.py "$@"
-
-echo
-echo "Done. Fonts are in:"
-echo "  ${REPO_DIR}/out/ttf"
-echo "  ${REPO_DIR}/out/kf"
