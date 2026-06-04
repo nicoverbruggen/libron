@@ -1,21 +1,21 @@
 SplineFontDB: 3.2
-FontName: Readerly-BoldItalic
-FullName: Readerly Bold Italic
-FamilyName: Readerly
+FontName: Libron-BoldItalic
+FullName: Libron Bold Italic
+FamilyName: Libron
 Weight: Bold
-Copyright: Newsreader (c) 2020 The Newsreader Project Authors (http://github.com/productiontype/Newsreader)\nReaderly (c) 2026 Nico Verbruggen (https://github.com/nicoverbruggen/readerly)
-Version: 1.8; ttfautohint (v1.8.4)
+Copyright: Newsreader (c) 2020 The Newsreader Project Authors\nLibron (c) 2026 Nico Verbruggen
+Version: 1.0
 ItalicAngle: -17
 UnderlinePosition: -303
 UnderlineWidth: 96
 Ascent: 1600
 Descent: 400
 InvalidEm: 0
-sfntRevision: 0x0001cccd
+sfntRevision: 0x00010000
 LayerCount: 2
 Layer: 0 1 "Back" 1
 Layer: 1 1 "Fore" 0
-XUID: [1021 301 -1444420827 16655230]
+XUID: [1021 1366236004 1066097624 776348399]
 StyleMap: 0x0021
 FSType: 0
 OS2Version: 4

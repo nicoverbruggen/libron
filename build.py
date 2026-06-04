@@ -4,28 +4,23 @@ Libron build script.
 
 Builds Libron from the static FontForge sources in ./src:
 
-  src/Libron-Regular.sfd  ->  Libron-Regular, Libron-Bold
-  src/Libron-Italic.sfd   ->  Libron-Italic
-
-Libron has no variable font. The Regular and Italic masters are exported
-as-is; the Bold is synthesized from the upright master (a "fake bold") with
-FontForge's changeWeight, which reads the most like a drawn bold and handles
-the upright capitals cleanly. There is no Bold Italic.
+  src/Libron-Regular.sfd      ->  Libron-Regular
+  src/Libron-Bold.sfd         ->  Libron-Bold
+  src/Libron-Italic.sfd       ->  Libron-Italic
+  src/Libron-BoldItalic.sfd   ->  Libron-BoldItalic
 
 Pipeline:
 
   1. Open each master SFD with FontForge
-  2. For the Bold style: embolden with changeWeight
-  3. Remove overlaps / correct direction (outline cleanup)
-  4. Apply vertical metrics, line height, renaming, version, copyright
+  2. Remove overlaps / correct direction (outline cleanup)
+  3. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
   6. Post-process TTFs (style flags, version names, autohinting)
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
   8. Generate WOFF2 webfonts in ./out/web/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
-are applied — the masters are already final. This is a straight export plus
-synthetic bold.
+are applied — the masters are already final. This is a straight export.
 
 Run with the prebuilt fntbld container (recommended; bundles FontForge,
 ttfautohint, fonttools, brotli, skia-pathops):
@@ -66,27 +61,22 @@ with open(os.path.join(ROOT_DIR, "COPYRIGHT")) as copyright_file:
 DEFAULT_FAMILY = "Libron II"
 
 # (style_suffix, source_sfd, embolden_method)
-# Bold reuses the upright master. The emboldening method per style:
-#   None           -> exported as-is (the Regular and Italic masters)
-#   "changeweight" -> FontForge's weight control. Looks the most like a drawn
-#                     bold and handles the upright capitals cleanly.
+# All styles are exported as-is from their respective SFD masters.
 SOURCE_STYLES = [
     ("Regular", os.path.join(SRC_DIR, "Libron-Regular.sfd"), None),
-    ("Bold", os.path.join(SRC_DIR, "Libron-Regular.sfd"), "changeweight"),
+    ("Bold", os.path.join(SRC_DIR, "Libron-Bold.sfd"), None),
     ("Italic", os.path.join(SRC_DIR, "Libron-Italic.sfd"), None),
+    ("BoldItalic", os.path.join(SRC_DIR, "Libron-BoldItalic.sfd"), None),
 ]
 
 STYLE_MAP = {
     "Regular": ("Regular", "Book", 400),
     "Bold": ("Bold", "Bold", 700),
     "Italic": ("Italic", "Book", 400),
+    "BoldItalic": ("Bold Italic", "Bold", 700),
 }
 
-# Synthetic bold strength, in font units (the masters are 2000 UPM).
-#
-# changeWeight thickens each stem by ~2x this value. Lower for a lighter bold,
-# raise for a heavier one.
-EMBOLDEN_STROKE = 40
+# (No synthetic bold — each weight uses its own drawn SFD master.)
 
 # Vertical metrics / line spacing, mirrored from Readerly so Libron keeps the
 # same reading rhythm. Values are multiples of UPM.
@@ -230,24 +220,6 @@ def build_per_font_script(open_path, save_path, steps):
     parts.append(f"print('\\nSaved: {save_path}\\n')")
     parts.append("f.close()")
     return "\n".join(parts)
-
-
-def ff_embolden_changeweight_script():
-    return textwrap.dedent(
-        f"""\
-        # FontForge weight control. Works directly on the (straight, polygonal)
-        # upright master: convert to cubic first so changeWeight does not spew
-        # "Invalid 2nd order spline" warnings, then thicken every stem by
-        # ~2*STROKE. This reads the most like a genuine drawn bold. It is NOT
-        # used for the italic, where it notches the sheared-serif capitals.
-        STROKE = {EMBOLDEN_STROKE}
-        f.is_quadratic = 0
-        f.selection.all()
-        f.changeWeight(STROKE, "auto", 0, 0, "auto")
-        count = sum(1 for g in f.glyphs() if g.isWorthOutputting())
-        print(f"  Emboldened {{count}} glyphs (changeWeight {{STROKE}})")
-        """
-    )
 
 
 def ff_remove_overlaps_script():
@@ -632,7 +604,7 @@ def main():
     print(f"  ttfautohint: {shutil.which('ttfautohint')}")
     print(f"  Family: {family}")
     print(f"  Outline fix: {'yes' if outline_fix else 'no'}")
-    print(f"  Embolden stroke: {EMBOLDEN_STROKE}")
+    print(f"  Sources: {len(SOURCE_STYLES)}")
 
     tmp_dir = os.path.join(ROOT_DIR, "tmp")
     if os.path.exists(tmp_dir):
@@ -653,9 +625,6 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
     variant_names = [name for name, _, _, _ in variants]
 
     print("\n-- Step 1: Import masters (+ synthesize bold) --\n")
-    embolden_code = {
-        "changeweight": ff_embolden_changeweight_script(),
-    }
     overlap_code = ff_remove_overlaps_script()
 
     for name, _style, source_path, method in variants:
@@ -663,11 +632,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
         print(f"Processing: {name}{f' ({method})' if method else ''}")
 
         steps = []
-        if method:
-            steps.append(("Emboldening", embolden_code[method]))
-        # Emboldened outlines self-overlap, so always clean them up; for the
-        # plain masters the cleanup is governed by the outline_fix flag.
-        if method or outline_fix:
+        if outline_fix:
             steps.append(("Removing overlaps", overlap_code))
 
         script = build_per_font_script(source_path, sfd_path, steps)
@@ -694,7 +659,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True):
             sfd_path,
             sfd_path,
             [
-                ("Setting baseline metrics", metrics_code),
+                ("Measuring baseline metrics", metrics_code),
                 ("Adjusting line height", lineheight_code),
                 ("Setting fontname for rename", set_fontname),
                 ("Updating font names", set_family + "\n" + rename_code),
