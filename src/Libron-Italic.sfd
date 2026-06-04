@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394406
-ModificationTime: 1780602122
+ModificationTime: 1780609335
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -5136,7 +5136,7 @@ EndChar
 
 StartChar: G
 Encoding: 71 71 42
-Width: 1526
+Width: 1481
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-4" 699 0 basechar 0
@@ -5656,7 +5656,7 @@ StartChar: S
 Encoding: 83 83 54
 Width: 1167
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 516 0 basechar 0
 LayerCount: 2
 Fore
@@ -10615,7 +10615,7 @@ EndChar
 
 StartChar: Gcircumflex
 Encoding: 284 284 222
-Width: 1526
+Width: 1481
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -10639,7 +10639,7 @@ EndChar
 
 StartChar: Gbreve
 Encoding: 286 286 224
-Width: 1526
+Width: 1481
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -10663,7 +10663,7 @@ EndChar
 
 StartChar: Gdotaccent
 Encoding: 288 288 226
-Width: 1526
+Width: 1481
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -10687,7 +10687,7 @@ EndChar
 
 StartChar: uni0122
 Encoding: 290 290 228
-Width: 1526
+Width: 1481
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -13060,7 +13060,7 @@ EndChar
 
 StartChar: Gcaron
 Encoding: 486 486 333
-Width: 1526
+Width: 1481
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
