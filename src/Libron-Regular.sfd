@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1780610065
+ModificationTime: 1780613947
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -6858,7 +6858,7 @@ StartChar: r
 Encoding: 114 114 85
 Width: 918
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 329 0 basechar 0
 AnchorPoint: "Anchor-0" 456 1062 basechar 0
 LayerCount: 2
@@ -9102,60 +9102,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-453 -519 m 0,0,1
- 365 -519 365 -519 332 -494.5 c 128,-1,2
- 299 -470 299 -470 299 -428 c 0,3,4
- 299 -397 299 -397 317 -379 c 128,-1,5
- 335 -361 335 -361 355 -361 c 0,6,7
- 367 -361 367 -361 386 -379 c 128,-1,8
- 405 -397 405 -397 429.5 -415 c 128,-1,9
- 454 -433 454 -433 485 -433 c 0,10,11
- 534 -433 534 -433 558.5 -412 c 128,-1,12
- 583 -391 583 -391 583 -351 c 0,13,14
- 583 -323 583 -323 567 -303 c 128,-1,15
- 551 -283 551 -283 504.5 -267 c 128,-1,16
- 458 -251 458 -251 366 -235 c 1,17,-1
- 366 -212 l 1,18,19
- 365 -212 365 -212 499 -20 c 1,20,21
- 395 -10 395 -10 312 40 c 0,22,23
- 207 104 207 104 149 223.5 c 128,-1,24
- 91 343 91 343 91 513 c 0,25,26
- 91 645 91 645 129.5 750.5 c 128,-1,27
- 168 856 168 856 241.5 930.5 c 128,-1,28
- 315 1005 315 1005 419 1044.5 c 128,-1,29
- 523 1084 523 1084 652 1084 c 0,30,31
- 768 1084 768 1084 833.5 1056.5 c 128,-1,32
- 899 1029 899 1029 926 988.5 c 128,-1,33
- 953 948 953 948 953 908 c 128,-1,34
- 953 868 953 868 937 835 c 128,-1,35
- 921 802 921 802 892.5 783 c 128,-1,36
- 864 764 864 764 827 764 c 0,37,38
- 815 764 815 764 790.5 782 c 128,-1,39
- 766 800 766 800 737 826.5 c 128,-1,40
- 708 853 708 853 677.5 879.5 c 128,-1,41
- 647 906 647 906 618 924 c 128,-1,42
- 589 942 589 942 567 942 c 0,43,44
- 489 942 489 942 426.5 903.5 c 128,-1,45
- 364 865 364 865 328 785.5 c 128,-1,46
- 292 706 292 706 292 586 c 0,47,48
- 292 447 292 447 331 353.5 c 128,-1,49
- 370 260 370 260 446.5 213 c 128,-1,50
- 523 166 523 166 635 166 c 0,51,52
- 706 166 706 166 778.5 186.5 c 128,-1,53
- 851 207 851 207 929 247 c 1,54,-1
- 936 149 l 1,55,56
- 871 93 871 93 806 54.5 c 128,-1,57
- 741 16 741 16 678 -4 c 0,58,59
- 639 -16 639 -16 601 -20 c 1,60,-1
- 529 -123 l 1,61,62
- 587 -139 587 -139 624 -159 c 0,63,64
- 677 -189 677 -189 696.5 -227 c 128,-1,65
- 716 -265 716 -265 716 -310 c 0,66,67
- 716 -378 716 -378 683 -425 c 128,-1,68
- 650 -472 650 -472 590 -495.5 c 128,-1,69
- 530 -519 530 -519 453 -519 c 0,0,1
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 537 0 2
+Refer: 70 99 N 1 0 0 1 0 0 2
 Kerns2: 552 -55 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 534 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -58 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -20 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -20 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -135 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -23 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -9703,77 +9651,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1096 77 m 1,0,-1
- 978 -96 l 2,1,2
- 945 -145 945 -145 925.5 -180.5 c 128,-1,3
- 906 -216 906 -216 898.5 -243.5 c 128,-1,4
- 891 -271 891 -271 891 -297 c 0,5,6
- 891 -345 891 -345 915.5 -370 c 128,-1,7
- 940 -395 940 -395 981 -395 c 0,8,9
- 1010 -395 1010 -395 1036.5 -386 c 128,-1,10
- 1063 -377 1063 -377 1103 -347 c 1,11,-1
- 1111 -416 l 1,12,13
- 1074 -455 1074 -455 1042.5 -477.5 c 128,-1,14
- 1011 -500 1011 -500 980 -509.5 c 128,-1,15
- 949 -519 949 -519 912 -519 c 0,16,17
- 826 -519 826 -519 785 -473 c 128,-1,18
- 744 -427 744 -427 744 -350 c 0,19,20
- 744 -313 744 -313 754.5 -278 c 128,-1,21
- 765 -243 765 -243 795 -198 c 128,-1,22
- 825 -153 825 -153 879 -90 c 2,23,-1
- 946 -11 l 1,24,25
- 940 -13 940 -13 933 -14 c 0,26,27
- 911 -18 911 -18 890 -18 c 0,28,29
- 829 -18 829 -18 787 12.5 c 128,-1,30
- 745 43 745 43 722 106 c 0,31,32
- 702 158 702 158 697 231 c 1,33,34
- 682 163 682 163 650 112 c 0,35,36
- 609 46 609 46 545 11.5 c 128,-1,37
- 481 -23 481 -23 396 -23 c 0,38,39
- 257 -23 257 -23 180 50.5 c 128,-1,40
- 103 124 103 124 103 261 c 0,41,42
- 103 339 103 339 130.5 400.5 c 128,-1,43
- 158 462 158 462 231.5 512 c 128,-1,44
- 305 562 305 562 442 603 c 0,45,46
- 546 634 546 634 694 662 c 1,47,-1
- 694 727 l 2,48,49
- 694 837 694 837 650.5 890 c 128,-1,50
- 607 943 607 943 495 943 c 0,51,52
- 441 943 441 943 396 936 c 0,53,54
- 381 934 381 934 366 931 c 1,55,56
- 360 904 360 904 354 882 c 0,57,58
- 341 839 341 839 325 802 c 0,59,60
- 308 764 308 764 281 753.5 c 128,-1,61
- 254 743 254 743 215 743 c 0,62,63
- 161 743 161 743 132.5 766 c 128,-1,64
- 104 789 104 789 104 823 c 0,65,66
- 104 862 104 862 138 906 c 128,-1,67
- 172 950 172 950 234 990 c 128,-1,68
- 296 1030 296 1030 380.5 1056 c 128,-1,69
- 465 1082 465 1082 563 1082 c 0,70,71
- 687 1082 687 1082 761 1043 c 128,-1,72
- 835 1004 835 1004 867.5 933 c 128,-1,73
- 900 862 900 862 900 762 c 2,74,-1
- 900 259 l 2,75,76
- 900 220 900 220 911 195.5 c 128,-1,77
- 922 171 922 171 944.5 159.5 c 128,-1,78
- 967 148 967 148 999 148 c 0,79,80
- 1021 148 1021 148 1046 153.5 c 128,-1,81
- 1071 159 1071 159 1096 167 c 1,82,-1
- 1096 77 l 1,0,-1
-694 539 m 1,83,84
- 600 521 600 521 536 503 c 0,85,86
- 447 478 447 478 400.5 449 c 128,-1,87
- 354 420 354 420 338 385 c 128,-1,88
- 322 350 322 350 322 305 c 0,89,90
- 322 228 322 228 362.5 189.5 c 128,-1,91
- 403 151 403 151 484 151 c 0,92,93
- 544 151 544 151 591 175.5 c 128,-1,94
- 638 200 638 200 666 241.5 c 128,-1,95
- 694 283 694 283 694 335 c 2,96,-1
- 694 539 l 1,83,84
-EndSplineSet
+Refer: 412 808 N 1.02997 0 0 1.07996 1083 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 Kerns2: 552 -120 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -77 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -119 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 512 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 510 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 508 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 506 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 379 22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 378 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 334 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 310 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 245 22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 229 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 227 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 225 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 223 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 193 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 191 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -53 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 92 -62 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -56 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 77 22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 74 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -121 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -191 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 30 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 36 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -86 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -10150,54 +10029,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-969 149 m 1,0,-1
- 849 -46 l 2,1,2
- 813 -104 813 -104 792.5 -149 c 128,-1,3
- 772 -194 772 -194 763.5 -229.5 c 128,-1,4
- 755 -265 755 -265 755 -294 c 0,5,6
- 755 -348 755 -348 783 -371.5 c 128,-1,7
- 811 -395 811 -395 853 -395 c 0,8,9
- 882 -395 882 -395 908.5 -386 c 128,-1,10
- 935 -377 935 -377 976 -347 c 1,11,-1
- 982 -416 l 1,12,13
- 945 -455 945 -455 916 -477.5 c 128,-1,14
- 887 -500 887 -500 858 -509.5 c 128,-1,15
- 829 -519 829 -519 790 -519 c 0,16,17
- 700 -519 700 -519 655 -471 c 128,-1,18
- 610 -423 610 -423 610 -340 c 0,19,20
- 610 -299 610 -299 621.5 -257 c 128,-1,21
- 633 -215 633 -215 663 -162.5 c 128,-1,22
- 693 -110 693 -110 748 -41 c 2,23,-1
- 808 40 l 1,24,25
- 757 14 757 14 706 -2 c 0,26,27
- 635 -23 635 -23 573 -23 c 0,28,29
- 427 -23 427 -23 318.5 41 c 128,-1,30
- 210 105 210 105 150.5 225.5 c 128,-1,31
- 91 346 91 346 91 516 c 128,-1,32
- 91 686 91 686 148 814 c 128,-1,33
- 205 942 205 942 310 1013 c 128,-1,34
- 415 1084 415 1084 558 1084 c 0,35,36
- 702 1084 702 1084 793 1020.5 c 128,-1,37
- 884 957 884 957 928 832.5 c 128,-1,38
- 972 708 972 708 976 527 c 1,39,-1
- 294 527 l 1,40,41
- 301 418 301 418 334 344 c 0,42,43
- 374 253 374 253 456 209 c 128,-1,44
- 538 165 538 165 661 165 c 0,45,46
- 719 165 719 165 771.5 176 c 128,-1,47
- 824 187 824 187 872 206 c 128,-1,48
- 920 225 920 225 961 246 c 1,49,-1
- 969 149 l 1,0,-1
-763 664 m 1,50,51
- 757 752 757 752 736 810 c 0,52,53
- 711 879 711 879 664 910.5 c 128,-1,54
- 617 942 617 942 549 942 c 0,55,56
- 469 942 469 942 411 904 c 128,-1,57
- 353 866 353 866 323 786 c 0,58,59
- 303 733 303 733 296 659 c 1,60,-1
- 763 664 l 1,50,51
-EndSplineSet
+Refer: 412 808 N 1.02997 0 0 1.07996 966 0 2
+Refer: 72 101 N 1 0 0 1 0 0 2
 Kerns2: 552 -84 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -36 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -78 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -34 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -78 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -149 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -61 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -44 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -10576,50 +10409,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-348 -95 m 2,0,1
- 325 -145 325 -145 312 -180 c 128,-1,2
- 299 -215 299 -215 294.5 -242.5 c 128,-1,3
- 290 -270 290 -270 290 -295 c 0,4,5
- 290 -344 290 -344 314 -369.5 c 128,-1,6
- 338 -395 338 -395 381 -395 c 0,7,8
- 410 -395 410 -395 436 -386 c 128,-1,9
- 462 -377 462 -377 503 -347 c 1,10,-1
- 510 -416 l 1,11,12
- 454 -474 454 -474 411 -496.5 c 128,-1,13
- 368 -519 368 -519 312 -519 c 0,14,15
- 226 -519 226 -519 184 -473 c 128,-1,16
- 142 -427 142 -427 142 -350 c 0,17,18
- 142 -315 142 -315 150.5 -279.5 c 128,-1,19
- 159 -244 159 -244 180.5 -199 c 128,-1,20
- 202 -154 202 -154 246 -91 c 2,21,-1
- 306 0 l 1,22,-1
- 84 0 l 1,23,-1
- 84 90 l 1,24,-1
- 238 135 l 1,25,-1
- 238 816 l 1,26,27
- 228 825 228 825 199.5 843 c 128,-1,28
- 171 861 171 861 137 881 c 128,-1,29
- 103 901 103 901 72 917 c 1,30,-1
- 72 978 l 1,31,-1
- 404 1084 l 1,32,-1
- 458 1084 l 1,33,-1
- 446 846 l 1,34,-1
- 446 135 l 1,35,-1
- 595 90 l 1,36,-1
- 595 0 l 1,37,-1
- 393 0 l 1,38,-1
- 348 -95 l 2,0,1
-326 1293 m 128,-1,40
- 255 1293 255 1293 212 1330.5 c 128,-1,41
- 169 1368 169 1368 169 1440 c 0,42,43
- 169 1511 169 1511 212 1549 c 128,-1,44
- 255 1587 255 1587 326 1587 c 128,-1,45
- 397 1587 397 1587 440 1549 c 128,-1,46
- 483 1511 483 1511 483 1440 c 128,-1,47
- 483 1369 483 1369 440 1331 c 128,-1,39
- 397 1293 397 1293 326 1293 c 128,-1,40
-EndSplineSet
+Refer: 412 808 N 1.02997 0 0 1.07996 496 0 2
+Refer: 76 105 N 1 0 0 1 0 0 2
 Kerns2: 552 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -11320,8 +11111,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 53 82 N 1 0 0 1 0 0 3
-Refer: 410 806 N 1 0 0 1 779 0 2
+Refer: 410 806 N 1 0 0 1 780 0 2
+Refer: 53 82 N 1 0 0 1 0 0 2
 Kerns2: 647 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 646 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 645 -21 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 644 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 643 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 642 -36 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 641 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 640 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 639 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 638 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -28 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -48 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 342 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 341 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 294 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 186 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 154 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -64 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -18 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -33 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 107 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -26 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -23 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -48 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 18 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -11495,69 +11286,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-411 -519 m 0,0,1
- 323 -519 323 -519 289.5 -494.5 c 128,-1,2
- 256 -470 256 -470 256 -428 c 0,3,4
- 256 -397 256 -397 274.5 -379 c 128,-1,5
- 293 -361 293 -361 313 -361 c 0,6,7
- 326 -361 326 -361 344 -379 c 128,-1,8
- 362 -397 362 -397 386.5 -415 c 128,-1,9
- 411 -433 411 -433 443 -433 c 0,10,11
- 493 -433 493 -433 517 -412 c 128,-1,12
- 541 -391 541 -391 541 -351 c 0,13,14
- 541 -323 541 -323 524.5 -303 c 128,-1,15
- 508 -283 508 -283 461.5 -267 c 128,-1,16
- 415 -251 415 -251 324 -235 c 1,17,-1
- 324 -212 l 1,18,-1
- 458 -19 l 1,19,20
- 447 -19 447 -19 435 -19 c 0,21,22
- 359 -19 359 -19 276 -6.5 c 128,-1,23
- 193 6 193 6 135 30 c 1,24,-1
- 92 334 l 1,25,-1
- 208 334 l 1,26,-1
- 299 121 l 1,27,28
- 327 116 327 116 356 114 c 0,29,30
- 394 111 394 111 428 111 c 0,31,32
- 562 111 562 111 627.5 152.5 c 128,-1,33
- 693 194 693 194 693 279 c 0,34,35
- 693 337 693 337 665.5 370 c 128,-1,36
- 638 403 638 403 591.5 420 c 128,-1,37
- 545 437 545 437 488.5 447.5 c 128,-1,38
- 432 458 432 458 374 472 c 0,39,40
- 299 490 299 490 240 522.5 c 128,-1,41
- 181 555 181 555 148 615 c 128,-1,42
- 115 675 115 675 115 775 c 128,-1,43
- 115 875 115 875 165.5 944 c 128,-1,44
- 216 1013 216 1013 309 1048.5 c 128,-1,45
- 402 1084 402 1084 530 1084 c 0,46,47
- 602 1084 602 1084 667.5 1072.5 c 128,-1,48
- 733 1061 733 1061 813 1032 c 1,49,-1
- 839 752 l 1,50,-1
- 725 752 l 1,51,-1
- 647 939 l 1,52,53
- 636 942 636 942 625 944 c 0,54,55
- 565 958 565 958 517 958 c 0,56,57
- 409 958 409 958 354 922.5 c 128,-1,58
- 299 887 299 887 299 820 c 0,59,60
- 299 755 299 755 334.5 721 c 128,-1,61
- 370 687 370 687 430.5 670 c 128,-1,62
- 491 653 491 653 568 637 c 0,63,64
- 626 626 626 626 682 608 c 128,-1,65
- 738 590 738 590 782.5 557 c 128,-1,66
- 827 524 827 524 854.5 467 c 128,-1,67
- 882 410 882 410 882 322 c 0,68,69
- 882 211 882 211 831 134.5 c 128,-1,70
- 780 58 780 58 681 20 c 0,71,72
- 630 -1 630 -1 565 -10 c 1,73,-1
- 486 -123 l 1,74,75
- 545 -139 545 -139 581 -159 c 0,76,77
- 635 -189 635 -189 654.5 -227 c 128,-1,78
- 674 -265 674 -265 674 -310 c 0,79,80
- 674 -378 674 -378 640.5 -425 c 128,-1,81
- 607 -472 607 -472 547.5 -495.5 c 128,-1,82
- 488 -519 488 -519 411 -519 c 0,0,1
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 497 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 Kerns2: 552 -71 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -66 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -89 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -150 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -25 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'locl' Localized Forms in Latin lookup 1 subtable" uni0219
 Substitution2: "'locl' Localized Forms in Latin lookup 0 subtable" uni0219
@@ -11649,54 +11379,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-423 -519 m 0,0,1
- 335 -519 335 -519 301.5 -494.5 c 128,-1,2
- 268 -470 268 -470 268 -428 c 0,3,4
- 268 -397 268 -397 286.5 -379 c 128,-1,5
- 305 -361 305 -361 325 -361 c 0,6,7
- 337 -361 337 -361 355.5 -379 c 128,-1,8
- 374 -397 374 -397 399 -415 c 128,-1,9
- 424 -433 424 -433 454 -433 c 0,10,11
- 504 -433 504 -433 528 -412 c 128,-1,12
- 552 -391 552 -391 552 -351 c 0,13,14
- 552 -323 552 -323 536.5 -303 c 128,-1,15
- 521 -283 521 -283 474.5 -267 c 128,-1,16
- 428 -251 428 -251 335 -235 c 1,17,-1
- 335 -212 l 1,18,-1
- 467 -22 l 1,19,20
- 394 -22 394 -22 334 6 c 0,21,22
- 274 35 274 35 240 92 c 128,-1,23
- 206 149 206 149 206 234 c 2,24,-1
- 206 887 l 1,25,-1
- 37 961 l 1,26,-1
- 37 1024 l 1,27,28
- 85 1043 85 1043 123.5 1062.5 c 128,-1,29
- 162 1082 162 1082 192 1103.5 c 128,-1,30
- 222 1125 222 1125 247.5 1149.5 c 128,-1,31
- 273 1174 273 1174 296 1203.5 c 128,-1,32
- 319 1233 319 1233 341 1269 c 1,33,-1
- 412 1269 l 1,34,-1
- 412 1062 l 1,35,-1
- 768 1062 l 1,36,-1
- 763 902 l 1,37,-1
- 412 902 l 1,38,-1
- 412 325 l 2,39,40
- 412 235 412 235 456.5 198.5 c 128,-1,41
- 501 162 501 162 596 162 c 0,42,43
- 637 162 637 162 686 170.5 c 128,-1,44
- 735 179 735 179 789 195 c 1,45,-1
- 789 107 l 1,46,47
- 712 58 712 58 655 30 c 0,48,49
- 617 10 617 10 585 -1 c 1,50,-1
- 498 -123 l 1,51,52
- 556 -139 556 -139 592 -159 c 0,53,54
- 647 -189 647 -189 666.5 -227 c 128,-1,55
- 686 -265 686 -265 686 -310 c 0,56,57
- 686 -378 686 -378 652 -425 c 128,-1,58
- 618 -472 618 -472 559 -495.5 c 128,-1,59
- 500 -519 500 -519 423 -519 c 0,0,1
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 506 0 2
+Refer: 87 116 N 1 0 0 1 0 0 2
 Kerns2: 552 -48 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 534 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -16 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 258 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -113 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -11995,57 +11679,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-920 -95 m 2,0,1
- 894 -144 894 -144 881 -179 c 128,-1,2
- 868 -214 868 -214 863.5 -242 c 128,-1,3
- 859 -270 859 -270 859 -296 c 0,4,5
- 859 -345 859 -345 883.5 -370 c 128,-1,6
- 908 -395 908 -395 950 -395 c 0,7,8
- 979 -395 979 -395 1005.5 -386 c 128,-1,9
- 1032 -377 1032 -377 1073 -347 c 1,10,-1
- 1079 -416 l 1,11,12
- 1042 -455 1042 -455 1011 -477.5 c 128,-1,13
- 980 -500 980 -500 949 -509.5 c 128,-1,14
- 918 -519 918 -519 881 -519 c 0,15,16
- 795 -519 795 -519 753.5 -473 c 128,-1,17
- 712 -427 712 -427 712 -350 c 0,18,19
- 712 -315 712 -315 719.5 -280.5 c 128,-1,20
- 727 -246 727 -246 750.5 -202 c 128,-1,21
- 774 -158 774 -158 819 -94 c 2,22,-1
- 882 -4 l 1,23,-1
- 831 162 l 1,24,25
- 772 110 772 110 730 76 c 0,26,27
- 678 33 678 33 639.5 11.5 c 128,-1,28
- 601 -10 601 -10 566.5 -16.5 c 128,-1,29
- 532 -23 532 -23 488 -23 c 0,30,31
- 338 -23 338 -23 268.5 61.5 c 128,-1,32
- 199 146 199 146 199 310 c 2,33,-1
- 199 895 l 1,34,-1
- 32 970 l 1,35,-1
- 32 1059 l 1,36,-1
- 424 1074 l 1,37,-1
- 405 916 l 1,38,-1
- 405 367 l 2,39,40
- 405 302 405 302 424.5 262 c 128,-1,41
- 444 222 444 222 487 204 c 128,-1,42
- 530 186 530 186 602 186 c 0,43,44
- 664 186 664 186 728 202 c 0,45,46
- 782 217 782 217 826 237 c 1,47,-1
- 826 900 l 1,48,-1
- 677 971 l 1,49,-1
- 677 1062 l 1,50,-1
- 1050 1074 l 1,51,-1
- 1035 915 l 1,52,-1
- 1035 239 l 1,53,54
- 1044 233 1044 233 1064 220 c 128,-1,55
- 1084 207 1084 207 1109.5 192.5 c 128,-1,56
- 1135 178 1135 178 1159 165 c 128,-1,57
- 1183 152 1183 152 1199 145 c 1,58,-1
- 1199 98 l 1,59,-1
- 969 -2 l 1,60,-1
- 920 -95 l 2,0,1
-EndSplineSet
+Refer: 412 808 N 1.02997 0 0 1.07996 1051 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 Kerns2: 552 -90 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -46 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -91 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -28 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -82 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -151 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -69 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -12297,51 +11932,10 @@ Encoding: 417 417 321
 Width: 1210
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "Anchor-4" 594 0 basechar 0
-AnchorPoint: "Anchor-0" 594 1062 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-1147 1226 m 0,0,1
- 1147 1099 1147 1099 1086 1036 c 0,2,3
- 1030 979 1030 979 924 971 c 1,4,5
- 1008 897 1008 897 1050 790 c 0,6,7
- 1096 674 1096 674 1096 535 c 0,8,9
- 1096 367 1096 367 1033 241.5 c 128,-1,10
- 970 116 970 116 855.5 46.5 c 128,-1,11
- 741 -23 741 -23 584 -23 c 0,12,13
- 431 -23 431 -23 320.5 45 c 128,-1,14
- 210 113 210 113 150.5 237.5 c 128,-1,15
- 91 362 91 362 91 527 c 0,16,17
- 91 695 91 695 154 820.5 c 128,-1,18
- 217 946 217 946 331.5 1015 c 128,-1,19
- 446 1084 446 1084 601 1084 c 0,20,21
- 645 1084 645 1084 688.5 1079 c 128,-1,22
- 732 1074 732 1074 771.5 1068 c 128,-1,23
- 811 1062 811 1062 844 1062 c 0,24,25
- 914 1062 914 1062 941 1089 c 128,-1,26
- 968 1116 968 1116 968 1166 c 0,27,28
- 968 1198 968 1198 958.5 1222 c 128,-1,29
- 949 1246 949 1246 940.5 1263 c 128,-1,30
- 932 1280 932 1280 932 1292 c 0,31,32
- 932 1324 932 1324 960 1346 c 0,33,34
- 989 1368 989 1368 1028 1368 c 0,35,36
- 1079 1368 1079 1368 1113 1335.5 c 128,-1,37
- 1147 1303 1147 1303 1147 1226 c 0,0,1
-586 131 m 0,38,39
- 681 131 681 131 747 170.5 c 128,-1,40
- 813 210 813 210 847 292.5 c 128,-1,41
- 881 375 881 375 881 504 c 0,42,43
- 881 647 881 647 850 741.5 c 128,-1,44
- 819 836 819 836 756.5 883.5 c 128,-1,45
- 694 931 694 931 599 931 c 128,-1,46
- 504 931 504 931 438.5 892 c 128,-1,47
- 373 853 373 853 339 770 c 128,-1,48
- 305 687 305 687 305 557 c 0,49,50
- 305 416 305 416 336 321 c 128,-1,51
- 367 226 367 226 429.5 178.5 c 128,-1,52
- 492 131 492 131 586 131 c 0,38,39
-EndSplineSet
+Refer: 407 795 N 1.02997 0 0 1.07996 778 -6 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 Kerns2: 235 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 4 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -12401,55 +11995,10 @@ Encoding: 432 432 323
 Width: 1264
 GlyphClass: 2
 Flags: MW
-AnchorPoint: "Anchor-4" 618 0 basechar 0
-AnchorPoint: "Anchor-0" 584 1062 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-1121 1166 m 0,0,1
- 1121 1199 1121 1199 1112.5 1222.5 c 128,-1,2
- 1104 1246 1104 1246 1094.5 1263 c 128,-1,3
- 1085 1280 1085 1280 1085 1292 c 0,4,5
- 1086 1323 1086 1323 1115 1345.5 c 128,-1,6
- 1144 1368 1144 1368 1182 1368 c 0,7,8
- 1233 1368 1233 1368 1267.5 1335 c 128,-1,9
- 1302 1302 1302 1302 1302 1226 c 0,10,11
- 1302 1114 1302 1114 1235.5 1050.5 c 128,-1,12
- 1169 987 1169 987 1040 976 c 1,13,-1
- 1035 915 l 1,14,-1
- 1035 239 l 1,15,16
- 1044 233 1044 233 1064 220 c 128,-1,17
- 1084 207 1084 207 1109.5 192.5 c 128,-1,18
- 1135 178 1135 178 1159 165 c 128,-1,19
- 1183 152 1183 152 1199 145 c 1,20,-1
- 1199 98 l 1,21,-1
- 923 -22 l 1,22,-1
- 888 -22 l 1,23,-1
- 831 162 l 1,24,25
- 772 110 772 110 730 76 c 0,26,27
- 678 33 678 33 639.5 11.5 c 128,-1,28
- 601 -10 601 -10 566.5 -16.5 c 128,-1,29
- 532 -23 532 -23 488 -23 c 0,30,31
- 338 -23 338 -23 268.5 61.5 c 128,-1,32
- 199 146 199 146 199 310 c 2,33,-1
- 199 895 l 1,34,-1
- 32 970 l 1,35,-1
- 32 1059 l 1,36,-1
- 424 1074 l 1,37,-1
- 405 916 l 1,38,-1
- 405 367 l 2,39,40
- 405 302 405 302 424.5 262 c 128,-1,41
- 444 222 444 222 487 204 c 128,-1,42
- 530 186 530 186 602 186 c 0,43,44
- 664 186 664 186 728 202 c 0,45,46
- 782 217 782 217 826 237 c 1,47,-1
- 826 900 l 1,48,-1
- 677 971 l 1,49,-1
- 677 1062 l 1,50,-1
- 981 1069 l 2,51,52
- 1062 1071 1062 1071 1091.5 1097.5 c 128,-1,53
- 1121 1124 1121 1124 1121 1166 c 0,0,1
-EndSplineSet
+Refer: 407 795 N 1.02997 0 0 1.07996 930 -7 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 Kerns2: 112 15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 107 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 4 9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -12655,51 +12204,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-639 -95 m 2,0,1
- 617 -146 617 -146 605 -180.5 c 128,-1,2
- 593 -215 593 -215 587 -242.5 c 128,-1,3
- 581 -270 581 -270 581 -296 c 0,4,5
- 581 -344 581 -344 605.5 -369.5 c 128,-1,6
- 630 -395 630 -395 673 -395 c 0,7,8
- 702 -395 702 -395 727.5 -386 c 128,-1,9
- 753 -377 753 -377 793 -347 c 1,10,-1
- 802 -416 l 1,11,12
- 745 -474 745 -474 701.5 -496.5 c 128,-1,13
- 658 -519 658 -519 602 -519 c 0,14,15
- 515 -519 515 -519 474 -473 c 128,-1,16
- 433 -427 433 -427 433 -350 c 0,17,18
- 433 -315 433 -315 441.5 -280 c 128,-1,19
- 450 -245 450 -245 472.5 -200.5 c 128,-1,20
- 495 -156 495 -156 536 -91 c 2,21,-1
- 579 -23 l 1,22,23
- 429 -22 429 -22 320 45 c 0,24,25
- 210 113 210 113 150.5 237.5 c 128,-1,26
- 91 362 91 362 91 527 c 0,27,28
- 91 695 91 695 154 820.5 c 128,-1,29
- 217 946 217 946 331.5 1015 c 128,-1,30
- 446 1084 446 1084 601 1084 c 0,31,32
- 754 1084 754 1084 865.5 1016 c 128,-1,33
- 977 948 977 948 1036.5 824.5 c 128,-1,34
- 1096 701 1096 701 1096 535 c 0,35,36
- 1096 367 1096 367 1033 241.5 c 128,-1,37
- 970 116 970 116 856 46 c 0,38,39
- 775 -2 775 -2 674 -17 c 1,40,-1
- 639 -95 l 2,0,1
-586 131 m 0,41,42
- 681 131 681 131 747 170.5 c 128,-1,43
- 813 210 813 210 847 292.5 c 128,-1,44
- 881 375 881 375 881 504 c 0,45,46
- 881 647 881 647 850 741.5 c 128,-1,47
- 819 836 819 836 756.5 883.5 c 128,-1,48
- 694 931 694 931 599 931 c 128,-1,49
- 504 931 504 931 438.5 892 c 128,-1,50
- 373 853 373 853 339 770 c 128,-1,51
- 305 687 305 687 305 557 c 0,52,53
- 305 416 305 416 336 321 c 128,-1,54
- 367 226 367 226 429.5 178.5 c 128,-1,55
- 492 131 492 131 586 131 c 0,41,42
-EndSplineSet
+Refer: 412 808 N 1.02997 0 0 1.07996 787 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 Kerns2: 552 -93 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -42 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -82 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -47 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -45 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -120 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -71 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -155 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -71 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -59 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -13108,8 +12614,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 87 116 N 1 0 0 1 0 0 3
-Refer: 410 806 N 1.02997 0 0 1.07996 504 0 2
+Refer: 410 806 N 1.02997 0 0 1.07996 506 0 2
+Refer: 87 116 N 1 0 0 1 0 0 2
 Kerns2: 552 -48 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 534 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -16 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 258 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -113 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -14147,8 +13653,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 68 97 N 1 0 0 1 0 0 3
-Refer: 408 803 N 1.02997 0 0 1.07996 -355.997 0 2
+Refer: 408 803 N 1.02997 0 0 1.07996 539 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 Kerns2: 552 -120 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -77 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -119 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -53 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -56 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -121 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -191 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -86 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -14292,9 +13798,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 68 97 N 1 0 0 1 0 0 3
+Refer: 408 803 N 1.02997 0 0 1.07996 539 0 2
 Refer: 394 770 N 1.02997 0 0 1.07996 509 0 2
-Refer: 408 803 N 1.02997 0 0 1.07996 -355.997 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 Kerns2: 552 -120 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -77 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -119 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -53 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -56 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -121 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -191 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -86 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -14414,9 +13920,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 68 97 N 1 0 0 1 0 0 3
+Refer: 408 803 N 1.02997 0 0 1.07996 539 0 2
 Refer: 397 774 N 1.02997 0 0 1.07996 509 0 2
-Refer: 408 803 N 1.02997 0 0 1.07996 -355.997 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 Kerns2: 552 -120 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -77 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -119 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -53 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -56 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -121 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -191 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -86 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -14657,8 +14163,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-Refer: 76 105 N 1 0 0 1 0 0 3
-Refer: 408 803 N 1.02997 0 0 1.07996 328 0 2
+Refer: 408 803 N 1.02997 0 0 1.07996 342 0 2
+Refer: 76 105 N 1 0 0 1 0 0 2
 Kerns2: 552 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
 
@@ -19902,37 +19408,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1359 140 m 1,0,-1
- 1528 92 l 1,1,-1
- 1528 0 l 1,2,-1
- 945 0 l 1,3,-1
- 945 92 l 1,4,-1
- 1116 138 l 1,5,-1
- 992 467 l 1,6,-1
- 448 467 l 1,7,-1
- 334 138 l 1,8,-1
- 504 92 l 1,9,-1
- 504 0 l 1,10,-1
- 12 0 l 1,11,-1
- 12 92 l 1,12,-1
- 168 138 l 1,13,-1
- 636 1413 l 1,14,-1
- 866 1413 l 1,15,-1
- 1359 140 l 1,0,-1
-708 1219 m 1,16,-1
- 499 616 l 1,17,-1
- 935 616 l 1,18,-1
- 708 1219 l 1,16,-1
-770 1605 m 1,19,-1
- 953 1790 l 1,20,-1
- 1095 1790 l 1,21,-1
- 862 1463 l 1,22,-1
- 678 1463 l 1,23,-1
- 445 1790 l 1,24,-1
- 587 1790 l 1,25,-1
- 770 1605 l 1,19,-1
-EndSplineSet
+Refer: 589 -1 N 1 0 0 1 753 0 2
+Refer: 36 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01CE
@@ -19942,68 +19419,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-697 231 m 1,0,1
- 682 163 682 163 650 112 c 0,2,3
- 609 46 609 46 545 11.5 c 128,-1,4
- 481 -23 481 -23 396 -23 c 0,5,6
- 257 -23 257 -23 180 50.5 c 128,-1,7
- 103 124 103 124 103 261 c 0,8,9
- 103 339 103 339 130.5 400.5 c 128,-1,10
- 158 462 158 462 231.5 512 c 128,-1,11
- 305 562 305 562 442 602 c 0,12,13
- 545 633 545 633 694 661 c 1,14,-1
- 694 727 l 2,15,16
- 694 837 694 837 650.5 890 c 128,-1,17
- 607 943 607 943 495 943 c 0,18,19
- 441 943 441 943 396 936 c 0,20,21
- 380 934 380 934 365 931 c 1,22,23
- 363 923 363 923 361 914 c 0,24,25
- 353 881 353 881 344 854 c 128,-1,26
- 335 827 335 827 325 802 c 0,27,28
- 308 764 308 764 281 753.5 c 128,-1,29
- 254 743 254 743 215 743 c 0,30,31
- 161 743 161 743 132.5 766 c 128,-1,32
- 104 789 104 789 104 823 c 0,33,34
- 104 862 104 862 138 906 c 128,-1,35
- 172 950 172 950 234 990 c 128,-1,36
- 296 1030 296 1030 380.5 1056 c 128,-1,37
- 465 1082 465 1082 563 1082 c 0,38,39
- 687 1082 687 1082 761 1043 c 128,-1,40
- 835 1004 835 1004 867.5 933 c 128,-1,41
- 900 862 900 862 900 762 c 2,42,-1
- 900 259 l 2,43,44
- 900 220 900 220 911 195.5 c 128,-1,45
- 922 171 922 171 944.5 159.5 c 128,-1,46
- 967 148 967 148 999 148 c 0,47,48
- 1021 148 1021 148 1046 153.5 c 128,-1,49
- 1071 159 1071 159 1096 167 c 1,50,-1
- 1096 77 l 1,51,52
- 1049 29 1049 29 994.5 5.5 c 128,-1,53
- 940 -18 940 -18 890 -18 c 0,54,55
- 829 -18 829 -18 787 12.5 c 128,-1,56
- 745 43 745 43 722 106 c 0,57,58
- 702 158 702 158 697 231 c 1,0,1
-694 539 m 1,59,60
- 600 521 600 521 536 503 c 0,61,62
- 447 478 447 478 400.5 449 c 128,-1,63
- 354 420 354 420 338 385 c 128,-1,64
- 322 350 322 350 322 305 c 0,65,66
- 322 228 322 228 362.5 189.5 c 128,-1,67
- 403 151 403 151 484 151 c 0,68,69
- 544 151 544 151 591 175.5 c 128,-1,70
- 638 200 638 200 666 241.5 c 128,-1,71
- 694 283 694 283 694 335 c 2,72,-1
- 694 539 l 1,59,60
-600 1248 m 1,73,-1
- 783 1433 l 1,74,-1
- 925 1433 l 1,75,-1
- 692 1106 l 1,76,-1
- 508 1106 l 1,77,-1
- 275 1433 l 1,78,-1
- 417 1433 l 1,79,-1
- 600 1248 l 1,73,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 509 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01CF
@@ -20013,29 +19430,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-708 92 m 1,0,-1
- 708 0 l 1,1,-1
- 137 0 l 1,2,-1
- 137 92 l 1,3,-1
- 312 139 l 1,4,-1
- 312 1257 l 1,5,-1
- 137 1304 l 1,6,-1
- 137 1396 l 1,7,-1
- 708 1396 l 1,8,-1
- 708 1304 l 1,9,-1
- 533 1257 l 1,10,-1
- 533 139 l 1,11,-1
- 708 92 l 1,0,-1
-422 1588 m 1,12,-1
- 605 1773 l 1,13,-1
- 747 1773 l 1,14,-1
- 514 1446 l 1,15,-1
- 330 1446 l 1,16,-1
- 97 1773 l 1,17,-1
- 239 1773 l 1,18,-1
- 422 1588 l 1,12,-1
-EndSplineSet
+Refer: 589 -1 N 1 0 0 1 382 0 2
+Refer: 44 73 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D0
@@ -20045,40 +19441,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-521 1084 m 1,0,-1
- 509 846 l 1,1,-1
- 509 135 l 1,2,-1
- 658 90 l 1,3,-1
- 658 0 l 1,4,-1
- 147 0 l 1,5,-1
- 147 90 l 1,6,-1
- 301 135 l 1,7,-1
- 301 816 l 1,8,9
- 291 825 291 825 262.5 843 c 128,-1,10
- 234 861 234 861 200 881 c 128,-1,11
- 166 901 166 901 135 917 c 1,12,-1
- 135 978 l 1,13,-1
- 467 1084 l 1,14,-1
- 521 1084 l 1,0,-1
-232 1440 m 0,15,16
- 232 1511 232 1511 275 1549 c 128,-1,17
- 318 1587 318 1587 389 1587 c 128,-1,18
- 460 1587 460 1587 503 1549 c 128,-1,19
- 546 1511 546 1511 546 1440 c 128,-1,20
- 546 1369 546 1369 503 1331 c 128,-1,21
- 460 1293 460 1293 389 1293 c 128,-1,22
- 318 1293 318 1293 275 1330.5 c 128,-1,23
- 232 1368 232 1368 232 1440 c 0,15,16
-397 1779 m 1,24,-1
- 580 1964 l 1,25,-1
- 722 1964 l 1,26,-1
- 489 1637 l 1,27,-1
- 305 1637 l 1,28,-1
- 72 1964 l 1,29,-1
- 214 1964 l 1,30,-1
- 397 1779 l 1,24,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 313 0 2
+Refer: 243 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D1
@@ -20088,46 +19452,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-797 139 m 0,0,1
- 941 139 941 139 1040.5 201.5 c 128,-1,2
- 1140 264 1140 264 1191.5 381 c 128,-1,3
- 1243 498 1243 498 1243 663 c 0,4,5
- 1243 852 1243 852 1189.5 984.5 c 128,-1,6
- 1136 1117 1136 1117 1033 1186.5 c 128,-1,7
- 930 1256 930 1256 781 1256 c 0,8,9
- 637 1256 637 1256 537 1194 c 128,-1,10
- 437 1132 437 1132 385.5 1015 c 128,-1,11
- 334 898 334 898 334 733 c 0,12,13
- 334 545 334 545 388 412 c 128,-1,14
- 442 279 442 279 545 209 c 128,-1,15
- 648 139 648 139 797 139 c 0,0,1
-790 1417 m 0,16,17
- 946 1417 946 1417 1072.5 1365 c 128,-1,18
- 1199 1313 1199 1313 1288.5 1217.5 c 128,-1,19
- 1378 1122 1378 1122 1425.5 990.5 c 128,-1,20
- 1473 859 1473 859 1473 700 c 0,21,22
- 1473 540 1473 540 1425 407.5 c 128,-1,23
- 1377 275 1377 275 1287 179 c 128,-1,24
- 1197 83 1197 83 1070.5 31 c 128,-1,25
- 944 -21 944 -21 788 -21 c 128,-1,26
- 632 -21 632 -21 505.5 31 c 128,-1,27
- 379 83 379 83 289.5 178.5 c 128,-1,28
- 200 274 200 274 152 405.5 c 128,-1,29
- 104 537 104 537 104 696 c 0,30,31
- 104 856 104 856 152.5 988 c 128,-1,32
- 201 1120 201 1120 291 1216 c 128,-1,33
- 381 1312 381 1312 507 1364.5 c 128,-1,34
- 633 1417 633 1417 790 1417 c 0,16,17
-788 1609 m 1,35,-1
- 971 1794 l 1,36,-1
- 1113 1794 l 1,37,-1
- 880 1467 l 1,38,-1
- 696 1467 l 1,39,-1
- 463 1794 l 1,40,-1
- 605 1794 l 1,41,-1
- 788 1609 l 1,35,-1
-EndSplineSet
+Refer: 589 -1 N 1 0 0 1 788 0 2
+Refer: 50 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D2
@@ -20137,42 +19463,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-594 1248 m 1,31,-1
- 777 1433 l 1,32,-1
- 919 1433 l 1,33,-1
- 686 1106 l 1,34,-1
- 502 1106 l 1,35,-1
- 269 1433 l 1,36,-1
- 411 1433 l 1,37,-1
- 594 1248 l 1,31,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D3
@@ -20182,43 +19474,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1201 509 m 2,0,-1
- 1201 1257 l 1,1,-1
- 1026 1304 l 1,2,-1
- 1026 1396 l 1,3,-1
- 1529 1396 l 1,4,-1
- 1529 1304 l 1,5,-1
- 1354 1257 l 1,6,-1
- 1354 518 l 2,7,8
- 1354 341 1354 341 1290.5 221 c 128,-1,9
- 1227 101 1227 101 1106.5 40 c 128,-1,10
- 986 -21 986 -21 813 -21 c 0,11,12
- 622 -21 622 -21 494 38 c 128,-1,13
- 366 97 366 97 301 219.5 c 128,-1,14
- 236 342 236 342 236 528 c 2,15,-1
- 236 1257 l 1,16,-1
- 61 1304 l 1,17,-1
- 61 1396 l 1,18,-1
- 632 1396 l 1,19,-1
- 632 1304 l 1,20,-1
- 457 1257 l 1,21,-1
- 457 529 l 2,22,23
- 457 401 457 401 499 318.5 c 128,-1,24
- 541 236 541 236 625 197 c 128,-1,25
- 709 158 709 158 835 158 c 0,26,27
- 956 158 956 158 1037 195 c 128,-1,28
- 1118 232 1118 232 1159.5 309.5 c 128,-1,29
- 1201 387 1201 387 1201 509 c 2,0,-1
-795 1588 m 1,30,-1
- 978 1773 l 1,31,-1
- 1120 1773 l 1,32,-1
- 887 1446 l 1,33,-1
- 703 1446 l 1,34,-1
- 470 1773 l 1,35,-1
- 612 1773 l 1,36,-1
- 795 1588 l 1,30,-1
-EndSplineSet
+Refer: 589 -1 N 1 0 0 1 829 0 2
+Refer: 56 85 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D4
@@ -20228,48 +19485,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-616 1248 m 1,38,-1
- 799 1433 l 1,39,-1
- 941 1433 l 1,40,-1
- 708 1106 l 1,41,-1
- 524 1106 l 1,42,-1
- 291 1433 l 1,43,-1
- 433 1433 l 1,44,-1
- 616 1248 l 1,38,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D5
@@ -20340,63 +19557,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-796 1245 m 0,38,39
- 734 1245 734 1245 702.5 1278.5 c 128,-1,40
- 671 1312 671 1312 671 1372.5 c 128,-1,41
- 671 1433 671 1433 702.5 1465 c 128,-1,42
- 734 1497 734 1497 796 1497 c 0,43,44
- 857 1497 857 1497 889.5 1465 c 128,-1,45
- 922 1433 922 1433 922 1372.5 c 128,-1,46
- 922 1312 922 1312 889.5 1278.5 c 128,-1,47
- 857 1245 857 1245 796 1245 c 0,38,39
-373 1245 m 128,-1,49
- 311 1245 311 1245 278.5 1278.5 c 128,-1,50
- 246 1312 246 1312 246 1372.5 c 128,-1,51
- 246 1433 246 1433 278.5 1465 c 128,-1,52
- 311 1497 311 1497 373 1497 c 128,-1,53
- 435 1497 435 1497 466 1465 c 128,-1,54
- 497 1433 497 1433 497 1372.5 c 128,-1,55
- 497 1312 497 1312 466 1278.5 c 128,-1,48
- 435 1245 435 1245 373 1245 c 128,-1,49
-332 1547 m 1,56,-1
- 332 1677 l 1,57,-1
- 900 1677 l 1,58,-1
- 900 1547 l 1,59,-1
- 332 1547 l 1,56,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 556 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D7
@@ -20468,64 +19631,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-796 1245 m 0,38,39
- 734 1245 734 1245 702.5 1278.5 c 128,-1,40
- 671 1312 671 1312 671 1372.5 c 128,-1,41
- 671 1433 671 1433 702.5 1465 c 128,-1,42
- 734 1497 734 1497 796 1497 c 0,43,44
- 857 1497 857 1497 889.5 1465 c 128,-1,45
- 922 1433 922 1433 922 1372.5 c 128,-1,46
- 922 1312 922 1312 889.5 1278.5 c 128,-1,47
- 857 1245 857 1245 796 1245 c 0,38,39
-373 1245 m 128,-1,49
- 311 1245 311 1245 278.5 1278.5 c 128,-1,50
- 246 1312 246 1312 246 1372.5 c 128,-1,51
- 246 1433 246 1433 278.5 1465 c 128,-1,52
- 311 1497 311 1497 373 1497 c 128,-1,53
- 435 1497 435 1497 466 1465 c 128,-1,54
- 497 1433 497 1433 497 1372.5 c 128,-1,55
- 497 1312 497 1312 466 1278.5 c 128,-1,48
- 435 1245 435 1245 373 1245 c 128,-1,49
-409 1547 m 1,56,-1
- 576 1874 l 1,57,-1
- 823 1874 l 1,58,-1
- 823 1834 l 1,59,-1
- 520 1547 l 1,60,-1
- 409 1547 l 1,56,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 556 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01D9
@@ -20599,66 +19707,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-796 1245 m 0,38,39
- 734 1245 734 1245 702.5 1278.5 c 128,-1,40
- 671 1312 671 1312 671 1372.5 c 128,-1,41
- 671 1433 671 1433 702.5 1465 c 128,-1,42
- 734 1497 734 1497 796 1497 c 0,43,44
- 857 1497 857 1497 889.5 1465 c 128,-1,45
- 922 1433 922 1433 922 1372.5 c 128,-1,46
- 922 1312 922 1312 889.5 1278.5 c 128,-1,47
- 857 1245 857 1245 796 1245 c 0,38,39
-373 1245 m 128,-1,49
- 311 1245 311 1245 278.5 1278.5 c 128,-1,50
- 246 1312 246 1312 246 1372.5 c 128,-1,51
- 246 1433 246 1433 278.5 1465 c 128,-1,52
- 311 1497 311 1497 373 1497 c 128,-1,53
- 435 1497 435 1497 466 1465 c 128,-1,54
- 497 1433 497 1433 497 1372.5 c 128,-1,55
- 497 1312 497 1312 466 1278.5 c 128,-1,48
- 435 1245 435 1245 373 1245 c 128,-1,49
-616 1689 m 1,56,-1
- 799 1874 l 1,57,-1
- 941 1874 l 1,58,-1
- 708 1547 l 1,59,-1
- 524 1547 l 1,60,-1
- 291 1874 l 1,61,-1
- 433 1874 l 1,62,-1
- 616 1689 l 1,56,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 556 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01DB
@@ -20730,64 +19781,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-796 1245 m 0,38,39
- 734 1245 734 1245 702.5 1278.5 c 128,-1,40
- 671 1312 671 1312 671 1372.5 c 128,-1,41
- 671 1433 671 1433 702.5 1465 c 128,-1,42
- 734 1497 734 1497 796 1497 c 0,43,44
- 857 1497 857 1497 889.5 1465 c 128,-1,45
- 922 1433 922 1433 922 1372.5 c 128,-1,46
- 922 1312 922 1312 889.5 1278.5 c 128,-1,47
- 857 1245 857 1245 796 1245 c 0,38,39
-373 1245 m 128,-1,49
- 311 1245 311 1245 278.5 1278.5 c 128,-1,50
- 246 1312 246 1312 246 1372.5 c 128,-1,51
- 246 1433 246 1433 278.5 1465 c 128,-1,52
- 311 1497 311 1497 373 1497 c 128,-1,53
- 435 1497 435 1497 466 1465 c 128,-1,54
- 497 1433 497 1433 497 1372.5 c 128,-1,55
- 497 1312 497 1312 466 1278.5 c 128,-1,48
- 435 1245 435 1245 373 1245 c 128,-1,49
-823 1547 m 1,56,-1
- 712 1547 l 1,57,-1
- 409 1834 l 1,58,-1
- 409 1874 l 1,59,-1
- 656 1874 l 1,60,-1
- 823 1547 l 1,56,-1
-EndSplineSet
+Refer: 392 768 N 1.02997 0 0 1.07996 556 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01DE
@@ -20852,83 +19848,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-697 231 m 1,0,1
- 682 163 682 163 650 112 c 0,2,3
- 609 46 609 46 545 11.5 c 128,-1,4
- 481 -23 481 -23 396 -23 c 0,5,6
- 257 -23 257 -23 180 50.5 c 128,-1,7
- 103 124 103 124 103 261 c 0,8,9
- 103 339 103 339 130.5 400.5 c 128,-1,10
- 158 462 158 462 231.5 512 c 128,-1,11
- 305 562 305 562 442 602 c 0,12,13
- 545 633 545 633 694 661 c 1,14,-1
- 694 727 l 2,15,16
- 694 837 694 837 650.5 890 c 128,-1,17
- 607 943 607 943 495 943 c 0,18,19
- 441 943 441 943 396 936 c 0,20,21
- 380 934 380 934 365 931 c 1,22,23
- 363 923 363 923 361 914 c 0,24,25
- 353 881 353 881 344 854 c 128,-1,26
- 335 827 335 827 325 802 c 0,27,28
- 308 764 308 764 281 753.5 c 128,-1,29
- 254 743 254 743 215 743 c 0,30,31
- 161 743 161 743 132.5 766 c 128,-1,32
- 104 789 104 789 104 823 c 0,33,34
- 104 862 104 862 138 906 c 128,-1,35
- 172 950 172 950 234 990 c 128,-1,36
- 296 1030 296 1030 380.5 1056 c 128,-1,37
- 465 1082 465 1082 563 1082 c 0,38,39
- 687 1082 687 1082 761 1043 c 128,-1,40
- 835 1004 835 1004 867.5 933 c 128,-1,41
- 900 862 900 862 900 762 c 2,42,-1
- 900 259 l 2,43,44
- 900 220 900 220 911 195.5 c 128,-1,45
- 922 171 922 171 944.5 159.5 c 128,-1,46
- 967 148 967 148 999 148 c 0,47,48
- 1021 148 1021 148 1046 153.5 c 128,-1,49
- 1071 159 1071 159 1096 167 c 1,50,-1
- 1096 77 l 1,51,52
- 1049 29 1049 29 994.5 5.5 c 128,-1,53
- 940 -18 940 -18 890 -18 c 0,54,55
- 829 -18 829 -18 787 12.5 c 128,-1,56
- 745 43 745 43 722 106 c 0,57,58
- 702 158 702 158 697 231 c 1,0,1
-694 539 m 1,59,60
- 600 521 600 521 536 503 c 0,61,62
- 447 478 447 478 400.5 449 c 128,-1,63
- 354 420 354 420 338 385 c 128,-1,64
- 322 350 322 350 322 305 c 0,65,66
- 322 228 322 228 362.5 189.5 c 128,-1,67
- 403 151 403 151 484 151 c 0,68,69
- 544 151 544 151 591 175.5 c 128,-1,70
- 638 200 638 200 666 241.5 c 128,-1,71
- 694 283 694 283 694 335 c 2,72,-1
- 694 539 l 1,59,60
-734 1245 m 0,73,74
- 672 1245 672 1245 640.5 1278.5 c 128,-1,75
- 609 1312 609 1312 609 1372.5 c 128,-1,76
- 609 1433 609 1433 640.5 1465 c 128,-1,77
- 672 1497 672 1497 734 1497 c 0,78,79
- 795 1497 795 1497 827.5 1465 c 128,-1,80
- 860 1433 860 1433 860 1372.5 c 128,-1,81
- 860 1312 860 1312 827.5 1278.5 c 128,-1,82
- 795 1245 795 1245 734 1245 c 0,73,74
-311 1245 m 128,-1,84
- 249 1245 249 1245 216.5 1278.5 c 128,-1,85
- 184 1312 184 1312 184 1372.5 c 128,-1,86
- 184 1433 184 1433 216.5 1465 c 128,-1,87
- 249 1497 249 1497 311 1497 c 128,-1,88
- 373 1497 373 1497 404 1465 c 128,-1,89
- 435 1433 435 1433 435 1372.5 c 128,-1,90
- 435 1312 435 1312 404 1278.5 c 128,-1,83
- 373 1245 373 1245 311 1245 c 128,-1,84
-316 1547 m 1,91,-1
- 316 1677 l 1,92,-1
- 884 1677 l 1,93,-1
- 884 1547 l 1,94,-1
- 316 1547 l 1,91,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 509 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 509 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni0226
@@ -20938,38 +19860,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1359 140 m 1,0,-1
- 1528 92 l 1,1,-1
- 1528 0 l 1,2,-1
- 945 0 l 1,3,-1
- 945 92 l 1,4,-1
- 1116 138 l 1,5,-1
- 992 467 l 1,6,-1
- 448 467 l 1,7,-1
- 334 138 l 1,8,-1
- 504 92 l 1,9,-1
- 504 0 l 1,10,-1
- 12 0 l 1,11,-1
- 12 92 l 1,12,-1
- 168 138 l 1,13,-1
- 636 1413 l 1,14,-1
- 866 1413 l 1,15,-1
- 1359 140 l 1,0,-1
-708 1219 m 1,16,-1
- 499 616 l 1,17,-1
- 935 616 l 1,18,-1
- 708 1219 l 1,16,-1
-629 1587 m 0,19,20
- 629 1646 629 1646 665 1677 c 128,-1,21
- 701 1708 701 1708 770 1708 c 128,-1,22
- 839 1708 839 1708 875 1677 c 128,-1,23
- 911 1646 911 1646 911 1587 c 0,24,25
- 911 1529 911 1529 875 1496 c 128,-1,26
- 839 1463 839 1463 770 1463 c 128,-1,27
- 701 1463 701 1463 665 1496 c 128,-1,28
- 629 1529 629 1529 629 1587 c 0,19,20
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 753 0 2
+Refer: 36 65 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01E0
@@ -21025,69 +19917,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-697 231 m 1,0,1
- 682 163 682 163 650 112 c 0,2,3
- 609 46 609 46 545 11.5 c 128,-1,4
- 481 -23 481 -23 396 -23 c 0,5,6
- 257 -23 257 -23 180 50.5 c 128,-1,7
- 103 124 103 124 103 261 c 0,8,9
- 103 339 103 339 130.5 400.5 c 128,-1,10
- 158 462 158 462 231.5 512 c 128,-1,11
- 305 562 305 562 442 602 c 0,12,13
- 545 633 545 633 694 661 c 1,14,-1
- 694 727 l 2,15,16
- 694 837 694 837 650.5 890 c 128,-1,17
- 607 943 607 943 495 943 c 0,18,19
- 441 943 441 943 396 936 c 0,20,21
- 380 934 380 934 365 931 c 1,22,23
- 363 923 363 923 361 914 c 0,24,25
- 353 881 353 881 344 854 c 128,-1,26
- 335 827 335 827 325 802 c 0,27,28
- 308 764 308 764 281 753.5 c 128,-1,29
- 254 743 254 743 215 743 c 0,30,31
- 161 743 161 743 132.5 766 c 128,-1,32
- 104 789 104 789 104 823 c 0,33,34
- 104 862 104 862 138 906 c 128,-1,35
- 172 950 172 950 234 990 c 128,-1,36
- 296 1030 296 1030 380.5 1056 c 128,-1,37
- 465 1082 465 1082 563 1082 c 0,38,39
- 687 1082 687 1082 761 1043 c 128,-1,40
- 835 1004 835 1004 867.5 933 c 128,-1,41
- 900 862 900 862 900 762 c 2,42,-1
- 900 259 l 2,43,44
- 900 220 900 220 911 195.5 c 128,-1,45
- 922 171 922 171 944.5 159.5 c 128,-1,46
- 967 148 967 148 999 148 c 0,47,48
- 1021 148 1021 148 1046 153.5 c 128,-1,49
- 1071 159 1071 159 1096 167 c 1,50,-1
- 1096 77 l 1,51,52
- 1049 29 1049 29 994.5 5.5 c 128,-1,53
- 940 -18 940 -18 890 -18 c 0,54,55
- 829 -18 829 -18 787 12.5 c 128,-1,56
- 745 43 745 43 722 106 c 0,57,58
- 702 158 702 158 697 231 c 1,0,1
-694 539 m 1,59,60
- 600 521 600 521 536 503 c 0,61,62
- 447 478 447 478 400.5 449 c 128,-1,63
- 354 420 354 420 338 385 c 128,-1,64
- 322 350 322 350 322 305 c 0,65,66
- 322 228 322 228 362.5 189.5 c 128,-1,67
- 403 151 403 151 484 151 c 0,68,69
- 544 151 544 151 591 175.5 c 128,-1,70
- 638 200 638 200 666 241.5 c 128,-1,71
- 694 283 694 283 694 335 c 2,72,-1
- 694 539 l 1,59,60
-459 1271 m 0,73,74
- 459 1330 459 1330 495 1361 c 128,-1,75
- 531 1392 531 1392 600 1392 c 128,-1,76
- 669 1392 669 1392 705 1361 c 128,-1,77
- 741 1330 741 1330 741 1271 c 0,78,79
- 741 1213 741 1213 705 1180 c 128,-1,80
- 669 1147 669 1147 600 1147 c 128,-1,81
- 531 1147 531 1147 495 1180 c 128,-1,82
- 459 1213 459 1213 459 1271 c 0,73,74
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 509 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01E1
@@ -21097,74 +19928,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-697 231 m 1,0,1
- 682 163 682 163 650 112 c 0,2,3
- 609 46 609 46 545 11.5 c 128,-1,4
- 481 -23 481 -23 396 -23 c 0,5,6
- 257 -23 257 -23 180 50.5 c 128,-1,7
- 103 124 103 124 103 261 c 0,8,9
- 103 339 103 339 130.5 400.5 c 128,-1,10
- 158 462 158 462 231.5 512 c 128,-1,11
- 305 562 305 562 442 602 c 0,12,13
- 545 633 545 633 694 661 c 1,14,-1
- 694 727 l 2,15,16
- 694 837 694 837 650.5 890 c 128,-1,17
- 607 943 607 943 495 943 c 0,18,19
- 441 943 441 943 396 936 c 0,20,21
- 380 934 380 934 365 931 c 1,22,23
- 363 923 363 923 361 914 c 0,24,25
- 353 881 353 881 344 854 c 128,-1,26
- 335 827 335 827 325 802 c 0,27,28
- 308 764 308 764 281 753.5 c 128,-1,29
- 254 743 254 743 215 743 c 0,30,31
- 161 743 161 743 132.5 766 c 128,-1,32
- 104 789 104 789 104 823 c 0,33,34
- 104 862 104 862 138 906 c 128,-1,35
- 172 950 172 950 234 990 c 128,-1,36
- 296 1030 296 1030 380.5 1056 c 128,-1,37
- 465 1082 465 1082 563 1082 c 0,38,39
- 687 1082 687 1082 761 1043 c 128,-1,40
- 835 1004 835 1004 867.5 933 c 128,-1,41
- 900 862 900 862 900 762 c 2,42,-1
- 900 259 l 2,43,44
- 900 220 900 220 911 195.5 c 128,-1,45
- 922 171 922 171 944.5 159.5 c 128,-1,46
- 967 148 967 148 999 148 c 0,47,48
- 1021 148 1021 148 1046 153.5 c 128,-1,49
- 1071 159 1071 159 1096 167 c 1,50,-1
- 1096 77 l 1,51,52
- 1049 29 1049 29 994.5 5.5 c 128,-1,53
- 940 -18 940 -18 890 -18 c 0,54,55
- 829 -18 829 -18 787 12.5 c 128,-1,56
- 745 43 745 43 722 106 c 0,57,58
- 702 158 702 158 697 231 c 1,0,1
-694 539 m 1,59,60
- 600 521 600 521 536 503 c 0,61,62
- 447 478 447 478 400.5 449 c 128,-1,63
- 354 420 354 420 338 385 c 128,-1,64
- 322 350 322 350 322 305 c 0,65,66
- 322 228 322 228 362.5 189.5 c 128,-1,67
- 403 151 403 151 484 151 c 0,68,69
- 544 151 544 151 591 175.5 c 128,-1,70
- 638 200 638 200 666 241.5 c 128,-1,71
- 694 283 694 283 694 335 c 2,72,-1
- 694 539 l 1,59,60
-459 1271 m 0,73,74
- 459 1330 459 1330 495 1361 c 128,-1,75
- 531 1392 531 1392 600 1392 c 128,-1,76
- 669 1392 669 1392 705 1361 c 128,-1,77
- 741 1330 741 1330 741 1271 c 0,78,79
- 741 1213 741 1213 705 1180 c 128,-1,80
- 669 1147 669 1147 600 1147 c 128,-1,81
- 531 1147 531 1147 495 1180 c 128,-1,82
- 459 1213 459 1213 459 1271 c 0,73,74
-316 1442 m 1,83,-1
- 316 1572 l 1,84,-1
- 884 1572 l 1,85,-1
- 884 1442 l 1,86,-1
- 316 1442 l 1,83,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 509 401 2
+Refer: 398 775 N 1.02997 0 0 1.07996 509 0 2
+Refer: 68 97 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01E2
@@ -21174,63 +19940,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-868 0 m 1,0,-1
- 868 92 l 1,1,-1
- 1043 139 l 1,2,-1
- 1043 482 l 1,3,-1
- 553 482 l 1,4,-1
- 330 138 l 1,5,-1
- 498 92 l 1,6,-1
- 498 0 l 1,7,-1
- -3 0 l 1,8,-1
- -3 92 l 1,9,-1
- 153 138 l 1,10,-1
- 880 1254 l 1,11,-1
- 694 1304 l 1,12,-1
- 694 1396 l 1,13,-1
- 972 1396 l 1,14,-1
- 998 1396 l 1,15,-1
- 1043 1396 l 1,16,-1
- 1093 1396 l 1,17,-1
- 1141 1396 l 1,18,-1
- 1264 1396 l 1,19,-1
- 1834 1396 l 1,20,-1
- 1920 1463 l 1,21,-1
- 2006 1463 l 1,22,-1
- 2022 1015 l 1,23,-1
- 1906 1012 l 1,24,-1
- 1827 1246 l 1,25,-1
- 1264 1246 l 1,26,-1
- 1264 802 l 1,27,-1
- 1606 802 l 1,28,-1
- 1623 984 l 1,29,-1
- 1738 984 l 1,30,-1
- 1738 727 l 1,31,-1
- 1738 470 l 1,32,-1
- 1623 470 l 1,33,34
- 1624 470 1624 470 1606 655 c 1,35,-1
- 1264 655 l 1,36,-1
- 1264 149 l 1,37,-1
- 1831 149 l 1,38,-1
- 1956 429 l 1,39,-1
- 2067 426 l 1,40,-1
- 1994 -72 l 1,41,-1
- 1896 -72 l 1,42,-1
- 1834 0 l 1,43,-1
- 1264 0 l 1,44,-1
- 1141 0 l 1,45,-1
- 868 0 l 1,0,-1
-1043 1239 m 1,46,-1
- 649 631 l 1,47,-1
- 1043 631 l 1,48,-1
- 1043 1239 l 1,46,-1
-748 1513 m 1,49,-1
- 748 1643 l 1,50,-1
- 1316 1643 l 1,51,-1
- 1316 1513 l 1,52,-1
- 748 1513 l 1,49,-1
-EndSplineSet
+Refer: 582 -1 N 1 0 0 1 1156 0 2
+Refer: 136 198 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01E3
@@ -21240,80 +19951,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-501 943 m 0,0,1
- 446 943 446 943 399 936 c 0,2,3
- 381 934 381 934 364 931 c 1,4,5
- 362 922 362 922 360 914 c 0,6,7
- 352 881 352 881 343.5 854 c 128,-1,8
- 335 827 335 827 324 802 c 0,9,10
- 307 764 307 764 280.5 753.5 c 128,-1,11
- 254 743 254 743 215 743 c 0,12,13
- 160 743 160 743 131.5 766 c 128,-1,14
- 103 789 103 789 103 823 c 0,15,16
- 103 862 103 862 138 906 c 128,-1,17
- 173 950 173 950 236 990 c 128,-1,18
- 299 1030 299 1030 384 1056 c 128,-1,19
- 469 1082 469 1082 569 1082 c 0,20,21
- 672 1082 672 1082 739 1053 c 128,-1,22
- 806 1024 806 1024 843 971 c 0,23,24
- 849 962 849 962 855 952 c 1,25,26
- 891 991 891 991 936 1020 c 0,27,28
- 1034 1084 1034 1084 1163 1084 c 0,29,30
- 1308 1084 1308 1084 1399 1019.5 c 128,-1,31
- 1490 955 1490 955 1533 829.5 c 128,-1,32
- 1576 704 1576 704 1579 521 c 1,33,-1
- 906 521 l 1,34,35
- 912 416 912 416 944 344 c 0,36,37
- 983 253 983 253 1064 209 c 128,-1,38
- 1145 165 1145 165 1265 165 c 0,39,40
- 1324 165 1324 165 1376.5 176 c 128,-1,41
- 1429 187 1429 187 1476.5 206 c 128,-1,42
- 1524 225 1524 225 1567 246 c 1,43,-1
- 1572 149 l 1,44,45
- 1507 94 1507 94 1439 55.5 c 128,-1,46
- 1371 17 1371 17 1303.5 -3 c 128,-1,47
- 1236 -23 1236 -23 1173 -23 c 0,48,49
- 1055 -23 1055 -23 962 17 c 128,-1,50
- 869 57 869 57 804 134 c 0,51,52
- 758 187 758 187 729 255 c 1,53,54
- 715 184 715 184 683 132 c 0,55,56
- 636 54 636 54 562 15.5 c 128,-1,57
- 488 -23 488 -23 397 -23 c 0,58,59
- 258 -23 258 -23 180 51 c 128,-1,60
- 102 125 102 125 102 261 c 0,61,62
- 102 338 102 338 129 398.5 c 128,-1,63
- 156 459 156 459 229.5 508.5 c 128,-1,64
- 303 558 303 558 442 600 c 0,65,66
- 547 632 547 632 700 660 c 1,67,-1
- 700 727 l 2,68,69
- 700 837 700 837 656 890 c 128,-1,70
- 612 943 612 943 501 943 c 0,0,1
-700 538 m 1,71,72
- 602 520 602 520 536 502 c 0,73,74
- 445 476 445 476 398.5 447 c 128,-1,75
- 352 418 352 418 337 383.5 c 128,-1,76
- 322 349 322 349 322 305 c 0,77,78
- 322 228 322 228 362.5 189.5 c 128,-1,79
- 403 151 403 151 484 151 c 0,80,81
- 546 151 546 151 594.5 176.5 c 128,-1,82
- 643 202 643 202 671.5 250.5 c 128,-1,83
- 700 299 700 299 700 368 c 2,84,-1
- 700 538 l 1,71,72
-1367 658 m 1,85,86
- 1363 750 1363 750 1340 810 c 0,87,88
- 1314 879 1314 879 1267 910.5 c 128,-1,89
- 1220 942 1220 942 1152 942 c 0,90,91
- 1074 942 1074 942 1018.5 904 c 128,-1,92
- 963 866 963 866 934 786 c 0,93,94
- 913 730 913 730 907 652 c 1,95,-1
- 1367 658 l 1,85,86
-556 1205 m 1,96,-1
- 556 1335 l 1,97,-1
- 1124 1335 l 1,98,-1
- 1124 1205 l 1,99,-1
- 556 1205 l 1,96,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 834 0 2
+Refer: 168 230 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01E8
@@ -21487,56 +20126,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-639 -95 m 2,0,1
- 617 -146 617 -146 605 -180.5 c 128,-1,2
- 593 -215 593 -215 587 -242.5 c 128,-1,3
- 581 -270 581 -270 581 -296 c 0,4,5
- 581 -344 581 -344 605.5 -369.5 c 128,-1,6
- 630 -395 630 -395 673 -395 c 0,7,8
- 702 -395 702 -395 727.5 -386 c 128,-1,9
- 753 -377 753 -377 793 -347 c 1,10,-1
- 802 -416 l 1,11,12
- 745 -474 745 -474 701.5 -496.5 c 128,-1,13
- 658 -519 658 -519 602 -519 c 0,14,15
- 515 -519 515 -519 474 -473 c 128,-1,16
- 433 -427 433 -427 433 -350 c 0,17,18
- 433 -315 433 -315 441.5 -280 c 128,-1,19
- 450 -245 450 -245 472.5 -200.5 c 128,-1,20
- 495 -156 495 -156 536 -91 c 2,21,-1
- 579 -23 l 1,22,23
- 429 -22 429 -22 320 45 c 0,24,25
- 210 113 210 113 150.5 237.5 c 128,-1,26
- 91 362 91 362 91 527 c 0,27,28
- 91 695 91 695 154 820.5 c 128,-1,29
- 217 946 217 946 331.5 1015 c 128,-1,30
- 446 1084 446 1084 601 1084 c 0,31,32
- 754 1084 754 1084 865.5 1016 c 128,-1,33
- 977 948 977 948 1036.5 824.5 c 128,-1,34
- 1096 701 1096 701 1096 535 c 0,35,36
- 1096 367 1096 367 1033 241.5 c 128,-1,37
- 970 116 970 116 856 46 c 0,38,39
- 775 -2 775 -2 674 -17 c 1,40,-1
- 639 -95 l 2,0,1
-586 131 m 0,41,42
- 681 131 681 131 747 170.5 c 128,-1,43
- 813 210 813 210 847 292.5 c 128,-1,44
- 881 375 881 375 881 504 c 0,45,46
- 881 647 881 647 850 741.5 c 128,-1,47
- 819 836 819 836 756.5 883.5 c 128,-1,48
- 694 931 694 931 599 931 c 128,-1,49
- 504 931 504 931 438.5 892 c 128,-1,50
- 373 853 373 853 339 770 c 128,-1,51
- 305 687 305 687 305 557 c 0,52,53
- 305 416 305 416 336 321 c 128,-1,54
- 367 226 367 226 429.5 178.5 c 128,-1,55
- 492 131 492 131 586 131 c 0,41,42
-310 1205 m 1,56,-1
- 310 1335 l 1,57,-1
- 878 1335 l 1,58,-1
- 878 1205 l 1,59,-1
- 310 1205 l 1,56,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 593 0 2
+Refer: 412 808 N 1.02997 0 0 1.07996 787 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F0
@@ -21546,45 +20138,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-309 816 m 1,0,1
- 299 825 299 825 269.5 843 c 128,-1,2
- 240 861 240 861 206 881 c 128,-1,3
- 172 901 172 901 142 917 c 1,4,-1
- 142 978 l 1,5,-1
- 474 1084 l 1,6,-1
- 527 1084 l 1,7,-1
- 515 846 l 1,8,-1
- 515 11 l 2,9,10
- 515 -54 515 -54 508 -103 c 128,-1,11
- 501 -152 501 -152 481 -195.5 c 128,-1,12
- 461 -239 461 -239 422 -284.5 c 128,-1,13
- 383 -330 383 -330 319.5 -386.5 c 128,-1,14
- 256 -443 256 -443 161 -519 c 1,15,-1
- 89 -424 l 1,16,17
- 167 -334 167 -334 211.5 -280 c 128,-1,18
- 256 -226 256 -226 276.5 -188.5 c 128,-1,19
- 297 -151 297 -151 303 -118 c 128,-1,20
- 309 -85 309 -85 309 -40 c 2,21,-1
- 309 816 l 1,0,1
-395 1293 m 0,22,23
- 325 1293 325 1293 281.5 1330.5 c 128,-1,24
- 238 1368 238 1368 238 1440 c 0,25,26
- 238 1511 238 1511 281.5 1549 c 128,-1,27
- 325 1587 325 1587 395 1587 c 0,28,29
- 466 1587 466 1587 509 1549 c 128,-1,30
- 552 1511 552 1511 552 1440 c 128,-1,31
- 552 1369 552 1369 509 1331 c 128,-1,32
- 466 1293 466 1293 395 1293 c 0,22,23
-320 1779 m 1,33,-1
- 503 1964 l 1,34,-1
- 645 1964 l 1,35,-1
- 412 1637 l 1,36,-1
- 228 1637 l 1,37,-1
- -5 1964 l 1,38,-1
- 137 1964 l 1,39,-1
- 320 1779 l 1,33,-1
-EndSplineSet
+Refer: 403 780 N 1.02997 0 0 1.07996 280 0 2
+Refer: 379 567 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F4
@@ -21594,53 +20149,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1343 209 m 1,0,-1
- 1446 185 l 1,1,-1
- 1446 109 l 1,2,3
- 1370 69 1370 69 1271.5 39.5 c 128,-1,4
- 1173 10 1173 10 1067 -5.5 c 128,-1,5
- 961 -21 961 -21 861 -21 c 0,6,7
- 680 -21 680 -21 538.5 24.5 c 128,-1,8
- 397 70 397 70 300 159.5 c 128,-1,9
- 203 249 203 249 153.5 381.5 c 128,-1,10
- 104 514 104 514 105 688 c 0,11,12
- 107 918 107 918 197.5 1081 c 128,-1,13
- 288 1244 288 1244 458.5 1330.5 c 128,-1,14
- 629 1417 629 1417 872 1417 c 0,15,16
- 965 1417 965 1417 1043 1402 c 0,17,18
- 1096 1392 1096 1392 1150 1377 c 1,19,20
- 1173 1404 1173 1404 1226 1465 c 1,21,-1
- 1317 1465 l 1,22,-1
- 1331 962 l 1,23,24
- 1330 962 1330 962 1206 959 c 1,25,-1
- 1126 1200 l 1,26,27
- 1072 1227 1072 1227 1022 1240 c 0,28,29
- 950 1259 950 1259 859 1259 c 0,30,31
- 725 1259 725 1259 627 1226 c 128,-1,32
- 529 1193 529 1193 465.5 1127 c 128,-1,33
- 402 1061 402 1061 370.5 964 c 128,-1,34
- 339 867 339 867 336 738 c 0,35,36
- 331 538 331 538 397 403 c 128,-1,37
- 463 268 463 268 586 200.5 c 128,-1,38
- 709 133 709 133 874 133 c 0,39,40
- 933 133 933 133 994 142 c 128,-1,41
- 1055 151 1055 151 1112 172 c 0,42,43
- 1117 173 1117 173 1122 175 c 1,44,-1
- 1122 518 l 1,45,-1
- 918 567 l 1,46,-1
- 918 658 l 1,47,-1
- 1483 658 l 1,48,-1
- 1483 567 l 1,49,-1
- 1343 519 l 1,50,-1
- 1343 209 l 1,0,-1
-587 1515 m 1,51,-1
- 754 1842 l 1,52,-1
- 1001 1842 l 1,53,-1
- 1001 1802 l 1,54,-1
- 698 1515 l 1,55,-1
- 587 1515 l 1,51,-1
-EndSplineSet
+Refer: 579 -1 N 1 0 0 1 802 0 2
+Refer: 42 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F5
@@ -21650,89 +20160,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-519 459 m 0,0,1
- 607 459 607 459 664.5 517 c 128,-1,2
- 722 575 722 575 722 700 c 0,3,4
- 722 829 722 829 670 891.5 c 128,-1,5
- 618 954 618 954 508 954 c 0,6,7
- 419 954 419 954 359 896 c 128,-1,8
- 299 838 299 838 299 713 c 0,9,10
- 299 586 299 586 354 522.5 c 128,-1,11
- 409 459 409 459 519 459 c 0,0,1
-517 -519 m 0,12,13
- 387 -519 387 -519 295 -501.5 c 128,-1,14
- 203 -484 203 -484 145.5 -450.5 c 128,-1,15
- 88 -417 88 -417 61 -368.5 c 128,-1,16
- 34 -320 34 -320 34 -258 c 0,17,18
- 34 -214 34 -214 54.5 -173.5 c 128,-1,19
- 75 -133 75 -133 121.5 -100.5 c 128,-1,20
- 168 -68 168 -68 242 -48 c 0,21,22
- 272 -39 272 -39 309 -33 c 1,23,24
- 237 -16 237 -16 196 11 c 0,25,26
- 152 40 152 40 134 80 c 128,-1,27
- 116 120 116 120 116 168 c 0,28,29
- 116 244 116 244 182 298 c 0,30,31
- 231 338 231 338 324 357 c 1,32,33
- 307 364 307 364 292 372 c 0,34,35
- 199 417 199 417 149 502.5 c 128,-1,36
- 99 588 99 588 99 704 c 0,37,38
- 99 824 99 824 149.5 909 c 128,-1,39
- 200 994 200 994 293 1039 c 128,-1,40
- 386 1084 386 1084 512 1084 c 0,41,42
- 596 1084 596 1084 665 1063 c 1,43,44
- 711 1062 711 1062 757 1064 c 0,45,46
- 824 1066 824 1066 883 1070.5 c 128,-1,47
- 942 1075 942 1075 989 1078.5 c 128,-1,48
- 1036 1082 1036 1082 1062 1082 c 0,49,50
- 1083 1082 1083 1082 1092.5 1064.5 c 128,-1,51
- 1102 1047 1102 1047 1102 1005 c 0,52,53
- 1102 952 1102 952 1089 921.5 c 128,-1,54
- 1076 891 1076 891 1059 891 c 0,55,56
- 1040 891 1040 891 1015.5 898 c 128,-1,57
- 991 905 991 905 950 916 c 0,58,59
- 911 927 911 927 849 938 c 1,60,61
- 875 904 875 904 892 862 c 0,62,63
- 920 793 920 793 920 705 c 0,64,65
- 920 586 920 586 870 501.5 c 128,-1,66
- 820 417 820 417 728 371.5 c 128,-1,67
- 636 326 636 326 511 326 c 0,68,69
- 444 326 444 326 386 339 c 1,70,71
- 344 332 344 332 323 316 c 0,72,73
- 297 295 297 295 297 252 c 0,74,75
- 297 226 297 226 307 206.5 c 128,-1,76
- 317 187 317 187 350 174.5 c 128,-1,77
- 383 162 383 162 450 155.5 c 128,-1,78
- 517 149 517 149 632 147 c 0,79,80
- 749 145 749 145 832.5 127.5 c 128,-1,81
- 916 110 916 110 969.5 75.5 c 128,-1,82
- 1023 41 1023 41 1049 -14.5 c 128,-1,83
- 1075 -70 1075 -70 1075 -150 c 0,84,85
- 1075 -260 1075 -260 1011 -343.5 c 128,-1,86
- 947 -427 947 -427 822.5 -473 c 128,-1,87
- 698 -519 698 -519 517 -519 c 0,12,13
-423 -49 m 1,88,89
- 377 -57 377 -57 346 -71 c 0,90,91
- 290 -95 290 -95 267.5 -132.5 c 128,-1,92
- 245 -170 245 -170 245 -218 c 0,93,94
- 245 -276 245 -276 273 -313.5 c 128,-1,95
- 301 -351 301 -351 364 -369.5 c 128,-1,96
- 427 -388 427 -388 529 -388 c 0,97,98
- 651 -388 651 -388 729.5 -366.5 c 128,-1,99
- 808 -345 808 -345 845.5 -304.5 c 128,-1,100
- 883 -264 883 -264 883 -205 c 0,101,102
- 883 -167 883 -167 870 -139 c 128,-1,103
- 857 -111 857 -111 819.5 -93 c 128,-1,104
- 782 -75 782 -75 709 -65 c 128,-1,105
- 636 -55 636 -55 517 -53 c 0,106,107
- 467 -53 467 -53 423 -49 c 1,88,89
-361 1106 m 1,108,-1
- 528 1433 l 1,109,-1
- 775 1433 l 1,110,-1
- 775 1393 l 1,111,-1
- 472 1106 l 1,112,-1
- 361 1106 l 1,108,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 523 0 2
+Refer: 74 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F8
@@ -21742,35 +20171,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-271 139 m 1,0,-1
- 271 1251 l 1,1,-1
- 99 1304 l 1,2,-1
- 99 1396 l 1,3,-1
- 555 1396 l 1,4,-1
- 1209 264 l 1,5,-1
- 1209 1257 l 1,6,-1
- 1025 1304 l 1,7,-1
- 1025 1396 l 1,8,-1
- 1532 1396 l 1,9,-1
- 1532 1304 l 1,10,-1
- 1362 1257 l 1,11,-1
- 1362 -4 l 1,12,-1
- 1119 -4 l 1,13,-1
- 424 1193 l 1,14,-1
- 424 139 l 1,15,-1
- 608 92 l 1,16,-1
- 608 0 l 1,17,-1
- 102 0 l 1,18,-1
- 102 92 l 1,19,-1
- 271 139 l 1,0,-1
-1023 1446 m 1,20,-1
- 912 1446 l 1,21,-1
- 609 1733 l 1,22,-1
- 609 1773 l 1,23,-1
- 856 1773 l 1,24,-1
- 1023 1446 l 1,20,-1
-EndSplineSet
+Refer: 578 -1 N 1 0 0 1 834 0 2
+Refer: 49 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni01F9
@@ -21780,46 +20182,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-761 90 m 1,0,-1
- 906 133 l 1,1,-1
- 906 679 l 2,2,3
- 906 747 906 747 884.5 790.5 c 128,-1,4
- 863 834 863 834 816 855 c 128,-1,5
- 769 876 769 876 692 876 c 0,6,7
- 624 876 624 876 554 858 c 0,8,9
- 491 842 491 842 443 818 c 1,10,-1
- 443 133 l 1,11,-1
- 587 90 l 1,12,-1
- 587 0 l 1,13,-1
- 81 0 l 1,14,-1
- 81 90 l 1,15,-1
- 237 135 l 1,16,-1
- 237 798 l 1,17,18
- 220 812 220 812 178 841 c 128,-1,19
- 136 870 136 870 69 913 c 1,20,-1
- 69 958 l 1,21,22
- 70 958 70 958 352 1088 c 1,23,-1
- 389 1088 l 1,24,-1
- 437 882 l 1,25,26
- 505 942 505 942 552 980 c 0,27,28
- 607 1025 607 1025 647 1047 c 128,-1,29
- 687 1069 687 1069 724.5 1076.5 c 128,-1,30
- 762 1084 762 1084 808 1084 c 0,31,32
- 966 1084 966 1084 1039 996 c 128,-1,33
- 1112 908 1112 908 1112 733 c 2,34,-1
- 1112 135 l 1,35,-1
- 1269 90 l 1,36,-1
- 1269 0 l 1,37,-1
- 761 0 l 1,38,-1
- 761 90 l 1,0,-1
-876 1106 m 1,39,-1
- 765 1106 l 1,40,-1
- 462 1393 l 1,41,-1
- 462 1433 l 1,42,-1
- 709 1433 l 1,43,-1
- 876 1106 l 1,39,-1
-EndSplineSet
+Refer: 392 768 N 1.02997 0 0 1.07996 669 0 2
+Refer: 81 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021E
@@ -21829,45 +20193,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1404 139 m 1,0,-1
- 1579 92 l 1,1,-1
- 1579 0 l 1,2,-1
- 1008 0 l 1,3,-1
- 1008 92 l 1,4,-1
- 1183 139 l 1,5,-1
- 1183 635 l 1,6,-1
- 493 635 l 1,7,-1
- 493 139 l 1,8,-1
- 668 92 l 1,9,-1
- 668 0 l 1,10,-1
- 97 0 l 1,11,-1
- 97 92 l 1,12,-1
- 272 139 l 1,13,-1
- 272 1257 l 1,14,-1
- 97 1304 l 1,15,-1
- 97 1396 l 1,16,-1
- 668 1396 l 1,17,-1
- 668 1304 l 1,18,-1
- 493 1257 l 1,19,-1
- 493 787 l 1,20,-1
- 1183 787 l 1,21,-1
- 1183 1257 l 1,22,-1
- 1008 1304 l 1,23,-1
- 1008 1396 l 1,24,-1
- 1579 1396 l 1,25,-1
- 1579 1304 l 1,26,-1
- 1404 1257 l 1,27,-1
- 1404 139 l 1,0,-1
-838 1588 m 1,28,-1
- 1021 1773 l 1,29,-1
- 1163 1773 l 1,30,-1
- 930 1446 l 1,31,-1
- 746 1446 l 1,32,-1
- 513 1773 l 1,33,-1
- 655 1773 l 1,34,-1
- 838 1588 l 1,28,-1
-EndSplineSet
+Refer: 589 -1 N 1 0 0 1 838 0 2
+Refer: 43 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni021F
@@ -21998,60 +20325,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-558 1084 m 0,0,1
- 702 1084 702 1084 793 1020.5 c 128,-1,2
- 884 957 884 957 928 832.5 c 128,-1,3
- 972 708 972 708 976 527 c 1,4,-1
- 294 527 l 1,5,6
- 301 418 301 418 334 344 c 0,7,8
- 374 253 374 253 456 209 c 128,-1,9
- 538 165 538 165 661 165 c 0,10,11
- 719 165 719 165 771.5 176 c 128,-1,12
- 824 187 824 187 872 206 c 128,-1,13
- 920 225 920 225 961 246 c 1,14,-1
- 969 149 l 1,15,16
- 904 95 904 95 836 56 c 128,-1,17
- 768 17 768 17 701 -3 c 128,-1,18
- 634 -23 634 -23 573 -23 c 0,19,20
- 427 -23 427 -23 318.5 41 c 128,-1,21
- 210 105 210 105 150.5 225.5 c 128,-1,22
- 91 346 91 346 91 516 c 128,-1,23
- 91 686 91 686 148 814 c 128,-1,24
- 205 942 205 942 310.5 1013 c 128,-1,25
- 416 1084 416 1084 558 1084 c 0,0,1
-763 664 m 1,26,27
- 757 752 757 752 736 810 c 0,28,29
- 711 879 711 879 664 910.5 c 128,-1,30
- 617 942 617 942 549 942 c 0,31,32
- 469 942 469 942 411 904 c 128,-1,33
- 353 866 353 866 323 786 c 0,34,35
- 303 733 303 733 296 659 c 1,36,-1
- 763 664 l 1,26,27
-480 -481 m 0,37,38
- 394 -481 394 -481 362 -458 c 128,-1,39
- 330 -435 330 -435 330 -396 c 0,40,41
- 330 -367 330 -367 347.5 -350.5 c 128,-1,42
- 365 -334 365 -334 384 -334 c 0,43,44
- 397 -334 397 -334 415 -351 c 128,-1,45
- 433 -368 433 -368 456.5 -384.5 c 128,-1,46
- 480 -401 480 -401 511 -401 c 0,47,48
- 559 -401 559 -401 582.5 -381.5 c 128,-1,49
- 606 -362 606 -362 606 -325 c 0,50,51
- 606 -299 606 -299 590 -280.5 c 128,-1,52
- 574 -262 574 -262 529 -247 c 128,-1,53
- 484 -232 484 -232 396 -218 c 1,54,-1
- 396 -196 l 1,55,-1
- 562 32 l 1,56,-1
- 662 32 l 1,57,-1
- 553 -113 l 1,58,59
- 610 -128 610 -128 646 -147 c 0,60,61
- 698 -175 698 -175 717 -210 c 128,-1,62
- 736 -245 736 -245 736 -287 c 0,63,64
- 736 -350 736 -350 703 -393.5 c 128,-1,65
- 670 -437 670 -437 612.5 -459 c 128,-1,66
- 555 -481 555 -481 480 -481 c 0,37,38
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 574 0 2
+Refer: 72 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni022E
@@ -22061,47 +20336,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-797 139 m 0,0,1
- 941 139 941 139 1040.5 201.5 c 128,-1,2
- 1140 264 1140 264 1191.5 381 c 128,-1,3
- 1243 498 1243 498 1243 663 c 0,4,5
- 1243 852 1243 852 1189.5 984.5 c 128,-1,6
- 1136 1117 1136 1117 1033 1186.5 c 128,-1,7
- 930 1256 930 1256 781 1256 c 0,8,9
- 637 1256 637 1256 537 1194 c 128,-1,10
- 437 1132 437 1132 385.5 1015 c 128,-1,11
- 334 898 334 898 334 733 c 0,12,13
- 334 545 334 545 388 412 c 128,-1,14
- 442 279 442 279 545 209 c 128,-1,15
- 648 139 648 139 797 139 c 0,0,1
-790 1417 m 0,16,17
- 946 1417 946 1417 1072.5 1365 c 128,-1,18
- 1199 1313 1199 1313 1288.5 1217.5 c 128,-1,19
- 1378 1122 1378 1122 1425.5 990.5 c 128,-1,20
- 1473 859 1473 859 1473 700 c 0,21,22
- 1473 540 1473 540 1425 407.5 c 128,-1,23
- 1377 275 1377 275 1287 179 c 128,-1,24
- 1197 83 1197 83 1070.5 31 c 128,-1,25
- 944 -21 944 -21 788 -21 c 128,-1,26
- 632 -21 632 -21 505.5 31 c 128,-1,27
- 379 83 379 83 289.5 178.5 c 128,-1,28
- 200 274 200 274 152 405.5 c 128,-1,29
- 104 537 104 537 104 696 c 0,30,31
- 104 856 104 856 152.5 988 c 128,-1,32
- 201 1120 201 1120 291 1216 c 128,-1,33
- 381 1312 381 1312 507 1364.5 c 128,-1,34
- 633 1417 633 1417 790 1417 c 0,16,17
-647 1591 m 0,35,36
- 647 1650 647 1650 683 1681 c 128,-1,37
- 719 1712 719 1712 788 1712 c 128,-1,38
- 857 1712 857 1712 893 1681 c 128,-1,39
- 929 1650 929 1650 929 1591 c 0,40,41
- 929 1533 929 1533 893 1500 c 128,-1,42
- 857 1467 857 1467 788 1467 c 128,-1,43
- 719 1467 719 1467 683 1500 c 128,-1,44
- 647 1533 647 1533 647 1591 c 0,35,36
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 788 0 2
+Refer: 50 79 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni022F
@@ -22111,43 +20347,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-453 1271 m 0,31,32
- 453 1330 453 1330 489 1361 c 128,-1,33
- 525 1392 525 1392 594 1392 c 128,-1,34
- 663 1392 663 1392 699 1361 c 128,-1,35
- 735 1330 735 1330 735 1271 c 0,36,37
- 735 1213 735 1213 699 1180 c 128,-1,38
- 663 1147 663 1147 594 1147 c 128,-1,39
- 525 1147 525 1147 489 1180 c 128,-1,40
- 453 1213 453 1213 453 1271 c 0,31,32
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E02
@@ -22340,58 +20541,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-380 853 m 1,0,-1
- 380 394 l 2,1,2
- 380 304 380 304 408.5 244.5 c 128,-1,3
- 437 185 437 185 494 154.5 c 128,-1,4
- 551 124 551 124 634 124 c 0,5,6
- 725 124 725 124 790.5 171 c 128,-1,7
- 856 218 856 218 890.5 311 c 128,-1,8
- 925 404 925 404 925 542 c 0,9,10
- 925 661 925 661 890.5 741 c 128,-1,11
- 856 821 856 821 787.5 861 c 128,-1,12
- 719 901 719 901 619 901 c 0,13,14
- 563 901 563 901 508.5 891 c 128,-1,15
- 454 881 454 881 402 862 c 0,16,17
- 391 857 391 857 380 853 c 1,0,-1
-380 963 m 1,18,19
- 415 983 415 983 445 998 c 0,20,21
- 508 1030 508 1030 556 1049 c 128,-1,22
- 604 1068 604 1068 641.5 1076 c 128,-1,23
- 679 1084 679 1084 710 1084 c 0,24,25
- 851 1084 851 1084 948.5 1022 c 128,-1,26
- 1046 960 1046 960 1097 846 c 128,-1,27
- 1148 732 1148 732 1148 576 c 0,28,29
- 1148 435 1148 435 1112.5 323.5 c 128,-1,30
- 1077 212 1077 212 1012.5 134 c 128,-1,31
- 948 56 948 56 859 15.5 c 128,-1,32
- 770 -25 770 -25 663 -25 c 0,33,34
- 583 -25 583 -25 518.5 -0.5 c 128,-1,35
- 454 24 454 24 404 74 c 0,36,37
- 374 106 374 106 349 149 c 1,38,-1
- 243 -4 l 1,39,-1
- 119 -1 l 1,40,-1
- 174 297 l 1,41,-1
- 174 1335 l 1,42,43
- 161 1344 161 1344 129.5 1359.5 c 128,-1,44
- 98 1375 98 1375 57.5 1393.5 c 128,-1,45
- 17 1412 17 1412 -22 1429 c 1,46,-1
- -22 1503 l 1,47,-1
- 356 1587 l 1,48,-1
- 398 1587 l 1,49,-1
- 380 1366 l 1,50,-1
- 380 963 l 1,18,19
-422 -295 m 0,51,52
- 422 -237 422 -237 458 -206 c 128,-1,53
- 494 -175 494 -175 563 -175 c 128,-1,54
- 632 -175 632 -175 668 -206 c 128,-1,55
- 704 -237 704 -237 704 -295 c 0,56,57
- 704 -355 704 -355 668 -387 c 128,-1,58
- 632 -419 632 -419 563 -419 c 128,-1,59
- 494 -419 494 -419 458 -387 c 128,-1,60
- 422 -355 422 -355 422 -295 c 0,51,52
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 558 0 2
+Refer: 69 98 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E06
@@ -22458,54 +20609,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-380 853 m 1,0,-1
- 380 394 l 2,1,2
- 380 304 380 304 408.5 244.5 c 128,-1,3
- 437 185 437 185 494 154.5 c 128,-1,4
- 551 124 551 124 634 124 c 0,5,6
- 725 124 725 124 790.5 171 c 128,-1,7
- 856 218 856 218 890.5 311 c 128,-1,8
- 925 404 925 404 925 542 c 0,9,10
- 925 661 925 661 890.5 741 c 128,-1,11
- 856 821 856 821 787.5 861 c 128,-1,12
- 719 901 719 901 619 901 c 0,13,14
- 563 901 563 901 508.5 891 c 128,-1,15
- 454 881 454 881 402 862 c 0,16,17
- 391 857 391 857 380 853 c 1,0,-1
-380 963 m 1,18,19
- 415 983 415 983 445 998 c 0,20,21
- 508 1030 508 1030 556 1049 c 128,-1,22
- 604 1068 604 1068 641.5 1076 c 128,-1,23
- 679 1084 679 1084 710 1084 c 0,24,25
- 851 1084 851 1084 948.5 1022 c 128,-1,26
- 1046 960 1046 960 1097 846 c 128,-1,27
- 1148 732 1148 732 1148 576 c 0,28,29
- 1148 435 1148 435 1112.5 323.5 c 128,-1,30
- 1077 212 1077 212 1012.5 134 c 128,-1,31
- 948 56 948 56 859 15.5 c 128,-1,32
- 770 -25 770 -25 663 -25 c 0,33,34
- 583 -25 583 -25 518.5 -0.5 c 128,-1,35
- 454 24 454 24 404 74 c 0,36,37
- 374 106 374 106 349 149 c 1,38,-1
- 243 -4 l 1,39,-1
- 119 -1 l 1,40,-1
- 174 297 l 1,41,-1
- 174 1335 l 1,42,43
- 161 1344 161 1344 129.5 1359.5 c 128,-1,44
- 98 1375 98 1375 57.5 1393.5 c 128,-1,45
- 17 1412 17 1412 -22 1429 c 1,46,-1
- -22 1503 l 1,47,-1
- 356 1587 l 1,48,-1
- 398 1587 l 1,49,-1
- 380 1366 l 1,50,-1
- 380 963 l 1,18,19
-279 -296 m 1,51,-1
- 279 -165 l 1,52,-1
- 847 -165 l 1,53,-1
- 847 -296 l 1,54,-1
- 279 -296 l 1,51,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 558 0 2
+Refer: 69 98 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E08
@@ -22586,66 +20691,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-453 -519 m 0,0,1
- 365 -519 365 -519 332 -494.5 c 128,-1,2
- 299 -470 299 -470 299 -428 c 0,3,4
- 299 -397 299 -397 317 -379 c 128,-1,5
- 335 -361 335 -361 355 -361 c 0,6,7
- 367 -361 367 -361 386 -379 c 128,-1,8
- 405 -397 405 -397 429.5 -415 c 128,-1,9
- 454 -433 454 -433 485 -433 c 0,10,11
- 534 -433 534 -433 558.5 -412 c 128,-1,12
- 583 -391 583 -391 583 -351 c 0,13,14
- 583 -323 583 -323 567 -303 c 128,-1,15
- 551 -283 551 -283 504.5 -267 c 128,-1,16
- 458 -251 458 -251 366 -235 c 1,17,-1
- 366 -212 l 1,18,19
- 365 -212 365 -212 499 -20 c 1,20,21
- 395 -10 395 -10 312 40 c 0,22,23
- 207 104 207 104 149 223.5 c 128,-1,24
- 91 343 91 343 91 513 c 0,25,26
- 91 645 91 645 129.5 750.5 c 128,-1,27
- 168 856 168 856 241.5 930.5 c 128,-1,28
- 315 1005 315 1005 419 1044.5 c 128,-1,29
- 523 1084 523 1084 652 1084 c 0,30,31
- 768 1084 768 1084 833.5 1056.5 c 128,-1,32
- 899 1029 899 1029 926 988.5 c 128,-1,33
- 953 948 953 948 953 908 c 128,-1,34
- 953 868 953 868 937 835 c 128,-1,35
- 921 802 921 802 892.5 783 c 128,-1,36
- 864 764 864 764 827 764 c 0,37,38
- 815 764 815 764 790.5 782 c 128,-1,39
- 766 800 766 800 737 826.5 c 128,-1,40
- 708 853 708 853 677.5 879.5 c 128,-1,41
- 647 906 647 906 618 924 c 128,-1,42
- 589 942 589 942 567 942 c 0,43,44
- 489 942 489 942 426.5 903.5 c 128,-1,45
- 364 865 364 865 328 785.5 c 128,-1,46
- 292 706 292 706 292 586 c 0,47,48
- 292 447 292 447 331 353.5 c 128,-1,49
- 370 260 370 260 446.5 213 c 128,-1,50
- 523 166 523 166 635 166 c 0,51,52
- 706 166 706 166 778.5 186.5 c 128,-1,53
- 851 207 851 207 929 247 c 1,54,-1
- 936 149 l 1,55,56
- 871 93 871 93 806 54.5 c 128,-1,57
- 741 16 741 16 678 -4 c 0,58,59
- 639 -16 639 -16 601 -20 c 1,60,-1
- 529 -123 l 1,61,62
- 587 -139 587 -139 624 -159 c 0,63,64
- 677 -189 677 -189 696.5 -227 c 128,-1,65
- 716 -265 716 -265 716 -310 c 0,66,67
- 716 -378 716 -378 683 -425 c 128,-1,68
- 650 -472 650 -472 590 -495.5 c 128,-1,69
- 530 -519 530 -519 453 -519 c 0,0,1
-315 1106 m 1,70,-1
- 482 1433 l 1,71,-1
- 729 1433 l 1,72,-1
- 729 1393 l 1,73,-1
- 426 1106 l 1,74,-1
- 315 1106 l 1,70,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 557 0 2
+Refer: 411 807 N 1.02997 0 0 1.07996 537 0 2
+Refer: 70 99 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E0A
@@ -22655,44 +20703,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-97 0 m 1,0,-1
- 97 92 l 1,1,-1
- 272 139 l 1,2,-1
- 272 1257 l 1,3,-1
- 97 1304 l 1,4,-1
- 97 1396 l 1,5,-1
- 367 1396 l 1,6,-1
- 493 1396 l 1,7,-1
- 741 1396 l 2,8,9
- 979 1396 979 1396 1139.5 1320.5 c 128,-1,10
- 1300 1245 1300 1245 1380 1096.5 c 128,-1,11
- 1460 948 1460 948 1460 730 c 0,12,13
- 1460 494 1460 494 1369 331 c 128,-1,14
- 1278 168 1278 168 1114.5 84 c 128,-1,15
- 951 0 951 0 734 0 c 2,16,-1
- 493 0 l 1,17,-1
- 367 0 l 1,18,-1
- 97 0 l 1,0,-1
-1229 715 m 0,19,20
- 1229 985 1229 985 1094 1114.5 c 128,-1,21
- 959 1244 959 1244 681 1244 c 2,22,-1
- 493 1244 l 1,23,-1
- 493 152 l 1,24,-1
- 723 152 l 2,25,26
- 885 152 885 152 998.5 210 c 128,-1,27
- 1112 268 1112 268 1170.5 392 c 128,-1,28
- 1229 516 1229 516 1229 715 c 0,19,20
-637 1570 m 0,29,30
- 637 1629 637 1629 673 1660 c 128,-1,31
- 709 1691 709 1691 778 1691 c 128,-1,32
- 847 1691 847 1691 883 1660 c 128,-1,33
- 919 1629 919 1629 919 1570 c 0,34,35
- 919 1512 919 1512 883 1479 c 128,-1,36
- 847 1446 847 1446 778 1446 c 128,-1,37
- 709 1446 709 1446 673 1479 c 128,-1,38
- 637 1512 637 1512 637 1570 c 0,29,30
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 791 0 2
+Refer: 39 68 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E0B
@@ -22812,60 +20824,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-859 701 m 2,0,1
- 859 813 859 813 805 877 c 128,-1,2
- 751 941 751 941 622 941 c 0,3,4
- 522 941 522 941 453.5 893 c 128,-1,5
- 385 845 385 845 349.5 754 c 128,-1,6
- 314 663 314 663 314 535 c 0,7,8
- 314 409 314 409 349.5 325.5 c 128,-1,9
- 385 242 385 242 453.5 201.5 c 128,-1,10
- 522 161 522 161 620 161 c 0,11,12
- 701 161 701 161 780 186 c 0,13,14
- 819 198 819 198 859 216 c 1,15,-1
- 859 701 l 2,0,1
-859 1042 m 1,16,-1
- 859 1346 l 1,17,18
- 848 1354 848 1354 813.5 1369.5 c 128,-1,19
- 779 1385 779 1385 738.5 1402 c 128,-1,20
- 698 1419 698 1419 671 1431 c 1,21,-1
- 671 1506 l 1,22,-1
- 1042 1587 l 1,23,-1
- 1083 1587 l 1,24,-1
- 1066 1366 l 1,25,-1
- 1066 239 l 1,26,27
- 1075 233 1075 233 1095.5 220 c 128,-1,28
- 1116 207 1116 207 1142 192.5 c 128,-1,29
- 1168 178 1168 178 1191.5 165 c 128,-1,30
- 1215 152 1215 152 1231 145 c 1,31,-1
- 1231 98 l 1,32,-1
- 956 -22 l 1,33,-1
- 921 -22 l 1,34,-1
- 871 155 l 1,35,36
- 815 113 815 113 772 84 c 0,37,38
- 706 38 706 38 662 15 c 128,-1,39
- 618 -8 618 -8 586 -15.5 c 128,-1,40
- 554 -23 554 -23 522 -23 c 0,41,42
- 380 -23 380 -23 284.5 39.5 c 128,-1,43
- 189 102 189 102 140.5 216 c 128,-1,44
- 92 330 92 330 92 487 c 0,45,46
- 92 624 92 624 133 735 c 128,-1,47
- 174 846 174 846 247.5 923.5 c 128,-1,48
- 321 1001 321 1001 419.5 1042.5 c 128,-1,49
- 518 1084 518 1084 632 1084 c 0,50,51
- 698 1084 698 1084 754 1074 c 0,52,53
- 807 1064 807 1064 859 1042 c 1,16,-1
-521 -295 m 0,54,55
- 521 -237 521 -237 557 -206 c 128,-1,56
- 593 -175 593 -175 662 -175 c 128,-1,57
- 731 -175 731 -175 767 -206 c 128,-1,58
- 803 -237 803 -237 803 -295 c 0,59,60
- 803 -355 803 -355 767 -387 c 128,-1,61
- 731 -419 731 -419 662 -419 c 128,-1,62
- 593 -419 593 -419 557 -387 c 128,-1,63
- 521 -355 521 -355 521 -295 c 0,54,55
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 626 0 2
+Refer: 71 100 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E0E
@@ -22918,56 +20878,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-859 701 m 2,0,1
- 859 813 859 813 805 877 c 128,-1,2
- 751 941 751 941 622 941 c 0,3,4
- 522 941 522 941 453.5 893 c 128,-1,5
- 385 845 385 845 349.5 754 c 128,-1,6
- 314 663 314 663 314 535 c 0,7,8
- 314 409 314 409 349.5 325.5 c 128,-1,9
- 385 242 385 242 453.5 201.5 c 128,-1,10
- 522 161 522 161 620 161 c 0,11,12
- 701 161 701 161 780 186 c 0,13,14
- 819 198 819 198 859 216 c 1,15,-1
- 859 701 l 2,0,1
-859 1042 m 1,16,-1
- 859 1346 l 1,17,18
- 848 1354 848 1354 813.5 1369.5 c 128,-1,19
- 779 1385 779 1385 738.5 1402 c 128,-1,20
- 698 1419 698 1419 671 1431 c 1,21,-1
- 671 1506 l 1,22,-1
- 1042 1587 l 1,23,-1
- 1083 1587 l 1,24,-1
- 1066 1366 l 1,25,-1
- 1066 239 l 1,26,27
- 1075 233 1075 233 1095.5 220 c 128,-1,28
- 1116 207 1116 207 1142 192.5 c 128,-1,29
- 1168 178 1168 178 1191.5 165 c 128,-1,30
- 1215 152 1215 152 1231 145 c 1,31,-1
- 1231 98 l 1,32,-1
- 956 -22 l 1,33,-1
- 921 -22 l 1,34,-1
- 871 155 l 1,35,36
- 815 113 815 113 772 84 c 0,37,38
- 706 38 706 38 662 15 c 128,-1,39
- 618 -8 618 -8 586 -15.5 c 128,-1,40
- 554 -23 554 -23 522 -23 c 0,41,42
- 380 -23 380 -23 284.5 39.5 c 128,-1,43
- 189 102 189 102 140.5 216 c 128,-1,44
- 92 330 92 330 92 487 c 0,45,46
- 92 624 92 624 133 735 c 128,-1,47
- 174 846 174 846 247.5 923.5 c 128,-1,48
- 321 1001 321 1001 419.5 1042.5 c 128,-1,49
- 518 1084 518 1084 632 1084 c 0,50,51
- 698 1084 698 1084 754 1074 c 0,52,53
- 807 1064 807 1064 859 1042 c 1,16,-1
-378 -296 m 1,54,-1
- 378 -165 l 1,55,-1
- 946 -165 l 1,56,-1
- 946 -296 l 1,57,-1
- 378 -296 l 1,54,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 626 0 2
+Refer: 71 100 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E10
@@ -23038,74 +20950,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-859 701 m 2,0,1
- 859 813 859 813 805 877 c 128,-1,2
- 751 941 751 941 622 941 c 0,3,4
- 522 941 522 941 453.5 893 c 128,-1,5
- 385 845 385 845 349.5 754 c 128,-1,6
- 314 663 314 663 314 535 c 0,7,8
- 314 409 314 409 349.5 325.5 c 128,-1,9
- 385 242 385 242 453.5 201.5 c 128,-1,10
- 522 161 522 161 620 161 c 0,11,12
- 701 161 701 161 780 186 c 0,13,14
- 819 198 819 198 859 216 c 1,15,-1
- 859 701 l 2,0,1
-859 1042 m 1,16,-1
- 859 1346 l 1,17,18
- 848 1354 848 1354 813.5 1369.5 c 128,-1,19
- 779 1385 779 1385 738.5 1402 c 128,-1,20
- 698 1419 698 1419 671 1431 c 1,21,-1
- 671 1506 l 1,22,-1
- 1042 1587 l 1,23,-1
- 1083 1587 l 1,24,-1
- 1066 1366 l 1,25,-1
- 1066 239 l 1,26,27
- 1075 233 1075 233 1095.5 220 c 128,-1,28
- 1116 207 1116 207 1142 192.5 c 128,-1,29
- 1168 178 1168 178 1191.5 165 c 128,-1,30
- 1215 152 1215 152 1231 145 c 1,31,-1
- 1231 98 l 1,32,-1
- 956 -22 l 1,33,-1
- 921 -22 l 1,34,-1
- 871 155 l 1,35,36
- 815 113 815 113 772 84 c 0,37,38
- 706 38 706 38 662 15 c 128,-1,39
- 618 -8 618 -8 586 -15.5 c 128,-1,40
- 554 -23 554 -23 522 -23 c 0,41,42
- 380 -23 380 -23 284.5 39.5 c 128,-1,43
- 189 102 189 102 140.5 216 c 128,-1,44
- 92 330 92 330 92 487 c 0,45,46
- 92 624 92 624 133 735 c 128,-1,47
- 174 846 174 846 247.5 923.5 c 128,-1,48
- 321 1001 321 1001 419.5 1042.5 c 128,-1,49
- 518 1084 518 1084 632 1084 c 0,50,51
- 698 1084 698 1084 754 1074 c 0,52,53
- 807 1064 807 1064 859 1042 c 1,16,-1
-608 -481 m 0,54,55
- 522 -481 522 -481 490 -458 c 128,-1,56
- 458 -435 458 -435 458 -396 c 0,57,58
- 458 -367 458 -367 475.5 -350.5 c 128,-1,59
- 493 -334 493 -334 512 -334 c 0,60,61
- 525 -334 525 -334 543 -351 c 128,-1,62
- 561 -368 561 -368 584.5 -384.5 c 128,-1,63
- 608 -401 608 -401 639 -401 c 0,64,65
- 687 -401 687 -401 710.5 -381.5 c 128,-1,66
- 734 -362 734 -362 734 -325 c 0,67,68
- 734 -299 734 -299 718 -280.5 c 128,-1,69
- 702 -262 702 -262 657 -247 c 128,-1,70
- 612 -232 612 -232 524 -218 c 1,71,-1
- 524 -196 l 1,72,-1
- 690 32 l 1,73,-1
- 790 32 l 1,74,-1
- 681 -113 l 1,75,76
- 738 -128 738 -128 774 -147 c 0,77,78
- 826 -175 826 -175 845 -210 c 128,-1,79
- 864 -245 864 -245 864 -287 c 0,80,81
- 864 -350 864 -350 831 -393.5 c 128,-1,82
- 798 -437 798 -437 740.5 -459 c 128,-1,83
- 683 -481 683 -481 608 -481 c 0,54,55
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 626 0 2
+Refer: 71 100 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E14
@@ -23171,48 +21017,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-558 1084 m 0,0,1
- 702 1084 702 1084 793 1020.5 c 128,-1,2
- 884 957 884 957 928 832.5 c 128,-1,3
- 972 708 972 708 976 527 c 1,4,-1
- 294 527 l 1,5,6
- 301 418 301 418 334 344 c 0,7,8
- 374 253 374 253 456 209 c 128,-1,9
- 538 165 538 165 661 165 c 0,10,11
- 719 165 719 165 771.5 176 c 128,-1,12
- 824 187 824 187 872 206 c 128,-1,13
- 920 225 920 225 961 246 c 1,14,-1
- 969 149 l 1,15,16
- 904 95 904 95 836 56 c 128,-1,17
- 768 17 768 17 701 -3 c 128,-1,18
- 634 -23 634 -23 573 -23 c 0,19,20
- 427 -23 427 -23 318.5 41 c 128,-1,21
- 210 105 210 105 150.5 225.5 c 128,-1,22
- 91 346 91 346 91 516 c 128,-1,23
- 91 686 91 686 148 814 c 128,-1,24
- 205 942 205 942 310.5 1013 c 128,-1,25
- 416 1084 416 1084 558 1084 c 0,0,1
-763 664 m 1,26,27
- 757 752 757 752 736 810 c 0,28,29
- 711 879 711 879 664 910.5 c 128,-1,30
- 617 942 617 942 549 942 c 0,31,32
- 469 942 469 942 411 904 c 128,-1,33
- 353 866 353 866 323 786 c 0,34,35
- 303 733 303 733 296 659 c 1,36,-1
- 763 664 l 1,26,27
-256 1301 m 1,37,-1
- 256 1442 l 1,38,-1
- 842 1442 l 1,39,-1
- 842 1301 l 1,40,-1
- 256 1301 l 1,37,-1
-741 1492 m 1,41,-1
- 630 1492 l 1,42,-1
- 327 1779 l 1,43,-1
- 327 1819 l 1,44,-1
- 574 1819 l 1,45,-1
- 741 1492 l 1,41,-1
-EndSplineSet
+Refer: 392 768 N 1.02997 0 0 1.07996 546 486 2
+Refer: 396 772 N 1.02997 0 0 1.07996 546 0 2
+Refer: 72 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E16
@@ -23278,48 +21085,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-558 1084 m 0,0,1
- 702 1084 702 1084 793 1020.5 c 128,-1,2
- 884 957 884 957 928 832.5 c 128,-1,3
- 972 708 972 708 976 527 c 1,4,-1
- 294 527 l 1,5,6
- 301 418 301 418 334 344 c 0,7,8
- 374 253 374 253 456 209 c 128,-1,9
- 538 165 538 165 661 165 c 0,10,11
- 719 165 719 165 771.5 176 c 128,-1,12
- 824 187 824 187 872 206 c 128,-1,13
- 920 225 920 225 961 246 c 1,14,-1
- 969 149 l 1,15,16
- 904 95 904 95 836 56 c 128,-1,17
- 768 17 768 17 701 -3 c 128,-1,18
- 634 -23 634 -23 573 -23 c 0,19,20
- 427 -23 427 -23 318.5 41 c 128,-1,21
- 210 105 210 105 150.5 225.5 c 128,-1,22
- 91 346 91 346 91 516 c 128,-1,23
- 91 686 91 686 148 814 c 128,-1,24
- 205 942 205 942 310.5 1013 c 128,-1,25
- 416 1084 416 1084 558 1084 c 0,0,1
-763 664 m 1,26,27
- 757 752 757 752 736 810 c 0,28,29
- 711 879 711 879 664 910.5 c 128,-1,30
- 617 942 617 942 549 942 c 0,31,32
- 469 942 469 942 411 904 c 128,-1,33
- 353 866 353 866 323 786 c 0,34,35
- 303 733 303 733 296 659 c 1,36,-1
- 763 664 l 1,26,27
-256 1301 m 1,37,-1
- 256 1442 l 1,38,-1
- 842 1442 l 1,39,-1
- 842 1301 l 1,40,-1
- 256 1301 l 1,37,-1
-327 1492 m 1,41,-1
- 494 1819 l 1,42,-1
- 741 1819 l 1,43,-1
- 741 1779 l 1,44,-1
- 438 1492 l 1,45,-1
- 327 1492 l 1,41,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 546 486 2
+Refer: 396 772 N 1.02997 0 0 1.07996 546 0 2
+Refer: 72 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E1C
@@ -23412,75 +21180,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-558 1084 m 0,0,1
- 702 1084 702 1084 793 1020.5 c 128,-1,2
- 884 957 884 957 928 832.5 c 128,-1,3
- 972 708 972 708 976 527 c 1,4,-1
- 294 527 l 1,5,6
- 301 418 301 418 334 344 c 0,7,8
- 374 253 374 253 456 209 c 128,-1,9
- 538 165 538 165 661 165 c 0,10,11
- 719 165 719 165 771.5 176 c 128,-1,12
- 824 187 824 187 872 206 c 128,-1,13
- 920 225 920 225 961 246 c 1,14,-1
- 969 149 l 1,15,16
- 904 95 904 95 836 56 c 128,-1,17
- 768 17 768 17 701 -3 c 128,-1,18
- 634 -23 634 -23 573 -23 c 0,19,20
- 427 -23 427 -23 318.5 41 c 128,-1,21
- 210 105 210 105 150.5 225.5 c 128,-1,22
- 91 346 91 346 91 516 c 128,-1,23
- 91 686 91 686 148 814 c 128,-1,24
- 205 942 205 942 310.5 1013 c 128,-1,25
- 416 1084 416 1084 558 1084 c 0,0,1
-763 664 m 1,26,27
- 757 752 757 752 736 810 c 0,28,29
- 711 879 711 879 664 910.5 c 128,-1,30
- 617 942 617 942 549 942 c 0,31,32
- 469 942 469 942 411 904 c 128,-1,33
- 353 866 353 866 323 786 c 0,34,35
- 303 733 303 733 296 659 c 1,36,-1
- 763 664 l 1,26,27
-480 -481 m 0,37,38
- 394 -481 394 -481 362 -458 c 128,-1,39
- 330 -435 330 -435 330 -396 c 0,40,41
- 330 -367 330 -367 347.5 -350.5 c 128,-1,42
- 365 -334 365 -334 384 -334 c 0,43,44
- 397 -334 397 -334 415 -351 c 128,-1,45
- 433 -368 433 -368 456.5 -384.5 c 128,-1,46
- 480 -401 480 -401 511 -401 c 0,47,48
- 559 -401 559 -401 582.5 -381.5 c 128,-1,49
- 606 -362 606 -362 606 -325 c 0,50,51
- 606 -299 606 -299 590 -280.5 c 128,-1,52
- 574 -262 574 -262 529 -247 c 128,-1,53
- 484 -232 484 -232 396 -218 c 1,54,-1
- 396 -196 l 1,55,-1
- 562 32 l 1,56,-1
- 662 32 l 1,57,-1
- 553 -113 l 1,58,59
- 610 -128 610 -128 646 -147 c 0,60,61
- 698 -175 698 -175 717 -210 c 128,-1,62
- 736 -245 736 -245 736 -287 c 0,63,64
- 736 -350 736 -350 703 -393.5 c 128,-1,65
- 670 -437 670 -437 612.5 -459 c 128,-1,66
- 555 -481 555 -481 480 -481 c 0,37,38
-534 1249 m 0,67,68
- 592 1249 592 1249 630.5 1266.5 c 128,-1,69
- 669 1284 669 1284 693.5 1324 c 128,-1,70
- 718 1364 718 1364 733 1433 c 1,71,-1
- 833 1433 l 1,72,73
- 814 1304 814 1304 778.5 1231.5 c 128,-1,74
- 743 1159 743 1159 683.5 1129.5 c 128,-1,75
- 624 1100 624 1100 534 1100 c 0,76,77
- 445 1100 445 1100 385 1129.5 c 128,-1,78
- 325 1159 325 1159 289.5 1231.5 c 128,-1,79
- 254 1304 254 1304 235 1433 c 1,80,-1
- 335 1433 l 1,81,82
- 350 1364 350 1364 374.5 1324 c 128,-1,83
- 399 1284 399 1284 438 1266.5 c 128,-1,84
- 477 1249 477 1249 534 1249 c 0,67,68
-EndSplineSet
+Refer: 397 774 N 1.02997 0 0 1.07996 546 0 2
+Refer: 411 807 N 1.02997 0 0 1.07996 574 0 2
+Refer: 72 101 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E1E
@@ -23591,52 +21293,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1343 209 m 1,0,-1
- 1446 185 l 1,1,-1
- 1446 109 l 1,2,3
- 1370 69 1370 69 1271.5 39.5 c 128,-1,4
- 1173 10 1173 10 1067 -5.5 c 128,-1,5
- 961 -21 961 -21 861 -21 c 0,6,7
- 680 -21 680 -21 538.5 24.5 c 128,-1,8
- 397 70 397 70 300 159.5 c 128,-1,9
- 203 249 203 249 153.5 381.5 c 128,-1,10
- 104 514 104 514 105 688 c 0,11,12
- 107 918 107 918 197.5 1081 c 128,-1,13
- 288 1244 288 1244 458.5 1330.5 c 128,-1,14
- 629 1417 629 1417 872 1417 c 0,15,16
- 965 1417 965 1417 1043 1402 c 0,17,18
- 1096 1392 1096 1392 1150 1377 c 1,19,20
- 1173 1404 1173 1404 1226 1465 c 1,21,-1
- 1317 1465 l 1,22,-1
- 1331 962 l 1,23,24
- 1330 962 1330 962 1206 959 c 1,25,-1
- 1126 1200 l 1,26,27
- 1072 1227 1072 1227 1022 1240 c 0,28,29
- 950 1259 950 1259 859 1259 c 0,30,31
- 725 1259 725 1259 627 1226 c 128,-1,32
- 529 1193 529 1193 465.5 1127 c 128,-1,33
- 402 1061 402 1061 370.5 964 c 128,-1,34
- 339 867 339 867 336 738 c 0,35,36
- 331 538 331 538 397 403 c 128,-1,37
- 463 268 463 268 586 200.5 c 128,-1,38
- 709 133 709 133 874 133 c 0,39,40
- 933 133 933 133 994 142 c 128,-1,41
- 1055 151 1055 151 1112 172 c 0,42,43
- 1117 173 1117 173 1122 175 c 1,44,-1
- 1122 518 l 1,45,-1
- 918 567 l 1,46,-1
- 918 658 l 1,47,-1
- 1483 658 l 1,48,-1
- 1483 567 l 1,49,-1
- 1343 519 l 1,50,-1
- 1343 209 l 1,0,-1
-510 1515 m 1,51,-1
- 510 1645 l 1,52,-1
- 1078 1645 l 1,53,-1
- 1078 1515 l 1,54,-1
- 510 1515 l 1,51,-1
-EndSplineSet
+Refer: 582 -1 N 1 0 0 1 802 0 2
+Refer: 42 71 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E21
@@ -23646,88 +21304,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-519 459 m 0,0,1
- 607 459 607 459 664.5 517 c 128,-1,2
- 722 575 722 575 722 700 c 0,3,4
- 722 829 722 829 670 891.5 c 128,-1,5
- 618 954 618 954 508 954 c 0,6,7
- 419 954 419 954 359 896 c 128,-1,8
- 299 838 299 838 299 713 c 0,9,10
- 299 586 299 586 354 522.5 c 128,-1,11
- 409 459 409 459 519 459 c 0,0,1
-517 -519 m 0,12,13
- 387 -519 387 -519 295 -501.5 c 128,-1,14
- 203 -484 203 -484 145.5 -450.5 c 128,-1,15
- 88 -417 88 -417 61 -368.5 c 128,-1,16
- 34 -320 34 -320 34 -258 c 0,17,18
- 34 -214 34 -214 54.5 -173.5 c 128,-1,19
- 75 -133 75 -133 121.5 -100.5 c 128,-1,20
- 168 -68 168 -68 242 -48 c 0,21,22
- 272 -39 272 -39 309 -33 c 1,23,24
- 237 -16 237 -16 196 11 c 0,25,26
- 152 40 152 40 134 80 c 128,-1,27
- 116 120 116 120 116 168 c 0,28,29
- 116 244 116 244 182 298 c 0,30,31
- 231 338 231 338 324 357 c 1,32,33
- 307 364 307 364 292 372 c 0,34,35
- 199 417 199 417 149 502.5 c 128,-1,36
- 99 588 99 588 99 704 c 0,37,38
- 99 824 99 824 149.5 909 c 128,-1,39
- 200 994 200 994 293 1039 c 128,-1,40
- 386 1084 386 1084 512 1084 c 0,41,42
- 596 1084 596 1084 665 1063 c 1,43,44
- 711 1062 711 1062 757 1064 c 0,45,46
- 824 1066 824 1066 883 1070.5 c 128,-1,47
- 942 1075 942 1075 989 1078.5 c 128,-1,48
- 1036 1082 1036 1082 1062 1082 c 0,49,50
- 1083 1082 1083 1082 1092.5 1064.5 c 128,-1,51
- 1102 1047 1102 1047 1102 1005 c 0,52,53
- 1102 952 1102 952 1089 921.5 c 128,-1,54
- 1076 891 1076 891 1059 891 c 0,55,56
- 1040 891 1040 891 1015.5 898 c 128,-1,57
- 991 905 991 905 950 916 c 0,58,59
- 911 927 911 927 849 938 c 1,60,61
- 875 904 875 904 892 862 c 0,62,63
- 920 793 920 793 920 705 c 0,64,65
- 920 586 920 586 870 501.5 c 128,-1,66
- 820 417 820 417 728 371.5 c 128,-1,67
- 636 326 636 326 511 326 c 0,68,69
- 444 326 444 326 386 339 c 1,70,71
- 344 332 344 332 323 316 c 0,72,73
- 297 295 297 295 297 252 c 0,74,75
- 297 226 297 226 307 206.5 c 128,-1,76
- 317 187 317 187 350 174.5 c 128,-1,77
- 383 162 383 162 450 155.5 c 128,-1,78
- 517 149 517 149 632 147 c 0,79,80
- 749 145 749 145 832.5 127.5 c 128,-1,81
- 916 110 916 110 969.5 75.5 c 128,-1,82
- 1023 41 1023 41 1049 -14.5 c 128,-1,83
- 1075 -70 1075 -70 1075 -150 c 0,84,85
- 1075 -260 1075 -260 1011 -343.5 c 128,-1,86
- 947 -427 947 -427 822.5 -473 c 128,-1,87
- 698 -519 698 -519 517 -519 c 0,12,13
-423 -49 m 1,88,89
- 377 -57 377 -57 346 -71 c 0,90,91
- 290 -95 290 -95 267.5 -132.5 c 128,-1,92
- 245 -170 245 -170 245 -218 c 0,93,94
- 245 -276 245 -276 273 -313.5 c 128,-1,95
- 301 -351 301 -351 364 -369.5 c 128,-1,96
- 427 -388 427 -388 529 -388 c 0,97,98
- 651 -388 651 -388 729.5 -366.5 c 128,-1,99
- 808 -345 808 -345 845.5 -304.5 c 128,-1,100
- 883 -264 883 -264 883 -205 c 0,101,102
- 883 -167 883 -167 870 -139 c 128,-1,103
- 857 -111 857 -111 819.5 -93 c 128,-1,104
- 782 -75 782 -75 709 -65 c 128,-1,105
- 636 -55 636 -55 517 -53 c 0,106,107
- 467 -53 467 -53 423 -49 c 1,88,89
-284 1205 m 1,108,-1
- 284 1335 l 1,109,-1
- 852 1335 l 1,110,-1
- 852 1205 l 1,111,-1
- 284 1205 l 1,108,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 523 0 2
+Refer: 74 103 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E22
@@ -23737,46 +21315,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1404 139 m 1,0,-1
- 1579 92 l 1,1,-1
- 1579 0 l 1,2,-1
- 1008 0 l 1,3,-1
- 1008 92 l 1,4,-1
- 1183 139 l 1,5,-1
- 1183 635 l 1,6,-1
- 493 635 l 1,7,-1
- 493 139 l 1,8,-1
- 668 92 l 1,9,-1
- 668 0 l 1,10,-1
- 97 0 l 1,11,-1
- 97 92 l 1,12,-1
- 272 139 l 1,13,-1
- 272 1257 l 1,14,-1
- 97 1304 l 1,15,-1
- 97 1396 l 1,16,-1
- 668 1396 l 1,17,-1
- 668 1304 l 1,18,-1
- 493 1257 l 1,19,-1
- 493 787 l 1,20,-1
- 1183 787 l 1,21,-1
- 1183 1257 l 1,22,-1
- 1008 1304 l 1,23,-1
- 1008 1396 l 1,24,-1
- 1579 1396 l 1,25,-1
- 1579 1304 l 1,26,-1
- 1404 1257 l 1,27,-1
- 1404 139 l 1,0,-1
-697 1570 m 0,28,29
- 697 1629 697 1629 733 1660 c 128,-1,30
- 769 1691 769 1691 838 1691 c 128,-1,31
- 907 1691 907 1691 943 1660 c 128,-1,32
- 979 1629 979 1629 979 1570 c 0,33,34
- 979 1512 979 1512 943 1479 c 128,-1,35
- 907 1446 907 1446 838 1446 c 128,-1,36
- 769 1446 769 1446 733 1479 c 128,-1,37
- 697 1512 697 1512 697 1570 c 0,28,29
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 838 0 2
+Refer: 43 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E23
@@ -23889,51 +21429,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-560 0 m 1,0,-1
- 54 0 l 1,1,-1
- 54 90 l 1,2,-1
- 209 135 l 1,3,-1
- 209 1335 l 1,4,5
- 197 1344 197 1344 165 1359.5 c 128,-1,6
- 133 1375 133 1375 92.5 1393.5 c 128,-1,7
- 52 1412 52 1412 13 1429 c 1,8,-1
- 13 1503 l 1,9,-1
- 391 1587 l 1,10,-1
- 433 1587 l 1,11,-1
- 416 1366 l 1,12,-1
- 416 887 l 1,13,14
- 480 943 480 943 525 980 c 0,15,16
- 580 1025 580 1025 620 1047 c 128,-1,17
- 660 1069 660 1069 697.5 1076.5 c 128,-1,18
- 735 1084 735 1084 782 1084 c 0,19,20
- 939 1084 939 1084 1012 996 c 128,-1,21
- 1085 908 1085 908 1085 733 c 2,22,-1
- 1085 135 l 1,23,-1
- 1242 90 l 1,24,-1
- 1242 0 l 1,25,26
- 1241 0 1241 0 733 0 c 1,27,-1
- 733 90 l 1,28,-1
- 879 133 l 1,29,-1
- 879 679 l 2,30,31
- 879 747 879 747 857.5 790.5 c 128,-1,32
- 836 834 836 834 789 855 c 128,-1,33
- 742 876 742 876 665 876 c 0,34,35
- 596 876 596 876 526 858 c 0,36,37
- 464 842 464 842 416 818 c 1,38,-1
- 416 134 l 1,39,-1
- 560 90 l 1,40,-1
- 560 0 l 1,0,-1
-487 -295 m 0,41,42
- 487 -237 487 -237 523 -206 c 128,-1,43
- 559 -175 559 -175 628 -175 c 128,-1,44
- 697 -175 697 -175 733 -206 c 128,-1,45
- 769 -237 769 -237 769 -295 c 0,46,47
- 769 -355 769 -355 733 -387 c 128,-1,48
- 697 -419 697 -419 628 -419 c 128,-1,49
- 559 -419 559 -419 523 -387 c 128,-1,50
- 487 -355 487 -355 487 -295 c 0,41,42
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 644 0 2
+Refer: 75 104 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E26
@@ -23943,55 +21440,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1404 139 m 1,0,-1
- 1579 92 l 1,1,-1
- 1579 0 l 1,2,-1
- 1008 0 l 1,3,-1
- 1008 92 l 1,4,-1
- 1183 139 l 1,5,-1
- 1183 635 l 1,6,-1
- 493 635 l 1,7,-1
- 493 139 l 1,8,-1
- 668 92 l 1,9,-1
- 668 0 l 1,10,-1
- 97 0 l 1,11,-1
- 97 92 l 1,12,-1
- 272 139 l 1,13,-1
- 272 1257 l 1,14,-1
- 97 1304 l 1,15,-1
- 97 1396 l 1,16,-1
- 668 1396 l 1,17,-1
- 668 1304 l 1,18,-1
- 493 1257 l 1,19,-1
- 493 787 l 1,20,-1
- 1183 787 l 1,21,-1
- 1183 1257 l 1,22,-1
- 1008 1304 l 1,23,-1
- 1008 1396 l 1,24,-1
- 1579 1396 l 1,25,-1
- 1579 1304 l 1,26,-1
- 1404 1257 l 1,27,-1
- 1404 139 l 1,0,-1
-1044 1446 m 0,28,29
- 984 1446 984 1446 953 1477 c 128,-1,30
- 922 1508 922 1508 922 1564 c 128,-1,31
- 922 1620 922 1620 953 1649.5 c 128,-1,32
- 984 1679 984 1679 1044 1679 c 0,33,34
- 1103 1679 1103 1679 1134.5 1649.5 c 128,-1,35
- 1166 1620 1166 1620 1166 1564 c 128,-1,36
- 1166 1508 1166 1508 1134.5 1477 c 128,-1,37
- 1103 1446 1103 1446 1044 1446 c 0,28,29
-633 1446 m 128,-1,39
- 573 1446 573 1446 541.5 1477 c 128,-1,40
- 510 1508 510 1508 510 1564 c 128,-1,41
- 510 1620 510 1620 541.5 1649.5 c 128,-1,42
- 573 1679 573 1679 633 1679 c 128,-1,43
- 693 1679 693 1679 723.5 1649.5 c 128,-1,44
- 754 1620 754 1620 754 1564 c 128,-1,45
- 754 1508 754 1508 723.5 1477 c 128,-1,38
- 693 1446 693 1446 633 1446 c 128,-1,39
-EndSplineSet
+Refer: 585 -1 N 1 0 0 1 838 0 2
+Refer: 43 72 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E27
@@ -24127,65 +21577,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-560 0 m 1,0,-1
- 54 0 l 1,1,-1
- 54 90 l 1,2,-1
- 209 135 l 1,3,-1
- 209 1335 l 1,4,5
- 197 1344 197 1344 165 1359.5 c 128,-1,6
- 133 1375 133 1375 92.5 1393.5 c 128,-1,7
- 52 1412 52 1412 13 1429 c 1,8,-1
- 13 1503 l 1,9,-1
- 391 1587 l 1,10,-1
- 433 1587 l 1,11,-1
- 416 1366 l 1,12,-1
- 416 887 l 1,13,14
- 480 943 480 943 525 980 c 0,15,16
- 580 1025 580 1025 620 1047 c 128,-1,17
- 660 1069 660 1069 697.5 1076.5 c 128,-1,18
- 735 1084 735 1084 782 1084 c 0,19,20
- 939 1084 939 1084 1012 996 c 128,-1,21
- 1085 908 1085 908 1085 733 c 2,22,-1
- 1085 135 l 1,23,-1
- 1242 90 l 1,24,-1
- 1242 0 l 1,25,26
- 1241 0 1241 0 733 0 c 1,27,-1
- 733 90 l 1,28,-1
- 879 133 l 1,29,-1
- 879 679 l 2,30,31
- 879 747 879 747 857.5 790.5 c 128,-1,32
- 836 834 836 834 789 855 c 128,-1,33
- 742 876 742 876 665 876 c 0,34,35
- 596 876 596 876 526 858 c 0,36,37
- 464 842 464 842 416 818 c 1,38,-1
- 416 134 l 1,39,-1
- 560 90 l 1,40,-1
- 560 0 l 1,0,-1
-574 -481 m 0,41,42
- 488 -481 488 -481 456 -458 c 128,-1,43
- 424 -435 424 -435 424 -396 c 0,44,45
- 424 -367 424 -367 441.5 -350.5 c 128,-1,46
- 459 -334 459 -334 478 -334 c 0,47,48
- 491 -334 491 -334 509 -351 c 128,-1,49
- 527 -368 527 -368 550.5 -384.5 c 128,-1,50
- 574 -401 574 -401 605 -401 c 0,51,52
- 653 -401 653 -401 676.5 -381.5 c 128,-1,53
- 700 -362 700 -362 700 -325 c 0,54,55
- 700 -299 700 -299 684 -280.5 c 128,-1,56
- 668 -262 668 -262 623 -247 c 128,-1,57
- 578 -232 578 -232 490 -218 c 1,58,-1
- 490 -196 l 1,59,-1
- 656 32 l 1,60,-1
- 756 32 l 1,61,-1
- 647 -113 l 1,62,63
- 704 -128 704 -128 740 -147 c 0,64,65
- 792 -175 792 -175 811 -210 c 128,-1,66
- 830 -245 830 -245 830 -287 c 0,67,68
- 830 -350 830 -350 797 -393.5 c 128,-1,69
- 764 -437 764 -437 706.5 -459 c 128,-1,70
- 649 -481 649 -481 574 -481 c 0,41,42
-EndSplineSet
+Refer: 411 807 N 1.02997 0 0 1.07996 644 0 2
+Refer: 75 104 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E2A
@@ -24250,57 +21643,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-560 0 m 1,0,-1
- 54 0 l 1,1,-1
- 54 90 l 1,2,-1
- 209 135 l 1,3,-1
- 209 1335 l 1,4,5
- 197 1344 197 1344 165 1359.5 c 128,-1,6
- 133 1375 133 1375 92.5 1393.5 c 128,-1,7
- 52 1412 52 1412 13 1429 c 1,8,-1
- 13 1503 l 1,9,-1
- 391 1587 l 1,10,-1
- 433 1587 l 1,11,-1
- 416 1366 l 1,12,-1
- 416 887 l 1,13,14
- 480 943 480 943 525 980 c 0,15,16
- 580 1025 580 1025 620 1047 c 128,-1,17
- 660 1069 660 1069 697.5 1076.5 c 128,-1,18
- 735 1084 735 1084 782 1084 c 0,19,20
- 939 1084 939 1084 1012 996 c 128,-1,21
- 1085 908 1085 908 1085 733 c 2,22,-1
- 1085 135 l 1,23,-1
- 1242 90 l 1,24,-1
- 1242 0 l 1,25,26
- 1241 0 1241 0 733 0 c 1,27,-1
- 733 90 l 1,28,-1
- 879 133 l 1,29,-1
- 879 679 l 2,30,31
- 879 747 879 747 857.5 790.5 c 128,-1,32
- 836 834 836 834 789 855 c 128,-1,33
- 742 876 742 876 665 876 c 0,34,35
- 596 876 596 876 526 858 c 0,36,37
- 464 842 464 842 416 818 c 1,38,-1
- 416 134 l 1,39,-1
- 560 90 l 1,40,-1
- 560 0 l 1,0,-1
-628 -244 m 0,41,42
- 686 -244 686 -244 724.5 -226.5 c 128,-1,43
- 763 -209 763 -209 787.5 -168.5 c 128,-1,44
- 812 -128 812 -128 827 -60 c 1,45,-1
- 927 -60 l 1,46,47
- 908 -189 908 -189 872.5 -261.5 c 128,-1,48
- 837 -334 837 -334 777.5 -363.5 c 128,-1,49
- 718 -393 718 -393 628 -393 c 0,50,51
- 539 -393 539 -393 479 -363.5 c 128,-1,52
- 419 -334 419 -334 383.5 -261.5 c 128,-1,53
- 348 -189 348 -189 329 -60 c 1,54,-1
- 429 -60 l 1,55,56
- 444 -128 444 -128 468.5 -168.5 c 128,-1,57
- 493 -209 493 -209 532 -226.5 c 128,-1,58
- 571 -244 571 -244 628 -244 c 0,41,42
-EndSplineSet
+Refer: 413 814 N 1.02997 0 0 1.07996 644 0 2
+Refer: 75 104 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E2E
@@ -24358,47 +21702,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-459 1084 m 1,0,-1
- 447 846 l 1,1,-1
- 447 135 l 1,2,-1
- 596 90 l 1,3,-1
- 596 0 l 1,4,-1
- 85 0 l 1,5,-1
- 85 90 l 1,6,-1
- 239 135 l 1,7,-1
- 239 816 l 1,8,9
- 229 825 229 825 200.5 843 c 128,-1,10
- 172 861 172 861 138 881 c 128,-1,11
- 104 901 104 901 73 917 c 1,12,-1
- 73 978 l 1,13,-1
- 405 1084 l 1,14,-1
- 459 1084 l 1,0,-1
-526 1245 m 0,15,16
- 464 1245 464 1245 432.5 1278.5 c 128,-1,17
- 401 1312 401 1312 401 1372.5 c 128,-1,18
- 401 1433 401 1433 432.5 1465 c 128,-1,19
- 464 1497 464 1497 526 1497 c 0,20,21
- 587 1497 587 1497 619.5 1465 c 128,-1,22
- 652 1433 652 1433 652 1372.5 c 128,-1,23
- 652 1312 652 1312 619.5 1278.5 c 128,-1,24
- 587 1245 587 1245 526 1245 c 0,15,16
-103 1245 m 128,-1,26
- 41 1245 41 1245 8.5 1278.5 c 128,-1,27
- -24 1312 -24 1312 -24 1372.5 c 128,-1,28
- -24 1433 -24 1433 8.5 1465 c 128,-1,29
- 41 1497 41 1497 103 1497 c 128,-1,30
- 165 1497 165 1497 196 1465 c 128,-1,31
- 227 1433 227 1433 227 1372.5 c 128,-1,32
- 227 1312 227 1312 196 1278.5 c 128,-1,25
- 165 1245 165 1245 103 1245 c 128,-1,26
-107 1547 m 1,33,-1
- 274 1874 l 1,34,-1
- 521 1874 l 1,35,-1
- 521 1834 l 1,36,-1
- 218 1547 l 1,37,-1
- 107 1547 l 1,33,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 313 401 2
+Refer: 399 776 N 1.02997 0 0 1.07996 313 0 2
+Refer: 243 305 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E30
@@ -24554,49 +21860,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-416 135 m 1,0,-1
- 565 90 l 1,1,-1
- 565 0 l 1,2,-1
- 54 0 l 1,3,-1
- 54 90 l 1,4,-1
- 209 135 l 1,5,-1
- 209 1335 l 1,6,7
- 197 1344 197 1344 165 1359.5 c 128,-1,8
- 133 1375 133 1375 92.5 1393.5 c 128,-1,9
- 52 1412 52 1412 13 1429 c 1,10,-1
- 13 1503 l 1,11,-1
- 391 1587 l 1,12,-1
- 433 1587 l 1,13,-1
- 416 1366 l 1,14,-1
- 416 669 l 1,15,-1
- 585 669 l 1,16,-1
- 841 934 l 1,17,-1
- 698 975 l 1,18,-1
- 698 1062 l 1,19,-1
- 1169 1062 l 1,20,-1
- 1169 975 l 1,21,-1
- 1033 935 l 1,22,-1
- 717 640 l 1,23,-1
- 1111 139 l 1,24,-1
- 1238 89 l 1,25,-1
- 1238 0 l 1,26,-1
- 839 0 l 1,27,-1
- 839 89 l 1,28,-1
- 866 123 l 1,29,-1
- 556 521 l 1,30,-1
- 416 521 l 1,31,-1
- 416 135 l 1,0,-1
-485 -295 m 0,32,33
- 485 -237 485 -237 521 -206 c 128,-1,34
- 557 -175 557 -175 626 -175 c 128,-1,35
- 695 -175 695 -175 731 -206 c 128,-1,36
- 767 -237 767 -237 767 -295 c 0,37,38
- 767 -355 767 -355 731 -387 c 128,-1,39
- 695 -419 695 -419 626 -419 c 128,-1,40
- 557 -419 557 -419 521 -387 c 128,-1,41
- 485 -355 485 -355 485 -295 c 0,32,33
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 672 0 2
+Refer: 78 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E34
@@ -24652,45 +21917,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-416 135 m 1,0,-1
- 565 90 l 1,1,-1
- 565 0 l 1,2,-1
- 54 0 l 1,3,-1
- 54 90 l 1,4,-1
- 209 135 l 1,5,-1
- 209 1335 l 1,6,7
- 197 1344 197 1344 165 1359.5 c 128,-1,8
- 133 1375 133 1375 92.5 1393.5 c 128,-1,9
- 52 1412 52 1412 13 1429 c 1,10,-1
- 13 1503 l 1,11,-1
- 391 1587 l 1,12,-1
- 433 1587 l 1,13,-1
- 416 1366 l 1,14,-1
- 416 669 l 1,15,-1
- 585 669 l 1,16,-1
- 841 934 l 1,17,-1
- 698 975 l 1,18,-1
- 698 1062 l 1,19,-1
- 1169 1062 l 1,20,-1
- 1169 975 l 1,21,-1
- 1033 935 l 1,22,-1
- 717 640 l 1,23,-1
- 1111 139 l 1,24,-1
- 1238 89 l 1,25,-1
- 1238 0 l 1,26,-1
- 839 0 l 1,27,-1
- 839 89 l 1,28,-1
- 866 123 l 1,29,-1
- 556 521 l 1,30,-1
- 416 521 l 1,31,-1
- 416 135 l 1,0,-1
-342 -296 m 1,32,-1
- 342 -165 l 1,33,-1
- 910 -165 l 1,34,-1
- 910 -296 l 1,35,-1
- 342 -296 l 1,32,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 672 0 2
+Refer: 78 107 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E36
@@ -24739,32 +21967,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-418 135 m 1,0,-1
- 568 90 l 1,1,-1
- 568 0 l 1,2,-1
- 57 0 l 1,3,-1
- 57 90 l 1,4,-1
- 211 135 l 1,5,-1
- 211 1335 l 1,6,7
- 199 1344 199 1344 167.5 1359.5 c 128,-1,8
- 136 1375 136 1375 95.5 1393.5 c 128,-1,9
- 55 1412 55 1412 17 1429 c 1,10,-1
- 17 1503 l 1,11,-1
- 394 1587 l 1,12,-1
- 436 1587 l 1,13,-1
- 418 1366 l 1,14,-1
- 418 135 l 1,0,-1
-151 -295 m 0,15,16
- 151 -237 151 -237 187 -206 c 128,-1,17
- 223 -175 223 -175 292 -175 c 128,-1,18
- 361 -175 361 -175 397 -206 c 128,-1,19
- 433 -237 433 -237 433 -295 c 0,20,21
- 433 -355 433 -355 397 -387 c 128,-1,22
- 361 -419 361 -419 292 -419 c 128,-1,23
- 223 -419 223 -419 187 -387 c 128,-1,24
- 151 -355 151 -355 151 -295 c 0,15,16
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 315 0 2
+Refer: 79 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E38
@@ -24893,28 +22097,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-427 135 m 1,0,-1
- 577 90 l 1,1,-1
- 577 0 l 1,2,-1
- 66 0 l 1,3,-1
- 66 90 l 1,4,-1
- 220 135 l 1,5,-1
- 220 1335 l 1,6,7
- 208 1344 208 1344 176.5 1359.5 c 128,-1,8
- 145 1375 145 1375 104.5 1393.5 c 128,-1,9
- 64 1412 64 1412 26 1429 c 1,10,-1
- 26 1503 l 1,11,-1
- 403 1587 l 1,12,-1
- 445 1587 l 1,13,-1
- 427 1366 l 1,14,-1
- 427 135 l 1,0,-1
-17 -296 m 1,15,-1
- 17 -165 l 1,16,-1
- 585 -165 l 1,17,-1
- 585 -296 l 1,18,-1
- 17 -296 l 1,15,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 315 0 2
+Refer: 79 108 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E3E
@@ -24967,66 +22151,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1699 754 m 2,0,-1
- 1699 135 l 1,1,-1
- 1855 90 l 1,2,-1
- 1855 0 l 1,3,-1
- 1350 0 l 1,4,-1
- 1350 90 l 1,5,-1
- 1492 133 l 1,6,-1
- 1492 694 l 2,7,8
- 1492 759 1492 759 1471.5 798.5 c 128,-1,9
- 1451 838 1451 838 1407.5 857 c 128,-1,10
- 1364 876 1364 876 1296 876 c 0,11,12
- 1233 876 1233 876 1168 860 c 0,13,14
- 1113 847 1113 847 1069 826 c 1,15,16
- 1071 804 1071 804 1071 779 c 2,17,-1
- 1071 133 l 1,18,-1
- 1212 90 l 1,19,-1
- 1212 0 l 1,20,-1
- 722 0 l 1,21,-1
- 722 90 l 1,22,-1
- 864 133 l 1,23,-1
- 864 696 l 2,24,25
- 864 760 864 760 844 799.5 c 128,-1,26
- 824 839 824 839 781 857.5 c 128,-1,27
- 738 876 738 876 670 876 c 0,28,29
- 607 876 607 876 544 860 c 0,30,31
- 487 847 487 847 443 826 c 1,32,-1
- 443 133 l 1,33,-1
- 584 90 l 1,34,-1
- 584 0 l 1,35,-1
- 81 0 l 1,36,-1
- 81 90 l 1,37,-1
- 237 135 l 1,38,-1
- 237 798 l 1,39,40
- 220 812 220 812 178 841 c 128,-1,41
- 136 870 136 870 69 913 c 1,42,-1
- 69 958 l 1,43,44
- 70 958 70 958 352 1088 c 1,45,-1
- 389 1088 l 1,46,-1
- 435 894 l 1,47,48
- 499 950 499 950 542 986 c 0,49,50
- 594 1028 594 1028 633 1049 c 128,-1,51
- 672 1070 672 1070 706 1077 c 128,-1,52
- 740 1084 740 1084 784 1084 c 0,53,54
- 884 1084 884 1084 947.5 1051 c 128,-1,55
- 1011 1018 1011 1018 1041 951 c 0,56,57
- 1053 925 1053 925 1060 893 c 1,58,59
- 1124 950 1124 950 1168 986 c 0,60,61
- 1220 1028 1220 1028 1258.5 1049 c 128,-1,62
- 1297 1070 1297 1070 1331.5 1077 c 128,-1,63
- 1366 1084 1366 1084 1411 1084 c 0,64,65
- 1561 1084 1561 1084 1630 1000.5 c 128,-1,66
- 1699 917 1699 917 1699 754 c 2,0,-1
-755 1106 m 1,67,-1
- 922 1433 l 1,68,-1
- 1169 1433 l 1,69,-1
- 1169 1393 l 1,70,-1
- 866 1106 l 1,71,-1
- 755 1106 l 1,67,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 954 0 2
+Refer: 80 109 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E40
@@ -25082,69 +22208,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1699 754 m 2,0,-1
- 1699 135 l 1,1,-1
- 1855 90 l 1,2,-1
- 1855 0 l 1,3,-1
- 1350 0 l 1,4,-1
- 1350 90 l 1,5,-1
- 1492 133 l 1,6,-1
- 1492 694 l 2,7,8
- 1492 759 1492 759 1471.5 798.5 c 128,-1,9
- 1451 838 1451 838 1407.5 857 c 128,-1,10
- 1364 876 1364 876 1296 876 c 0,11,12
- 1233 876 1233 876 1168 860 c 0,13,14
- 1113 847 1113 847 1069 826 c 1,15,16
- 1071 804 1071 804 1071 779 c 2,17,-1
- 1071 133 l 1,18,-1
- 1212 90 l 1,19,-1
- 1212 0 l 1,20,-1
- 722 0 l 1,21,-1
- 722 90 l 1,22,-1
- 864 133 l 1,23,-1
- 864 696 l 2,24,25
- 864 760 864 760 844 799.5 c 128,-1,26
- 824 839 824 839 781 857.5 c 128,-1,27
- 738 876 738 876 670 876 c 0,28,29
- 607 876 607 876 544 860 c 0,30,31
- 487 847 487 847 443 826 c 1,32,-1
- 443 133 l 1,33,-1
- 584 90 l 1,34,-1
- 584 0 l 1,35,-1
- 81 0 l 1,36,-1
- 81 90 l 1,37,-1
- 237 135 l 1,38,-1
- 237 798 l 1,39,40
- 220 812 220 812 178 841 c 128,-1,41
- 136 870 136 870 69 913 c 1,42,-1
- 69 958 l 1,43,44
- 70 958 70 958 352 1088 c 1,45,-1
- 389 1088 l 1,46,-1
- 435 894 l 1,47,48
- 499 950 499 950 542 986 c 0,49,50
- 594 1028 594 1028 633 1049 c 128,-1,51
- 672 1070 672 1070 706 1077 c 128,-1,52
- 740 1084 740 1084 784 1084 c 0,53,54
- 884 1084 884 1084 947.5 1051 c 128,-1,55
- 1011 1018 1011 1018 1041 951 c 0,56,57
- 1053 925 1053 925 1060 893 c 1,58,59
- 1124 950 1124 950 1168 986 c 0,60,61
- 1220 1028 1220 1028 1258.5 1049 c 128,-1,62
- 1297 1070 1297 1070 1331.5 1077 c 128,-1,63
- 1366 1084 1366 1084 1411 1084 c 0,64,65
- 1561 1084 1561 1084 1630 1000.5 c 128,-1,66
- 1699 917 1699 917 1699 754 c 2,0,-1
-821 1271 m 0,67,68
- 821 1330 821 1330 857 1361 c 128,-1,69
- 893 1392 893 1392 962 1392 c 128,-1,70
- 1031 1392 1031 1392 1067 1361 c 128,-1,71
- 1103 1330 1103 1330 1103 1271 c 0,72,73
- 1103 1213 1103 1213 1067 1180 c 128,-1,74
- 1031 1147 1031 1147 962 1147 c 128,-1,75
- 893 1147 893 1147 857 1180 c 128,-1,76
- 821 1213 821 1213 821 1271 c 0,67,68
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 954 0 2
+Refer: 80 109 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E42
@@ -25200,69 +22265,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1699 754 m 2,0,-1
- 1699 135 l 1,1,-1
- 1855 90 l 1,2,-1
- 1855 0 l 1,3,-1
- 1350 0 l 1,4,-1
- 1350 90 l 1,5,-1
- 1492 133 l 1,6,-1
- 1492 694 l 2,7,8
- 1492 759 1492 759 1471.5 798.5 c 128,-1,9
- 1451 838 1451 838 1407.5 857 c 128,-1,10
- 1364 876 1364 876 1296 876 c 0,11,12
- 1233 876 1233 876 1168 860 c 0,13,14
- 1113 847 1113 847 1069 826 c 1,15,16
- 1071 804 1071 804 1071 779 c 2,17,-1
- 1071 133 l 1,18,-1
- 1212 90 l 1,19,-1
- 1212 0 l 1,20,-1
- 722 0 l 1,21,-1
- 722 90 l 1,22,-1
- 864 133 l 1,23,-1
- 864 696 l 2,24,25
- 864 760 864 760 844 799.5 c 128,-1,26
- 824 839 824 839 781 857.5 c 128,-1,27
- 738 876 738 876 670 876 c 0,28,29
- 607 876 607 876 544 860 c 0,30,31
- 487 847 487 847 443 826 c 1,32,-1
- 443 133 l 1,33,-1
- 584 90 l 1,34,-1
- 584 0 l 1,35,-1
- 81 0 l 1,36,-1
- 81 90 l 1,37,-1
- 237 135 l 1,38,-1
- 237 798 l 1,39,40
- 220 812 220 812 178 841 c 128,-1,41
- 136 870 136 870 69 913 c 1,42,-1
- 69 958 l 1,43,44
- 70 958 70 958 352 1088 c 1,45,-1
- 389 1088 l 1,46,-1
- 435 894 l 1,47,48
- 499 950 499 950 542 986 c 0,49,50
- 594 1028 594 1028 633 1049 c 128,-1,51
- 672 1070 672 1070 706 1077 c 128,-1,52
- 740 1084 740 1084 784 1084 c 0,53,54
- 884 1084 884 1084 947.5 1051 c 128,-1,55
- 1011 1018 1011 1018 1041 951 c 0,56,57
- 1053 925 1053 925 1060 893 c 1,58,59
- 1124 950 1124 950 1168 986 c 0,60,61
- 1220 1028 1220 1028 1258.5 1049 c 128,-1,62
- 1297 1070 1297 1070 1331.5 1077 c 128,-1,63
- 1366 1084 1366 1084 1411 1084 c 0,64,65
- 1561 1084 1561 1084 1630 1000.5 c 128,-1,66
- 1699 917 1699 917 1699 754 c 2,0,-1
-821 -295 m 0,67,68
- 821 -237 821 -237 857 -206 c 128,-1,69
- 893 -175 893 -175 962 -175 c 128,-1,70
- 1031 -175 1031 -175 1067 -206 c 128,-1,71
- 1103 -237 1103 -237 1103 -295 c 0,72,73
- 1103 -355 1103 -355 1067 -387 c 128,-1,74
- 1031 -419 1031 -419 962 -419 c 128,-1,75
- 893 -419 893 -419 857 -387 c 128,-1,76
- 821 -355 821 -355 821 -295 c 0,67,68
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 954 0 2
+Refer: 80 109 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E44
@@ -25272,38 +22276,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-271 139 m 1,0,-1
- 271 1251 l 1,1,-1
- 99 1304 l 1,2,-1
- 99 1396 l 1,3,-1
- 555 1396 l 1,4,-1
- 1209 264 l 1,5,-1
- 1209 1257 l 1,6,-1
- 1025 1304 l 1,7,-1
- 1025 1396 l 1,8,-1
- 1532 1396 l 1,9,-1
- 1532 1304 l 1,10,-1
- 1362 1257 l 1,11,-1
- 1362 -4 l 1,12,-1
- 1119 -4 l 1,13,-1
- 424 1193 l 1,14,-1
- 424 139 l 1,15,-1
- 608 92 l 1,16,-1
- 608 0 l 1,17,-1
- 102 0 l 1,18,-1
- 102 92 l 1,19,-1
- 271 139 l 1,0,-1
-675 1570 m 0,20,21
- 675 1629 675 1629 711 1660 c 128,-1,22
- 747 1691 747 1691 816 1691 c 128,-1,23
- 885 1691 885 1691 921 1660 c 128,-1,24
- 957 1629 957 1629 957 1570 c 0,25,26
- 957 1512 957 1512 921 1479 c 128,-1,27
- 885 1446 885 1446 816 1446 c 128,-1,28
- 747 1446 747 1446 711 1479 c 128,-1,29
- 675 1512 675 1512 675 1570 c 0,20,21
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 834 0 2
+Refer: 49 78 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E45
@@ -25313,49 +22287,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-761 90 m 1,0,-1
- 906 133 l 1,1,-1
- 906 679 l 2,2,3
- 906 747 906 747 884.5 790.5 c 128,-1,4
- 863 834 863 834 816 855 c 128,-1,5
- 769 876 769 876 692 876 c 0,6,7
- 624 876 624 876 554 858 c 0,8,9
- 491 842 491 842 443 818 c 1,10,-1
- 443 133 l 1,11,-1
- 587 90 l 1,12,-1
- 587 0 l 1,13,-1
- 81 0 l 1,14,-1
- 81 90 l 1,15,-1
- 237 135 l 1,16,-1
- 237 798 l 1,17,18
- 220 812 220 812 178 841 c 128,-1,19
- 136 870 136 870 69 913 c 1,20,-1
- 69 958 l 1,21,22
- 70 958 70 958 352 1088 c 1,23,-1
- 389 1088 l 1,24,-1
- 437 882 l 1,25,26
- 505 942 505 942 552 980 c 0,27,28
- 607 1025 607 1025 647 1047 c 128,-1,29
- 687 1069 687 1069 724.5 1076.5 c 128,-1,30
- 762 1084 762 1084 808 1084 c 0,31,32
- 966 1084 966 1084 1039 996 c 128,-1,33
- 1112 908 1112 908 1112 733 c 2,34,-1
- 1112 135 l 1,35,-1
- 1269 90 l 1,36,-1
- 1269 0 l 1,37,-1
- 761 0 l 1,38,-1
- 761 90 l 1,0,-1
-528 1271 m 0,39,40
- 528 1330 528 1330 564 1361 c 128,-1,41
- 600 1392 600 1392 669 1392 c 128,-1,42
- 738 1392 738 1392 774 1361 c 128,-1,43
- 810 1330 810 1330 810 1271 c 0,44,45
- 810 1213 810 1213 774 1180 c 128,-1,46
- 738 1147 738 1147 669 1147 c 128,-1,47
- 600 1147 600 1147 564 1180 c 128,-1,48
- 528 1213 528 1213 528 1271 c 0,39,40
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 669 0 2
+Refer: 81 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E46
@@ -25406,49 +22339,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-761 90 m 1,0,-1
- 906 133 l 1,1,-1
- 906 679 l 2,2,3
- 906 747 906 747 884.5 790.5 c 128,-1,4
- 863 834 863 834 816 855 c 128,-1,5
- 769 876 769 876 692 876 c 0,6,7
- 624 876 624 876 554 858 c 0,8,9
- 491 842 491 842 443 818 c 1,10,-1
- 443 133 l 1,11,-1
- 587 90 l 1,12,-1
- 587 0 l 1,13,-1
- 81 0 l 1,14,-1
- 81 90 l 1,15,-1
- 237 135 l 1,16,-1
- 237 798 l 1,17,18
- 220 812 220 812 178 841 c 128,-1,19
- 136 870 136 870 69 913 c 1,20,-1
- 69 958 l 1,21,22
- 70 958 70 958 352 1088 c 1,23,-1
- 389 1088 l 1,24,-1
- 437 882 l 1,25,26
- 505 942 505 942 552 980 c 0,27,28
- 607 1025 607 1025 647 1047 c 128,-1,29
- 687 1069 687 1069 724.5 1076.5 c 128,-1,30
- 762 1084 762 1084 808 1084 c 0,31,32
- 966 1084 966 1084 1039 996 c 128,-1,33
- 1112 908 1112 908 1112 733 c 2,34,-1
- 1112 135 l 1,35,-1
- 1269 90 l 1,36,-1
- 1269 0 l 1,37,-1
- 761 0 l 1,38,-1
- 761 90 l 1,0,-1
-528 -295 m 0,39,40
- 528 -237 528 -237 564 -206 c 128,-1,41
- 600 -175 600 -175 669 -175 c 128,-1,42
- 738 -175 738 -175 774 -206 c 128,-1,43
- 810 -237 810 -237 810 -295 c 0,44,45
- 810 -355 810 -355 774 -387 c 128,-1,46
- 738 -419 738 -419 669 -419 c 128,-1,47
- 600 -419 600 -419 564 -387 c 128,-1,48
- 528 -355 528 -355 528 -295 c 0,39,40
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 657 0 2
+Refer: 81 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E48
@@ -25495,45 +22387,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-761 90 m 1,0,-1
- 906 133 l 1,1,-1
- 906 679 l 2,2,3
- 906 747 906 747 884.5 790.5 c 128,-1,4
- 863 834 863 834 816 855 c 128,-1,5
- 769 876 769 876 692 876 c 0,6,7
- 624 876 624 876 554 858 c 0,8,9
- 491 842 491 842 443 818 c 1,10,-1
- 443 133 l 1,11,-1
- 587 90 l 1,12,-1
- 587 0 l 1,13,-1
- 81 0 l 1,14,-1
- 81 90 l 1,15,-1
- 237 135 l 1,16,-1
- 237 798 l 1,17,18
- 220 812 220 812 178 841 c 128,-1,19
- 136 870 136 870 69 913 c 1,20,-1
- 69 958 l 1,21,22
- 70 958 70 958 352 1088 c 1,23,-1
- 389 1088 l 1,24,-1
- 437 882 l 1,25,26
- 505 942 505 942 552 980 c 0,27,28
- 607 1025 607 1025 647 1047 c 128,-1,29
- 687 1069 687 1069 724.5 1076.5 c 128,-1,30
- 762 1084 762 1084 808 1084 c 0,31,32
- 966 1084 966 1084 1039 996 c 128,-1,33
- 1112 908 1112 908 1112 733 c 2,34,-1
- 1112 135 l 1,35,-1
- 1269 90 l 1,36,-1
- 1269 0 l 1,37,-1
- 761 0 l 1,38,-1
- 761 90 l 1,0,-1
-385 -296 m 1,39,-1
- 385 -165 l 1,40,-1
- 953 -165 l 1,41,-1
- 953 -296 l 1,42,-1
- 385 -296 l 1,39,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 657 0 2
+Refer: 81 110 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4C
@@ -25613,63 +22468,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-905 1535 m 1,31,32
- 890 1401 890 1401 867 1328.5 c 128,-1,33
- 844 1256 844 1256 808 1228.5 c 128,-1,34
- 772 1201 772 1201 718 1201 c 0,35,36
- 674 1201 674 1201 639 1227 c 128,-1,37
- 604 1253 604 1253 574.5 1286.5 c 128,-1,38
- 545 1320 545 1320 518.5 1345 c 128,-1,39
- 492 1370 492 1370 466 1370 c 0,40,41
- 449 1370 449 1370 435 1358.5 c 128,-1,42
- 421 1347 421 1347 410.5 1312 c 128,-1,43
- 400 1277 400 1277 389 1207 c 1,44,-1
- 275 1207 l 1,45,46
- 290 1341 290 1341 312.5 1413.5 c 128,-1,47
- 335 1486 335 1486 372 1513.5 c 128,-1,48
- 409 1541 409 1541 463 1541 c 0,49,50
- 506 1541 506 1541 540.5 1515 c 128,-1,51
- 575 1489 575 1489 605 1455.5 c 128,-1,52
- 635 1422 635 1422 661.5 1397 c 128,-1,53
- 688 1372 688 1372 715 1372 c 0,54,55
- 733 1372 733 1372 746.5 1383.5 c 128,-1,56
- 760 1395 760 1395 770 1431 c 128,-1,57
- 780 1467 780 1467 791 1535 c 1,58,-1
- 905 1535 l 1,31,32
-387 1591 m 1,59,-1
- 554 1918 l 1,60,-1
- 801 1918 l 1,61,-1
- 801 1878 l 1,62,-1
- 498 1591 l 1,63,-1
- 387 1591 l 1,59,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 593 401 2
+Refer: 395 771 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E4E
@@ -25761,75 +22562,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-905 1535 m 1,31,32
- 890 1401 890 1401 867 1328.5 c 128,-1,33
- 844 1256 844 1256 808 1228.5 c 128,-1,34
- 772 1201 772 1201 718 1201 c 0,35,36
- 674 1201 674 1201 639 1227 c 128,-1,37
- 604 1253 604 1253 574.5 1286.5 c 128,-1,38
- 545 1320 545 1320 518.5 1345 c 128,-1,39
- 492 1370 492 1370 466 1370 c 0,40,41
- 449 1370 449 1370 435 1358.5 c 128,-1,42
- 421 1347 421 1347 410.5 1312 c 128,-1,43
- 400 1277 400 1277 389 1207 c 1,44,-1
- 275 1207 l 1,45,46
- 290 1341 290 1341 312.5 1413.5 c 128,-1,47
- 335 1486 335 1486 372 1513.5 c 128,-1,48
- 409 1541 409 1541 463 1541 c 0,49,50
- 506 1541 506 1541 540.5 1515 c 128,-1,51
- 575 1489 575 1489 605 1455.5 c 128,-1,52
- 635 1422 635 1422 661.5 1397 c 128,-1,53
- 688 1372 688 1372 715 1372 c 0,54,55
- 733 1372 733 1372 746.5 1383.5 c 128,-1,56
- 760 1395 760 1395 770 1431 c 128,-1,57
- 780 1467 780 1467 791 1535 c 1,58,-1
- 905 1535 l 1,31,32
-800 1591 m 0,59,60
- 740 1591 740 1591 709 1622 c 128,-1,61
- 678 1653 678 1653 678 1709 c 128,-1,62
- 678 1765 678 1765 709 1794.5 c 128,-1,63
- 740 1824 740 1824 800 1824 c 0,64,65
- 859 1824 859 1824 890.5 1794.5 c 128,-1,66
- 922 1765 922 1765 922 1709 c 128,-1,67
- 922 1653 922 1653 890.5 1622 c 128,-1,68
- 859 1591 859 1591 800 1591 c 0,59,60
-389 1591 m 128,-1,70
- 329 1591 329 1591 297.5 1622 c 128,-1,71
- 266 1653 266 1653 266 1709 c 128,-1,72
- 266 1765 266 1765 297.5 1794.5 c 128,-1,73
- 329 1824 329 1824 389 1824 c 128,-1,74
- 449 1824 449 1824 479.5 1794.5 c 128,-1,75
- 510 1765 510 1765 510 1709 c 128,-1,76
- 510 1653 510 1653 479.5 1622 c 128,-1,69
- 449 1591 449 1591 389 1591 c 128,-1,70
-EndSplineSet
+Refer: 399 776 N 1.02997 0 0 1.07996 593 401 2
+Refer: 395 771 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E50
@@ -25891,45 +22626,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-301 1301 m 1,31,-1
- 301 1442 l 1,32,-1
- 887 1442 l 1,33,-1
- 887 1301 l 1,34,-1
- 301 1301 l 1,31,-1
-801 1492 m 1,35,-1
- 690 1492 l 1,36,-1
- 387 1779 l 1,37,-1
- 387 1819 l 1,38,-1
- 634 1819 l 1,39,-1
- 801 1492 l 1,35,-1
-EndSplineSet
+Refer: 392 768 N 1.02997 0 0 1.07996 593 486 2
+Refer: 396 772 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E52
@@ -25991,45 +22690,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-584 -23 m 0,0,1
- 431 -23 431 -23 320.5 45 c 128,-1,2
- 210 113 210 113 150.5 237.5 c 128,-1,3
- 91 362 91 362 91 527 c 0,4,5
- 91 695 91 695 154 820.5 c 128,-1,6
- 217 946 217 946 331.5 1015 c 128,-1,7
- 446 1084 446 1084 601 1084 c 0,8,9
- 754 1084 754 1084 865.5 1016 c 128,-1,10
- 977 948 977 948 1036.5 824.5 c 128,-1,11
- 1096 701 1096 701 1096 535 c 0,12,13
- 1096 367 1096 367 1033 241.5 c 128,-1,14
- 970 116 970 116 855.5 46.5 c 128,-1,15
- 741 -23 741 -23 584 -23 c 0,0,1
-586 131 m 0,16,17
- 681 131 681 131 747 170.5 c 128,-1,18
- 813 210 813 210 847 292.5 c 128,-1,19
- 881 375 881 375 881 504 c 0,20,21
- 881 647 881 647 850 741.5 c 128,-1,22
- 819 836 819 836 756.5 883.5 c 128,-1,23
- 694 931 694 931 599 931 c 128,-1,24
- 504 931 504 931 438.5 892 c 128,-1,25
- 373 853 373 853 339 770 c 128,-1,26
- 305 687 305 687 305 557 c 0,27,28
- 305 416 305 416 336 321 c 128,-1,29
- 367 226 367 226 429.5 178.5 c 128,-1,30
- 492 131 492 131 586 131 c 0,16,17
-301 1301 m 1,31,-1
- 301 1442 l 1,32,-1
- 887 1442 l 1,33,-1
- 887 1301 l 1,34,-1
- 301 1301 l 1,31,-1
-387 1492 m 1,35,-1
- 554 1819 l 1,36,-1
- 801 1819 l 1,37,-1
- 801 1779 l 1,38,-1
- 498 1492 l 1,39,-1
- 387 1492 l 1,35,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 593 486 2
+Refer: 396 772 N 1.02997 0 0 1.07996 593 0 2
+Refer: 82 111 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E54
@@ -26086,55 +22749,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-965 521 m 0,0,1
- 965 714 965 714 884 807.5 c 128,-1,2
- 803 901 803 901 658 901 c 0,3,4
- 604 901 604 901 551.5 891.5 c 128,-1,5
- 499 882 499 882 449 864 c 0,6,7
- 434 859 434 859 419 853 c 1,8,-1
- 419 367 l 2,9,10
- 419 288 419 288 451.5 234 c 128,-1,11
- 484 180 484 180 541.5 152 c 128,-1,12
- 599 124 599 124 674 124 c 0,13,14
- 766 124 766 124 830.5 171 c 128,-1,15
- 895 218 895 218 930 307.5 c 128,-1,16
- 965 397 965 397 965 521 c 0,0,1
-419 145 m 1,17,-1
- 419 -364 l 1,18,-1
- 596 -407 l 1,19,-1
- 596 -497 l 1,20,-1
- 54 -497 l 1,21,-1
- 54 -407 l 1,22,-1
- 213 -362 l 1,23,-1
- 213 799 l 1,24,25
- 201 810 201 810 175 828 c 128,-1,26
- 149 846 149 846 116 868 c 128,-1,27
- 83 890 83 890 46 913 c 1,28,-1
- 46 958 l 1,29,-1
- 328 1089 l 1,30,-1
- 366 1089 l 1,31,-1
- 405 956 l 1,32,33
- 447 981 447 981 484 1000 c 0,34,35
- 542 1031 542 1031 588.5 1049.5 c 128,-1,36
- 635 1068 635 1068 673 1076 c 128,-1,37
- 711 1084 711 1084 744 1084 c 0,38,39
- 887 1084 887 1084 986 1022 c 128,-1,40
- 1085 960 1085 960 1136 846 c 128,-1,41
- 1187 732 1187 732 1187 576 c 0,42,43
- 1187 389 1187 389 1122 255 c 128,-1,44
- 1057 121 1057 121 948.5 49 c 128,-1,45
- 840 -23 840 -23 705 -23 c 0,46,47
- 622 -23 622 -23 555.5 12.5 c 128,-1,48
- 489 48 489 48 444 106 c 0,49,50
- 430 125 430 125 419 145 c 1,17,-1
-409 1106 m 1,51,-1
- 576 1433 l 1,52,-1
- 823 1433 l 1,53,-1
- 823 1393 l 1,54,-1
- 520 1106 l 1,55,-1
- 409 1106 l 1,51,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 640 0 2
+Refer: 83 112 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E56
@@ -26194,58 +22810,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-965 521 m 0,0,1
- 965 714 965 714 884 807.5 c 128,-1,2
- 803 901 803 901 658 901 c 0,3,4
- 604 901 604 901 551.5 891.5 c 128,-1,5
- 499 882 499 882 449 864 c 0,6,7
- 434 859 434 859 419 853 c 1,8,-1
- 419 367 l 2,9,10
- 419 288 419 288 451.5 234 c 128,-1,11
- 484 180 484 180 541.5 152 c 128,-1,12
- 599 124 599 124 674 124 c 0,13,14
- 766 124 766 124 830.5 171 c 128,-1,15
- 895 218 895 218 930 307.5 c 128,-1,16
- 965 397 965 397 965 521 c 0,0,1
-419 145 m 1,17,-1
- 419 -364 l 1,18,-1
- 596 -407 l 1,19,-1
- 596 -497 l 1,20,-1
- 54 -497 l 1,21,-1
- 54 -407 l 1,22,-1
- 213 -362 l 1,23,-1
- 213 799 l 1,24,25
- 201 810 201 810 175 828 c 128,-1,26
- 149 846 149 846 116 868 c 128,-1,27
- 83 890 83 890 46 913 c 1,28,-1
- 46 958 l 1,29,-1
- 328 1089 l 1,30,-1
- 366 1089 l 1,31,-1
- 405 956 l 1,32,33
- 447 981 447 981 484 1000 c 0,34,35
- 542 1031 542 1031 588.5 1049.5 c 128,-1,36
- 635 1068 635 1068 673 1076 c 128,-1,37
- 711 1084 711 1084 744 1084 c 0,38,39
- 887 1084 887 1084 986 1022 c 128,-1,40
- 1085 960 1085 960 1136 846 c 128,-1,41
- 1187 732 1187 732 1187 576 c 0,42,43
- 1187 389 1187 389 1122 255 c 128,-1,44
- 1057 121 1057 121 948.5 49 c 128,-1,45
- 840 -23 840 -23 705 -23 c 0,46,47
- 622 -23 622 -23 555.5 12.5 c 128,-1,48
- 489 48 489 48 444 106 c 0,49,50
- 430 125 430 125 419 145 c 1,17,-1
-475 1271 m 0,51,52
- 475 1330 475 1330 511 1361 c 128,-1,53
- 547 1392 547 1392 616 1392 c 128,-1,54
- 685 1392 685 1392 721 1361 c 128,-1,55
- 757 1330 757 1330 757 1271 c 0,56,57
- 757 1213 757 1213 721 1180 c 128,-1,58
- 685 1147 685 1147 616 1147 c 128,-1,59
- 547 1147 547 1147 511 1180 c 128,-1,60
- 475 1213 475 1213 475 1271 c 0,51,52
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 640 0 2
+Refer: 83 112 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E58
@@ -26255,62 +22821,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-755 770 m 2,0,1
- 874 770 874 770 942 827 c 128,-1,2
- 1010 884 1010 884 1010 1008 c 0,3,4
- 1010 1087 1010 1087 981 1139 c 128,-1,5
- 952 1191 952 1191 880 1217.5 c 128,-1,6
- 808 1244 808 1244 681 1244 c 2,7,-1
- 493 1244 l 1,8,-1
- 493 770 l 1,9,-1
- 755 770 l 2,0,1
-493 624 m 1,10,-1
- 493 139 l 1,11,-1
- 666 92 l 1,12,-1
- 666 0 l 1,13,-1
- 97 0 l 1,14,-1
- 97 92 l 1,15,-1
- 272 139 l 1,16,-1
- 272 1257 l 1,17,-1
- 97 1304 l 1,18,-1
- 97 1396 l 1,19,-1
- 373 1396 l 1,20,-1
- 493 1396 l 1,21,-1
- 775 1396 l 2,22,23
- 944 1396 944 1396 1045 1352 c 128,-1,24
- 1146 1308 1146 1308 1190 1228.5 c 128,-1,25
- 1234 1149 1234 1149 1234 1045 c 0,26,27
- 1234 951 1234 951 1200 878.5 c 128,-1,28
- 1166 806 1166 806 1096 759 c 0,29,30
- 1035 719 1035 719 947 699 c 1,31,32
- 1005 691 1005 691 1044 672 c 0,33,34
- 1092 647 1092 647 1118.5 601.5 c 128,-1,35
- 1145 556 1145 556 1161 486 c 2,36,-1
- 1216 249 l 2,37,38
- 1231 186 1231 186 1247.5 155.5 c 128,-1,39
- 1264 125 1264 125 1292.5 116 c 128,-1,40
- 1321 107 1321 107 1372 107 c 1,41,-1
- 1372 0 l 1,42,43
- 1262 -5 1262 -5 1194.5 -0.5 c 128,-1,44
- 1127 4 1127 4 1088.5 24.5 c 128,-1,45
- 1050 45 1050 45 1030 87 c 128,-1,46
- 1010 129 1010 129 995 198 c 2,47,-1
- 944 424 l 2,48,49
- 928 502 928 502 906 545.5 c 128,-1,50
- 884 589 884 589 845 606.5 c 128,-1,51
- 806 624 806 624 732 624 c 2,52,-1
- 493 624 l 1,10,-1
-593 1570 m 0,53,54
- 593 1629 593 1629 629 1660 c 128,-1,55
- 665 1691 665 1691 734 1691 c 128,-1,56
- 803 1691 803 1691 839 1660 c 128,-1,57
- 875 1629 875 1629 875 1570 c 0,58,59
- 875 1512 875 1512 839 1479 c 128,-1,60
- 803 1446 803 1446 734 1446 c 128,-1,61
- 665 1446 665 1446 629 1479 c 128,-1,62
- 593 1512 593 1512 593 1570 c 0,53,54
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 703 0 2
+Refer: 53 82 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E59
@@ -26320,46 +22832,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-757 1080 m 0,0,1
- 808 1080 808 1080 837.5 1048.5 c 128,-1,2
- 867 1017 867 1017 867 961 c 0,3,4
- 867 895 867 895 846.5 858 c 128,-1,5
- 826 821 826 821 798 821 c 0,6,7
- 755 821 755 821 714 824.5 c 128,-1,8
- 673 828 673 828 631 832.5 c 128,-1,9
- 589 837 589 837 547 837 c 0,10,11
- 522 837 522 837 499.5 832.5 c 128,-1,12
- 477 828 477 828 452 818 c 0,13,14
- 448 816 448 816 443 814 c 1,15,-1
- 443 135 l 1,16,-1
- 615 90 l 1,17,-1
- 615 0 l 1,18,-1
- 81 0 l 1,19,-1
- 81 90 l 1,20,-1
- 237 135 l 1,21,-1
- 237 798 l 1,22,23
- 224 810 224 810 198 828 c 128,-1,24
- 172 846 172 846 138.5 867.5 c 128,-1,25
- 105 889 105 889 69 913 c 1,26,-1
- 69 958 l 1,27,-1
- 356 1088 l 1,28,-1
- 393 1088 l 1,29,-1
- 435 893 l 1,30,31
- 475 930 475 930 508 957 c 0,32,33
- 565 1005 565 1005 609 1032 c 128,-1,34
- 653 1059 653 1059 688 1069.5 c 128,-1,35
- 723 1080 723 1080 757 1080 c 0,0,1
-327 1271 m 0,36,37
- 327 1330 327 1330 363 1361 c 128,-1,38
- 399 1392 399 1392 468 1392 c 128,-1,39
- 537 1392 537 1392 573 1361 c 128,-1,40
- 609 1330 609 1330 609 1271 c 0,41,42
- 609 1213 609 1213 573 1180 c 128,-1,43
- 537 1147 537 1147 468 1147 c 128,-1,44
- 399 1147 399 1147 363 1180 c 128,-1,45
- 327 1213 327 1213 327 1271 c 0,36,37
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 456 0 2
+Refer: 85 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5A
@@ -26434,46 +22908,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-757 1080 m 0,0,1
- 808 1080 808 1080 837.5 1048.5 c 128,-1,2
- 867 1017 867 1017 867 961 c 0,3,4
- 867 895 867 895 846.5 858 c 128,-1,5
- 826 821 826 821 798 821 c 0,6,7
- 755 821 755 821 714 824.5 c 128,-1,8
- 673 828 673 828 631 832.5 c 128,-1,9
- 589 837 589 837 547 837 c 0,10,11
- 522 837 522 837 499.5 832.5 c 128,-1,12
- 477 828 477 828 452 818 c 0,13,14
- 448 816 448 816 443 814 c 1,15,-1
- 443 135 l 1,16,-1
- 615 90 l 1,17,-1
- 615 0 l 1,18,-1
- 81 0 l 1,19,-1
- 81 90 l 1,20,-1
- 237 135 l 1,21,-1
- 237 798 l 1,22,23
- 224 810 224 810 198 828 c 128,-1,24
- 172 846 172 846 138.5 867.5 c 128,-1,25
- 105 889 105 889 69 913 c 1,26,-1
- 69 958 l 1,27,-1
- 356 1088 l 1,28,-1
- 393 1088 l 1,29,-1
- 435 893 l 1,30,31
- 475 930 475 930 508 957 c 0,32,33
- 565 1005 565 1005 609 1032 c 128,-1,34
- 653 1059 653 1059 688 1069.5 c 128,-1,35
- 723 1080 723 1080 757 1080 c 0,0,1
-327 -295 m 0,36,37
- 327 -237 327 -237 363 -206 c 128,-1,38
- 399 -175 399 -175 468 -175 c 128,-1,39
- 537 -175 537 -175 573 -206 c 128,-1,40
- 609 -237 609 -237 609 -295 c 0,41,42
- 609 -355 609 -355 573 -387 c 128,-1,43
- 537 -419 537 -419 468 -419 c 128,-1,44
- 399 -419 399 -419 363 -387 c 128,-1,45
- 327 -355 327 -355 327 -295 c 0,36,37
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 329 0 2
+Refer: 85 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5C
@@ -26553,51 +22989,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-757 1080 m 0,0,1
- 808 1080 808 1080 837.5 1048.5 c 128,-1,2
- 867 1017 867 1017 867 961 c 0,3,4
- 867 895 867 895 846.5 858 c 128,-1,5
- 826 821 826 821 798 821 c 0,6,7
- 755 821 755 821 714 824.5 c 128,-1,8
- 673 828 673 828 631 832.5 c 128,-1,9
- 589 837 589 837 547 837 c 0,10,11
- 522 837 522 837 499.5 832.5 c 128,-1,12
- 477 828 477 828 452 818 c 0,13,14
- 448 816 448 816 443 814 c 1,15,-1
- 443 135 l 1,16,-1
- 615 90 l 1,17,-1
- 615 0 l 1,18,-1
- 81 0 l 1,19,-1
- 81 90 l 1,20,-1
- 237 135 l 1,21,-1
- 237 798 l 1,22,23
- 224 810 224 810 198 828 c 128,-1,24
- 172 846 172 846 138.5 867.5 c 128,-1,25
- 105 889 105 889 69 913 c 1,26,-1
- 69 958 l 1,27,-1
- 356 1088 l 1,28,-1
- 393 1088 l 1,29,-1
- 435 893 l 1,30,31
- 475 930 475 930 508 957 c 0,32,33
- 565 1005 565 1005 609 1032 c 128,-1,34
- 653 1059 653 1059 688 1069.5 c 128,-1,35
- 723 1080 723 1080 757 1080 c 0,0,1
-327 -295 m 0,36,37
- 327 -237 327 -237 363 -206 c 128,-1,38
- 399 -175 399 -175 468 -175 c 128,-1,39
- 537 -175 537 -175 573 -206 c 128,-1,40
- 609 -237 609 -237 609 -295 c 0,41,42
- 609 -355 609 -355 573 -387 c 128,-1,43
- 537 -419 537 -419 468 -419 c 128,-1,44
- 399 -419 399 -419 363 -387 c 128,-1,45
- 327 -355 327 -355 327 -295 c 0,36,37
-184 1205 m 1,46,-1
- 184 1335 l 1,47,-1
- 752 1335 l 1,48,-1
- 752 1205 l 1,49,-1
- 184 1205 l 1,46,-1
-EndSplineSet
+Refer: 396 772 N 1.02997 0 0 1.07996 456 0 2
+Refer: 408 803 N 1.02997 0 0 1.07996 329 0 2
+Refer: 85 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E5E
@@ -26668,42 +23062,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-757 1080 m 0,0,1
- 808 1080 808 1080 837.5 1048.5 c 128,-1,2
- 867 1017 867 1017 867 961 c 0,3,4
- 867 895 867 895 846.5 858 c 128,-1,5
- 826 821 826 821 798 821 c 0,6,7
- 755 821 755 821 714 824.5 c 128,-1,8
- 673 828 673 828 631 832.5 c 128,-1,9
- 589 837 589 837 547 837 c 0,10,11
- 522 837 522 837 499.5 832.5 c 128,-1,12
- 477 828 477 828 452 818 c 0,13,14
- 448 816 448 816 443 814 c 1,15,-1
- 443 135 l 1,16,-1
- 615 90 l 1,17,-1
- 615 0 l 1,18,-1
- 81 0 l 1,19,-1
- 81 90 l 1,20,-1
- 237 135 l 1,21,-1
- 237 798 l 1,22,23
- 224 810 224 810 198 828 c 128,-1,24
- 172 846 172 846 138.5 867.5 c 128,-1,25
- 105 889 105 889 69 913 c 1,26,-1
- 69 958 l 1,27,-1
- 356 1088 l 1,28,-1
- 393 1088 l 1,29,-1
- 435 893 l 1,30,31
- 475 930 475 930 508 957 c 0,32,33
- 565 1005 565 1005 609 1032 c 128,-1,34
- 653 1059 653 1059 688 1069.5 c 128,-1,35
- 723 1080 723 1080 757 1080 c 0,0,1
-184 -296 m 1,36,-1
- 184 -165 l 1,37,-1
- 752 -165 l 1,38,-1
- 752 -296 l 1,39,-1
- 184 -296 l 1,36,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 329 0 2
+Refer: 85 114 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E60
@@ -26713,60 +23073,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-369 142 m 1,0,1
- 440 124 440 124 535 124 c 0,2,3
- 655 124 655 124 733.5 148 c 128,-1,4
- 812 172 812 172 850 225 c 128,-1,5
- 888 278 888 278 888 364 c 0,6,7
- 888 437 888 437 855.5 482.5 c 128,-1,8
- 823 528 823 528 767.5 555 c 128,-1,9
- 712 582 712 582 644.5 600 c 128,-1,10
- 577 618 577 618 505 636 c 0,11,12
- 436 655 436 655 369.5 680.5 c 128,-1,13
- 303 706 303 706 250 748.5 c 128,-1,14
- 197 791 197 791 165.5 859 c 128,-1,15
- 134 927 134 927 134 1030 c 0,16,17
- 134 1157 134 1157 193 1243 c 128,-1,18
- 252 1329 252 1329 364 1373 c 128,-1,19
- 476 1417 476 1417 635 1417 c 0,20,21
- 734 1417 734 1417 818 1397 c 0,22,23
- 844 1391 844 1391 871 1382 c 1,24,-1
- 942 1465 l 1,25,-1
- 1036 1465 l 1,26,-1
- 1051 978 l 1,27,-1
- 924 975 l 1,28,-1
- 836 1228 l 1,29,30
- 799 1248 799 1248 760 1258 c 0,31,32
- 698 1275 698 1275 623 1275 c 0,33,34
- 489 1275 489 1275 413 1227.5 c 128,-1,35
- 337 1180 337 1180 337 1072 c 0,36,37
- 337 1007 337 1007 364.5 966 c 128,-1,38
- 392 925 392 925 440 899 c 128,-1,39
- 488 873 488 873 551 856 c 128,-1,40
- 614 839 614 839 684 822 c 128,-1,41
- 754 805 754 805 827 781.5 c 128,-1,42
- 900 758 900 758 961 715 c 128,-1,43
- 1022 672 1022 672 1059.5 597.5 c 128,-1,44
- 1097 523 1097 523 1097 406 c 0,45,46
- 1097 257 1097 257 1030 162.5 c 128,-1,47
- 963 68 963 68 839.5 23.5 c 128,-1,48
- 716 -21 716 -21 543 -21 c 0,49,50
- 433 -21 433 -21 345.5 -10.5 c 128,-1,51
- 258 0 258 0 168 33 c 1,52,-1
- 106 431 l 1,53,-1
- 233 431 l 1,54,-1
- 369 142 l 1,0,1
-461 1639 m 0,55,56
- 461 1698 461 1698 497 1729 c 128,-1,57
- 533 1760 533 1760 602 1760 c 128,-1,58
- 671 1760 671 1760 707 1729 c 128,-1,59
- 743 1698 743 1698 743 1639 c 0,60,61
- 743 1581 743 1581 707 1548 c 128,-1,62
- 671 1515 671 1515 602 1515 c 128,-1,63
- 533 1515 533 1515 497 1548 c 128,-1,64
- 461 1581 461 1581 461 1639 c 0,55,56
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 591 0 2
+Refer: 54 83 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E61
@@ -26776,56 +23084,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-530 1084 m 0,0,1
- 602 1084 602 1084 667.5 1072.5 c 128,-1,2
- 733 1061 733 1061 813 1032 c 1,3,-1
- 839 752 l 1,4,-1
- 725 752 l 1,5,-1
- 647 939 l 1,6,7
- 636 942 636 942 625 944 c 0,8,9
- 565 958 565 958 517 958 c 0,10,11
- 409 958 409 958 354 922.5 c 128,-1,12
- 299 887 299 887 299 820 c 0,13,14
- 299 755 299 755 334.5 721 c 128,-1,15
- 370 687 370 687 430.5 670 c 128,-1,16
- 491 653 491 653 568 637 c 0,17,18
- 626 626 626 626 682 608 c 128,-1,19
- 738 590 738 590 782.5 557 c 128,-1,20
- 827 524 827 524 854.5 467 c 128,-1,21
- 882 410 882 410 882 322 c 0,22,23
- 882 211 882 211 831 134.5 c 128,-1,24
- 780 58 780 58 681 19.5 c 128,-1,25
- 582 -19 582 -19 435 -19 c 0,26,27
- 359 -19 359 -19 276 -6.5 c 128,-1,28
- 193 6 193 6 135 30 c 1,29,-1
- 92 334 l 1,30,-1
- 208 334 l 1,31,-1
- 299 121 l 1,32,33
- 327 116 327 116 356 114 c 0,34,35
- 394 111 394 111 428 111 c 0,36,37
- 562 111 562 111 627.5 152.5 c 128,-1,38
- 693 194 693 194 693 279 c 0,39,40
- 693 337 693 337 665.5 370 c 128,-1,41
- 638 403 638 403 591.5 420 c 128,-1,42
- 545 437 545 437 488.5 447.5 c 128,-1,43
- 432 458 432 458 374 472 c 0,44,45
- 299 490 299 490 240 522.5 c 128,-1,46
- 181 555 181 555 148 615 c 128,-1,47
- 115 675 115 675 115 775 c 128,-1,48
- 115 875 115 875 165.5 944 c 128,-1,49
- 216 1013 216 1013 309 1048.5 c 128,-1,50
- 402 1084 402 1084 530 1084 c 0,0,1
-346 1271 m 0,51,52
- 346 1330 346 1330 382 1361 c 128,-1,53
- 418 1392 418 1392 487 1392 c 128,-1,54
- 556 1392 556 1392 592 1361 c 128,-1,55
- 628 1330 628 1330 628 1271 c 0,56,57
- 628 1213 628 1213 592 1180 c 128,-1,58
- 556 1147 556 1147 487 1147 c 128,-1,59
- 418 1147 418 1147 382 1180 c 128,-1,60
- 346 1213 346 1213 346 1271 c 0,51,52
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 485 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E62
@@ -26898,56 +23158,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-530 1084 m 0,0,1
- 602 1084 602 1084 667.5 1072.5 c 128,-1,2
- 733 1061 733 1061 813 1032 c 1,3,-1
- 839 752 l 1,4,-1
- 725 752 l 1,5,-1
- 647 939 l 1,6,7
- 636 942 636 942 625 944 c 0,8,9
- 565 958 565 958 517 958 c 0,10,11
- 409 958 409 958 354 922.5 c 128,-1,12
- 299 887 299 887 299 820 c 0,13,14
- 299 755 299 755 334.5 721 c 128,-1,15
- 370 687 370 687 430.5 670 c 128,-1,16
- 491 653 491 653 568 637 c 0,17,18
- 626 626 626 626 682 608 c 128,-1,19
- 738 590 738 590 782.5 557 c 128,-1,20
- 827 524 827 524 854.5 467 c 128,-1,21
- 882 410 882 410 882 322 c 0,22,23
- 882 211 882 211 831 134.5 c 128,-1,24
- 780 58 780 58 681 19.5 c 128,-1,25
- 582 -19 582 -19 435 -19 c 0,26,27
- 359 -19 359 -19 276 -6.5 c 128,-1,28
- 193 6 193 6 135 30 c 1,29,-1
- 92 334 l 1,30,-1
- 208 334 l 1,31,-1
- 299 121 l 1,32,33
- 327 116 327 116 356 114 c 0,34,35
- 394 111 394 111 428 111 c 0,36,37
- 562 111 562 111 627.5 152.5 c 128,-1,38
- 693 194 693 194 693 279 c 0,39,40
- 693 337 693 337 665.5 370 c 128,-1,41
- 638 403 638 403 591.5 420 c 128,-1,42
- 545 437 545 437 488.5 447.5 c 128,-1,43
- 432 458 432 458 374 472 c 0,44,45
- 299 490 299 490 240 522.5 c 128,-1,46
- 181 555 181 555 148 615 c 128,-1,47
- 115 675 115 675 115 775 c 128,-1,48
- 115 875 115 875 165.5 944 c 128,-1,49
- 216 1013 216 1013 309 1048.5 c 128,-1,50
- 402 1084 402 1084 530 1084 c 0,0,1
-346 -295 m 0,51,52
- 346 -237 346 -237 382 -206 c 128,-1,53
- 418 -175 418 -175 487 -175 c 128,-1,54
- 556 -175 556 -175 592 -206 c 128,-1,55
- 628 -237 628 -237 628 -295 c 0,56,57
- 628 -355 628 -355 592 -387 c 128,-1,58
- 556 -419 556 -419 487 -419 c 128,-1,59
- 418 -419 418 -419 382 -387 c 128,-1,60
- 346 -355 346 -355 346 -295 c 0,51,52
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 497 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E64
@@ -27026,62 +23238,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-530 1084 m 0,0,1
- 602 1084 602 1084 667.5 1072.5 c 128,-1,2
- 733 1061 733 1061 813 1032 c 1,3,-1
- 839 752 l 1,4,-1
- 725 752 l 1,5,-1
- 647 939 l 1,6,7
- 636 942 636 942 625 944 c 0,8,9
- 565 958 565 958 517 958 c 0,10,11
- 409 958 409 958 354 922.5 c 128,-1,12
- 299 887 299 887 299 820 c 0,13,14
- 299 755 299 755 334.5 721 c 128,-1,15
- 370 687 370 687 430.5 670 c 128,-1,16
- 491 653 491 653 568 637 c 0,17,18
- 626 626 626 626 682 608 c 128,-1,19
- 738 590 738 590 782.5 557 c 128,-1,20
- 827 524 827 524 854.5 467 c 128,-1,21
- 882 410 882 410 882 322 c 0,22,23
- 882 211 882 211 831 134.5 c 128,-1,24
- 780 58 780 58 681 19.5 c 128,-1,25
- 582 -19 582 -19 435 -19 c 0,26,27
- 359 -19 359 -19 276 -6.5 c 128,-1,28
- 193 6 193 6 135 30 c 1,29,-1
- 92 334 l 1,30,-1
- 208 334 l 1,31,-1
- 299 121 l 1,32,33
- 327 116 327 116 356 114 c 0,34,35
- 394 111 394 111 428 111 c 0,36,37
- 562 111 562 111 627.5 152.5 c 128,-1,38
- 693 194 693 194 693 279 c 0,39,40
- 693 337 693 337 665.5 370 c 128,-1,41
- 638 403 638 403 591.5 420 c 128,-1,42
- 545 437 545 437 488.5 447.5 c 128,-1,43
- 432 458 432 458 374 472 c 0,44,45
- 299 490 299 490 240 522.5 c 128,-1,46
- 181 555 181 555 148 615 c 128,-1,47
- 115 675 115 675 115 775 c 128,-1,48
- 115 875 115 875 165.5 944 c 128,-1,49
- 216 1013 216 1013 309 1048.5 c 128,-1,50
- 402 1084 402 1084 530 1084 c 0,0,1
-414 1194 m 1,51,-1
- 586 1548 l 1,52,-1
- 840 1548 l 1,53,-1
- 840 1504 l 1,54,-1
- 528 1194 l 1,55,-1
- 414 1194 l 1,51,-1
-346 1722 m 0,56,57
- 346 1781 346 1781 382 1812 c 128,-1,58
- 418 1843 418 1843 487 1843 c 128,-1,59
- 556 1843 556 1843 592 1812 c 128,-1,60
- 628 1781 628 1781 628 1722 c 0,61,62
- 628 1664 628 1664 592 1631 c 128,-1,63
- 556 1598 556 1598 487 1598 c 128,-1,64
- 418 1598 418 1598 382 1631 c 128,-1,65
- 346 1664 346 1664 346 1722 c 0,56,57
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 514 544 2
+Refer: 393 769 N 1.02997 0 0 1.07996 485 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E66
@@ -27162,64 +23321,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-530 1084 m 0,0,1
- 602 1084 602 1084 667.5 1072.5 c 128,-1,2
- 733 1061 733 1061 813 1032 c 1,3,-1
- 839 752 l 1,4,-1
- 725 752 l 1,5,-1
- 647 939 l 1,6,7
- 636 942 636 942 625 944 c 0,8,9
- 565 958 565 958 517 958 c 0,10,11
- 409 958 409 958 354 922.5 c 128,-1,12
- 299 887 299 887 299 820 c 0,13,14
- 299 755 299 755 334.5 721 c 128,-1,15
- 370 687 370 687 430.5 670 c 128,-1,16
- 491 653 491 653 568 637 c 0,17,18
- 626 626 626 626 682 608 c 128,-1,19
- 738 590 738 590 782.5 557 c 128,-1,20
- 827 524 827 524 854.5 467 c 128,-1,21
- 882 410 882 410 882 322 c 0,22,23
- 882 211 882 211 831 134.5 c 128,-1,24
- 780 58 780 58 681 19.5 c 128,-1,25
- 582 -19 582 -19 435 -19 c 0,26,27
- 359 -19 359 -19 276 -6.5 c 128,-1,28
- 193 6 193 6 135 30 c 1,29,-1
- 92 334 l 1,30,-1
- 208 334 l 1,31,-1
- 299 121 l 1,32,33
- 327 116 327 116 356 114 c 0,34,35
- 394 111 394 111 428 111 c 0,36,37
- 562 111 562 111 627.5 152.5 c 128,-1,38
- 693 194 693 194 693 279 c 0,39,40
- 693 337 693 337 665.5 370 c 128,-1,41
- 638 403 638 403 591.5 420 c 128,-1,42
- 545 437 545 437 488.5 447.5 c 128,-1,43
- 432 458 432 458 374 472 c 0,44,45
- 299 490 299 490 240 522.5 c 128,-1,46
- 181 555 181 555 148 615 c 128,-1,47
- 115 675 115 675 115 775 c 128,-1,48
- 115 875 115 875 165.5 944 c 128,-1,49
- 216 1013 216 1013 309 1048.5 c 128,-1,50
- 402 1084 402 1084 530 1084 c 0,0,1
-485 1348 m 1,51,-1
- 673 1548 l 1,52,-1
- 820 1548 l 1,53,-1
- 580 1194 l 1,54,-1
- 390 1194 l 1,55,-1
- 150 1548 l 1,56,-1
- 297 1548 l 1,57,-1
- 485 1348 l 1,51,-1
-346 1722 m 0,58,59
- 346 1781 346 1781 382 1812 c 128,-1,60
- 418 1843 418 1843 487 1843 c 128,-1,61
- 556 1843 556 1843 592 1812 c 128,-1,62
- 628 1781 628 1781 628 1722 c 0,63,64
- 628 1664 628 1664 592 1631 c 128,-1,65
- 556 1598 556 1598 487 1598 c 128,-1,66
- 418 1598 418 1598 382 1631 c 128,-1,67
- 346 1664 346 1664 346 1722 c 0,58,59
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 485 486 2
+Refer: 403 780 N 1.02997 0 0 1.07996 485 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E68
@@ -27301,65 +23405,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-530 1084 m 0,0,1
- 602 1084 602 1084 667.5 1072.5 c 128,-1,2
- 733 1061 733 1061 813 1032 c 1,3,-1
- 839 752 l 1,4,-1
- 725 752 l 1,5,-1
- 647 939 l 1,6,7
- 636 942 636 942 625 944 c 0,8,9
- 565 958 565 958 517 958 c 0,10,11
- 409 958 409 958 354 922.5 c 128,-1,12
- 299 887 299 887 299 820 c 0,13,14
- 299 755 299 755 334.5 721 c 128,-1,15
- 370 687 370 687 430.5 670 c 128,-1,16
- 491 653 491 653 568 637 c 0,17,18
- 626 626 626 626 682 608 c 128,-1,19
- 738 590 738 590 782.5 557 c 128,-1,20
- 827 524 827 524 854.5 467 c 128,-1,21
- 882 410 882 410 882 322 c 0,22,23
- 882 211 882 211 831 134.5 c 128,-1,24
- 780 58 780 58 681 19.5 c 128,-1,25
- 582 -19 582 -19 435 -19 c 0,26,27
- 359 -19 359 -19 276 -6.5 c 128,-1,28
- 193 6 193 6 135 30 c 1,29,-1
- 92 334 l 1,30,-1
- 208 334 l 1,31,-1
- 299 121 l 1,32,33
- 327 116 327 116 356 114 c 0,34,35
- 394 111 394 111 428 111 c 0,36,37
- 562 111 562 111 627.5 152.5 c 128,-1,38
- 693 194 693 194 693 279 c 0,39,40
- 693 337 693 337 665.5 370 c 128,-1,41
- 638 403 638 403 591.5 420 c 128,-1,42
- 545 437 545 437 488.5 447.5 c 128,-1,43
- 432 458 432 458 374 472 c 0,44,45
- 299 490 299 490 240 522.5 c 128,-1,46
- 181 555 181 555 148 615 c 128,-1,47
- 115 675 115 675 115 775 c 128,-1,48
- 115 875 115 875 165.5 944 c 128,-1,49
- 216 1013 216 1013 309 1048.5 c 128,-1,50
- 402 1084 402 1084 530 1084 c 0,0,1
-346 -295 m 0,51,52
- 346 -237 346 -237 382 -206 c 128,-1,53
- 418 -175 418 -175 487 -175 c 128,-1,54
- 556 -175 556 -175 592 -206 c 128,-1,55
- 628 -237 628 -237 628 -295 c 0,56,57
- 628 -355 628 -355 592 -387 c 128,-1,58
- 556 -419 556 -419 487 -419 c 128,-1,59
- 418 -419 418 -419 382 -387 c 128,-1,60
- 346 -355 346 -355 346 -295 c 0,51,52
-346 1271 m 0,61,62
- 346 1330 346 1330 382 1361 c 128,-1,63
- 418 1392 418 1392 487 1392 c 128,-1,64
- 556 1392 556 1392 592 1361 c 128,-1,65
- 628 1330 628 1330 628 1271 c 0,66,67
- 628 1213 628 1213 592 1180 c 128,-1,68
- 556 1147 556 1147 487 1147 c 128,-1,69
- 418 1147 418 1147 382 1180 c 128,-1,70
- 346 1213 346 1213 346 1271 c 0,61,62
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 485 0 2
+Refer: 408 803 N 1.02997 0 0 1.07996 497 0 2
+Refer: 86 115 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E6A
@@ -27369,38 +23417,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1152 1396 m 1,0,1
- 1176 1423 1176 1423 1226 1481 c 1,2,-1
- 1313 1481 l 1,3,-1
- 1377 951 l 1,4,-1
- 1255 949 l 1,5,-1
- 1146 1244 l 1,6,-1
- 826 1244 l 1,7,-1
- 826 139 l 1,8,-1
- 1013 92 l 1,9,-1
- 1013 0 l 1,10,-1
- 416 0 l 1,11,-1
- 416 92 l 1,12,-1
- 603 139 l 1,13,-1
- 603 1244 l 1,14,-1
- 284 1244 l 1,15,-1
- 175 949 l 1,16,-1
- 52 951 l 1,17,-1
- 116 1481 l 1,18,-1
- 203 1481 l 1,19,-1
- 277 1396 l 1,20,-1
- 1152 1396 l 1,0,1
-573 1655 m 0,21,22
- 573 1714 573 1714 609 1745 c 128,-1,23
- 645 1776 645 1776 714 1776 c 128,-1,24
- 783 1776 783 1776 819 1745 c 128,-1,25
- 855 1714 855 1714 855 1655 c 0,26,27
- 855 1597 855 1597 819 1564 c 128,-1,28
- 783 1531 783 1531 714 1531 c 128,-1,29
- 645 1531 645 1531 609 1564 c 128,-1,30
- 573 1597 573 1597 573 1655 c 0,21,22
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 680 0 2
+Refer: 55 84 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E6B
@@ -27497,43 +23515,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-412 325 m 2,0,1
- 412 235 412 235 456.5 198.5 c 128,-1,2
- 501 162 501 162 596 162 c 0,3,4
- 637 162 637 162 686 170.5 c 128,-1,5
- 735 179 735 179 789 195 c 1,6,-1
- 789 107 l 1,7,8
- 712 58 712 58 655 29.5 c 128,-1,9
- 598 1 598 1 554 -10.5 c 128,-1,10
- 510 -22 510 -22 468 -22 c 0,11,12
- 394 -22 394 -22 334 6.5 c 128,-1,13
- 274 35 274 35 240 92 c 128,-1,14
- 206 149 206 149 206 234 c 2,15,-1
- 206 887 l 1,16,-1
- 37 961 l 1,17,-1
- 37 1024 l 1,18,19
- 84 1043 84 1043 121.5 1061.5 c 128,-1,20
- 159 1080 159 1080 189.5 1101 c 128,-1,21
- 220 1122 220 1122 245.5 1146.5 c 128,-1,22
- 271 1171 271 1171 294.5 1201.5 c 128,-1,23
- 318 1232 318 1232 341 1269 c 1,24,-1
- 412 1269 l 1,25,-1
- 412 1062 l 1,26,-1
- 768 1062 l 1,27,-1
- 763 902 l 1,28,-1
- 412 902 l 1,29,-1
- 412 325 l 2,0,1
-272 -295 m 0,30,31
- 272 -237 272 -237 308 -206 c 128,-1,32
- 344 -175 344 -175 413 -175 c 128,-1,33
- 482 -175 482 -175 518 -206 c 128,-1,34
- 554 -237 554 -237 554 -295 c 0,35,36
- 554 -355 554 -355 518 -387 c 128,-1,37
- 482 -419 482 -419 413 -419 c 128,-1,38
- 344 -419 344 -419 308 -387 c 128,-1,39
- 272 -355 272 -355 272 -295 c 0,30,31
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 506 0 2
+Refer: 87 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E6E
@@ -27580,39 +23563,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-412 325 m 2,0,1
- 412 235 412 235 456.5 198.5 c 128,-1,2
- 501 162 501 162 596 162 c 0,3,4
- 637 162 637 162 686 170.5 c 128,-1,5
- 735 179 735 179 789 195 c 1,6,-1
- 789 107 l 1,7,8
- 712 58 712 58 655 29.5 c 128,-1,9
- 598 1 598 1 554 -10.5 c 128,-1,10
- 510 -22 510 -22 468 -22 c 0,11,12
- 394 -22 394 -22 334 6.5 c 128,-1,13
- 274 35 274 35 240 92 c 128,-1,14
- 206 149 206 149 206 234 c 2,15,-1
- 206 887 l 1,16,-1
- 37 961 l 1,17,-1
- 37 1024 l 1,18,19
- 84 1043 84 1043 121.5 1061.5 c 128,-1,20
- 159 1080 159 1080 189.5 1101 c 128,-1,21
- 220 1122 220 1122 245.5 1146.5 c 128,-1,22
- 271 1171 271 1171 294.5 1201.5 c 128,-1,23
- 318 1232 318 1232 341 1269 c 1,24,-1
- 412 1269 l 1,25,-1
- 412 1062 l 1,26,-1
- 768 1062 l 1,27,-1
- 763 902 l 1,28,-1
- 412 902 l 1,29,-1
- 412 325 l 2,0,1
-129 -296 m 1,30,-1
- 129 -165 l 1,31,-1
- 697 -165 l 1,32,-1
- 697 -296 l 1,33,-1
- 129 -296 l 1,30,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 506 0 2
+Refer: 87 116 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E72
@@ -27678,58 +23630,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-822 -344 m 0,38,39
- 762 -344 762 -344 731 -312.5 c 128,-1,40
- 700 -281 700 -281 700 -226 c 0,41,42
- 700 -169 700 -169 731 -139.5 c 128,-1,43
- 762 -110 762 -110 822 -110 c 0,44,45
- 881 -110 881 -110 912.5 -139.5 c 128,-1,46
- 944 -169 944 -169 944 -226 c 0,47,48
- 944 -281 944 -281 912.5 -312.5 c 128,-1,49
- 881 -344 881 -344 822 -344 c 0,38,39
-410 -344 m 0,50,51
- 351 -344 351 -344 319.5 -312.5 c 128,-1,52
- 288 -281 288 -281 288 -226 c 0,53,54
- 288 -169 288 -169 319.5 -139.5 c 128,-1,55
- 351 -110 351 -110 410 -110 c 0,56,57
- 471 -110 471 -110 501.5 -139.5 c 128,-1,58
- 532 -169 532 -169 532 -226 c 0,59,60
- 532 -281 532 -281 501.5 -312.5 c 128,-1,61
- 471 -344 471 -344 410 -344 c 0,50,51
-EndSplineSet
+Refer: 409 804 N 1.02997 0 0 1.07996 590 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E78
@@ -27806,69 +23708,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-895 1535 m 1,38,39
- 880 1401 880 1401 857 1328.5 c 128,-1,40
- 834 1256 834 1256 798 1228.5 c 128,-1,41
- 762 1201 762 1201 708 1201 c 0,42,43
- 664 1201 664 1201 629 1227 c 128,-1,44
- 594 1253 594 1253 564.5 1286.5 c 128,-1,45
- 535 1320 535 1320 508.5 1345 c 128,-1,46
- 482 1370 482 1370 456 1370 c 0,47,48
- 439 1370 439 1370 425 1358.5 c 128,-1,49
- 411 1347 411 1347 400.5 1312 c 128,-1,50
- 390 1277 390 1277 379 1207 c 1,51,-1
- 265 1207 l 1,52,53
- 280 1341 280 1341 302.5 1413.5 c 128,-1,54
- 325 1486 325 1486 362 1513.5 c 128,-1,55
- 399 1541 399 1541 453 1541 c 0,56,57
- 496 1541 496 1541 530.5 1515 c 128,-1,58
- 565 1489 565 1489 595 1455.5 c 128,-1,59
- 625 1422 625 1422 651.5 1397 c 128,-1,60
- 678 1372 678 1372 705 1372 c 0,61,62
- 723 1372 723 1372 736.5 1383.5 c 128,-1,63
- 750 1395 750 1395 760 1431 c 128,-1,64
- 770 1467 770 1467 781 1535 c 1,65,-1
- 895 1535 l 1,38,39
-409 1591 m 1,66,-1
- 576 1918 l 1,67,-1
- 823 1918 l 1,68,-1
- 823 1878 l 1,69,-1
- 520 1591 l 1,70,-1
- 409 1591 l 1,66,-1
-EndSplineSet
+Refer: 393 769 N 1.02997 0 0 1.07996 556 401 2
+Refer: 395 771 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E7A
@@ -27939,63 +23781,9 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-405 367 m 2,0,1
- 405 302 405 302 424.5 262 c 128,-1,2
- 444 222 444 222 487 204 c 128,-1,3
- 530 186 530 186 602 186 c 0,4,5
- 664 186 664 186 728 202 c 0,6,7
- 782 217 782 217 826 237 c 1,8,-1
- 826 900 l 1,9,-1
- 677 971 l 1,10,-1
- 677 1062 l 1,11,-1
- 1050 1074 l 1,12,-1
- 1035 915 l 1,13,-1
- 1035 239 l 1,14,15
- 1044 233 1044 233 1064 220 c 128,-1,16
- 1084 207 1084 207 1109.5 192.5 c 128,-1,17
- 1135 178 1135 178 1159 165 c 128,-1,18
- 1183 152 1183 152 1199 145 c 1,19,-1
- 1199 98 l 1,20,-1
- 923 -22 l 1,21,-1
- 888 -22 l 1,22,-1
- 831 162 l 1,23,24
- 772 110 772 110 730 76 c 0,25,26
- 678 33 678 33 639.5 11.5 c 128,-1,27
- 601 -10 601 -10 566.5 -16.5 c 128,-1,28
- 532 -23 532 -23 488 -23 c 0,29,30
- 338 -23 338 -23 268.5 61.5 c 128,-1,31
- 199 146 199 146 199 310 c 2,32,-1
- 199 895 l 1,33,-1
- 32 970 l 1,34,-1
- 32 1059 l 1,35,-1
- 424 1074 l 1,36,-1
- 405 916 l 1,37,-1
- 405 367 l 2,0,1
-291 1301 m 1,38,-1
- 291 1442 l 1,39,-1
- 877 1442 l 1,40,-1
- 877 1301 l 1,41,-1
- 291 1301 l 1,38,-1
-822 1492 m 0,42,43
- 762 1492 762 1492 731 1523 c 128,-1,44
- 700 1554 700 1554 700 1610 c 128,-1,45
- 700 1666 700 1666 731 1695.5 c 128,-1,46
- 762 1725 762 1725 822 1725 c 0,47,48
- 881 1725 881 1725 912.5 1695.5 c 128,-1,49
- 944 1666 944 1666 944 1610 c 128,-1,50
- 944 1554 944 1554 912.5 1523 c 128,-1,51
- 881 1492 881 1492 822 1492 c 0,42,43
-411 1492 m 128,-1,53
- 351 1492 351 1492 319.5 1523 c 128,-1,54
- 288 1554 288 1554 288 1610 c 128,-1,55
- 288 1666 288 1666 319.5 1695.5 c 128,-1,56
- 351 1725 351 1725 411 1725 c 128,-1,57
- 471 1725 471 1725 501.5 1695.5 c 128,-1,58
- 532 1666 532 1666 532 1610 c 128,-1,59
- 532 1554 532 1554 501.5 1523 c 128,-1,52
- 471 1492 471 1492 411 1492 c 128,-1,53
-EndSplineSet
+Refer: 399 776 N 1.02997 0 0 1.07996 556 486 2
+Refer: 396 772 N 1.02997 0 0 1.07996 556 0 2
+Refer: 88 117 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E7C
@@ -28055,47 +23843,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1084 935 m 1,0,-1
- 724 -19 l 1,1,-1
- 544 -19 l 1,2,-1
- 153 919 l 1,3,-1
- 11 974 l 1,4,-1
- 11 1062 l 1,5,-1
- 528 1062 l 1,6,-1
- 528 973 l 1,7,-1
- 384 928 l 1,8,-1
- 681 197 l 1,9,-1
- 939 931 l 1,10,-1
- 801 973 l 1,11,-1
- 801 1062 l 1,12,-1
- 1199 1062 l 1,13,-1
- 1199 973 l 1,14,-1
- 1084 935 l 1,0,-1
-911 1421 m 1,15,16
- 896 1297 896 1297 874 1230 c 128,-1,17
- 852 1163 852 1163 817 1137.5 c 128,-1,18
- 782 1112 782 1112 729 1112 c 0,19,20
- 687 1112 687 1112 653 1136 c 128,-1,21
- 619 1160 619 1160 590 1191 c 128,-1,22
- 561 1222 561 1222 535.5 1245.5 c 128,-1,23
- 510 1269 510 1269 485 1269 c 0,24,25
- 468 1269 468 1269 454.5 1258 c 128,-1,26
- 441 1247 441 1247 431 1214.5 c 128,-1,27
- 421 1182 421 1182 410 1118 c 1,28,-1
- 299 1118 l 1,29,30
- 314 1242 314 1242 336 1309 c 128,-1,31
- 358 1376 358 1376 393.5 1401.5 c 128,-1,32
- 429 1427 429 1427 482 1427 c 0,33,34
- 524 1427 524 1427 557.5 1403 c 128,-1,35
- 591 1379 591 1379 620 1348 c 128,-1,36
- 649 1317 649 1317 674.5 1293.5 c 128,-1,37
- 700 1270 700 1270 726 1270 c 0,38,39
- 744 1270 744 1270 757 1281 c 128,-1,40
- 770 1292 770 1292 780 1325 c 128,-1,41
- 790 1358 790 1358 800 1421 c 1,42,-1
- 911 1421 l 1,15,16
-EndSplineSet
+Refer: 395 771 N 1.02997 0 0 1.07996 645 0 2
+Refer: 89 118 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E7E
@@ -28141,33 +23890,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1084 935 m 1,0,-1
- 724 -19 l 1,1,-1
- 544 -19 l 1,2,-1
- 153 919 l 1,3,-1
- 11 974 l 1,4,-1
- 11 1062 l 1,5,-1
- 528 1062 l 1,6,-1
- 528 973 l 1,7,-1
- 384 928 l 1,8,-1
- 681 197 l 1,9,-1
- 939 931 l 1,10,-1
- 801 973 l 1,11,-1
- 801 1062 l 1,12,-1
- 1199 1062 l 1,13,-1
- 1199 973 l 1,14,-1
- 1084 935 l 1,0,-1
-464 -295 m 0,15,16
- 464 -237 464 -237 500 -206 c 128,-1,17
- 536 -175 536 -175 605 -175 c 128,-1,18
- 674 -175 674 -175 710 -206 c 128,-1,19
- 746 -237 746 -237 746 -295 c 0,20,21
- 746 -355 746 -355 710 -387 c 128,-1,22
- 674 -419 674 -419 605 -419 c 128,-1,23
- 536 -419 536 -419 500 -387 c 128,-1,24
- 464 -355 464 -355 464 -295 c 0,15,16
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 631 0 2
+Refer: 89 118 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E86
@@ -28177,39 +23901,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1555 238 m 1,0,-1
- 1749 1257 l 1,1,-1
- 1581 1304 l 1,2,-1
- 1581 1396 l 1,3,-1
- 2059 1396 l 1,4,-1
- 2059 1304 l 1,5,-1
- 1905 1258 l 1,6,-1
- 1639 -4 l 1,7,-1
- 1398 -4 l 1,8,-1
- 1047 1128 l 1,9,-1
- 693 -4 l 1,10,-1
- 441 -4 l 1,11,-1
- 180 1256 l 1,12,-1
- 12 1304 l 1,13,-1
- 12 1396 l 1,14,-1
- 589 1396 l 1,15,-1
- 589 1304 l 1,16,-1
- 420 1258 l 1,17,-1
- 624 224 l 1,18,-1
- 974 1400 l 1,19,-1
- 1196 1400 l 1,20,-1
- 1555 238 l 1,0,-1
-895 1574 m 0,21,22
- 895 1633 895 1633 931 1664 c 128,-1,23
- 967 1695 967 1695 1036 1695 c 128,-1,24
- 1105 1695 1105 1695 1141 1664 c 128,-1,25
- 1177 1633 1177 1633 1177 1574 c 0,26,27
- 1177 1516 1177 1516 1141 1483 c 128,-1,28
- 1105 1450 1105 1450 1036 1450 c 128,-1,29
- 967 1450 967 1450 931 1483 c 128,-1,30
- 895 1516 895 1516 895 1574 c 0,21,22
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 1069 0 2
+Refer: 58 87 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E87
@@ -28219,39 +23912,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1383 931 m 1,0,1
- 1382 931 1382 931 1244 973 c 1,2,-1
- 1244 1062 l 1,3,-1
- 1632 1062 l 1,4,-1
- 1632 973 l 1,5,-1
- 1521 935 l 1,6,-1
- 1285 -19 l 1,7,-1
- 1106 -19 l 1,8,-1
- 848 806 l 1,9,-1
- 577 -19 l 1,10,-1
- 396 -19 l 1,11,-1
- 162 919 l 1,12,-1
- 22 974 l 1,13,-1
- 22 1062 l 1,14,-1
- 515 1062 l 1,15,-1
- 515 973 l 1,16,-1
- 374 928 l 1,17,-1
- 540 247 l 1,18,-1
- 806 1081 l 1,19,-1
- 975 1081 l 1,20,-1
- 1231 260 l 1,21,-1
- 1383 931 l 1,0,1
-686 1271 m 0,22,23
- 686 1330 686 1330 722 1361 c 128,-1,24
- 758 1392 758 1392 827 1392 c 128,-1,25
- 896 1392 896 1392 932 1361 c 128,-1,26
- 968 1330 968 1330 968 1271 c 0,27,28
- 968 1213 968 1213 932 1180 c 128,-1,29
- 896 1147 896 1147 827 1147 c 128,-1,30
- 758 1147 758 1147 722 1180 c 128,-1,31
- 686 1213 686 1213 686 1271 c 0,22,23
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 880 0 2
+Refer: 90 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E88
@@ -28303,39 +23965,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1383 931 m 1,0,1
- 1382 931 1382 931 1244 973 c 1,2,-1
- 1244 1062 l 1,3,-1
- 1632 1062 l 1,4,-1
- 1632 973 l 1,5,-1
- 1521 935 l 1,6,-1
- 1285 -19 l 1,7,-1
- 1106 -19 l 1,8,-1
- 848 806 l 1,9,-1
- 577 -19 l 1,10,-1
- 396 -19 l 1,11,-1
- 162 919 l 1,12,-1
- 22 974 l 1,13,-1
- 22 1062 l 1,14,-1
- 515 1062 l 1,15,-1
- 515 973 l 1,16,-1
- 374 928 l 1,17,-1
- 540 247 l 1,18,-1
- 806 1081 l 1,19,-1
- 975 1081 l 1,20,-1
- 1231 260 l 1,21,-1
- 1383 931 l 1,0,1
-686 -295 m 0,22,23
- 686 -237 686 -237 722 -206 c 128,-1,24
- 758 -175 758 -175 827 -175 c 128,-1,25
- 896 -175 896 -175 932 -206 c 128,-1,26
- 968 -237 968 -237 968 -295 c 0,27,28
- 968 -355 968 -355 932 -387 c 128,-1,29
- 896 -419 896 -419 827 -419 c 128,-1,30
- 758 -419 758 -419 722 -387 c 128,-1,31
- 686 -355 686 -355 686 -295 c 0,22,23
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 871 0 2
+Refer: 90 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8A
@@ -28394,46 +24025,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1028 138 m 1,0,-1
- 1150 87 l 1,1,-1
- 1150 0 l 1,2,-1
- 662 0 l 1,3,-1
- 662 87 l 1,4,-1
- 777 129 l 1,5,-1
- 550 433 l 1,6,-1
- 306 124 l 1,7,-1
- 428 87 l 1,8,-1
- 428 0 l 1,9,-1
- 41 0 l 1,10,-1
- 41 87 l 1,11,-1
- 150 126 l 1,12,-1
- 478 529 l 1,13,-1
- 175 923 l 1,14,-1
- 51 974 l 1,15,-1
- 51 1062 l 1,16,-1
- 540 1062 l 1,17,-1
- 540 974 l 1,18,-1
- 425 933 l 1,19,-1
- 628 660 l 1,20,-1
- 847 940 l 1,21,-1
- 725 974 l 1,22,-1
- 725 1062 l 1,23,-1
- 1110 1062 l 1,24,-1
- 1110 974 l 1,25,-1
- 1003 936 l 1,26,-1
- 700 566 l 1,27,-1
- 1028 138 l 1,0,-1
-455 1271 m 0,28,29
- 455 1330 455 1330 491 1361 c 128,-1,30
- 527 1392 527 1392 596 1392 c 128,-1,31
- 665 1392 665 1392 701 1361 c 128,-1,32
- 737 1330 737 1330 737 1271 c 0,33,34
- 737 1213 737 1213 701 1180 c 128,-1,35
- 665 1147 665 1147 596 1147 c 128,-1,36
- 527 1147 527 1147 491 1180 c 128,-1,37
- 455 1213 455 1213 455 1271 c 0,28,29
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 598 0 2
+Refer: 91 120 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8C
@@ -28501,55 +24094,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1028 138 m 1,0,-1
- 1150 87 l 1,1,-1
- 1150 0 l 1,2,-1
- 662 0 l 1,3,-1
- 662 87 l 1,4,-1
- 777 129 l 1,5,-1
- 550 433 l 1,6,-1
- 306 124 l 1,7,-1
- 428 87 l 1,8,-1
- 428 0 l 1,9,-1
- 41 0 l 1,10,-1
- 41 87 l 1,11,-1
- 150 126 l 1,12,-1
- 478 529 l 1,13,-1
- 175 923 l 1,14,-1
- 51 974 l 1,15,-1
- 51 1062 l 1,16,-1
- 540 1062 l 1,17,-1
- 540 974 l 1,18,-1
- 425 933 l 1,19,-1
- 628 660 l 1,20,-1
- 847 940 l 1,21,-1
- 725 974 l 1,22,-1
- 725 1062 l 1,23,-1
- 1110 1062 l 1,24,-1
- 1110 974 l 1,25,-1
- 1003 936 l 1,26,-1
- 700 566 l 1,27,-1
- 1028 138 l 1,0,-1
-802 1153 m 0,28,29
- 742 1153 742 1153 711 1184 c 128,-1,30
- 680 1215 680 1215 680 1271 c 128,-1,31
- 680 1327 680 1327 711 1356.5 c 128,-1,32
- 742 1386 742 1386 802 1386 c 0,33,34
- 861 1386 861 1386 892.5 1356.5 c 128,-1,35
- 924 1327 924 1327 924 1271 c 128,-1,36
- 924 1215 924 1215 892.5 1184 c 128,-1,37
- 861 1153 861 1153 802 1153 c 0,28,29
-391 1153 m 128,-1,39
- 331 1153 331 1153 299.5 1184 c 128,-1,40
- 268 1215 268 1215 268 1271 c 128,-1,41
- 268 1327 268 1327 299.5 1356.5 c 128,-1,42
- 331 1386 331 1386 391 1386 c 128,-1,43
- 451 1386 451 1386 481.5 1356.5 c 128,-1,44
- 512 1327 512 1327 512 1271 c 128,-1,45
- 512 1215 512 1215 481.5 1184 c 128,-1,38
- 451 1153 451 1153 391 1153 c 128,-1,39
-EndSplineSet
+Refer: 399 776 N 1.02997 0 0 1.07996 598 0 2
+Refer: 91 120 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8E
@@ -28559,39 +24105,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-156 1257 m 1,0,-1
- 4 1304 l 1,1,-1
- 4 1396 l 1,2,-1
- 602 1396 l 1,3,-1
- 602 1304 l 1,4,-1
- 434 1257 l 1,5,-1
- 796 736 l 1,6,-1
- 1119 1257 l 1,7,-1
- 946 1304 l 1,8,-1
- 946 1396 l 1,9,-1
- 1428 1396 l 1,10,-1
- 1428 1304 l 1,11,-1
- 1287 1257 l 1,12,-1
- 858 591 l 1,13,-1
- 858 139 l 1,14,-1
- 1033 92 l 1,15,-1
- 1033 0 l 1,16,-1
- 462 0 l 1,17,-1
- 462 92 l 1,18,-1
- 636 139 l 1,19,-1
- 636 583 l 1,20,-1
- 156 1257 l 1,0,-1
-575 1570 m 0,21,22
- 575 1629 575 1629 611 1660 c 128,-1,23
- 647 1691 647 1691 716 1691 c 128,-1,24
- 785 1691 785 1691 821 1660 c 128,-1,25
- 857 1629 857 1629 857 1570 c 0,26,27
- 857 1512 857 1512 821 1479 c 128,-1,28
- 785 1446 785 1446 716 1446 c 128,-1,29
- 647 1446 647 1446 611 1479 c 128,-1,30
- 575 1512 575 1512 575 1570 c 0,21,22
-EndSplineSet
+Refer: 584 -1 N 1 0 0 1 754 0 2
+Refer: 60 89 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E8F
@@ -28601,47 +24116,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-286 -519 m 0,0,1
- 202 -519 202 -519 157.5 -478.5 c 128,-1,2
- 113 -438 113 -438 113 -365 c 0,3,4
- 113 -332 113 -332 124 -307 c 128,-1,5
- 135 -282 135 -282 150 -267.5 c 128,-1,6
- 165 -253 165 -253 178 -253 c 0,7,8
- 193 -253 193 -253 223.5 -260 c 128,-1,9
- 254 -267 254 -267 288.5 -274.5 c 128,-1,10
- 323 -282 323 -282 351 -282 c 0,11,12
- 393 -282 393 -282 425.5 -261 c 128,-1,13
- 458 -240 458 -240 488.5 -193 c 128,-1,14
- 519 -146 519 -146 550 -69 c 2,15,-1
- 576 -4 l 1,16,-1
- 163 919 l 1,17,-1
- 22 974 l 1,18,-1
- 22 1062 l 1,19,-1
- 538 1062 l 1,20,-1
- 538 973 l 1,21,-1
- 393 928 l 1,22,-1
- 681 272 l 1,23,-1
- 912 931 l 1,24,-1
- 773 973 l 1,25,-1
- 773 1062 l 1,26,-1
- 1175 1062 l 1,27,-1
- 1175 973 l 1,28,-1
- 1059 935 l 1,29,-1
- 626 -199 l 2,30,31
- 582 -315 582 -315 534 -385.5 c 128,-1,32
- 486 -456 486 -456 426 -487.5 c 128,-1,33
- 366 -519 366 -519 286 -519 c 0,0,1
-457 1271 m 0,34,35
- 457 1330 457 1330 493 1361 c 128,-1,36
- 529 1392 529 1392 598 1392 c 128,-1,37
- 667 1392 667 1392 703 1361 c 128,-1,38
- 739 1330 739 1330 739 1271 c 0,39,40
- 739 1213 739 1213 703 1180 c 128,-1,41
- 667 1147 667 1147 598 1147 c 128,-1,42
- 529 1147 529 1147 493 1180 c 128,-1,43
- 457 1213 457 1213 457 1271 c 0,34,35
-EndSplineSet
+Refer: 398 775 N 1.02997 0 0 1.07996 633 0 2
+Refer: 92 121 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E90
@@ -28651,35 +24127,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1169 1396 m 1,0,-1
- 1169 1277 l 1,1,-1
- 387 152 l 1,2,-1
- 996 152 l 1,3,-1
- 1120 426 l 1,4,-1
- 1228 424 l 1,5,-1
- 1157 -69 l 1,6,-1
- 1060 -69 l 1,7,-1
- 999 0 l 1,8,-1
- 113 0 l 1,9,-1
- 113 118 l 1,10,-1
- 895 1244 l 1,11,-1
- 311 1244 l 1,12,-1
- 223 979 l 1,13,-1
- 111 982 l 1,14,-1
- 129 1465 l 1,15,-1
- 216 1465 l 1,16,-1
- 303 1396 l 1,17,-1
- 1169 1396 l 1,0,-1
-345 1515 m 1,18,-1
- 578 1842 l 1,19,-1
- 762 1842 l 1,20,-1
- 995 1515 l 1,21,-1
- 853 1515 l 1,22,-1
- 670 1700 l 1,23,-1
- 487 1515 l 1,24,-1
- 345 1515 l 1,18,-1
-EndSplineSet
+Refer: 580 -1 N 1 0 0 1 674 0 2
+Refer: 61 90 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E91
@@ -28689,33 +24138,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-88 0 m 1,0,-1
- 88 75 l 1,1,-1
- 640 921 l 1,2,-1
- 274 920 l 1,3,-1
- 179 717 l 1,4,-1
- 88 717 l 1,5,-1
- 123 1084 l 1,6,-1
- 202 1084 l 1,7,-1
- 252 1062 l 1,8,-1
- 918 1062 l 1,9,-1
- 918 988 l 1,10,-1
- 361 140 l 1,11,-1
- 733 141 l 1,12,-1
- 863 377 l 1,13,-1
- 955 377 l 1,14,-1
- 876 0 l 1,15,-1
- 88 0 l 1,0,-1
-197 1106 m 1,16,-1
- 430 1433 l 1,17,-1
- 614 1433 l 1,18,-1
- 847 1106 l 1,19,-1
- 705 1106 l 1,20,-1
- 522 1291 l 1,21,-1
- 339 1106 l 1,22,-1
- 197 1106 l 1,16,-1
-EndSplineSet
+Refer: 394 770 N 1.02997 0 0 1.07996 526 0 2
+Refer: 93 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E92
@@ -28764,34 +24188,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-88 0 m 1,0,-1
- 88 75 l 1,1,-1
- 640 921 l 1,2,-1
- 274 920 l 1,3,-1
- 179 717 l 1,4,-1
- 88 717 l 1,5,-1
- 123 1084 l 1,6,-1
- 202 1084 l 1,7,-1
- 252 1062 l 1,8,-1
- 918 1062 l 1,9,-1
- 918 988 l 1,10,-1
- 361 140 l 1,11,-1
- 733 141 l 1,12,-1
- 863 377 l 1,13,-1
- 955 377 l 1,14,-1
- 876 0 l 1,15,-1
- 88 0 l 1,0,-1
-381 -295 m 0,16,17
- 381 -237 381 -237 417 -206 c 128,-1,18
- 453 -175 453 -175 522 -175 c 128,-1,19
- 591 -175 591 -175 627 -206 c 128,-1,20
- 663 -237 663 -237 663 -295 c 0,21,22
- 663 -355 663 -355 627 -387 c 128,-1,23
- 591 -419 591 -419 522 -419 c 128,-1,24
- 453 -419 453 -419 417 -387 c 128,-1,25
- 381 -355 381 -355 381 -295 c 0,16,17
-EndSplineSet
+Refer: 408 803 N 1.02997 0 0 1.07996 513 0 2
+Refer: 93 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E94
@@ -28836,30 +24234,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-88 0 m 1,0,-1
- 88 75 l 1,1,-1
- 640 921 l 1,2,-1
- 274 920 l 1,3,-1
- 179 717 l 1,4,-1
- 88 717 l 1,5,-1
- 123 1084 l 1,6,-1
- 202 1084 l 1,7,-1
- 252 1062 l 1,8,-1
- 918 1062 l 1,9,-1
- 918 988 l 1,10,-1
- 361 140 l 1,11,-1
- 733 141 l 1,12,-1
- 863 377 l 1,13,-1
- 955 377 l 1,14,-1
- 876 0 l 1,15,-1
- 88 0 l 1,0,-1
-238 -296 m 1,16,-1
- 238 -165 l 1,17,-1
- 806 -165 l 1,18,-1
- 806 -296 l 1,19,-1
- 238 -296 l 1,16,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 513 0 2
+Refer: 93 122 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E96
@@ -28869,47 +24245,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-560 0 m 1,0,-1
- 54 0 l 1,1,-1
- 54 90 l 1,2,-1
- 209 135 l 1,3,-1
- 209 1335 l 1,4,5
- 197 1344 197 1344 165 1359.5 c 128,-1,6
- 133 1375 133 1375 92.5 1393.5 c 128,-1,7
- 52 1412 52 1412 13 1429 c 1,8,-1
- 13 1503 l 1,9,-1
- 391 1587 l 1,10,-1
- 433 1587 l 1,11,-1
- 416 1366 l 1,12,-1
- 416 887 l 1,13,14
- 480 943 480 943 525 980 c 0,15,16
- 580 1025 580 1025 620 1047 c 128,-1,17
- 660 1069 660 1069 697.5 1076.5 c 128,-1,18
- 735 1084 735 1084 782 1084 c 0,19,20
- 939 1084 939 1084 1012 996 c 128,-1,21
- 1085 908 1085 908 1085 733 c 2,22,-1
- 1085 135 l 1,23,-1
- 1242 90 l 1,24,-1
- 1242 0 l 1,25,26
- 1241 0 1241 0 733 0 c 1,27,-1
- 733 90 l 1,28,-1
- 879 133 l 1,29,-1
- 879 679 l 2,30,31
- 879 747 879 747 857.5 790.5 c 128,-1,32
- 836 834 836 834 789 855 c 128,-1,33
- 742 876 742 876 665 876 c 0,34,35
- 596 876 596 876 526 858 c 0,36,37
- 464 842 464 842 416 818 c 1,38,-1
- 416 134 l 1,39,-1
- 560 90 l 1,40,-1
- 560 0 l 1,0,-1
-344 -296 m 1,41,-1
- 344 -165 l 1,42,-1
- 912 -165 l 1,43,-1
- 912 -296 l 1,44,-1
- 344 -296 l 1,41,-1
-EndSplineSet
+Refer: 414 817 N 1.02997 0 0 1.07996 644 0 2
+Refer: 75 104 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E97
@@ -28974,48 +24311,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-1383 931 m 1,0,1
- 1382 931 1382 931 1244 973 c 1,2,-1
- 1244 1062 l 1,3,-1
- 1632 1062 l 1,4,-1
- 1632 973 l 1,5,-1
- 1521 935 l 1,6,-1
- 1285 -19 l 1,7,-1
- 1106 -19 l 1,8,-1
- 848 806 l 1,9,-1
- 577 -19 l 1,10,-1
- 396 -19 l 1,11,-1
- 162 919 l 1,12,-1
- 22 974 l 1,13,-1
- 22 1062 l 1,14,-1
- 515 1062 l 1,15,-1
- 515 973 l 1,16,-1
- 374 928 l 1,17,-1
- 540 247 l 1,18,-1
- 806 1081 l 1,19,-1
- 975 1081 l 1,20,-1
- 1231 260 l 1,21,-1
- 1383 931 l 1,0,1
-826 1156 m 0,22,23
- 877 1156 877 1156 906 1187.5 c 128,-1,24
- 935 1219 935 1219 935 1272 c 0,25,26
- 935 1327 935 1327 906 1358.5 c 128,-1,27
- 877 1390 877 1390 826 1390 c 0,28,29
- 776 1390 776 1390 747 1358.5 c 128,-1,30
- 718 1327 718 1327 718 1272 c 0,31,32
- 718 1219 718 1219 747 1187.5 c 128,-1,33
- 776 1156 776 1156 826 1156 c 0,22,23
-826 1454 m 0,34,35
- 907 1454 907 1454 955 1404.5 c 128,-1,36
- 1003 1355 1003 1355 1003 1272 c 128,-1,37
- 1003 1189 1003 1189 955 1139.5 c 128,-1,38
- 907 1090 907 1090 826 1090 c 0,39,40
- 746 1090 746 1090 698 1139.5 c 128,-1,41
- 650 1189 650 1189 650 1272 c 128,-1,42
- 650 1355 650 1355 698 1404.5 c 128,-1,43
- 746 1454 746 1454 826 1454 c 0,34,35
-EndSplineSet
+Refer: 401 778 N 1.02997 0 0 1.07996 880 0 2
+Refer: 90 119 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni1E99
@@ -29025,56 +24322,8 @@ GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
-SplineSet
-286 -519 m 0,0,1
- 202 -519 202 -519 157.5 -478.5 c 128,-1,2
- 113 -438 113 -438 113 -365 c 0,3,4
- 113 -332 113 -332 124 -307 c 128,-1,5
- 135 -282 135 -282 150 -267.5 c 128,-1,6
- 165 -253 165 -253 178 -253 c 0,7,8
- 193 -253 193 -253 223.5 -260 c 128,-1,9
- 254 -267 254 -267 288.5 -274.5 c 128,-1,10
- 323 -282 323 -282 351 -282 c 0,11,12
- 393 -282 393 -282 425.5 -261 c 128,-1,13
- 458 -240 458 -240 488.5 -193 c 128,-1,14
- 519 -146 519 -146 550 -69 c 2,15,-1
- 576 -4 l 1,16,-1
- 163 919 l 1,17,-1
- 22 974 l 1,18,-1
- 22 1062 l 1,19,-1
- 538 1062 l 1,20,-1
- 538 973 l 1,21,-1
- 393 928 l 1,22,-1
- 681 272 l 1,23,-1
- 912 931 l 1,24,-1
- 773 973 l 1,25,-1
- 773 1062 l 1,26,-1
- 1175 1062 l 1,27,-1
- 1175 973 l 1,28,-1
- 1059 935 l 1,29,-1
- 626 -199 l 2,30,31
- 582 -315 582 -315 534 -385.5 c 128,-1,32
- 486 -456 486 -456 426 -487.5 c 128,-1,33
- 366 -519 366 -519 286 -519 c 0,0,1
-598 1156 m 0,34,35
- 649 1156 649 1156 678 1187.5 c 128,-1,36
- 707 1219 707 1219 707 1272 c 0,37,38
- 707 1327 707 1327 678 1358.5 c 128,-1,39
- 649 1390 649 1390 598 1390 c 0,40,41
- 548 1390 548 1390 519 1358.5 c 128,-1,42
- 490 1327 490 1327 490 1272 c 0,43,44
- 490 1219 490 1219 519 1187.5 c 128,-1,45
- 548 1156 548 1156 598 1156 c 0,34,35
-598 1454 m 0,46,47
- 679 1454 679 1454 727 1404.5 c 128,-1,48
- 775 1355 775 1355 775 1272 c 128,-1,49
- 775 1189 775 1189 727 1139.5 c 128,-1,50
- 679 1090 679 1090 598 1090 c 0,51,52
- 518 1090 518 1090 470 1139.5 c 128,-1,53
- 422 1189 422 1189 422 1272 c 128,-1,54
- 422 1355 422 1355 470 1404.5 c 128,-1,55
- 518 1454 518 1454 598 1454 c 0,46,47
-EndSplineSet
+Refer: 401 778 N 1.02997 0 0 1.07996 633 0 2
+Refer: 92 121 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
