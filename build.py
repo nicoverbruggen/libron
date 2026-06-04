@@ -58,7 +58,7 @@ with open(os.path.join(ROOT_DIR, "VERSION")) as version_file:
 with open(os.path.join(ROOT_DIR, "COPYRIGHT")) as copyright_file:
     COPYRIGHT_TEXT = copyright_file.read().strip()
 
-DEFAULT_FAMILY = "Libron II"
+DEFAULT_FAMILY = "Libron IV"
 
 # (style_suffix, source_sfd, embolden_method)
 # All styles are exported as-is from their respective SFD masters.
