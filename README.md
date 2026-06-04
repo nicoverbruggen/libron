@@ -6,19 +6,8 @@ This is an experimental modification, and I may roll these changes into Readerly
 
 ## What's next
 
-### Done
-
-- Regular: Numbers, lowercase, uppercase alphabet and bearing (v1)
-- Italic: Numbers, lowercase, uppercase alphabet
-- Bold: Numbers, uppercase alphabet
-- Bold Italic: Numbers
-
-### To do
-
-- Bold: Lowercase alphabet
-- Bold italic: Uppercase and lowercase alphabet
-- Italic, bold, bold italic left and right bearing checks
-
+- Check bearings
+- Detail spot check
 
 ## How to build
 
