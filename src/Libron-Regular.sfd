@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1780651296
+ModificationTime: 1780691267
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3996,36 +3996,6 @@ FitToEm: 0
 WinInfo: 39 13 11
 BeginPrivate: 0
 EndPrivate
-Grid
--2000 1431.5 m 0
- 4000 1431.5 l 1024
--2000 922.5 m 0
- 4000 922.5 l 1024
--2000 1051 m 0
- 4000 1051 l 1024
--2000 932 m 0
- 4000 932 l 1024
-138.5 2600 m 0
- 138.5 -1400 l 1024
--2000 1395.98339844 m 0
- 4000 1395.98339844 l 1024
-  Named: "/Top"
-1349.48999023 2600 m 0
- 1349.48999023 -1400 l 1024
--2000 -8.79164860273 m 0
- 4000 -8.79164860273 l 1024
-418.166625977 2600 m 0
- 418.166625977 -1400 l 1024
--2000 1403.5 m 0
- 4000 1403.5 l 1024
--2000 1061.59997559 m 0
- 4000 1061.59997559 l 1024
--2000 138 m 0
- 4000 138 l 1024
--2000 92.7000045776 m 0
- 4000 92.7000045776 l 1024
-  Named: "Huide"
-EndSplineSet
 TeXData: 1 0 0 250609 125304 83536 556794 1048576 83536 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-5" "'mkmk' Mark to Mark in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable"
 BeginChars: 65632 825
@@ -6981,7 +6951,7 @@ StartChar: u
 Encoding: 117 117 88
 Width: 1220
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 590 0 basechar 0
 AnchorPoint: "Anchor-3" 1051 0 basechar 0
 AnchorPoint: "Anchor-2" 930 1061 basechar 0
@@ -6997,11 +6967,11 @@ SplineSet
  754 217 754 217 798 237 c 1,8,-1
  798 900 l 1,9,-1
  703 947 l 1,10,-1
- 704 1041 l 1,11,-1
+ 704 1032 l 1,11,-1
  1022 1062 l 1,12,-1
  1007 915 l 1,13,-1
  1013 150 l 1,14,15
- 1013 150 1013 150 1179 80 c 5,16,17
+ 1013 150 1013 150 1179 80 c 1,16,17
  1126 -16 1126 -16 860 -22 c 1,18,-1
  803 92 l 1,19,20
  803 92 803 92 734 56.5 c 128,-1,21
