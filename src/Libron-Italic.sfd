@@ -4125,7 +4125,7 @@ StartChar: dollar
 Encoding: 36 36 7
 Width: 1210
 GlyphClass: 1
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 618 -1 N 1 0 0 1 67 0 2
@@ -17932,7 +17932,7 @@ StartChar: dollar.lf
 Encoding: 65590 -1 618
 Width: 1076
 GlyphClass: 1
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
