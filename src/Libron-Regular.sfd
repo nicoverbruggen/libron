@@ -18833,7 +18833,7 @@ StartChar: T_h
 Encoding: 65632 -1 825
 Width: 2456
 VWidth: 0
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet

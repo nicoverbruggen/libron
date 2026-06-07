@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394406
-ModificationTime: 1780783444
+ModificationTime: 1780819535
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -214,10 +214,10 @@ GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -48
+DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 65 13 11
+WinInfo: 0 22 10
 Grid
 -2000 415 m 0
  4000 415 l 1024
@@ -1593,7 +1593,7 @@ StartChar: M
 Encoding: 77 77 48
 Width: 2065
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "Anchor-4" 833 0 basechar 0
 LayerCount: 2
 Fore
@@ -1634,7 +1634,7 @@ StartChar: N
 Encoding: 78 78 49
 Width: 1586
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "Anchor-4" 691 0 basechar 0
 LayerCount: 2
 Fore
@@ -1823,7 +1823,7 @@ StartChar: R
 Encoding: 82 82 53
 Width: 1501
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "Anchor-4" 731 0 basechar 0
 LayerCount: 2
 Fore
@@ -1933,14 +1933,14 @@ StartChar: T
 Encoding: 84 84 55
 Width: 1449
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 593 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 1601 1395.90039062 m 1,0,-1
- 1536 954 l 1,1,-1
- 1407 912 l 1,2,-1
+ 1553 1076.90039062 l 1,1,-1
+ 1386 1076.90039062 l 5,2,-1
  1367 1218 l 1,3,-1
  1101 1218 l 1,4,-1
  786 139 l 1,5,-1
@@ -1951,8 +1951,8 @@ SplineSet
  459 142 l 1,10,-1
  773 1218 l 1,11,-1
  527 1218 l 1,12,-1
- 304 910 l 1,13,-1
- 182 952 l 1,14,-1
+ 425 1076.90039062 l 1,13,-1
+ 230 1076.90039062 l 1,14,-1
  350 1395.90039062 l 1,15,-1
  1601 1395.90039062 l 1,0,-1
 EndSplineSet
@@ -2005,7 +2005,7 @@ StartChar: V
 Encoding: 86 86 57
 Width: 1506
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "Anchor-4" 659 0 basechar 0
 LayerCount: 2
 Fore
@@ -2034,7 +2034,7 @@ StartChar: W
 Encoding: 87 87 58
 Width: 2101
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 AnchorPoint: "Anchor-4" 967 0 basechar 0
 LayerCount: 2
 Fore
