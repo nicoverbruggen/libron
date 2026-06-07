@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1780819733
+ModificationTime: 1780853584
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -18882,7 +18882,6 @@ SplineSet
  1754 0 l 1,1,-1
 EndSplineSet
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Latin lookup 10 subtable" T h
 EndChar
 EndChars
 EndSplineFont
