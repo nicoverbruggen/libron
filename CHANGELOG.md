@@ -4,8 +4,9 @@
 
 Slight changes to Libron, nudging ever closer to a v1.0 release. This release aims to fix a few minor visual annoyances that I encountered when I was reading.
 
-- Fixed regular `H` top left serif.
-- Capital `E` and `F` have longer horizontal middle lines.
+- Capital `E` and `F` have longer horizontal middle lines (all).
+- Reworked lowercase `j` and `u` (regular, bold).
+- Fixed regular `H` top left serif (regular).
 - Lowercase `q` has been tweaked (regular, bold).
 - Adjusted `Ja`, `es`, `th` kern pairs (regular).
 - Adjusted `Fr` kern pair (italic, bold italic).
