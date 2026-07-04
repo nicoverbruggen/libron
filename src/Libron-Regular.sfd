@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1783207247
+ModificationTime: 1783208142
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -3180,7 +3180,7 @@ StartChar: t
 Encoding: 116 116 87
 Width: 815
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 506 0 basechar 0
 AnchorPoint: "Anchor-3" 393 1602 basechar 0
 LayerCount: 2
@@ -3402,7 +3402,7 @@ StartChar: z
 Encoding: 122 122 93
 Width: 1013
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 513 0 basechar 0
 AnchorPoint: "Anchor-0" 526 1062 basechar 0
 LayerCount: 2
@@ -3412,15 +3412,15 @@ SplineSet
  88 75 l 1,1,-1
  640 921 l 1,2,-1
  274 920 l 1,3,-1
- 179 717 l 1,4,-1
- 88 717 l 1,5,-1
+ 217 750 l 1,4,-1
+ 97 750 l 1,5,-1
  122 1061.59960938 l 1,6,-1
  244 1061.59960938 l 1,7,-1
  962 1061.59960938 l 1,8,-1
  361 140 l 1,9,-1
  733 141 l 1,10,-1
- 863 377 l 1,11,-1
- 955 377 l 1,12,-1
+ 815 290.5 l 1,11,-1
+ 939 290.5 l 1,12,-1
  876 0 l 1,13,-1
  88 0 l 1,0,-1
 EndSplineSet
