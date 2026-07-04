@@ -2,11 +2,12 @@
 
 ## v0.12
 
-Changes: [regular, bold]
+Changes: [regular, bold, italic, bold italic]
 
 - Capital `E` and `F` have longer horizontal middle lines.
-- Lowercase `q` has been tweaked.
-- Adjusted `Ja`, `es`, `th` kern pairs.
+- Lowercase `q` has been tweaked (regular, bold).
+- Adjusted `Ja`, `es`, `th` kern pairs (regular).
+- Adjusted `Fr` kern pair (italic, bold italic).
 
 ## v0.11
 
