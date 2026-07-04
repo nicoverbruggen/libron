@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1783200206
+ModificationTime: 1783201760
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -221,6 +221,10 @@ WinInfo: 65 13 10
 BeginPrivate: 0
 EndPrivate
 Grid
+97 2600 m 0
+ 97 -1400 l 1024
+1579 2600 m 0
+ 1579 -1400 l 1024
 996.25 2600 m 0
  996.25 -1400 l 1024
 1054.5 2600 m 0
@@ -1334,7 +1338,7 @@ StartChar: F
 Encoding: 70 70 41
 Width: 1184
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 328 0 basechar 0
 LayerCount: 2
 Fore
@@ -1414,7 +1418,7 @@ StartChar: H
 Encoding: 72 72 43
 Width: 1675
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 838 0 basechar 0
 LayerCount: 2
 Fore
@@ -1434,8 +1438,8 @@ SplineSet
  97 92 l 1,12,-1
  272 139 l 1,13,-1
  272 1257 l 1,14,-1
- 138.5 1293 l 1,15,-1
- 138.5 1395 l 5,16,-1
+ 97 1292 l 1,15,-1
+ 97 1395 l 1,16,-1
  668 1396 l 1,17,-1
  668 1304 l 1,18,-1
  493 1257 l 1,19,-1
