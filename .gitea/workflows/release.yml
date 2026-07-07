@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Build fonts
         run: python3 build.py --with-kobofix
@@ -50,12 +52,24 @@ jobs:
             echo '__RELEASE_EOF__'
           } >> "$GITHUB_ENV"
 
+      - name: Determine pre-release
+        if: startsWith(gitea.ref, 'refs/tags/')
+        run: |
+          # Pre-release unless this tag's commit is reachable from main.
+          if git fetch --no-tags --quiet origin main 2>/dev/null \
+             && git merge-base --is-ancestor HEAD FETCH_HEAD; then
+            echo "PRERELEASE=false" >> "$GITHUB_ENV"
+          else
+            echo "PRERELEASE=true" >> "$GITHUB_ENV"
+          fi
+
       - name: Create release
         if: startsWith(gitea.ref, 'refs/tags/')
         uses: akkuman/gitea-release-action@v1
         with:
           token: ${{ secrets.GITEA_TOKEN }}
           draft: false
+          prerelease: ${{ env.PRERELEASE }}
           tag_name: ${{ gitea.ref_name }}
           name: Libron (${{ gitea.ref_name }})
           body: ${{ env.RELEASE_BODY }}

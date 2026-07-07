@@ -68,6 +68,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - uses: actions/download-artifact@v6
         with:
@@ -91,10 +93,21 @@ jobs:
             echo '__RELEASE_EOF__'
           } >> "$GITHUB_ENV"
 
+      - name: Determine pre-release
+        run: |
+          # Pre-release unless this tag's commit is reachable from main.
+          if git fetch --no-tags --quiet origin main 2>/dev/null \
+             && git merge-base --is-ancestor HEAD FETCH_HEAD; then
+            echo "PRERELEASE=false" >> "$GITHUB_ENV"
+          else
+            echo "PRERELEASE=true" >> "$GITHUB_ENV"
+          fi
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
           draft: true
+          prerelease: ${{ env.PRERELEASE }}
           name: ${{ github.ref_name }}
           body: ${{ env.RELEASE_BODY }}
           files: |
