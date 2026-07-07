@@ -6,10 +6,10 @@ Slight changes to Libron, nudging ever closer to a v1.0 release. This release ai
 
 - Straightened top of `A` for consistency with siblings.
 - Reworked `E`, `F`, `L` (all variants) and updated sidebearings.
-- Reworked `g`, `j`, `t`, `u`, `z` (regular, bold).
+- Reworked `g`, `j`, `t`, `u`, `z`, `s` (regular, bold).
 - Fixed regular `H` top left serif (regular).
 - Lowercase `q` has been tweaked (regular, bold).
-- Minor tweaks to: `a`, `b`, `d`, `h` (regular only).
+- Minor tweaks to: `a`, `b`, `d`, `h`, `i`, `j` (regular only).
 
 Minor adjustments for kern classes:
 
