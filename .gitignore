@@ -2,3 +2,5 @@ out/
 tmp/
 tools/
 proofs/
+.release-baseline-ttf/
+.release-section.md

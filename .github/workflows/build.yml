@@ -67,22 +67,36 @@ jobs:
       contents: write
 
     steps:
+      - uses: actions/checkout@v5
+
       - uses: actions/download-artifact@v6
         with:
           name: Libron-release
 
+      - name: Assemble release notes
+        run: |
+          {
+            echo 'RELEASE_BODY<<__RELEASE_EOF__'
+            # Notes under the first "## " heading in CHANGELOG.md.
+            awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
+            cat <<'EOF'
+
+          > [!TIP]
+          > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download KF_Libron.zip, which has fonts processed via `kobo-font-fix` for improved compatibility on Kobo devices.
+
+          ### Learn more
+
+          Libron is a modified version of Readerly with reduced serifs. For more information about the font and how it was built, please consult the repository README.
+          EOF
+            echo '__RELEASE_EOF__'
+          } >> "$GITHUB_ENV"
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          draft: false
+          draft: true
           name: ${{ github.ref_name }}
-          body: |
-            > [!TIP]
-            > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download KF_Libron.zip, which has fonts processed via `kobo-font-fix` for improved compatibility on Kobo devices.
-
-            ### Learn more
-
-            Libron is a modified version of Readerly with reduced serifs. For more information about the font and how it was built, please consult the repository README.
+          body: ${{ env.RELEASE_BODY }}
           files: |
             Libron.zip
             KF_Libron.zip

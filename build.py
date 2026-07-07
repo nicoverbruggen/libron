@@ -87,7 +87,7 @@ LINE_HEIGHT = 1.0
 SELECTION_HEIGHT = 1.3
 ASCENDER_RATIO = 0.8
 
-KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.8/kobofix.py"
+KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.9.1/kobofix.py"
 
 # ttfautohint options, kept in sync with Readerly.
 AUTOHINT_OPTS = [
