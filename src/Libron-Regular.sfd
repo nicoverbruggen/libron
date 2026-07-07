@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1783454857
+ModificationTime: 1783455356
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -2255,7 +2255,7 @@ StartChar: a
 Encoding: 97 97 68
 Width: 1115
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 539 0 basechar 0
 AnchorPoint: "Anchor-3" 1083 0 basechar 0
 AnchorPoint: "Anchor-0" 509 1062 basechar 0
@@ -2747,7 +2747,7 @@ EndChar
 
 StartChar: k
 Encoding: 107 107 78
-Width: 1252
+Width: 1278
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-4" 672 0 basechar 0
@@ -6688,7 +6688,7 @@ EndChar
 
 StartChar: uni0137
 Encoding: 311 311 247
-Width: 1252
+Width: 1278
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
