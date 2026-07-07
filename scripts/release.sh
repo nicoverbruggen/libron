@@ -84,8 +84,8 @@ kobo_ver() { grep -oE 'kobo-font-fix/[^/]+/kobofix\.py' "$1/build.py" \
 OLD_KOBO="$(kobo_ver "$WT" || true)"
 NEW_KOBO="$(kobo_ver "$REPO" || true)"
 if [[ -n "$NEW_KOBO" && "$OLD_KOBO" != "$NEW_KOBO" ]]; then
-  printf '\nUpdated to newer version of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix).\n' \
-    >> .release-section.md
+  printf '\nAs part of this release, %s of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.\n' \
+    "$NEW_KOBO" >> .release-section.md
   echo ">> noted kobo-font-fix bump ${OLD_KOBO:-none} -> ${NEW_KOBO}" >&2
 fi
 

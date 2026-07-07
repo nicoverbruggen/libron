@@ -278,9 +278,9 @@ def render_summary(rows):
         ka = [f"{l}→{rt}" for (l, rt), _ in r["kern_added"] if base(l) and base(rt)]
         kr = [f"{l}→{rt}" for (l, rt), _ in r["kern_removed"] if base(l) and base(rt)]
         kc = [f"{l}→{rt}" for (l, rt), _, _ in r["kern_changed"] if base(l) and base(rt)]
-        for action, pairs in (("Added", ka), ("Removed", kr), ("Retuned", kc)):
-            if pairs:
-                kerning.append((name, action, f"`{' '.join(pairs)}`"))
+        if ka or kr or kc:
+            cell = lambda p: f"`{' '.join(p)}`" if p else "—"
+            kerning.append((name, cell(ka), cell(kr), cell(kc)))
 
         sb = sorted(g for g in r["spacing_base"] if base(g))
         if sb:
@@ -301,9 +301,9 @@ def render_summary(rows):
         out.extend("| " + " | ".join(row) + " |" for row in items)
         out.append("")
 
-    table("The following outlines have been adjusted:", ["Weight", "Glyphs"], outlines)
-    table("The following kern changes have been made:", ["Weight", "Change", "Pairs"], kerning)
-    table("Spacing has been adjusted:", ["Weight", "Glyphs"], spacing)
+    table("### Adjusted outlines", ["Weight", "Glyphs"], outlines)
+    table("### Updated kerning", ["Weight", "Added", "Removed", "Retuned"], kerning)
+    table("### Updated spacing", ["Weight", "Glyphs"], spacing)
     if addrem:
         out.extend(["Glyphs added / removed: " + "; ".join(addrem) + ".", ""])
 
