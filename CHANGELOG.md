@@ -1,20 +1,12 @@
 # Changelog
 
+## trunk
+
+At some point, this will become Libron 1.0.
+
 ## v0.20
 
-Slight changes to Libron, nudging ever closer to a v1.0 release. This release aims to fix a few minor visual annoyances that I encountered when I was reading:
-
-- Straightened top of `A` for consistency with siblings.
-- Reworked `E`, `F`, `L` (all variants) and updated sidebearings.
-- Reworked `g`, `j`, `t`, `u`, `z`, `s` (regular, bold).
-- Fixed regular `H` top left serif (regular).
-- Lowercase `q` has been tweaked (regular, bold).
-- Minor tweaks to: `a`, `b`, `d`, `h`, `i`, `j` (regular only).
-
-Minor adjustments for kern classes:
-
-- Adjusted `J-a`, `e-s`, `t-h` kern pairs (regular).
-- Adjusted `F-r` kern pair (italic, bold italic).
+Slight changes to Libron, nudging ever closer to a v1.0 release. This release aims to fix a few minor visual annoyances that I encountered when I was reading.
 
 This release also updated to the latest version [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) with generated common Unicode whitespace and dash characters for the KF version if the fonts lacks them.
 
