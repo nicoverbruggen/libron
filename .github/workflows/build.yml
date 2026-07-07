@@ -106,7 +106,7 @@ jobs:
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          draft: true
+          draft: false
           prerelease: ${{ env.PRERELEASE }}
           name: ${{ github.ref_name }}
           body: ${{ env.RELEASE_BODY }}
