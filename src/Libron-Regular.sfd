@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1783666716
+ModificationTime: 1783677601
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -221,6 +221,8 @@ WinInfo: 70 14 5
 BeginPrivate: 0
 EndPrivate
 Grid
+-2000 1087.49996759 m 0
+ 4000 1087.49996759 l 1024
 -2000 965.50016276 m 0
  4000 965.50016276 l 1024
 -2000 942.166781003 m 0
@@ -2369,7 +2371,7 @@ EndChar
 
 StartChar: c
 Encoding: 99 99 70
-Width: 1017
+Width: 1003
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-4" 537 0 basechar 0
@@ -2379,18 +2381,15 @@ LayerCount: 2
 Fore
 SplineSet
 649 1084 m 0,0,1
- 765 1084 765 1084 830.5 1056.5 c 128,-1,2
- 896 1029 896 1029 923 988.5 c 128,-1,3
- 950 948 950 948 950 908 c 128,-1,4
- 950 868 950 868 934 835 c 128,-1,5
- 918 802 918 802 889.5 783 c 128,-1,6
- 861 764 861 764 824 764 c 0,7,8
- 812 764 812 764 787.5 782 c 128,-1,9
- 763 800 763 800 734 826.5 c 128,-1,10
- 705 853 705 853 674.5 879.5 c 128,-1,11
- 644 906 644 906 615 924 c 128,-1,12
- 586 942 586 942 564 942 c 0,13,14
- 481 942 481 942 419.5 903.5 c 128,-1,15
+ 758 1084 758 1084 831 1057 c 128,-1,2
+ 904 1030 904 1030 934 997.25008138 c 0,3,4
+ 965 964 965 964 954 937 c 1,5,6
+ 928 894 928 894 891 851 c 128,-1,7
+ 854 808 854 808 828 808 c 0,8,9
+ 816 808 816 808 791.5 826 c 128,-1,10
+ 767 844 767 844 738 870.5 c 0,11,12
+ 680 924 680 924 565 924 c 0,13,14
+ 482 924 482 924 420 894.5 c 128,-1,15
  358 865 358 865 323.5 785.5 c 128,-1,16
  289 706 289 706 289 586 c 0,17,18
  289 447 289 447 328 353.5 c 128,-1,19
@@ -2753,7 +2752,7 @@ StartChar: k
 Encoding: 107 107 78
 Width: 1278
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 672 0 basechar 0
 LayerCount: 2
 Fore
@@ -5867,7 +5866,7 @@ EndChar
 
 StartChar: cacute
 Encoding: 263 263 201
-Width: 1017
+Width: 1006
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5891,7 +5890,7 @@ EndChar
 
 StartChar: ccircumflex
 Encoding: 265 265 203
-Width: 1017
+Width: 1006
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5915,7 +5914,7 @@ EndChar
 
 StartChar: cdotaccent
 Encoding: 267 267 205
-Width: 1017
+Width: 1006
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5939,7 +5938,7 @@ EndChar
 
 StartChar: ccaron
 Encoding: 269 269 207
-Width: 1017
+Width: 1006
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
