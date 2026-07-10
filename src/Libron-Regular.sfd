@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1783677601
+ModificationTime: 1783677742
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -221,6 +221,8 @@ WinInfo: 70 14 5
 BeginPrivate: 0
 EndPrivate
 Grid
+238.416259766 2600 m 0
+ 238.416259766 -1400 l 1024
 -2000 1087.49996759 m 0
  4000 1087.49996759 l 1024
 -2000 965.50016276 m 0
@@ -2694,9 +2696,9 @@ SplineSet
  84 0 l 1,5,-1
  84 90 l 1,6,-1
  238 135 l 1,7,-1
- 234 931.966796875 l 5,8,9
- 234 931.966796875 234 931.966796875 104 932 c 1,10,-1
- 106 1067.96679688 l 1,11,-1
+ 238.416015625 932 l 1,8,9
+ 238.416015625 932 238.416015625 932 104 932 c 1,10,-1
+ 104 1067.96679688 l 1,11,-1
  448 1068 l 1,0,-1
 326 1293 m 128,-1,13
  255 1293 255 1293 212 1330.5 c 128,-1,14
@@ -2865,12 +2867,12 @@ SplineSet
  223 854 l 1,39,40
  206 868 206 868 130.5 890.5 c 128,-1,41
  55 913 55 913 55 913 c 1,42,-1
- 55 958 l 1,43,44
- 56 958 56 958 338 1088 c 1,45,-1
+ 55 988 l 5,43,44
+ 117 989 117 989 338 1088 c 1,45,-1
  375 1088 l 1,46,-1
  418 940 l 1,47,48
  498 996 498 996 619 1049 c 0,49,50
- 673.401367188 1073.17089844 673.401367188 1073.17089844 692 1077 c 0,51,52
+ 673 1073 673 1073 692 1077 c 0,51,52
  726 1084 726 1084 770 1084 c 0,53,54
  881 1084 881 1084 933.5 1051 c 0,55,56
  1016 998 1016 998 1030 944 c 1,57,58
@@ -2910,12 +2912,12 @@ SplineSet
  229 865 l 1,17,18
  212 879 212 879 136 896 c 128,-1,19
  60 913 60 913 60 913 c 1,20,-1
- 60 958 l 1,21,22
- 61 958 61 958 343 1088 c 1,23,-1
+ 60 1001 l 5,21,22
+ 152 1002 152 1002 343 1088 c 1,23,-1
  380 1088 l 1,24,-1
  419 950 l 1,25,26
- 779 1191 779 1191 1030 996 c 0,27,28
- 1103 938.809627835 1103 938.809627835 1103 733 c 2,29,-1
+ 780 1192 780 1192 1030 996 c 0,27,28
+ 1103 939 1103 939 1103 733 c 2,29,-1
  1103 135 l 1,30,-1
  1260 90 l 1,31,-1
  1260 0 l 1,32,-1
@@ -3077,9 +3079,9 @@ AnchorPoint: "Anchor-0" 447 1062 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-738 1080 m 4,0,1
- 822 1066 822 1066 868 989.5 c 0,2,3
- 867.834960938 989.115234375 867.834960938 989.115234375 830 786 c 1,4,5
+738 1080 m 0,0,1
+ 868 1059 868 1059 868 989.5 c 0,2,3
+ 868 989 868 989 830 786 c 1,4,5
  805 798 805 798 768 810 c 0,6,7
  604 859 604 859 480.5 832.5 c 0,8,9
  450 826 450 826 433 818 c 0,10,11
@@ -3092,13 +3094,13 @@ SplineSet
  218 135 l 1,18,-1
  223 882 l 1,19,20
  223 882 223 882 50 896 c 1,21,-1
- 50 958 l 1,22,-1
+ 49 1014 l 1,22,-1
  337 1088 l 1,23,-1
  374 1088 l 1,24,-1
  415 912 l 1,25,26
- 415 912 415 912 590 1032 c 0,27,28
- 634 1059 634 1059 669 1069.5 c 0,29,30
- 715.48046875 1083.44433594 715.48046875 1083.44433594 738 1080 c 4,0,1
+ 415 915 415 915 590 1032 c 0,27,28
+ 627 1057 627 1057 669 1069.5 c 0,29,30
+ 715 1083 715 1083 738 1080 c 0,0,1
 EndSplineSet
 Kerns2: 552 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 534 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -18 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 294 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 258 -64 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -110 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 117 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 83 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -114 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -114 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -75 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 18 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -53 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
