@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.21
+
+### Adjusted outlines
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `C E F G K L M N V W Z b c d h i k l m n p r s u v w` |
+
+### Updated kerning
+
+| Weight | Added | Removed | Retuned |
+|---|---|---|---|
+| Regular | `a→l` | — | — |
+
+### Updated spacing
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `c` |
+
 ## v0.20
 
 ### Adjusted outlines
