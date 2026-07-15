@@ -6,8 +6,8 @@
 
 | Weight | Glyphs |
 |---|---|
-| Regular | `s` |
-| Bold | `5 C c i j n r` |
+| Regular | `S i j s` |
+| Bold | `5 C S Z c i j n r` |
 | Italic | `5` |
 
 ## v0.21

@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1784150311
+ModificationTime: 1784150726
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -2130,7 +2130,7 @@ StartChar: Z
 Encoding: 90 90 61
 Width: 1387
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 664 0 basechar 0
 LayerCount: 2
 Fore
@@ -2697,9 +2697,9 @@ SplineSet
  81 0 l 1,4,-1
  81 98 l 1,5,-1
  218 141 l 1,6,-1
- 218 869 l 2,7,8
- 140 869 140 869 62 869 c 1,9,-1
- 63 1070.90039062 l 5,10,-1
+ 218 869 l 6,7,8
+ 218 869 218 869 62 924 c 1,9,-1
+ 63 1070.90039062 l 1,10,-1
  534 1070.90039062 l 1,0,-1
 362.6796875 1289.70019531 m 0,11,12
  275 1290 275 1290 229.1796875 1335.375 c 0,13,14
@@ -2718,14 +2718,14 @@ StartChar: j
 Encoding: 106 106 77
 Width: 663
 GlyphClass: 2
-Flags: MW
+Flags: MWO
 AnchorPoint: "Anchor-4" 327 -388 basechar 0
 AnchorPoint: "Anchor-0" 487.625 1966.14 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-195 886 m 1,0,1
- 195 886 195 886 40 887 c 1,2,-1
+196 869 m 1,0,1
+ 196 869 196 869 40 924 c 5,2,-1
  40 1070.90039062 l 1,3,-1
  440 1070.90039062 l 1,4,-1
  510 1070.90039062 l 1,5,-1
@@ -2743,16 +2743,16 @@ SplineSet
  179 -92 179 -92 187.109383059 -52 c 0,27,28
  195 -12 195 -12 197.713478545 43 c 0,29,30
  200 98 200 98 200.605504587 178 c 1,31,-1
- 195 886 l 1,0,1
-310.700195312 1291.70019531 m 4,32,33
- 222 1292 222 1292 174.349609375 1337.375 c 4,34,35
- 127 1383 127 1383 127.099609375 1467.04980469 c 132,-1,36
- 127 1551 127 1551 174.349609375 1594.625 c 4,37,38
- 222 1638 222 1638 310.700195312 1638.20019531 c 4,39,40
- 400 1638 400 1638 445.700195312 1594.625 c 4,41,42
- 492 1551 492 1551 491.599609375 1467.04980469 c 4,43,44
- 492 1383 492 1383 445.700195312 1337.375 c 4,45,46
- 400 1292 400 1292 310.700195312 1291.70019531 c 4,32,33
+ 196 869 l 1,0,1
+310.700195312 1291.70019531 m 0,32,33
+ 222 1292 222 1292 174.349609375 1337.375 c 0,34,35
+ 127 1383 127 1383 127.099609375 1467.04980469 c 128,-1,36
+ 127 1551 127 1551 174.349609375 1594.625 c 0,37,38
+ 222 1638 222 1638 310.700195312 1638.20019531 c 0,39,40
+ 400 1638 400 1638 445.700195312 1594.625 c 0,41,42
+ 492 1551 492 1551 491.599609375 1467.04980469 c 0,43,44
+ 492 1383 492 1383 445.700195312 1337.375 c 0,45,46
+ 400 1292 400 1292 310.700195312 1291.70019531 c 0,32,33
 EndSplineSet
 Kerns2: 522 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 360 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 88 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 EndChar
