@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1784143291
+ModificationTime: 1784143511
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -216,7 +216,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 48 12 7
+WinInfo: 65518 17 7
 Grid
 -2000 1637.99995118 m 0
  4000 1637.99995118 l 1024
@@ -2716,7 +2716,7 @@ StartChar: j
 Encoding: 106 106 77
 Width: 663
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 327 -388 basechar 0
 AnchorPoint: "Anchor-0" 487.625 1966.14 basechar 0
 LayerCount: 2
@@ -14972,7 +14972,7 @@ SplineSet
  352 633 352 633 160 650 c 1,22,-1
  342 1396 l 1,23,-1
  811 1396 l 1,24,-1
- 1096 1435 l 1,25,-1
+ 1083 1395.5 l 5,25,-1
  993 1114 l 1,26,-1
  458 1114 l 1,27,-1
  399 917 l 1,28,29
