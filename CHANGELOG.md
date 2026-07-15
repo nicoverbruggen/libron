@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.22
+
+### Adjusted outlines
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `s` |
+| Bold | `5 C c i j n r` |
+| Italic | `5` |
+
 ## v0.21
 
 ### Adjusted outlines

@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1606394360
-ModificationTime: 1784143747
+ModificationTime: 1784150147
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -221,6 +221,8 @@ WinInfo: 52 26 10
 BeginPrivate: 0
 EndPrivate
 Grid
+-2000 327.900024414 m 0
+ 4000 327.900024414 l 1024
 -2000 -448.700029352 m 0
  4000 -448.700029352 l 1024
 -2000 -519.700012207 m 0
@@ -1910,8 +1912,8 @@ SplineSet
  844 1391 844 1391 871 1382 c 1,26,-1
  1039 1337 l 1,27,-1
  1039 1337 l 1,28,-1
- 1051 978 l 1,29,-1
- 924 975 l 1,30,-1
+ 1051 1038 l 1,29,-1
+ 924 1035 l 1,30,-1
  836 1228 l 1,31,32
  799 1248 799 1248 760 1258 c 0,33,34
  698 1275 698 1275 623 1275 c 0,35,36
@@ -1930,8 +1932,8 @@ SplineSet
  716 -21 716 -21 543 -21 c 0,51,52
  433 -21 433 -21 345.5 -10.5 c 128,-1,53
  258 0 258 0 168 33 c 1,54,-1
- 106 431 l 1,55,-1
- 233 431 l 1,56,-1
+ 106 361 l 5,55,-1
+ 233 361 l 5,56,-1
  369 142 l 1,0,1
 EndSplineSet
 Kerns2: 474 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 456 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 430 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 54 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 83 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
@@ -3126,7 +3128,7 @@ StartChar: s
 Encoding: 115 115 86
 Width: 973
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 AnchorPoint: "Anchor-4" 497 0 basechar 0
 AnchorPoint: "Anchor-0" 485 1062 basechar 0
 LayerCount: 2
