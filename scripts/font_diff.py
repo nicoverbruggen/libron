@@ -251,16 +251,32 @@ def render_style(style, r):
     return "\n".join(out)
 
 
+def _base_char(name, cmap):
+    """The ASCII letter/digit a glyph represents, or None.
+
+    Resolves stylistic variants (`five.lf`, `a.sc`, …) back to their stem, so an
+    outline edit to an *unencoded* variant is still attributed to its base
+    character. This matters for figures especially: the encoded `five` is a
+    composite that merely references the (unmapped) `five.lf`, which is where the
+    actual contour lives -- so a redraw only ever surfaces on the variant, never
+    on the cmap'd glyph.
+    """
+    for cand in (name, name.split(".", 1)[0]):
+        c = cmap.get(cand)
+        if c and len(c) == 1 and c.isascii() and c.isalnum():
+            return c
+    return None
+
+
 def _is_base(name, cmap):
-    """A base glyph = one mapped to a single ASCII letter (A-Z / a-z)."""
-    c = cmap.get(name)
-    return bool(c and len(c) == 1 and c.isascii() and c.isalpha())
+    """True if a glyph maps (directly or via its stem) to an ASCII letter/digit."""
+    return _base_char(name, cmap) is not None
 
 
 def render_summary(rows):
     """A compact, base-glyph-focused changelog section: one table per category.
 
-    Kerning and spacing are filtered to base (ASCII-letter) glyphs, so the
+    Kerning and spacing are filtered to base (ASCII letter/digit) glyphs, so the
     accented-variant noise (which only tracks its base) drops out. Each table
     lists only the weights that actually changed.
     """
@@ -270,19 +286,21 @@ def render_summary(rows):
     for style, r in rows:
         cmap, name = r["cmap"], pretty.get(style, style)
         base = lambda g: _is_base(g, cmap)
+        bc = lambda g: _base_char(g, cmap) or g
 
-        rb = [g for g in r["redrawn_base"] if base(g)]
+        # Roll variant outlines up to their base char and de-dupe (`five.lf` -> 5).
+        rb = sorted({bc(g) for g in r["redrawn_base"] if base(g)})
         if rb:
             outlines.append((name, f"`{' '.join(rb)}`"))
 
-        ka = [f"{l}→{rt}" for (l, rt), _ in r["kern_added"] if base(l) and base(rt)]
-        kr = [f"{l}→{rt}" for (l, rt), _ in r["kern_removed"] if base(l) and base(rt)]
-        kc = [f"{l}→{rt}" for (l, rt), _, _ in r["kern_changed"] if base(l) and base(rt)]
+        ka = [f"{bc(l)}→{bc(rt)}" for (l, rt), _ in r["kern_added"] if base(l) and base(rt)]
+        kr = [f"{bc(l)}→{bc(rt)}" for (l, rt), _ in r["kern_removed"] if base(l) and base(rt)]
+        kc = [f"{bc(l)}→{bc(rt)}" for (l, rt), _, _ in r["kern_changed"] if base(l) and base(rt)]
         if ka or kr or kc:
             cell = lambda p: f"`{' '.join(p)}`" if p else "—"
             kerning.append((name, cell(ka), cell(kr), cell(kc)))
 
-        sb = sorted(g for g in r["spacing_base"] if base(g))
+        sb = sorted({bc(g) for g in r["spacing_base"] if base(g)})
         if sb:
             spacing.append((name, f"`{' '.join(sb)}`"))
 
