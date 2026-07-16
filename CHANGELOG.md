@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.23
+
+As part of this release, v0.9.2 of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.
+
 ## v0.22
 
 ### Adjusted outlines
