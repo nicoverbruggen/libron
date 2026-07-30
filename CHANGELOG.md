@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.24
+
+This release adds official support for [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader) as Libron is now available as the converted `cpfont` files which are compatible with this awesome reader app. Libron is available at 12, 14, 16 and 18 point sizes, with all four styles.
+
 ## v0.23
 
 As part of this release, v0.9.2 of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.

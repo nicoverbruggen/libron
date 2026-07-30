@@ -19,6 +19,9 @@ jobs:
       - name: Build fonts
         run: python3 build.py --with-kobofix
 
+      - name: Build CrossPoint fonts
+        run: python3 scripts/build_cpfont.py
+
       - name: Validate generated fonts with ots-sanitize
         run: |
           for font in out/ttf/*.ttf out/kf/*.ttf out/web/*.woff2; do
@@ -32,6 +35,9 @@ jobs:
           cd out/ttf && zip -j /tmp/Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/kf  && zip -j /tmp/KF_Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/web && zip -j /tmp/Libron_Web.zip *.woff2
+          mkdir -p /tmp/crosspoint-package/fonts/Libron
+          cp $GITHUB_WORKSPACE/out/cpfont/*.cpfont /tmp/crosspoint-package/fonts/Libron/
+          cd /tmp/crosspoint-package && zip -r /tmp/CP_Libron.zip fonts
 
       - name: Assemble release notes
         if: startsWith(gitea.ref, 'refs/tags/')
@@ -42,12 +48,20 @@ jobs:
             awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
             cat <<'EOF'
 
-          > [!TIP]
-          > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download KF_Libron.zip, which has fonts processed via `kobo-font-fix` for improved compatibility on Kobo devices.
+          ### Downloads
+
+          - **If you are using a Kobo device**, download [KF_Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/KF_Libron.zip). It has been processed with `kobo-font-fix` for improved compatibility with Kobo's `kepub` renderer.
+          - **If you are using a Kindle, another e-reader or a desktop computer**, download [Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron.zip).
+          - **If you are using CrossPoint Reader**, you can try out an early version of Libron for the Xteink X3 and X4 devices by downloading [CP_Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/CP_Libron.zip).
+          - **If you want to use Libron on a website**, download [Libron_Web.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron_Web.zip).
 
           ### Learn more
 
-          Libron is a modified version of Readerly with reduced serifs. For more information about the font and how it was built, please consult the repository README.
+          Libron is a modified version of Readerly with a calmer, more neutral appearance intended for reading books. For more information about the font and how it was built, please consult the [README](${{ gitea.server_url }}/${{ gitea.repository }}/src/branch/main/README.md).
+
+          ### License
+
+          Libron is available under the [SIL Open Font License](${{ gitea.server_url }}/${{ gitea.repository }}/src/branch/main/LICENSE) and may be embedded in digital books.
           EOF
             echo '__RELEASE_EOF__'
           } >> "$GITHUB_ENV"
@@ -77,3 +91,4 @@ jobs:
             /tmp/Libron.zip
             /tmp/KF_Libron.zip
             /tmp/Libron_Web.zip
+            /tmp/CP_Libron.zip
