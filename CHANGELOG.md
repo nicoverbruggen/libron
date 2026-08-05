@@ -2,7 +2,7 @@
 
 ## v0.24
 
-This release adds official support for [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader) as Libron is now available as the converted `cpfont` files which are compatible with this awesome reader app. Libron is available at 12, 14, 16 and 18 point sizes, with all four styles.
+Libron now supports [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader). The converted `cpfont` files are built and published in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts), at 12, 14, 16 and 18 point sizes, with all four styles.
 
 ### Fixed accent placement
 

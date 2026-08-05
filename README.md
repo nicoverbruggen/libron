@@ -32,8 +32,9 @@ The following variants are generated:
 
 - Libron for desktop (`TTF`)
 - Libron for [Kobo devices](https://github.com/nicoverbruggen/kobo-font-fix) (`KF TTF`)
-- Libron for [devices with CrossPoint Reader](https://github.com/nicoverbruggen/ebook-fonts) (`cpfont`)
 - Libron's webfont variant (`WOFF2`) 
+
+Libron for devices running CrossPoint Reader (`cpfont`) is built and published in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts).
 
 ### Building locally
 

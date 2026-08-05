@@ -19,9 +19,6 @@ jobs:
       - name: Build fonts
         run: python3 build.py --with-kobofix
 
-      - name: Build CrossPoint fonts
-        run: python3 scripts/build_cpfont.py
-
       - name: Validate generated fonts with ots-sanitize
         run: |
           for font in out/ttf/*.ttf out/kf/*.ttf out/web/*.woff2; do
@@ -35,9 +32,6 @@ jobs:
           cd out/ttf && zip -j /tmp/Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/kf  && zip -j /tmp/KF_Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/web && zip -j /tmp/Libron_Web.zip *.woff2
-          mkdir -p /tmp/crosspoint-package/fonts/Libron
-          cp $GITHUB_WORKSPACE/out/cpfont/*.cpfont /tmp/crosspoint-package/fonts/Libron/
-          cd /tmp/crosspoint-package && zip -r /tmp/CP_Libron.zip fonts
 
       - name: Assemble release notes
         if: startsWith(gitea.ref, 'refs/tags/')
@@ -52,7 +46,7 @@ jobs:
 
           - **If you are using a Kobo device**, download [KF_Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/KF_Libron.zip). It has been processed with `kobo-font-fix` for improved compatibility with Kobo's `kepub` renderer.
           - **If you are using a Kindle, another e-reader or a desktop computer**, download [Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron.zip).
-          - **If you are using CrossPoint Reader**, you can try out an early version of Libron for the Xteink X3 and X4 devices by downloading [CP_Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/CP_Libron.zip).
+          - **If you are using CrossPoint Reader**, Libron for the Xteink X3 and X4 devices is published as `cpfont` files in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts).
           - **If you want to use Libron on a website**, download [Libron_Web.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron_Web.zip).
 
           ### Learn more
@@ -91,4 +85,3 @@ jobs:
             /tmp/Libron.zip
             /tmp/KF_Libron.zip
             /tmp/Libron_Web.zip
-            /tmp/CP_Libron.zip
