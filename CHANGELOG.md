@@ -4,6 +4,14 @@
 
 This release adds official support for [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader) as Libron is now available as the converted `cpfont` files which are compatible with this awesome reader app. Libron is available at 12, 14, 16 and 18 point sizes, with all four styles.
 
+### Fixed accent placement
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `ù ú û ü ũ ū ŭ ů ű ȕ ȗ ụ ủ` |
+
+The accents on these sat too far to the right, over the right stem of the `u` instead of over the middle of the letter. They are now back on the `u` anchor, which is where the other weights already placed them.
+
 ## v0.23
 
 As part of this release, v0.9.2 of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.
