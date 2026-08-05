@@ -12,6 +12,8 @@ This release adds official support for [CrossPoint Reader](https://github.com/cr
 
 The accents on these sat too far to the right, over the right stem of the `u` instead of over the middle of the letter. They are now back on the `u` anchor, which is where the other weights already placed them.
 
+As part of this release, v0.10 of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.
+
 ## v0.23
 
 As part of this release, v0.9.2 of [kobofix.py](https://github.com/nicoverbruggen/kobo-font-fix) is now being used to build the `KF` variant of Libron.
