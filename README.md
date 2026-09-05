@@ -19,6 +19,7 @@ What started as a few tweaks to the serifs to make the different font files a li
 - Many uppercase and lowercase letters, figures and punctuation marks have now been redrawn or refined across all four styles. 
 - Spacing and kerning have been adjusted alongside the outlines to create a more even reading texture.
 - Accented characters have been rebuilt where necessary, so that they remain consistent with their base glyphs.
+- Synthetic small caps were added to the font, based on scaled down capitals for each four styles.
 
 The result keeps Readerly's proportions and overall character, but has a calmer and more neutral appearance intended specifically for reading books. As such, it is a successor to Readerly.
 

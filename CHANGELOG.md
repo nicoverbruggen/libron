@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.25
+
+### Small caps
+
+Libron now has small caps in all four styles, through the `smcp` and `c2sc` features. They are derived from the capitals: scaled to a little above the x-height, thickened to match the lowercase stems, spaced more openly, and kerned from the capitals' own pairs.
+
+**Note**: KOReader, Calibre and browsers use these native small caps correctly. Kobo's built-in reader ignores the `smcp` and `c2sc` font features and shrinks the capitals with its native renderer. Use [NickelTypeFix](https://github.com/nicoverbruggen/NickelTypeFix) to get native small caps working.
+
 ## v0.24
 
 Libron now supports [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader). The converted `cpfont` files are built and published in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts), at 12, 14, 16 and 18 point sizes, with all four styles.
