@@ -15,12 +15,12 @@ Pipeline:
   2. Remove overlaps / correct direction (outline cleanup)
   3. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
-  6. Fit and merge Source Serif Greek/Cyrillic, then autohint
+  6. Post-process TTFs (style flags, version names, autohinting)
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
   8. Generate WOFF2 webfonts in ./out/web/
 
-The Latin masters are exported without scaling or condensing. Greek and
-Cyrillic are added from the pinned Source Serif 4 variable fonts in ./src.
+All glyphs, including the fitted Greek and Cyrillic, live in the SFD masters.
+The build exports them without scaling or condensing.
 
 Run with the prebuilt fntbld container (recommended; bundles FontForge,
 ttfautohint, fonttools, brotli, skia-pathops):
@@ -319,6 +319,13 @@ def ff_lineheight_script():
         sel_total = int(round(upm * SELECTION_HEIGHT))
         sel_asc = int(round(sel_total * ASCENDER_RATIO))
         sel_dsc = sel_total - sel_asc
+
+        # Accented glyphs can exceed the normal selection span. Keep the Typo
+        # line spacing fixed and enlarge only the clipping metrics.
+        bounds = [g.boundingBox() for g in f.glyphs() if g.isWorthOutputting()]
+        if bounds:
+            sel_asc = max(sel_asc, int(round(max(box[3] for box in bounds))))
+            sel_dsc = max(sel_dsc, int(round(-min(box[1] for box in bounds))))
 
         f.hhea_ascent = sel_asc
         f.hhea_descent = -sel_dsc
@@ -685,7 +692,6 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
 
     print("\n-- Step 3: Export TTFs --\n")
     os.makedirs(OUT_TTF_DIR, exist_ok=True)
-    from scripts.expand_scripts import expand_script_coverage
 
     for name, style, _source_path, _embolden in variants:
         sfd_path = os.path.join(tmp_dir, f"{name}.sfd")
@@ -694,7 +700,6 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
         run_fontforge_script(script)
         fix_ttf_style_flags(ttf_path, style)
         fix_ttf_version_names(ttf_path)
-        expand_script_coverage(ttf_path, style, SRC_DIR, tmp_dir)
         autohint_ttf(ttf_path)
 
     if with_kobofix:
