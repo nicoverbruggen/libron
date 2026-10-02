@@ -17,6 +17,9 @@ jobs:
       - name: Build fonts
         run: python3 build.py --with-kobofix
 
+      - name: Check script coverage and shaping
+        run: python3 -m unittest discover -s tests
+
       - name: Validate generated fonts with ots-sanitize
         run: |
           for font in out/ttf/*.ttf out/kf/*.ttf out/web/*.woff2; do

@@ -15,12 +15,12 @@ Pipeline:
   2. Remove overlaps / correct direction (outline cleanup)
   3. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
-  6. Post-process TTFs (style flags, version names, autohinting)
+  6. Fit and merge Source Serif Greek/Cyrillic, then autohint
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
   8. Generate WOFF2 webfonts in ./out/web/
 
-No glyph scaling, condensing, ligature edits, or other outline transforms
-are applied — the masters are already final. This is a straight export.
+The Latin masters are exported without scaling or condensing. Greek and
+Cyrillic are added from the pinned Source Serif 4 variable fonts in ./src.
 
 Run with the prebuilt fntbld container (recommended; bundles FontForge,
 ttfautohint, fonttools, brotli, skia-pathops):
@@ -638,7 +638,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
     ]
     variant_names = [name for name, _, _, _ in variants]
 
-    print("\n-- Step 1: Import masters (+ synthesize bold) --\n")
+    print("\n-- Step 1: Import masters --\n")
     overlap_code = ff_remove_overlaps_script()
 
     for name, _style, source_path, method in variants:
@@ -685,6 +685,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
 
     print("\n-- Step 3: Export TTFs --\n")
     os.makedirs(OUT_TTF_DIR, exist_ok=True)
+    from scripts.expand_scripts import expand_script_coverage
 
     for name, style, _source_path, _embolden in variants:
         sfd_path = os.path.join(tmp_dir, f"{name}.sfd")
@@ -693,6 +694,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
         run_fontforge_script(script)
         fix_ttf_style_flags(ttf_path, style)
         fix_ttf_version_names(ttf_path)
+        expand_script_coverage(ttf_path, style, SRC_DIR, tmp_dir)
         autohint_ttf(ttf_path)
 
     if with_kobofix:
