@@ -8341,12 +8341,12 @@ EndChar
 
 StartChar: florin
 Encoding: 402 402 319
-Width: 1347
+Width: 1308
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 621 -1 N 1.02997 0 0 1.07996 -161 0 2
+Refer: 621 -1 N 1.02997 0 0 1.07996 -180 0 2
 Substitution2: "'tnum' Tabular Numbers in Latin lookup 7 subtable" florin
 Substitution2: "'pnum' Proportional Numbers in Latin lookup 6 subtable" florin.lf
 EndChar

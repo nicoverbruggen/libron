@@ -810,12 +810,12 @@ EndChar
 
 StartChar: two
 Encoding: 50 50 21
-Width: 1195
+Width: 1210
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 640 -1 N 1 0 0 1 19 0 2
+Refer: 640 -1 N 1 0 0 1 27 0 2
 Substitution2: "'tnum' Tabular Numbers in Latin lookup 7 subtable" two
 Substitution2: "'pnum' Proportional Numbers in Latin lookup 6 subtable" two.lf
 Substitution2: "'sups' Superscript in Latin lookup 5 subtable" uni00B2
@@ -836,12 +836,12 @@ EndChar
 
 StartChar: four
 Encoding: 52 52 23
-Width: 1261
+Width: 1210
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 642 -1 N 1 0 0 1 33 0 2
+Refer: 642 -1 N 1 0 0 1 8 0 2
 Substitution2: "'tnum' Tabular Numbers in Latin lookup 7 subtable" four
 Substitution2: "'pnum' Proportional Numbers in Latin lookup 6 subtable" four.lf
 Substitution2: "'sups' Superscript in Latin lookup 5 subtable" uni2074
@@ -8343,12 +8343,12 @@ EndChar
 
 StartChar: florin
 Encoding: 402 402 319
-Width: 1246
+Width: 1210
 GlyphClass: 1
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 621 -1 N 1.02997 0 0 1.07996 -148 0 2
+Refer: 621 -1 N 1.02997 0 0 1.07996 -166 0 2
 Substitution2: "'tnum' Tabular Numbers in Latin lookup 7 subtable" florin
 Substitution2: "'pnum' Proportional Numbers in Latin lookup 6 subtable" florin.lf
 EndChar
