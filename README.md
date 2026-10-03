@@ -23,6 +23,8 @@ What started as a few tweaks to the serifs to make the different font files a li
 
 The result keeps Readerly's proportions and overall character, but has a calmer and more neutral appearance intended specifically for reading books. As such, it is a successor to Readerly.
 
+Text tagged as Polish can use steeper acute accents through the OpenType `locl` feature. These forms cover `ć ń ó ś ź`, their capitals, and their small caps in all four styles. Readers that do not apply language-specific forms use the default accents.
+
 ## Building Libron
 
 ### Automatic builds
