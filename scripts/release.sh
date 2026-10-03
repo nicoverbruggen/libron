@@ -6,8 +6,9 @@
 #   1. Reads the target version from VERSION and refuses to run if a matching
 #      tag (vX.Y) already exists (or CHANGELOG.md already has that section).
 #   2. Builds the previous release and the current sources, diffs the compiled
-#      fonts (outlines / kerning / tracking), and inserts that section at the
-#      top of CHANGELOG.md, directly under "# Changelog" and a blank line.
+#      fonts (outlines / kerning / tracking), and prepares the changelog section.
+#   3. Regenerates specimen.svg and sample.svg from the current build, then
+#      inserts the section at the top of CHANGELOG.md.
 #
 # Compiled-font diffing catches everything the source view misses -- notably
 # class-based kerning (one big KernClass2 matrix a text diff won't surface).
@@ -16,7 +17,7 @@
 #   scripts/release.sh [BASELINE_TAG]
 #
 #   BASELINE_TAG   release to diff against (default: newest existing tag)
-#   --rebuild      rebuild current TTFs too (default: reuse out/ttf if present)
+#   --rebuild      accepted for compatibility; current fonts always rebuild
 #
 # Requires: podman + the fntbld-oci image (FontForge + fonttools), per AGENTS.md.
 set -euo pipefail
@@ -26,10 +27,9 @@ cd "$REPO"
 
 IMAGE="ghcr.io/nicoverbruggen/fntbld-oci:latest"
 BASELINE=""
-REBUILD=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --rebuild) REBUILD=1; shift ;;
+    --rebuild) shift ;;
     -*) echo "unknown flag: $1" >&2; exit 2 ;;
     *) BASELINE="$1"; shift ;;
   esac
@@ -58,10 +58,8 @@ echo ">> releasing ${TAG}, diffing against ${BASELINE}" >&2
 run() { podman run --rm -v "$1":/work -w /work "$IMAGE" "${@:2}"; }
 
 # --- 2a. Builds ------------------------------------------------------------ #
-if [[ "$REBUILD" == 1 || ! -f out/ttf/Libron-Regular.ttf ]]; then
-  echo ">> building current (${VERSION})" >&2
-  run "$REPO" python3 build.py >/dev/null
-fi
+echo ">> building current (${VERSION})" >&2
+run "$REPO" python3 build.py >/dev/null
 
 WT="$(mktemp -d)"
 BASE_TTF="$REPO/.release-baseline-ttf"
@@ -89,6 +87,11 @@ if [[ -n "$NEW_KOBO" && "$OLD_KOBO" != "$NEW_KOBO" ]]; then
   echo ">> noted kobo-font-fix bump ${OLD_KOBO:-none} -> ${NEW_KOBO}" >&2
 fi
 
+# Generate images before editing the changelog so a rendering failure leaves
+# the release notes untouched. Both images use the freshly built fonts.
+echo ">> regenerating README specimens" >&2
+run "$REPO" python3 scripts/generate_specimens.py
+
 # --- 2c. Insert at the top of CHANGELOG.md --------------------------------- #
 python3 - "$TAG" <<'PY'
 import sys
@@ -105,4 +108,4 @@ open("CHANGELOG.md", "w").write(f"{head}\n\n{section}\n\n{rest}")
 print(f">> inserted {tag} section at top of CHANGELOG.md", file=sys.stderr)
 PY
 
-echo ">> done. Review CHANGELOG.md, then commit + tag ${TAG} yourself." >&2
+echo ">> done. Review CHANGELOG.md, specimen.svg and sample.svg, then commit + tag ${TAG} yourself." >&2

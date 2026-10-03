@@ -9,7 +9,13 @@ The original font was imported and has been manually edited using [FontForge](ht
 
 ## Specimen
 
-<img src="./specimen.svg" width=400px>
+<img src="./specimen.svg" width="400" alt="Libron roman and italic letters, lowercase alphabet and figures">
+
+## Reading sample
+
+<img src="./sample.svg" width="600" alt="The Firm, the prologue of Trevelyan's Type Tester, set as a book page in Libron">
+
+The sample shows the opening page of the public-domain prologue of [Trevelyan's Type Tester](https://github.com/nicoverbruggen/type-tester-epub), with native small caps, an enlarged initial and indented paragraphs. It uses a simulated 7-inch e-reader display at 1264 × 1680 pixels, with 36-pixel body type.
 
 ## General changes
 
@@ -43,6 +49,16 @@ Libron for devices running CrossPoint Reader (`cpfont`) is built and published i
 ### Building locally
 
 You can run `./local-build.sh` if you have Podman installed to build the definitive fonts. If you have all dependencies installed locally, you can also use `./build.py` to build the font with Python.
+
+Font builds do not regenerate the README images. Before a release, bump [VERSION](./VERSION) and run `scripts/release.sh` to generate the changelog section and refresh `specimen.svg` and `sample.svg`. The script builds the current sources, so the images use the release's outlines, kerning, ligatures and version. Review and commit the notes and images before creating the tag. The script does not commit, tag or push.
+
+To edit the specimen layout or sample text, change [scripts/generate_specimens.py](./scripts/generate_specimens.py). To regenerate the images from an existing build without rebuilding the fonts, run:
+
+```sh
+podman run --rm -v "$PWD":/work -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 scripts/generate_specimens.py
+```
+
+The generator needs `fonttools` and the HarfBuzz shared library, both included in `fntbld-oci`. CI builds the fonts and uses the committed README images.
 
 ## License
 
