@@ -44,3 +44,5 @@ You can run `./local-build.sh` if you have Podman installed to build the definit
 ## License
 
 This font is available under the [OFL license](./LICENSE).
+
+Libron is a Reserved Font Name. Modified versions must use a different primary font name unless Nico Verbruggen gives written permission.
