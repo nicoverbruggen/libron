@@ -1,5 +1,8 @@
 # <img src="./icon.png" width=20px> Libron
 
+> [!NOTE]
+> If this font has been useful to you, please **star the repository** so I know it is being used. Please also consider [a donation](https://nicoverbruggen.be/donate) to support the project, which I work on in my free time. **Thank you!**
+
 **Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various edits to give the font a more neutral look. 
 
 The original font was imported and has been manually edited using [FontForge](https://fontforge.org). All modified source files are available in the `src` directory.
