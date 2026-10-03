@@ -49,6 +49,8 @@ The imported glyphs were fitted at optical size `9`, weight `450` for regular an
 
 The Greek marks come from Literata 3.103 at optical size `12`, with weights `400` and `700` for regular and bold and their corresponding italics. The marks are scaled uniformly to the Greek lowercase height; combined marks retain Literata's internal spacing. The fitted outlines are stored in the SFD masters and need no additional build dependency.
 
+Greek and Cyrillic letters use Libron's Latin shapes where Source Serif shares those shapes and Libron has the corresponding Latin glyph. This includes shared small caps and localized forms. Related accented forms retain their Greek or Cyrillic marks, fitted to the new bases. Small caps retain the existing Greek and Cyrillic small-cap heights. The remaining donor italic letters are sheared to match Libron's drawn stem angles, with separate adjustments for capitals and lowercase. Accents follow the fitted bases without changing their shapes.
+
 All glyph edits now belong in the Libron SFD masters. The donor-fitting recipe and original Latin masters remain available in the Git history before the migration.
 
 After a full build with Kobo variants, run `python3 -m unittest discover -s tests` in the same container to check coverage, canonical accent spellings and localized shaping.
