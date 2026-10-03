@@ -1,7 +1,11 @@
+Libron is based on Readerly, which is based on Newsreader.
+
+Greek and Cyrillic coverage is based on Source Serif 4 (https://github.com/adobe-fonts/source-serif), with glyphs adapted to Libron.
+
+Greek diacritics, including accents, breathing marks and iota subscripts, are adapted from Literata (https://github.com/googlefonts/literata).
+
 Newsreader (c) 2020 The Newsreader Project Authors (http://github.com/productiontype/Newsreader)
-Source Serif 4 (c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
-Literata (c) 2017 The Literata Project Authors (https://github.com/googlefonts/literata)
 Readerly (c) 2026 Nico Verbruggen (https://github.com/nicoverbruggen/readerly)
 Libron (c) 2026 Nico Verbruggen (https://github.com/nicoverbruggen/libron)
-
-Libron is a modified version of Readerly with reduced serifs.
+Source Serif 4 (c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+Literata (c) 2017 The Literata Project Authors (https://github.com/googlefonts/literata)
