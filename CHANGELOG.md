@@ -1,5 +1,51 @@
 # Changelog
 
+## v0.30
+
+Changes since v0.25.
+
+### Capital sharp S
+
+Replaced the `SS` placeholder at U+1E9E with a capital sharp S outline in all four styles. Updated its small caps form and added a `smcp` substitution from lowercase `ß`.
+
+### Polish typography
+
+Added steeper Polish acute accents for `ć ń ó ś ź`, their capitals, and their small caps in all four styles. These forms use the OpenType `locl` feature when the text is tagged as Polish. Readers that do not apply language-specific forms use the default accents.
+
+Each style has 17 new alternate glyphs: 15 letters and two combining marks. Unicode character coverage is unchanged.
+
+Strengthened the ogoneks, reshaped `Ą`, and corrected the attachment of `ę`. The ogonek on italic and bold italic `ę` also moved 70 units left. Adjusted the default acute positions on `ć ń ó ź` in all four styles.
+
+### Adjusted outlines
+
+Updated accented capitals, `Æ Ł Œ`, and their small caps to match the current base letters. Corrected the cedilla placement on `Ḩ ḩ` and updated related currency and superscript forms.
+
+| Weight | Glyphs |
+|---|---|
+| All four styles | `² Æ ó Ą ć Ę ę Ł ń Œ Ţ ź Ȩ Ḩ ḩ Ḷ Ḻ Ṣ Ṭ Ṯ Ẓ Ẕ` |
+
+The corresponding capital small caps and the currency forms `£ ₣ ₤ ₺` were also updated.
+
+### Updated kerning
+
+| Weight | Added | Removed | Retuned |
+|---|---|---|---|
+| Regular | — | — | `f→i k→a` |
+| Bold | `T→h T→k t→k` | — | `k→a` |
+
+Regular `fi` now overlaps when ligatures are disabled. Bold `Th`, `Tk`, and `tk` now match regular. Regular and bold `ka` use a value between their previous settings. The accented equivalents follow the same adjustments, and the new Polish alternates retain the kerning of their default forms.
+
+### Updated spacing
+
+Restored equal widths for tabular figures and currency symbols that had drifted after outline edits. Corrected spacing on several accented capitals and their small caps.
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `2 4 Ę Ţ ƒ Ȩ Ḷ Ḻ Ṭ Ṯ` |
+| Bold | `Ę ƒ Ȩ Ḷ Ḻ` |
+| Italic | `7 ƒ ₽` |
+| Bold Italic | `7 ƒ ₽` |
+
 ## v0.25
 
 ### Small caps
