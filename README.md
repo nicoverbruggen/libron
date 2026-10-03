@@ -43,9 +43,11 @@ You can run `./local-build.sh` if you have Podman installed to build the definit
 
 ## Language coverage
 
-Libron has broad Latin coverage, including Vietnamese, plus modern Greek and Cyrillic in all four styles. Greek and Cyrillic come from Source Serif 4, fitted to Libron's height and thickness. Bulgarian, Serbian and Macedonian localized forms are retained. Polytonic Greek is not included.
+Libron has broad Latin coverage, including Vietnamese, plus modern and polytonic Greek and Cyrillic in all four styles. Greek and Cyrillic come from Source Serif 4, fitted to Libron's height and thickness. Bulgarian, Serbian and Macedonian localized forms are retained. Modern and polytonic Greek use Literata's accent and breathing-mark outlines, fitted onto the existing Greek letters. The Greek Extended block and combining breathing marks, circumflex and iota subscript are supported. Capital breathing marks and accents sit to the left; length marks sit above. Iota subscripts sit below both lowercase and capital letters. Greek small caps are available in regular and bold, including the polytonic forms.
 
 The imported glyphs were fitted at optical size `9`, weight `450` for regular and italic, `650` for bold, and `675` for bold italic. Capitals and lowercase were fitted separately. The SFD masters contain the fitted outlines, combining-mark positioning and localized forms. The build exports them directly and preserves Libron's typographic line spacing.
+
+The Greek marks come from Literata 3.103 at optical size `12`, with weights `400` and `700` for regular and bold and their corresponding italics. The marks are scaled uniformly to the Greek lowercase height; combined marks retain Literata's internal spacing. The fitted outlines are stored in the SFD masters and need no additional build dependency.
 
 All glyph edits now belong in the Libron SFD masters. The donor-fitting recipe and original Latin masters remain available in the Git history before the migration.
 

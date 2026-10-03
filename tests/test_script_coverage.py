@@ -14,6 +14,8 @@ from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
 STYLES = ("Regular", "Bold", "Italic", "BoldItalic")
+POLYTONIC = {cp for cp in range(0x1F00, 0x2000) if unicodedata.category(chr(cp)) != "Cn"}
+POLYTONIC_MARKS = {0x0313, 0x0314, 0x0342, 0x0345}
 PUNCTUATION = {0x0374: 0x02B9, 0x037E: 0x003B, 0x0387: 0x00B7}
 
 
@@ -103,6 +105,7 @@ class ScriptCoverageTests(unittest.TestCase):
 
     def test_greek_and_cyrillic_survive_each_output_format(self):
         required = set(map(ord, "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋΐΰАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяҐґЄєІіЇїЂђЉљЊњЋћЏџЃѓЅѕЌќЈј"))
+        required |= POLYTONIC | POLYTONIC_MARKS
         for style in STYLES:
             for directory, filename in (("ttf", f"Libron-{style}.ttf"), ("kf", f"KF_Libron-{style}.ttf"), ("web", f"Libron-{style}.woff2")):
                 with self.subTest(style=style, format=directory), TTFont(ROOT / "out" / directory / filename) as font:
@@ -115,15 +118,54 @@ class ScriptCoverageTests(unittest.TestCase):
     def test_canonical_spellings_shape_identically(self):
         for style, font in self.fonts.items():
             for codepoint in sorted(font.cmap):
-                if not 0x0370 <= codepoint <= 0x052F:
+                if not (0x0370 <= codepoint <= 0x052F or codepoint in POLYTONIC):
                     continue
                 character = chr(codepoint)
                 decomposed = unicodedata.normalize("NFD", character)
                 if character == decomposed:
                     continue
-                language = "el" if codepoint < 0x0400 else "ru"
+                language = "ru" if 0x0400 <= codepoint <= 0x052F else "el"
                 with self.subTest(style=style, character=f"U+{codepoint:04X}"):
                     self.assertEqual(font.shape(character, language), font.shape(decomposed, language))
+
+    def test_polytonic_marks_attach_above_length_marks(self):
+        # These scholarly combinations have no single precomposed character.
+        # Breathing and acute must form a pair above the macron or breve.
+        for style, font in self.fonts.items():
+            for text in ("α\u0304\u0313\u0301", "α\u0306\u0314\u0300"):
+                with self.subTest(style=style, text=text):
+                    shaped = font.shape(text, "grc")
+                    self.assertEqual(len(shaped), 2)
+                    self.assertNotIn(".notdef", [glyph[0] for glyph in shaped])
+                    self.assertEqual(shaped[1][1], 0)
+                    self.assertGreater(shaped[1][4], 0)
+                    self.assertIn(".poly", shaped[1][0])
+
+    def test_polytonic_letters_have_visible_outlines(self):
+        for style in STYLES:
+            with TTFont(ROOT / "out" / "ttf" / f"Libron-{style}.ttf") as font:
+                cmap = font.getBestCmap()
+                for codepoint in POLYTONIC | POLYTONIC_MARKS:
+                    with self.subTest(style=style, codepoint=f"U+{codepoint:04X}"):
+                        glyph = font["glyf"][cmap[codepoint]]
+                        self.assertNotEqual(glyph.numberOfContours, 0)
+                        self.assertLessEqual(glyph.yMax, font["OS/2"].usWinAscent)
+                        self.assertGreaterEqual(glyph.yMin, -font["OS/2"].usWinDescent)
+
+    def test_capital_subscripts_and_length_marks_preserve_advance(self):
+        for style, shaper in self.fonts.items():
+            with TTFont(ROOT / "out" / "ttf" / f"Libron-{style}.ttf") as font:
+                cmap = font.getBestCmap()
+                for accented, base in (("ᾼ", "Α"), ("ῌ", "Η"), ("ῼ", "Ω"), ("Ᾰ", "Α"), ("Ᾱ", "Α")):
+                    with self.subTest(style=style, character=accented):
+                        self.assertEqual(shaper.shape(accented, "grc")[0][1], shaper.shape(base, "grc")[0][1])
+                        glyph = font["glyf"][cmap[ord(accented)]]
+                        if accented in "ᾼῌῼ":
+                            self.assertLess(glyph.yMin, -100)
+                            # A subscript does not change the letter's right-side kern.
+                            self.assertEqual(shaper.shape(accented + "Τ", "grc")[0][1], shaper.shape(base + "Τ", "grc")[0][1])
+                        else:
+                            self.assertGreater(glyph.yMax, font["glyf"][cmap[ord(base)]].yMax + 100)
 
     def test_localized_cyrillic_forms(self):
         for style, font in self.fonts.items():
