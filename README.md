@@ -1,7 +1,7 @@
 # <img src="./icon.png" width=20px> Libron
 
 > [!NOTE]
-> If this font has been useful to you, please **star the repository** so I know it is being used. Please also consider [a donation](https://nicoverbruggen.be/donate) to support the project, which I work on in my free time. **Thank you!**
+> If this font has been useful to you, please **star the repository** so I know it is being used. Please also consider [a donation](https://nicoverbruggen.be/donate) to support the project, which I work on in my free time. It makes a big difference. **Thank you!**
 
 **Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various edits to give the font a more neutral look. 
 
@@ -54,14 +54,6 @@ The local wrapper builds Kobo and CrossPoint variants by default. Use `--without
 The Gitea release workflow builds only standard and Kobo fonts with `--with-kobofix --without-web`. GitHub releases also include web fonts and CrossPoint bundles.
 
 Font builds do not regenerate the README images. Before a release, bump [VERSION](./VERSION) and run `scripts/release.sh` to generate the changelog section and refresh `specimen.svg` and `sample.svg`. The script builds the current sources, so the images use the release's outlines, kerning, ligatures and version. Review and commit the notes and images before creating the tag. The script does not commit, tag or push.
-
-To edit the specimen layout or sample text, change [scripts/generate_specimens.py](./scripts/generate_specimens.py). To regenerate the images from an existing build without rebuilding the fonts, run:
-
-```sh
-podman run --rm -v "$PWD":/work -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 scripts/generate_specimens.py
-```
-
-The generator needs `fonttools` and the HarfBuzz shared library, both included in `fntbld-oci`. CI builds the fonts and uses the committed README images.
 
 ## License
 

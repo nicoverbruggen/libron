@@ -5,3 +5,4 @@
 - Preferred command from the repository root:
   `podman run --rm -v "$PWD":/work -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 build.py`
 - When creating a new release, bump `VERSION` in the repository's root first.
+- Before tagging a new release, update the specimen layout or sample text, change [scripts/generate_specimens.py](./scripts/generate_specimens.py).
