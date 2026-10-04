@@ -18,6 +18,7 @@ Pipeline:
   6. Post-process TTFs (style flags, version names, autohinting)
   7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
   8. Generate WOFF2 webfonts in ./out/web/
+  9. Optionally generate CrossPoint Reader bundles in ./out/cpfont/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
 are applied — the masters are already final. This is a straight export.
@@ -51,6 +52,7 @@ OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_TTF_DIR = os.path.join(OUT_DIR, "ttf")
 OUT_KF_DIR = os.path.join(OUT_DIR, "kf")
 OUT_WEB_DIR = os.path.join(OUT_DIR, "web")
+OUT_CPFONT_DIR = os.path.join(OUT_DIR, "cpfont")
 
 with open(os.path.join(ROOT_DIR, "VERSION")) as version_file:
     FONT_VERSION = version_file.read().strip()
@@ -594,6 +596,7 @@ def main():
     family = DEFAULT_FAMILY
     outline_fix = True
     with_kobofix = False
+    with_crosspoint = "--with-crosspoint" in sys.argv
 
     if "--name" in sys.argv:
         idx = sys.argv.index("--name")
@@ -618,6 +621,7 @@ def main():
     print(f"  Family: {family}")
     print(f"  Outline fix: {'yes' if outline_fix else 'no'}")
     print(f"  Kobo fix: {'yes' if with_kobofix else 'no'}")
+    print(f"  CrossPoint: {'yes' if with_crosspoint else 'no'}")
     print(f"  Sources: {len(SOURCE_STYLES)}")
 
     tmp_dir = os.path.join(ROOT_DIR, "tmp")
@@ -626,12 +630,13 @@ def main():
     os.makedirs(tmp_dir)
 
     try:
-        build(tmp_dir, family=family, outline_fix=outline_fix, with_kobofix=with_kobofix)
+        build(tmp_dir, family=family, outline_fix=outline_fix,
+              with_kobofix=with_kobofix, with_crosspoint=with_crosspoint)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
-def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
+def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, with_crosspoint=False):
     variants = [
         (f"{family}-{style}", style, source_path, method)
         for style, source_path, method in SOURCE_STYLES
@@ -708,11 +713,19 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False):
         woff2_path = os.path.join(OUT_WEB_DIR, f"{name}.woff2")
         convert_to_woff2(ttf_path, woff2_path)
 
+    if with_crosspoint:
+        from scripts.build_cpfont import build_crosspoint
+
+        print("\n-- Step 6: Generate CrossPoint Reader bundles --\n")
+        build_crosspoint(OUT_TTF_DIR, OUT_CPFONT_DIR, tmp_dir, family)
+
     print("\n" + "=" * 60)
     print("  Build complete!")
     print(f"  TTF fonts are in:  {OUT_TTF_DIR}/")
     print(f"  KF fonts are in:   {OUT_KF_DIR}/")
     print(f"  Web fonts are in:  {OUT_WEB_DIR}/")
+    if with_crosspoint:
+        print(f"  CrossPoint fonts are in: {OUT_CPFONT_DIR}/")
     print("=" * 60)
 
 

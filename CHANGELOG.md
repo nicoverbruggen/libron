@@ -4,6 +4,10 @@
 
 Changes since v0.25.
 
+### CrossPoint Reader builds
+
+Releases now include `Libron_CrossPoint.zip` for CrossPoint Reader. It contains sizes 12, 14, 16 and 18, with all four styles in each `cpfont` file. The builds use the same relaxed line spacing as the CrossPoint fonts in ebook-fonts.
+
 ### Capital sharp S
 
 Replaced the `SS` placeholder at U+1E9E with a capital sharp S outline in all four styles. Updated its small caps form and added a `smcp` substitution from lowercase `ß`.

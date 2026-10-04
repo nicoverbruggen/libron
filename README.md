@@ -42,13 +42,14 @@ The following variants are generated:
 
 - Libron for desktop (`TTF`)
 - Libron for [Kobo devices](https://github.com/nicoverbruggen/kobo-font-fix) (`KF TTF`)
+- Libron for [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader#custom-sd-card-fonts) (`cpfont`)
 - Libron's webfont variant (`WOFF2`) 
-
-Libron for devices running CrossPoint Reader (`cpfont`) is built and published in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts).
 
 ### Building locally
 
 You can run `./local-build.sh` if you have Podman installed to build the definitive fonts. If you have all dependencies installed locally, you can also use `./build.py` to build the font with Python.
+
+The local wrapper builds Kobo and CrossPoint variants by default. Use `--without-crosspoint` to skip CrossPoint. With `build.py`, add `--with-crosspoint` to generate the bundles. To convert existing TTFs without rebuilding them, run `python3 scripts/build_cpfont.py` in the `fntbld-oci` container. CrossPoint builds need network access to download the converter pinned in [scripts/build_cpfont.py](./scripts/build_cpfont.py).
 
 Font builds do not regenerate the README images. Before a release, bump [VERSION](./VERSION) and run `scripts/release.sh` to generate the changelog section and refresh `specimen.svg` and `sample.svg`. The script builds the current sources, so the images use the release's outlines, kerning, ligatures and version. Review and commit the notes and images before creating the tag. The script does not commit, tag or push.
 

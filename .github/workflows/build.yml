@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Build fonts
-        run: python3 build.py --with-kobofix
+        run: python3 build.py --with-kobofix --with-crosspoint
 
       - name: Validate generated fonts with ots-sanitize
         run: |
@@ -42,12 +42,19 @@ jobs:
           name: Libron_Web
           path: out/web/*.woff2
 
+      - name: Upload CrossPoint artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: Libron_CrossPoint
+          path: out/cpfont/
+
       - name: Zip fonts for release
         if: startsWith(github.ref, 'refs/tags/')
         run: |
           cd out/ttf && zip -j ../../Libron.zip *.ttf
           cd ../../out/kf && zip -j ../../KF_Libron.zip *.ttf
           cd ../../out/web && zip -j ../../Libron_Web.zip *.woff2
+          cd ../../out/cpfont && zip -r ../../Libron_CrossPoint.zip Libron
 
       - name: Upload release zips
         if: startsWith(github.ref, 'refs/tags/')
@@ -58,6 +65,7 @@ jobs:
             Libron.zip
             KF_Libron.zip
             Libron_Web.zip
+            Libron_CrossPoint.zip
 
   release:
     needs: build
@@ -87,7 +95,7 @@ jobs:
 
           - **If you are using a Kobo device**, download [KF_Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/KF_Libron.zip). It has been processed with `kobo-font-fix` for improved compatibility with Kobo's `kepub` renderer.
           - **If you are using a Kindle, another e-reader or a desktop computer**, download [Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron.zip).
-          - **If you are using CrossPoint Reader**, Libron for the Xteink X3 and X4 devices is published as `cpfont` files in [ebook-fonts](https://github.com/nicoverbruggen/ebook-fonts).
+          - **If you are using CrossPoint Reader**, download [Libron_CrossPoint.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_CrossPoint.zip). Copy the `Libron` folder into `/fonts` or `/.fonts` on the SD card. Each `cpfont` file includes all four styles at one reading size.
           - **If you want to use Libron on a website**, download [Libron_Web.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_Web.zip).
 
           ### Learn more
@@ -122,3 +130,4 @@ jobs:
             Libron.zip
             KF_Libron.zip
             Libron_Web.zip
+            Libron_CrossPoint.zip
