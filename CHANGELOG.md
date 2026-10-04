@@ -39,6 +39,8 @@ The corresponding capital small caps and the currency forms `£ ₣ ₤ ₺` wer
 
 Regular `fi` now overlaps when ligatures are disabled. Bold `Th`, `Tk`, and `tk` now match regular. Regular and bold `ka` use a value between their previous settings. The accented equivalents follow the same adjustments, and the new Polish alternates retain the kerning of their default forms.
 
+Reset 14 Regular kern pairs to zero: `AX Ax CJ Cv Cy Kx gX gx kx rr sh zv zw zy`. These changes reduce inconsistent pixel spacing and occasional contacts at small reading sizes, including with slight ink expansion. Outlines and sidebearings are unchanged.
+
 ### Updated spacing
 
 Restored equal widths for tabular figures and currency symbols that had drifted after outline edits. Corrected spacing on several accented capitals and their small caps.
