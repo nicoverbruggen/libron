@@ -597,6 +597,7 @@ def main():
     outline_fix = True
     with_kobofix = False
     with_crosspoint = "--with-crosspoint" in sys.argv
+    with_web = "--without-web" not in sys.argv
 
     if "--name" in sys.argv:
         idx = sys.argv.index("--name")
@@ -622,6 +623,7 @@ def main():
     print(f"  Outline fix: {'yes' if outline_fix else 'no'}")
     print(f"  Kobo fix: {'yes' if with_kobofix else 'no'}")
     print(f"  CrossPoint: {'yes' if with_crosspoint else 'no'}")
+    print(f"  Web fonts: {'yes' if with_web else 'no'}")
     print(f"  Sources: {len(SOURCE_STYLES)}")
 
     tmp_dir = os.path.join(ROOT_DIR, "tmp")
@@ -631,12 +633,12 @@ def main():
 
     try:
         build(tmp_dir, family=family, outline_fix=outline_fix,
-              with_kobofix=with_kobofix, with_crosspoint=with_crosspoint)
+              with_kobofix=with_kobofix, with_crosspoint=with_crosspoint, with_web=with_web)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
-def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, with_crosspoint=False):
+def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, with_crosspoint=False, with_web=True):
     variants = [
         (f"{family}-{style}", style, source_path, method)
         for style, source_path, method in SOURCE_STYLES
@@ -706,12 +708,13 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
         download_kobofix(kobofix_path)
         run_kobofix(kobofix_path, variant_names)
 
-    print("\n-- Step 5: Generate WOFF2 webfonts --\n")
-    os.makedirs(OUT_WEB_DIR, exist_ok=True)
-    for name in variant_names:
-        ttf_path = os.path.join(OUT_TTF_DIR, f"{name}.ttf")
-        woff2_path = os.path.join(OUT_WEB_DIR, f"{name}.woff2")
-        convert_to_woff2(ttf_path, woff2_path)
+    if with_web:
+        print("\n-- Step 5: Generate WOFF2 webfonts --\n")
+        os.makedirs(OUT_WEB_DIR, exist_ok=True)
+        for name in variant_names:
+            ttf_path = os.path.join(OUT_TTF_DIR, f"{name}.ttf")
+            woff2_path = os.path.join(OUT_WEB_DIR, f"{name}.woff2")
+            convert_to_woff2(ttf_path, woff2_path)
 
     if with_crosspoint:
         from scripts.build_cpfont import build_crosspoint
@@ -722,8 +725,10 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
     print("\n" + "=" * 60)
     print("  Build complete!")
     print(f"  TTF fonts are in:  {OUT_TTF_DIR}/")
-    print(f"  KF fonts are in:   {OUT_KF_DIR}/")
-    print(f"  Web fonts are in:  {OUT_WEB_DIR}/")
+    if with_kobofix:
+        print(f"  KF fonts are in:   {OUT_KF_DIR}/")
+    if with_web:
+        print(f"  Web fonts are in:  {OUT_WEB_DIR}/")
     if with_crosspoint:
         print(f"  CrossPoint fonts are in: {OUT_CPFONT_DIR}/")
     print("=" * 60)
