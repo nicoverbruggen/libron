@@ -10,7 +10,7 @@ Releases now include `Libron_CrossPoint.zip` for CrossPoint Reader. It contains 
 
 ### Capital sharp S
 
-Replaced the `SS` placeholder at U+1E9E with a capital sharp S outline in all four styles. Updated its small caps form and added a `smcp` substitution from lowercase `ß`.
+Replaced the `SS` placeholder at U+1E9E with a capital sharp S outline in all four styles. Updated its small caps form and added a `smcp` substitution from lowercase `ß`. The design is preliminary and may change in a later release.
 
 ### Polish typography
 
@@ -22,7 +22,7 @@ Strengthened the ogoneks, reshaped `Ą`, and corrected the attachment of `ę`. T
 
 ### Adjusted outlines
 
-Updated accented capitals, `Æ Ł Œ`, and their small caps to match the current base letters. Corrected the cedilla placement on `Ḩ ḩ` and updated related currency and superscript forms.
+Updated accented capitals, `Æ Ł Œ`, and their small caps to match the current base letters. Corrected the cedilla placement on `Ḩ ḩ`.
 
 | Weight | Glyphs |
 |---|---|
@@ -32,12 +32,12 @@ The corresponding capital small caps and the currency forms `£ ₣ ₤ ₺` wer
 
 ### Updated kerning
 
-| Weight | Added | Removed | Retuned |
-|---|---|---|---|
-| Regular | — | — | `f→i k→a` |
-| Bold | `T→h T→k t→k` | — | `k→a` |
+| Weight | Added | Retuned |
+|---|---|---|
+| Regular | — | `f→i k→a` |
+| Bold | `T→h T→k t→k` | `k→a` |
 
-Regular `fi` now overlaps when ligatures are disabled. Bold `Th`, `Tk`, and `tk` now match regular. Regular and bold `ka` use a value between their previous settings. The accented equivalents follow the same adjustments, and the new Polish alternates retain the kerning of their default forms.
+Regular `fi` now overlaps when ligatures are disabled. Bold `Th`, `Tk`, and `tk` now match regular. Regular and bold `ka` now share a value between their previous settings. The accented equivalents follow the same adjustments, and the new Polish alternates retain the kerning of their default forms.
 
 Reset 14 Regular kern pairs to zero: `AX Ax CJ Cv Cy Kx gX gx kx rr sh zv zw zy`. These changes reduce inconsistent pixel spacing and occasional contacts at small reading sizes, including with slight ink expansion. Outlines and sidebearings are unchanged.
 

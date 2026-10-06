@@ -27,6 +27,7 @@ Run with the container python (has fonttools), e.g.:
 import argparse
 import os
 import sys
+import unicodedata
 
 from fontTools.ttLib import TTFont
 
@@ -67,34 +68,56 @@ def outline_sig(glyf, name):
 
 
 def _iter_pairpos(gpos):
-    """Yield every PairPos subtable in a GPOS table, resolving Extensions."""
+    """Yield (lookup index, PairPos subtable) for a GPOS table, resolving Extensions."""
     if gpos is None or not hasattr(gpos.table, "LookupList") or gpos.table.LookupList is None:
         return
-    for lookup in gpos.table.LookupList.Lookup:
+    for li, lookup in enumerate(gpos.table.LookupList.Lookup):
         for sub in lookup.SubTable:
             st = sub
             if lookup.LookupType == 9:  # Extension Positioning
                 st = sub.ExtSubTable
             if getattr(st, "LookupType", lookup.LookupType) == 2 or hasattr(st, "PairSet") or hasattr(st, "Class1Record"):
-                yield st
+                yield li, st
 
 
 def kern_pairs(font):
-    """Return {(left, right): xAdvance} for all nonzero GPOS pair kerns."""
+    """Return {(left, right): xAdvance} for all nonzero GPOS pair kerns.
+
+    Follows shaper semantics: within one lookup the first subtable that
+    matches a pair wins and later subtables are skipped, even when the
+    matching value is 0. A per-glyph (format 1) subtable matches only the
+    pairs it lists; a class (format 2) subtable matches every pair whose
+    left glyph is in its coverage, since class 0 catches any right glyph.
+    FontForge writes a per-glyph zero in front of the class matrix to cancel
+    a class kern, so this is what makes such resets show up. Values from
+    different lookups add up.
+    """
     pairs = {}
     if "GPOS" not in font:
         return pairs
-    for st in _iter_pairpos(font["GPOS"]):
+    per_lookup = {}
+    claimed_pairs = {}   # lookup index -> pairs an earlier subtable matched
+    claimed_left = {}    # lookup index -> left glyphs a class subtable matched
+    for li, st in _iter_pairpos(font["GPOS"]):
+        lookup_pairs = per_lookup.setdefault(li, {})
+        taken = claimed_pairs.setdefault(li, set())
+        taken_left = claimed_left.setdefault(li, set())
         fmt = getattr(st, "Format", None)
         if fmt == 1 or hasattr(st, "PairSet"):
             first = st.Coverage.glyphs
             for gi, pairset in zip(first, st.PairSet):
+                if gi in taken_left:
+                    continue
                 for rec in pairset.PairValueRecord:
+                    key = (gi, rec.SecondGlyph)
+                    if key in taken:
+                        continue
+                    taken.add(key)
                     v = getattr(getattr(rec, "Value1", None), "XAdvance", 0) or 0
                     if v:
-                        pairs[(gi, rec.SecondGlyph)] = v
+                        lookup_pairs[key] = v
         elif fmt == 2 or hasattr(st, "Class1Record"):
-            first = st.Coverage.glyphs
+            first = [g for g in st.Coverage.glyphs if g not in taken_left]
             c1 = st.ClassDef1.classDefs if st.ClassDef1 else {}
             c2 = st.ClassDef2.classDefs if st.ClassDef2 else {}
             # class -> glyphs
@@ -111,8 +134,13 @@ def kern_pairs(font):
                         continue
                     for lg in g1.get(cls1, ()):
                         for rg in g2.get(cls2, ()):
-                            pairs[(lg, rg)] = v
-    return pairs
+                            if (lg, rg) not in taken:
+                                lookup_pairs[(lg, rg)] = v
+            taken_left.update(first)
+    for lookup_pairs in per_lookup.values():
+        for key, v in lookup_pairs.items():
+            pairs[key] = pairs.get(key, 0) + v
+    return {k: v for k, v in pairs.items() if v}
 
 
 def widths(font):
@@ -156,13 +184,15 @@ def compare_style(old_path, new_path):
 
     # Kerning
     ok, nk = kern_pairs(old), kern_pairs(new)
+    inherited = _inherited_kerning(added, nset, nk)
     kern_added, kern_removed, kern_changed = [], [], []
     for pair in sorted(set(ok) | set(nk)):
         ov, nv = ok.get(pair), nk.get(pair)
         if ov == nv:
             continue
         if ov is None:
-            kern_added.append((pair, nv))
+            if pair[0] not in inherited and pair[1] not in inherited:
+                kern_added.append((pair, nv))
         elif nv is None:
             kern_removed.append((pair, ov))
         else:
@@ -178,22 +208,121 @@ def compare_style(old_path, new_path):
     def comp(g):
         return nglyf[g].isComposite()
 
+    def parts(glyf, g):
+        return sorted(c.glyphName for c in glyf[g].components)
+
+    # A composite that kept its components but moved them while its width
+    # changed was re-centered, not redrawn: `two` around `two.lf`.
+    recentered = [
+        g for g in reworked
+        if comp(g) and oglyf[g].isComposite() and g in width_changes
+        and parts(oglyf, g) == parts(nglyf, g)
+    ]
+
     return {
         "cmap": cmap,
+        "fwd": {ch: n for n, ch in cmap.items()},
         "reworked": reworked, "added": added, "removed": removed,
-        "redrawn_base": [g for g in reworked if not comp(g)],
-        "redrawn_comp": [g for g in reworked if comp(g)],
+        "redrawn": [g for g in reworked if g not in recentered],
         "kern_added": kern_added, "kern_removed": kern_removed,
-        "kern_changed": kern_changed,
+        "kern_changed": kern_changed, "kern_inherited": inherited,
         "width_changes": width_changes,
-        "spacing_base": [g for g in width_changes if not comp(g)],
         "is_composite": {g: comp(g) for g in width_changes},
     }
+
+
+def _inherited_kerning(added, glyphs, kern):
+    """{added glyph: base glyph} for added glyphs that kern exactly like a base.
+
+    The base is the name with trailing dotted suffixes stripped until it hits
+    an existing, pre-existing glyph (`Cacute.sc.loclPLK` -> `Cacute.sc`). The
+    comparison maps other added glyphs to their base as well, so a pair
+    `Cacute.loclPLK` -> `cacute.loclPLK` counts as `Cacute` -> `cacute`.
+    Glyphs without any kerning are not reported; there is nothing to list.
+    """
+    added = set(added)
+    base_of = {}
+    for g in added:
+        parts = g.split(".")
+        for i in range(len(parts) - 1, 0, -1):
+            cand = ".".join(parts[:i])
+            if cand in glyphs and cand not in added:
+                base_of[g] = cand
+                break
+    norm = lambda n: base_of.get(n, n)
+    by_left, by_right = {}, {}
+    for (l, rt), v in kern.items():
+        by_left.setdefault(l, {})[norm(rt)] = v
+        by_right.setdefault(rt, {})[norm(l)] = v
+    out = {}
+    for g, b in base_of.items():
+        lg, lb = by_left.get(g, {}), by_left.get(b, {})
+        rg, rb = by_right.get(g, {}), by_right.get(b, {})
+        if (lg or rg) and lg == lb and rg == rb:
+            out[g] = b
+    return out
+
+
+def _own_char(name, cmap):
+    """The character a glyph represents, ignoring a style suffix.
+
+    `five.lf` -> '5', `Eogonek.sc` -> 'Ę'. Unencoded glyphs give None. The
+    encoded `five` is a composite that merely references the unmapped
+    `five.lf`, where the contour lives, so this is what lets an edit to the
+    variant show up under its character.
+    """
+    for cand in (name, name.split(".", 1)[0]):
+        c = cmap.get(cand)
+        if c and len(c) == 1:
+            # show a combining mark on a dotted circle, as code charts do
+            return "◌" + c if unicodedata.category(c) == "Mn" else c
+    return None
+
+
+def _stem_char(name, cmap):
+    """The unaccented character behind a glyph: `aacute` -> 'a', `k.sc` -> 'k'."""
+    c = _own_char(name, cmap)
+    if c is None:
+        return None
+    return unicodedata.normalize("NFD", c[-1])[0]
+
+
+def _stem_name(name, r):
+    """The glyph a variant descends from, keeping its suffix: `aacute.sc` -> `a.sc`."""
+    core, dot, suffix = name.partition(".")
+    c = _stem_char(core, r["cmap"])
+    return r["fwd"].get(c, core) + dot + suffix
+
+
+def _collapse(entries, r):
+    """Group kern entries that only differ by accents on either glyph.
+
+    `entries` holds (pair, *values). Yields (pair, values, count, stem pair):
+    the base pair when it is part of the group, else its first member, plus
+    how many members the group has. Values must match to merge.
+    """
+    groups = {}
+    for pair, *vals in entries:
+        key = (_stem_name(pair[0], r), _stem_name(pair[1], r), tuple(vals))
+        groups.setdefault(key, []).append(pair)
+    out = []
+    for (sl, sr, vals), members in groups.items():
+        rep = (sl, sr) if (sl, sr) in members else members[0]
+        out.append((rep, vals, len(members), (sl, sr)))
+    return sorted(out)
 
 
 def render_style(style, r):
     cmap = r["cmap"]
     L = lambda n: label(n, cmap)
+
+    def tail(rep, n, stem):
+        if n == 1:
+            return ""
+        forms = "form" if n == 2 else "forms"
+        if rep == stem:
+            return f" (+{n - 1} accented {forms})"
+        return f" (+{n - 1} other {forms} of {L(stem[0])} → {L(stem[1])})"
     out = [f"### {style}\n"]
     changed = any([
         r["reworked"], r["added"], r["removed"],
@@ -218,14 +347,18 @@ def render_style(style, r):
         out.append("")
 
     # Kerning
-    if r["kern_added"] or r["kern_removed"] or r["kern_changed"]:
+    if r["kern_added"] or r["kern_removed"] or r["kern_changed"] or r["kern_inherited"]:
         out.append("**Kerning**\n")
-        for (l, rt), v in r["kern_added"]:
-            out.append(f"- Added {L(l)} → {L(rt)}: {v:+d}")
-        for (l, rt), v in r["kern_removed"]:
-            out.append(f"- Removed {L(l)} → {L(rt)} (was {v:+d})")
-        for (l, rt), ov, nv in r["kern_changed"]:
-            out.append(f"- {L(l)} → {L(rt)}: {ov:+d} → {nv:+d} ({nv-ov:+d})")
+        for (l, rt), (v,), n, stem in _collapse(r["kern_added"], r):
+            out.append(f"- Added {L(l)} → {L(rt)}: {v:+d}{tail((l, rt), n, stem)}")
+        for (l, rt), (v,), n, stem in _collapse(r["kern_removed"], r):
+            out.append(f"- Removed {L(l)} → {L(rt)} (was {v:+d}){tail((l, rt), n, stem)}")
+        for (l, rt), (ov, nv), n, stem in _collapse(r["kern_changed"], r):
+            out.append(f"- {L(l)} → {L(rt)}: {ov:+d} → {nv:+d} ({nv-ov:+d}){tail((l, rt), n, stem)}")
+        if r["kern_inherited"]:
+            pairs = ", ".join(f"{L(g)} as {L(b)}"
+                              for g, b in sorted(r["kern_inherited"].items()))
+            out.append(f"- Added glyphs kerned the same as their base form: {pairs}")
         out.append("")
 
     # Tracking / spacing, grouped by delta, base letters first
@@ -251,56 +384,56 @@ def render_style(style, r):
     return "\n".join(out)
 
 
-def _base_char(name, cmap):
-    """The ASCII letter/digit a glyph represents, or None.
+def _own_spacing(g, r):
+    """True if a width change is the glyph's own, not inherited from its stem.
 
-    Resolves stylistic variants (`five.lf`, `a.sc`, …) back to their stem, so an
-    outline edit to an *unencoded* variant is still attributed to its base
-    character. This matters for figures especially: the encoded `five` is a
-    composite that merely references the (unmapped) `five.lf`, which is where the
-    actual contour lives -- so a redraw only ever surfaces on the variant, never
-    on the cmap'd glyph.
+    `aacute` widening along with `a` is noise; `Eogonek` changing while `E`
+    did not is a real edit. A composite is its own stem when it just wraps
+    an unencoded contour glyph, like `two` around `two.lf`.
     """
-    for cand in (name, name.split(".", 1)[0]):
-        c = cmap.get(cand)
-        if c and len(c) == 1 and c.isascii() and c.isalnum():
-            return c
-    return None
-
-
-def _is_base(name, cmap):
-    """True if a glyph maps (directly or via its stem) to an ASCII letter/digit."""
-    return _base_char(name, cmap) is not None
+    if not r["is_composite"][g]:
+        return True
+    stem = r["fwd"].get(_stem_char(g, r["cmap"]))
+    return stem is None or stem == g or stem not in r["width_changes"]
 
 
 def render_summary(rows):
-    """A compact, base-glyph-focused changelog section: one table per category.
+    """A compact, per-character changelog section: one table per category.
 
-    Kerning and spacing are filtered to base (ASCII letter/digit) glyphs, so the
-    accented-variant noise (which only tracks its base) drops out. Each table
+    Outlines and spacing list the character a glyph stands for, with style
+    suffixes dropped and inherited width shifts left out. Kerning pairs are
+    reduced to their unaccented stems, so `k→a` covers `k→á`. Each table
     lists only the weights that actually changed.
     """
     pretty = {"BoldItalic": "Bold Italic"}
     outlines, kerning, spacing, addrem = [], [], [], []
 
+    def unique(items):
+        seen, out = set(), []
+        for it in items:
+            if it not in seen:
+                seen.add(it)
+                out.append(it)
+        return out
+
     for style, r in rows:
         cmap, name = r["cmap"], pretty.get(style, style)
-        base = lambda g: _is_base(g, cmap)
-        bc = lambda g: _base_char(g, cmap) or g
+        own = lambda g: _own_char(g, cmap)
+        stem = lambda g: _stem_char(g, cmap)
 
-        # Roll variant outlines up to their base char and de-dupe (`five.lf` -> 5).
-        rb = sorted({bc(g) for g in r["redrawn_base"] if base(g)})
+        rb = sorted({own(g) for g in r["redrawn"] if own(g)})
         if rb:
             outlines.append((name, f"`{' '.join(rb)}`"))
 
-        ka = [f"{bc(l)}→{bc(rt)}" for (l, rt), _ in r["kern_added"] if base(l) and base(rt)]
-        kr = [f"{bc(l)}→{bc(rt)}" for (l, rt), _ in r["kern_removed"] if base(l) and base(rt)]
-        kc = [f"{bc(l)}→{bc(rt)}" for (l, rt), _, _ in r["kern_changed"] if base(l) and base(rt)]
+        def stems(entries):
+            return unique(f"{stem(l)}→{stem(rt)}" for (l, rt), *_ in entries
+                          if stem(l) and stem(rt))
+        ka, kr, kc = (stems(r[k]) for k in ("kern_added", "kern_removed", "kern_changed"))
         if ka or kr or kc:
             cell = lambda p: f"`{' '.join(p)}`" if p else "—"
             kerning.append((name, cell(ka), cell(kr), cell(kc)))
 
-        sb = sorted({bc(g) for g in r["spacing_base"] if base(g)})
+        sb = sorted({own(g) for g in r["width_changes"] if own(g) and _own_spacing(g, r)})
         if sb:
             spacing.append((name, f"`{' '.join(sb)}`"))
 
