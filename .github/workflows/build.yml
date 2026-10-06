@@ -102,9 +102,9 @@ jobs:
           ### Downloads
 
           - **If you are using a Kobo device**, download [KF_Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/KF_Libron.zip). It has been processed with `kobo-font-fix` for improved compatibility with Kobo's `kepub` renderer.
+          - **If you are using KOReader**, download [Libron_R.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_R.zip). The family appears as `Libron R` and uses 35% extra line spacing.
+          - **If you are using CrossPoint Reader**, download [Libron_CrossPoint.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_CrossPoint.zip). Copy the `Libron` folder into the `fonts` folder on the SD card. Each `cpfont` file includes all four styles at one reading size.
           - **If you are using a Kindle, another e-reader or a desktop computer**, download [Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron.zip).
-          - **If you prefer looser line spacing**, download [Libron_R.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_R.zip). The family appears as `Libron R` and uses 35% extra line spacing.
-          - **If you are using CrossPoint Reader**, download [Libron_CrossPoint.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_CrossPoint.zip). Copy the `Libron` folder into `/fonts` or `/.fonts` on the SD card. Each `cpfont` file includes all four styles at one reading size.
           - **If you want to use Libron on a website**, download [Libron_Web.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_Web.zip).
 
           ### Learn more
