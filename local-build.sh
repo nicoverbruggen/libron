@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Build Libron locally inside the fntbld container via Podman.
+# Build Libron locally inside the fntbld container via Podman or Docker.
 #
 # This mirrors the CI build: it mounts the repository into the prebuilt
 # fntbld image (which bundles FontForge, ttfautohint, fonttools, brotli,
@@ -19,18 +19,69 @@
 #
 set -euo pipefail
 
+for arg in "$@"; do
+  case "${arg}" in
+    -h|--help)
+      cat <<'EOF'
+Usage: ./local-build.sh [options]
+
+Build all four styles in the fntbld-oci container. Uses Podman when installed,
+otherwise Docker. The selected runtime must be running.
+
+Options:
+  -h, --help             Show this help without starting a build.
+  --without-kobofix      Skip Kobo fonts.
+  --without-crosspoint   Skip CrossPoint Reader bundles.
+  --without-web          Skip WOFF2 webfonts.
+  --with-kobofix         Enable Kobo fonts, the default.
+  --with-crosspoint      Enable CrossPoint bundles, the default.
+  --name FAMILY         Set the font family name, default Libron.
+  --customize           Prompt for the family name and outline cleanup.
+
+Other arguments are passed to build.py. Set FNTBLD_IMAGE to override the image.
+
+Outputs:
+  out/ttf/              Standard TTF fonts.
+  out/relaxed/          Libron R TTF fonts with 35% extra line spacing.
+  out/kf/               Kobo TTF fonts processed with kobo-font-fix.
+  out/web/              WOFF2 webfonts.
+  out/cpfont/Libron/     CrossPoint bundles at sizes 12, 14, 16 and 18.
+
+Custom family names also change the relaxed family and CrossPoint folder.
+Relaxed fonts match ebook-fonts, with Typo, hhea and Win metrics set to the
+relaxed spacing so readers such as KOReader use it. Existing outlines and
+kerning stay the same. Missing spaces and dashes are added.
+
+Network access is required to download the image, the pinned kobo-font-fix
+script and, when enabled, the pinned CrossPoint converter.
+Copy the CrossPoint family folder into /fonts or /.fonts on the SD card.
+To convert existing TTFs, run python3 scripts/build_cpfont.py in the container.
+
+This builds fonts only. It does not regenerate specimen.svg or sample.svg.
+EOF
+      exit 0
+      ;;
+  esac
+done
+
 IMAGE="${FNTBLD_IMAGE:-ghcr.io/nicoverbruggen/fntbld-oci:latest}"
 
 # Resolve the repository root (directory of this script) so the build works
 # no matter where it is invoked from.
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if ! command -v podman >/dev/null 2>&1; then
-  echo "ERROR: podman not found. Install Podman from https://podman.io" >&2
+if command -v podman >/dev/null 2>&1; then
+  runtime=podman
+  volume="${REPO_DIR}:/work:z"
+elif command -v docker >/dev/null 2>&1; then
+  runtime=docker
+  volume="${REPO_DIR}:/work"
+else
+  echo "ERROR: neither Podman nor Docker was found. Install one to build Libron." >&2
   exit 1
 fi
 
-echo "Building Libron with ${IMAGE}"
+echo "Building Libron with ${IMAGE} via ${runtime}"
 echo
 
 # Kobo fix is on by default; let the user opt out with --without-kobofix.
@@ -56,8 +107,8 @@ if [ "${with_crosspoint}" -eq 1 ]; then
   args+=("--with-crosspoint")
 fi
 
-podman run --rm \
-  -v "${REPO_DIR}":/work:z \
+"${runtime}" run --rm \
+  -v "${volume}" \
   -w /work \
   "${IMAGE}" \
   python3 build.py ${args[@]+"${args[@]}"}

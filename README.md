@@ -52,13 +52,11 @@ Besides the TrueType fonts files, there's also:
 
 ### Building locally
 
-You can run `./local-build.sh` if you have Podman installed to build the definitive fonts. If you have all dependencies installed locally, you can also use `./build.py` to build the font with Python.
+You can run `./local-build.sh` if you have Podman or Docker installed to build the definitive fonts.
 
-The local wrapper builds Kobo and CrossPoint variants by default. Use `--without-crosspoint` to skip CrossPoint. With `build.py`, add `--with-crosspoint` to generate the bundles. To convert existing TTFs without rebuilding them, run `python3 scripts/build_cpfont.py` in the `fntbld-oci` container. CrossPoint builds need network access to download the converter pinned in [scripts/build_cpfont.py](./scripts/build_cpfont.py).
+The wrapper prefers Podman and falls back to Docker if Podman is not installed. Run `./local-build.sh --help` for options and output paths.
 
-The Gitea release workflow builds only standard and Kobo fonts with `--with-kobofix --without-web`. GitHub releases also include web fonts and CrossPoint bundles.
-
-Font builds do not regenerate the README images. Before a release, bump [VERSION](./VERSION) and run `scripts/release.sh` to generate the changelog section and refresh `specimen.svg` and `sample.svg`. The script builds the current sources, so the images use the release's outlines, kerning, ligatures and version. Review and commit the notes and images before creating the tag. The script does not commit, tag or push.
+If you have all dependencies installed locally, you can also use `./build.py` to build the font with Python.
 
 ## License
 
