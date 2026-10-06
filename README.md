@@ -40,8 +40,13 @@ When a commit of Libron is tagged, a version is automatically released. The vers
 
 The following variants are generated:
 
-- Libron for desktop (`TTF`)
-- Libron for [Kobo devices](https://github.com/nicoverbruggen/kobo-font-fix) (`KF TTF`)
+- **Libron** for desktop (`TTF`)
+- **Libron R** for [KOReader](https://koreader.rocks/) (`TTF`) with relaxed line spacing
+- **KF Libron** for [Kobo devices](https://github.com/nicoverbruggen/kobo-font-fix) (`KF TTF`)
+
+
+Besides the TrueType fonts files, there's also:
+
 - Libron for [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader#custom-sd-card-fonts) (`cpfont`)
 - Libron's webfont variant (`WOFF2`) 
 

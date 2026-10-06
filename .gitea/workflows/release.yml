@@ -21,7 +21,7 @@ jobs:
 
       - name: Validate generated fonts with ots-sanitize
         run: |
-          for font in out/ttf/*.ttf out/kf/*.ttf; do
+          for font in out/ttf/*.ttf out/kf/*.ttf out/relaxed/*.ttf; do
             echo "Validating ${font}"
             ots-sanitize "${font}"
           done
@@ -31,6 +31,7 @@ jobs:
         run: |
           cd out/ttf && zip -j /tmp/Libron.zip *.ttf
           cd $GITHUB_WORKSPACE/out/kf  && zip -j /tmp/KF_Libron.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/relaxed && zip -j /tmp/Libron_R.zip *.ttf
 
       - name: Assemble release notes
         if: startsWith(gitea.ref, 'refs/tags/')
@@ -45,6 +46,7 @@ jobs:
 
           - [Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron.zip): standard fonts for e-readers and desktop use.
           - [KF_Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/KF_Libron.zip): Kobo fonts processed with `kobo-font-fix`.
+          - [Libron_R.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron_R.zip): `Libron R` with 35% extra line spacing.
 
           CrossPoint and web fonts are available from the [GitHub releases](https://github.com/nicoverbruggen/libron/releases).
 
@@ -77,3 +79,4 @@ jobs:
           files: |
             /tmp/Libron.zip
             /tmp/KF_Libron.zip
+            /tmp/Libron_R.zip

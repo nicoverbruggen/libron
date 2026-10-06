@@ -16,9 +16,10 @@ Pipeline:
   3. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
   6. Post-process TTFs (style flags, version names, autohinting)
-  7. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
-  8. Generate WOFF2 webfonts in ./out/web/
-  9. Optionally generate CrossPoint Reader bundles in ./out/cpfont/
+  7. Generate relaxed (R) TTFs in ./out/relaxed/ with 35% extra line spacing
+  8. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
+  9. Generate WOFF2 webfonts in ./out/web/
+  10. Optionally generate CrossPoint Reader bundles in ./out/cpfont/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
 are applied — the masters are already final. This is a straight export.
@@ -51,6 +52,7 @@ SRC_DIR = os.path.join(ROOT_DIR, "src")
 OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_TTF_DIR = os.path.join(OUT_DIR, "ttf")
 OUT_KF_DIR = os.path.join(OUT_DIR, "kf")
+OUT_RELAXED_DIR = os.path.join(OUT_DIR, "relaxed")
 OUT_WEB_DIR = os.path.join(OUT_DIR, "web")
 OUT_CPFONT_DIR = os.path.join(OUT_DIR, "cpfont")
 
@@ -88,6 +90,7 @@ STYLE_MAP = {
 LINE_HEIGHT = 1.0
 SELECTION_HEIGHT = 1.3
 ASCENDER_RATIO = 0.8
+RELAXED_LINE_PERCENT = 35
 
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.10/kobofix.py"
 
@@ -584,6 +587,40 @@ def convert_to_woff2(ttf_path, woff2_path):
     print(f"  {os.path.basename(ttf_path)} -> {os.path.basename(woff2_path)}")
 
 
+def build_relaxed(kobofix_path, variant_names, tmp_dir, family):
+    """Build the same relaxed family as ebook-fonts, preserving outlines and kerning."""
+    from fontTools.ttLib import TTFont
+
+    work = os.path.join(tmp_dir, "relaxed")
+    os.makedirs(work)
+    input_names = [f"{name}.ttf" for name in variant_names]
+    for name in input_names:
+        shutil.copy2(os.path.join(OUT_TTF_DIR, name), os.path.join(work, name))
+    subprocess.run(
+        [sys.executable, kobofix_path, "--prefix", "", "--name", f"{family} R",
+         "--line-percent", str(RELAXED_LINE_PERCENT),
+         "--kern", "skip", "--outline", "skip"] + input_names,
+        cwd=work, check=True,
+    )
+    outputs = [name for name in os.listdir(work)
+               if name.endswith(".ttf") and name not in input_names]
+    if len(outputs) != len(variant_names):
+        raise RuntimeError("kobofix did not produce all relaxed styles")
+    for name in outputs:
+        path = os.path.join(work, name)
+        with TTFont(path) as font:
+            os2, hhea = font["OS/2"], font["hhea"]
+            os2.sTypoAscender = hhea.ascent
+            os2.sTypoDescender = hhea.descent
+            os2.sTypoLineGap = hhea.lineGap
+            font.save(path)
+    if os.path.exists(OUT_RELAXED_DIR):
+        shutil.rmtree(OUT_RELAXED_DIR)
+    os.makedirs(OUT_RELAXED_DIR)
+    for name in outputs:
+        shutil.move(os.path.join(work, name), os.path.join(OUT_RELAXED_DIR, name))
+
+
 def main():
     print("=" * 60)
     print("  Libron Build")
@@ -702,10 +739,13 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
         fix_ttf_version_names(ttf_path)
         autohint_ttf(ttf_path)
 
+    kobofix_path = os.path.join(tmp_dir, "kobofix.py")
+    download_kobofix(kobofix_path)
+    print("\n-- Generate relaxed (R) variants --\n")
+    build_relaxed(kobofix_path, variant_names, tmp_dir, family)
+
     if with_kobofix:
         print("\n-- Step 4: Generate Kobo (KF) variants --\n")
-        kobofix_path = os.path.join(tmp_dir, "kobofix.py")
-        download_kobofix(kobofix_path)
         run_kobofix(kobofix_path, variant_names)
 
     if with_web:
@@ -725,6 +765,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
     print("\n" + "=" * 60)
     print("  Build complete!")
     print(f"  TTF fonts are in:  {OUT_TTF_DIR}/")
+    print(f"  Relaxed fonts are in: {OUT_RELAXED_DIR}/")
     if with_kobofix:
         print(f"  KF fonts are in:   {OUT_KF_DIR}/")
     if with_web:
