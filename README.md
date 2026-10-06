@@ -3,7 +3,7 @@
 > [!NOTE]
 > If this font has been useful to you, please **star the repository** so I know it is being used. Please also consider [a donation](https://nicoverbruggen.be/donate) to support the project, which I work on in my free time. It makes a big difference. **Thank you!**
 
-**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various edits to give the font a more neutral look. 
+**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various edits to give the font a more neutral look, which is (in turn) based on [Newsreader](https://github.com/productiontype/Newsreader).
 
 The original font was imported and has been manually edited using [FontForge](https://fontforge.org). All modified source files are available in the `src` directory.
 
@@ -14,8 +14,6 @@ The original font was imported and has been manually edited using [FontForge](ht
 ## Reading sample
 
 <img src="./sample.svg" width="600" alt="The Firm, the prologue of Trevelyan's Type Tester, set as a book page in Libron">
-
-The sample shows the opening page of the public-domain prologue of [Trevelyan's Type Tester](https://github.com/nicoverbruggen/type-tester-epub), with native small caps, an enlarged initial and indented paragraphs. It uses a simulated 7-inch e-reader display at 1264 × 1680 pixels, with 36-pixel body type.
 
 ## General changes
 
