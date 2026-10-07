@@ -5504,7 +5504,7 @@ EndChar
 
 StartChar: igrave
 Encoding: 236 236 174
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5517,7 +5517,7 @@ EndChar
 
 StartChar: iacute
 Encoding: 237 237 175
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5530,7 +5530,7 @@ EndChar
 
 StartChar: icircumflex
 Encoding: 238 238 176
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -5543,7 +5543,7 @@ EndChar
 
 StartChar: idieresis
 Encoding: 239 239 177
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -6680,7 +6680,7 @@ EndChar
 
 StartChar: itilde
 Encoding: 297 297 235
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -6706,7 +6706,7 @@ EndChar
 
 StartChar: imacron
 Encoding: 299 299 237
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -6732,7 +6732,7 @@ EndChar
 
 StartChar: ibreve
 Encoding: 301 301 239
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -6790,7 +6790,7 @@ EndChar
 
 StartChar: iogonek
 Encoding: 303 303 241
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -6816,7 +6816,7 @@ EndChar
 
 StartChar: dotlessi
 Encoding: 305 305 243
-Width: 653
+Width: 650
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-4" 341 0 basechar 0
@@ -6825,7 +6825,7 @@ AnchorPoint: "Anchor-0" 313 1062 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-458 1084 m 1,0,-1
+448 1068 m 1,0,-1
  446 846 l 1,1,-1
  446 135 l 1,2,-1
  595 90 l 1,3,-1
@@ -6833,13 +6833,10 @@ SplineSet
  84 0 l 1,5,-1
  84 90 l 1,6,-1
  238 135 l 1,7,-1
- 238 816 l 1,8,9
- 228 825 228 825 199.5 843 c 128,-1,10
- 171 861 171 861 137 881 c 128,-1,11
- 103 901 103 901 72 917 c 1,12,-1
- 72 978 l 1,13,-1
- 404 1084 l 1,14,-1
- 458 1084 l 1,0,-1
+ 237 931.966796875 l 1,8,9
+ 237 931.966796875 237 931.966796875 105 965.5 c 1,10,-1
+ 104 1067.96679688 l 1,11,-1
+ 448 1068 l 1,0,-1
 EndSplineSet
 Kerns2: 552 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -31 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" I.sc
@@ -8843,7 +8840,7 @@ EndChar
 
 StartChar: uni0209
 Encoding: 521 521 352
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -8869,7 +8866,7 @@ EndChar
 
 StartChar: uni020B
 Encoding: 523 523 354
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -10707,7 +10704,7 @@ EndChar
 
 StartChar: uni1EC9
 Encoding: 7881 7881 464
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -15954,7 +15951,7 @@ EndChar
 
 StartChar: uni01D0
 Encoding: 464 464 661
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -17493,7 +17490,7 @@ EndChar
 
 StartChar: uni1E2F
 Encoding: 7727 7727 734
-Width: 653
+Width: 650
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
