@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.31
+
+### Adjusted outlines
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `ı ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ḳ Ḵ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
+| Bold | `ı ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
+| Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
+| Bold Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
+
+### Updated spacing
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `ì í î ï ĩ ī ĭ į ı ǐ ǩ ȉ ȋ ḃ ḋ ḯ ḱ Ṇ Ṉ ṫ ẗ ỉ` |
+| Bold | `ṫ ẗ` |
+
 ## v0.30
 
 ### CrossPoint Reader builds
