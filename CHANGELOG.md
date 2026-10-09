@@ -2,21 +2,37 @@
 
 ## v0.31
 
+### Superscripts, subscripts and fractions
+
+Completed superscript and subscript digits and added their signs and parentheses in all four styles. Adjusted the new small figures for weight, height and spacing, including italic subscript placement. Added the remaining encoded fractions.
+
+Completed `sups` and added `subs`, `sinf`, `numr`, `dnom` and `frac`. The `frac` feature supports multi-digit fractions with `/` or `⁄` and works with proportional and tabular figures.
+
+### Unicode spaces
+
+Added 14 Unicode spaces, including en, em, figure, punctuation, thin, hair and narrow no-break spaces.
+
+### Polish typography
+
+Moved the Polish acute accents on `ć ń ó ś ź` 50 units right in Regular and Bold.
+
 ### Adjusted outlines
 
 | Weight | Glyphs |
 |---|---|
-| Regular | `ı ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ḳ Ḵ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
-| Bold | `ı ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
-| Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
-| Bold Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ` |
+| Regular | `ó ć ı ń ś ź ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ḳ Ḵ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ ẞ` |
+| Bold | `ó ć ı ń ś ź ǩ ȟ ḃ ḋ ḟ ḣ ḧ ḱ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ ẞ` |
+| Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ ẞ` |
+| Bold Italic | `ḋ Ṃ Ṇ Ṉ Ṛ Ṟ ṫ Ṿ Ẉ ẗ ẞ` |
 
 ### Updated spacing
 
 | Weight | Glyphs |
 |---|---|
-| Regular | `ì í î ï ĩ ī ĭ į ı ǐ ǩ ȉ ȋ ḃ ḋ ḯ ḱ Ṇ Ṉ ṫ ẗ ỉ` |
-| Bold | `ṫ ẗ` |
+| Regular | `ì í î ï ĩ ī ĭ į ı ǐ ǩ ȉ ȋ ḃ ḋ ḯ ḱ Ṇ Ṉ ṫ ẗ ẞ ỉ` |
+| Bold | `ṫ ẗ ẞ` |
+| Italic | `ẞ` |
+| Bold Italic | `ẞ` |
 
 ## v0.30
 

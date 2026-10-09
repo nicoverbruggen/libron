@@ -406,7 +406,7 @@ def render_summary(rows):
     lists only the weights that actually changed.
     """
     pretty = {"BoldItalic": "Bold Italic"}
-    outlines, kerning, spacing, addrem = [], [], [], []
+    outlines, kerning, spacing, additions, removals = [], [], [], [], []
 
     def unique(items):
         seen, out = set(), []
@@ -437,8 +437,25 @@ def render_summary(rows):
         if sb:
             spacing.append((name, f"`{' '.join(sb)}`"))
 
-        if r["added"] or r["removed"]:
-            addrem.append(f"{name}: +{len(r['added'])} / −{len(r['removed'])}")
+        def glyph_list(glyphs):
+            characters, alternates = set(), []
+            for glyph in glyphs:
+                character = cmap.get(glyph)
+                if character:
+                    # Space characters need a visible code point label.
+                    if character.isspace():
+                        characters.add(f"U+{ord(character):04X}")
+                    else:
+                        characters.add(_own_char(glyph, cmap))
+                else:
+                    alternates.append(glyph)
+            items = sorted(characters) + sorted(alternates)
+            return " ".join(f"`{item}`" for item in items)
+
+        if r["added"]:
+            additions.append((name, glyph_list(r["added"])))
+        if r["removed"]:
+            removals.append((name, glyph_list(r["removed"])))
 
     out = []
 
@@ -455,8 +472,8 @@ def render_summary(rows):
     table("### Adjusted outlines", ["Weight", "Glyphs"], outlines)
     table("### Updated kerning", ["Weight", "Added", "Removed", "Retuned"], kerning)
     table("### Updated spacing", ["Weight", "Glyphs"], spacing)
-    if addrem:
-        out.extend(["Glyphs added / removed: " + "; ".join(addrem) + ".", ""])
+    table("### Added glyphs", ["Weight", "Glyphs"], additions)
+    table("### Removed glyphs", ["Weight", "Glyphs"], removals)
 
     return "\n".join(out).rstrip()
 
