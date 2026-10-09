@@ -332,7 +332,7 @@ Grid
  4000 1396.5 l 1024
 EndSplineSet
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-5" "'mkmk' Mark to Mark in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable"
-BeginChars: 65937 1172
+BeginChars: 65937 1186
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -26446,5 +26446,117 @@ Refer: 1131 -1 N 1 0 0 1 1026 0 2
 Refer: 531 8260 N 1 0 0 1 899 0 2
 Refer: 533 8304 N 1 0 0 1 0 0 2
 EndChar
+StartChar: uni2000
+Encoding: 8192 8192 1172
+Width: 1000
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2001
+Encoding: 8193 8193 1173
+Width: 2000
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2002
+Encoding: 8194 8194 1174
+Width: 1000
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2003
+Encoding: 8195 8195 1175
+Width: 2000
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2004
+Encoding: 8196 8196 1176
+Width: 667
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2005
+Encoding: 8197 8197 1177
+Width: 500
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2006
+Encoding: 8198 8198 1178
+Width: 333
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2007
+Encoding: 8199 8199 1179
+Width: 1210
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2008
+Encoding: 8200 8200 1180
+Width: 485
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni2009
+Encoding: 8201 8201 1181
+Width: 400
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni200A
+Encoding: 8202 8202 1182
+Width: 200
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni202F
+Encoding: 8239 8239 1183
+Width: 400
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni205F
+Encoding: 8287 8287 1184
+Width: 444
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
+StartChar: uni3000
+Encoding: 12288 12288 1185
+Width: 2000
+GlyphClass: 1
+Flags: MW
+LayerCount: 2
+EndChar
+
 EndChars
 EndSplineFont
