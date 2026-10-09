@@ -24326,7 +24326,7 @@ GlyphClass: 1
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 1102 -1 N 1.02997 0 0 1.07996 520 0 2
+Refer: 1102 -1 N 1.02997 0 0 1.07996 570 0 2
 Refer: 70 99 N 1 0 0 1 0 0 2
 Kerns2: 5 8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 10 8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -146 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -28 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -21 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 534 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -60 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" Cacute.sc.loclPLK
@@ -24340,7 +24340,7 @@ GlyphClass: 1
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 1102 -1 N 1.02997 0 0 1.07996 652 0 2
+Refer: 1102 -1 N 1.02997 0 0 1.07996 702 0 2
 Refer: 81 110 N 1 0 0 1 0 0 2
 Kerns2: 9 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -68 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -81 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -192 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -108 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -42 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -104 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -58 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -111 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" Nacute.sc.loclPLK
@@ -24354,7 +24354,7 @@ GlyphClass: 1
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 1102 -1 N 1.02997 0 0 1.07996 554 0 2
+Refer: 1102 -1 N 1.02997 0 0 1.07996 604 0 2
 Refer: 82 111 N 1 0 0 1 0 0 2
 Kerns2: 5 -61 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 10 -61 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -61 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -69 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -161 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -81 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -130 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -44 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -39 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -46 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -47 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -84 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -100 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" Oacute.sc.loclPLK
@@ -24368,7 +24368,7 @@ GlyphClass: 1
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 1102 -1 N 1.02997 0 0 1.07996 510 0 2
+Refer: 1102 -1 N 1.02997 0 0 1.07996 560 0 2
 Refer: 86 115 N 1 0 0 1 0 0 2
 Kerns2: 5 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 10 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -33 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -43 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -28 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -155 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -86 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 383 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 517 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 520 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -61 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -81 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" Sacute.sc.loclPLK
@@ -24382,7 +24382,7 @@ GlyphClass: 1
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 1102 -1 N 1.02997 0 0 1.07996 504 0 2
+Refer: 1102 -1 N 1.02997 0 0 1.07996 554 0 2
 Refer: 93 122 N 1 0 0 1 0 0 2
 Kerns2: 5 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 10 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 12 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 48 -18 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -154 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -27 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -68 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" Zacute.sc.loclPLK
