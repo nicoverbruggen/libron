@@ -11983,15 +11983,15 @@ EndChar
 
 StartChar: endash
 Encoding: 8211 8211 514
-Width: 977
+Width: 1088
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
 136 560 m 1,0,-1
- 881 560 l 1,1,-1
- 846 442 l 1,2,-1
+ 992 560 l 1,1,-1
+ 957 442 l 1,2,-1
  101 442 l 1,3,-1
  136 560 l 1,0,-1
 EndSplineSet
@@ -12001,15 +12001,15 @@ EndChar
 
 StartChar: emdash
 Encoding: 8212 8212 515
-Width: 1274
+Width: 1791
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
 136 560 m 1,0,-1
- 1178 560 l 1,1,-1
- 1144 442 l 1,2,-1
+ 1695 560 l 1,1,-1
+ 1661 442 l 1,2,-1
  101 442 l 1,3,-1
  136 560 l 1,0,-1
 EndSplineSet
@@ -14501,7 +14501,7 @@ EndChar
 
 StartChar: endash.case
 Encoding: 65580 -1 608
-Width: 1007
+Width: 1118
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
@@ -14512,7 +14512,7 @@ EndChar
 
 StartChar: emdash.case
 Encoding: 65581 -1 609
-Width: 1304
+Width: 1821
 GlyphClass: 1
 Flags: MW
 LayerCount: 2
