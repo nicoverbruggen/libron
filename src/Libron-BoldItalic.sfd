@@ -27630,25 +27630,21 @@ LayerCount: 2
 Fore
 SplineSet
 849.70703125 156 m 1,0,-1
- 775.70703125 -99 l 1,1,-1
- 964.70703125 -160 l 1,2,3
- 963.708007812 -160 963.708007812 -160 941.70703125 -243 c 1,4,-1
- 201.70703125 -243 l 1,5,-1
- 225.70703125 -160 l 1,6,-1
- 439.70703125 -99 l 1,7,-1
- 517.70703125 156 l 1,8,-1
- -53.29296875 156 l 1,9,-1
- 8.70703125 379 l 1,10,-1
- 783.70703125 1155 l 1,11,-1
- 1140.70703125 1155 l 1,12,-1
- 912.70703125 373 l 1,13,-1
- 1207.70703125 375 l 1,14,-1
- 1089.70703125 156 l 1,15,-1
+ 733.70703125 -243 l 1,1,-1
+ 395.70703125 -243 l 1,2,-1
+ 517.70703125 156 l 1,3,-1
+ -53.29296875 156 l 1,4,-1
+ 8.70703125 379 l 1,5,-1
+ 783.70703125 1155 l 1,6,-1
+ 1140.70703125 1155 l 1,7,-1
+ 912.70703125 373 l 1,8,-1
+ 1207.70703125 375 l 1,9,-1
+ 1089.70703125 156 l 1,10,-1
  849.70703125 156 l 1,0,-1
-584.70703125 373 m 1,16,-1
- 751.70703125 918 l 1,17,-1
- 198.70703125 373 l 1,18,-1
- 584.70703125 373 l 1,16,-1
+584.70703125 373 m 1,11,-1
+ 751.70703125 918 l 1,12,-1
+ 198.70703125 373 l 1,13,-1
+ 584.70703125 373 l 1,11,-1
 EndSplineSet
 Kerns2: 15 90 "Old-style figure kerning subtable" 54 90 "Old-style figure kerning subtable" 70 40 "Old-style figure kerning subtable" 85 70 "Old-style figure kerning subtable" 43 22 "Old-style figure kerning subtable" 50 28 "Old-style figure kerning subtable" 91 90 "Old-style figure kerning subtable" 59 88 "Old-style figure kerning subtable" 542 38 "Old-style figure kerning subtable" 47 22 "Old-style figure kerning subtable" 53 26 "Old-style figure kerning subtable" 42 23 "Old-style figure kerning subtable" 78 31 "Old-style figure kerning subtable" 93 87 "Old-style figure kerning subtable" 51 22 "Old-style figure kerning subtable" 73 90 "Old-style figure kerning subtable" 68 53 "Old-style figure kerning subtable" 4 82 "Old-style figure kerning subtable" 14 -42 "Old-style figure kerning subtable" 11 41 "Old-style figure kerning subtable" 92 39 "Old-style figure kerning subtable" 89 68 "Old-style figure kerning subtable" 37 22 "Old-style figure kerning subtable" 81 70 "Old-style figure kerning subtable" 77 133 "Old-style figure kerning subtable" 8 66 "Old-style figure kerning subtable" 83 65 "Old-style figure kerning subtable" 39 22 "Old-style figure kerning subtable" 94 30 "Old-style figure kerning subtable" 71 78 "Old-style figure kerning subtable" 16 -150 "Old-style figure kerning subtable" 87 74 "Old-style figure kerning subtable" 79 38 "Old-style figure kerning subtable" 72 42 "Old-style figure kerning subtable" 44 22 "Old-style figure kerning subtable" 17 90 "Old-style figure kerning subtable" 62 71 "Old-style figure kerning subtable" 90 68 "Old-style figure kerning subtable" 7 90 "Old-style figure kerning subtable" 29 90 "Old-style figure kerning subtable" 86 88 "Old-style figure kerning subtable" 52 19 "Old-style figure kerning subtable" 41 22 "Old-style figure kerning subtable" 75 32 "Old-style figure kerning subtable" 88 71 "Old-style figure kerning subtable" 80 70 "Old-style figure kerning subtable" 64 90 "Old-style figure kerning subtable" 38 25 "Old-style figure kerning subtable" 48 45 "Old-style figure kerning subtable" 84 26 "Old-style figure kerning subtable" 101 86 "Old-style figure kerning subtable" 82 38 "Old-style figure kerning subtable" 96 90 "Old-style figure kerning subtable" 46 22 "Old-style figure kerning subtable" 74 68 "Old-style figure kerning subtable" 553 -150 "Old-style figure kerning subtable" 40 22 "Old-style figure kerning subtable" 515 -150 "Old-style figure kerning subtable" 32 90 "Old-style figure kerning subtable" 1206 72 "Old-style figure kerning subtable" 34 -36 "Old-style figure kerning subtable" 1212 37 "Old-style figure kerning subtable" 69 56 "Old-style figure kerning subtable" 30 90 "Old-style figure kerning subtable" 18 90 "Old-style figure kerning subtable" 36 90 "Old-style figure kerning subtable" 76 87 "Old-style figure kerning subtable" 514 -150 "Old-style figure kerning subtable" 1214 63 "Old-style figure kerning subtable" 5 -16 "Old-style figure kerning subtable" 10 -16 "Old-style figure kerning subtable" 12 90 "Old-style figure kerning subtable" 13 -64 "Old-style figure kerning subtable" 45 90 "Old-style figure kerning subtable" 49 22 "Old-style figure kerning subtable" 55 -124 "Old-style figure kerning subtable" 57 -143 "Old-style figure kerning subtable" 58 -81 "Old-style figure kerning subtable" 60 -150 "Old-style figure kerning subtable" 61 90 "Old-style figure kerning subtable" 63 -38 "Old-style figure kerning subtable" 114 -9 "Old-style figure kerning subtable" 147 22 "Old-style figure kerning subtable" 159 -150 "Old-style figure kerning subtable" 244 90 "Old-style figure kerning subtable" 259 22 "Old-style figure kerning subtable" 263 22 "Old-style figure kerning subtable" 265 -14 "Old-style figure kerning subtable" 289 -149 "Old-style figure kerning subtable" 291 -124 "Old-style figure kerning subtable" 293 -81 "Old-style figure kerning subtable" 305 -18 "Old-style figure kerning subtable" 307 -81 "Old-style figure kerning subtable" 309 -150 "Old-style figure kerning subtable" 311 -150 "Old-style figure kerning subtable" 312 90 "Old-style figure kerning subtable" 314 90 "Old-style figure kerning subtable" 316 90 "Old-style figure kerning subtable" 330 17 "Old-style figure kerning subtable" 331 -10 "Old-style figure kerning subtable" 369 -147 "Old-style figure kerning subtable" 377 -150 "Old-style figure kerning subtable" 383 22 "Old-style figure kerning subtable" 416 -81 "Old-style figure kerning subtable" 418 -81 "Old-style figure kerning subtable" 420 -81 "Old-style figure kerning subtable" 491 -15 "Old-style figure kerning subtable" 503 -15 "Old-style figure kerning subtable" 505 -150 "Old-style figure kerning subtable" 507 -150 "Old-style figure kerning subtable" 509 -150 "Old-style figure kerning subtable" 511 -150 "Old-style figure kerning subtable" 516 15 "Old-style figure kerning subtable" 517 22 "Old-style figure kerning subtable" 519 15 "Old-style figure kerning subtable" 520 22 "Old-style figure kerning subtable" 527 18 "Old-style figure kerning subtable" 528 18 "Old-style figure kerning subtable" 532 27 "Old-style figure kerning subtable" 622 -150 "Old-style figure kerning subtable" 1207 0 "Old-style figure kerning subtable" 1208 -18 "Old-style figure kerning subtable" 1209 15 "Old-style figure kerning subtable" 1210 75 "Old-style figure kerning subtable" 1211 40 "Old-style figure kerning subtable" 1213 20 "Old-style figure kerning subtable" 1215 45 "Old-style figure kerning subtable" 1108 90 "Old-style figure kerning subtable" 1105 22 "Old-style figure kerning subtable"
 Substitution2: "Small-cap figures subtable" four.lf.sc
