@@ -54,6 +54,10 @@ You can run `./local-build.sh` if you have Podman or Docker installed to build t
 
 The wrapper prefers Podman and falls back to Docker if Podman is not installed. Run `./local-build.sh --help` for options and output paths.
 
+Every build checks combining-accent shaping with HarfBuzz in all four styles, including the Kobo and relaxed variants when generated. The checks cover Lithuanian stress marks, the font's Latin letters with above- and below-marks, stacked marks, equivalent Unicode encodings, and ordinary Lithuanian text with OpenType features. The checks do not modify fonts. Line spacing and Windows metrics retain the existing build settings. Text with tall accent stacks may need more line spacing in the reader; the shaping checks do not test reader-specific clipping.
+
+Inside the build container, run `python3 scripts/make_proof_sheet.py --check` to repeat the checks. To compare with an earlier build, use `python3 scripts/make_proof_sheet.py --compare-dir <earlier-ttf-directory>` to generate proofs in `proofs/`.
+
 If you have all dependencies installed locally, you can also use `./build.py` to build the font with Python.
 
 ## License

@@ -15,7 +15,7 @@ Pipeline:
   2. Remove overlaps / correct direction (outline cleanup)
   3. Apply vertical metrics, line height, renaming, version, copyright
   5. Export TTFs to ./out/ttf/
-  6. Post-process TTFs (style flags, version names, autohinting)
+  6. Post-process TTFs and check combining-accent shaping
   7. Generate relaxed (R) TTFs in ./out/relaxed/ with 35% extra line spacing
   8. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
   9. Generate WOFF2 webfonts in ./out/web/
@@ -587,6 +587,15 @@ def convert_to_woff2(ttf_path, woff2_path):
     print(f"  {os.path.basename(ttf_path)} -> {os.path.basename(woff2_path)}")
 
 
+def check_combining_accents(paths):
+    """Validate combining-accent shaping without modifying the fonts."""
+    subprocess.run(
+        [sys.executable, "-B", os.path.join(ROOT_DIR, "scripts", "make_proof_sheet.py"),
+         "--check", "--fonts"] + paths,
+        check=True,
+    )
+
+
 def build_relaxed(kobofix_path, variant_names, tmp_dir, family):
     """Build the same relaxed family as ebook-fonts, preserving outlines and kerning."""
     from fontTools.ttLib import TTFont
@@ -739,14 +748,20 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
         fix_ttf_version_names(ttf_path)
         autohint_ttf(ttf_path)
 
+    print("\n-- Check combining-accent shaping --\n")
+    check_combining_accents([os.path.join(OUT_TTF_DIR, name + ".ttf") for name in variant_names])
+
     kobofix_path = os.path.join(tmp_dir, "kobofix.py")
     download_kobofix(kobofix_path)
     print("\n-- Generate relaxed (R) variants --\n")
     build_relaxed(kobofix_path, variant_names, tmp_dir, family)
+    check_combining_accents([os.path.join(OUT_RELAXED_DIR, name)
+                            for name in sorted(os.listdir(OUT_RELAXED_DIR)) if name.endswith(".ttf")])
 
     if with_kobofix:
         print("\n-- Step 4: Generate Kobo (KF) variants --\n")
         run_kobofix(kobofix_path, variant_names)
+        check_combining_accents([os.path.join(OUT_KF_DIR, "KF_" + name + ".ttf") for name in variant_names])
 
     if with_web:
         print("\n-- Step 5: Generate WOFF2 webfonts --\n")
