@@ -2119,7 +2119,7 @@ EndChar
 
 StartChar: R
 Encoding: 82 82 53
-Width: 1487
+Width: 1499
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -8520,7 +8520,7 @@ EndChar
 
 StartChar: Racute
 Encoding: 340 340 275
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -8556,7 +8556,7 @@ EndChar
 
 StartChar: uni0156
 Encoding: 342 342 277
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -8592,7 +8592,7 @@ EndChar
 
 StartChar: Rcaron
 Encoding: 344 344 279
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -10369,7 +10369,7 @@ EndChar
 
 StartChar: uni0210
 Encoding: 528 528 359
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -10405,7 +10405,7 @@ EndChar
 
 StartChar: uni0212
 Encoding: 530 530 361
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -20543,7 +20543,7 @@ EndChar
 
 StartChar: uni1E58
 Encoding: 7768 7768 771
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -20577,7 +20577,7 @@ EndChar
 
 StartChar: uni1E5A
 Encoding: 7770 7770 773
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -20621,7 +20621,7 @@ EndChar
 
 StartChar: uni1E5C
 Encoding: 7772 7772 775
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
@@ -20657,7 +20657,7 @@ EndChar
 
 StartChar: uni1E5E
 Encoding: 7774 7774 777
-Width: 1487
+Width: 1499
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1371 0 basechar 0
