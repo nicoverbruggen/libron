@@ -1779,36 +1779,34 @@ AnchorPoint: "Anchor-4" 881 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1496 154 m 1,0,-1
- 1641 102 l 1,1,-1
- 1641 0 l 1,2,-1
- 1064 0 l 1,3,-1
- 1064 80 l 1,4,-1
- 1096 107 l 1,5,-1
- 729 619 l 1,6,-1
- 598 619 l 1,7,-1
- 598 152 l 1,8,-1
- 760 102 l 1,9,-1
- 760 0 l 1,10,-1
- 89 0 l 1,11,-1
- 89 102 l 1,12,-1
- 253 152 l 1,13,-1
- 253 1244 l 1,14,-1
- 89 1293 l 1,15,-1
- 89 1396 l 1,16,-1
- 762 1396 l 1,17,-1
- 762 1293 l 1,18,-1
- 598 1244 l 1,19,-1
- 598 821 l 1,20,-1
- 748 821 l 1,21,-1
- 1159 1252 l 1,22,-1
- 1004 1293 l 1,23,-1
- 1004 1396 l 1,24,-1
- 1549 1396 l 1,25,-1
- 1549 1293 l 1,26,27
- 1548 1293 1548 1293 1396 1244 c 1,28,-1
- 1002 837 l 1,29,-1
- 1496 154 l 1,0,-1
+1002 837 m 1,0,-1
+ 1320 400 l 1,1,-1
+ 1608 0 l 1,2,-1
+ 1176 0 l 1,3,-1
+ 888 400 l 1,4,-1
+ 729 619 l 1,5,-1
+ 598 619 l 1,6,-1
+ 598 152 l 1,7,-1
+ 760 102 l 1,8,-1
+ 760 0 l 1,9,-1
+ 89 0 l 1,10,-1
+ 89 102 l 1,11,-1
+ 253 152 l 1,12,-1
+ 253 1244 l 1,13,-1
+ 89 1293 l 1,14,-1
+ 89 1396 l 1,15,-1
+ 762 1396 l 1,16,-1
+ 762 1293 l 1,17,-1
+ 598 1244 l 1,18,-1
+ 598 821 l 1,19,-1
+ 748 821 l 1,20,-1
+ 1159 1252 l 1,21,-1
+ 1004 1293 l 1,22,-1
+ 1004 1396 l 1,23,-1
+ 1549 1396 l 1,24,-1
+ 1549 1293 l 1,25,26
+ 1548 1293 1548 1293 1396 1244 c 1,27,-1
+ 1002 837 l 1,0,-1
 EndSplineSet
 Kerns2: 863 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 851 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 845 -4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 858 -21 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 869 -45 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 948 -74 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 647 -20 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 646 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 645 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 644 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 643 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 642 -44 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 641 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 640 6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 638 -35 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 613 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 611 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 456 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 430 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -40 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 379 -16 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 360 2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 129 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 344 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 342 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 341 -92 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -56 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 294 -55 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 293 -26 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 258 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 257 -5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 239 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 192 5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 186 -50 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -52 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 174 8 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 154 -92 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -91 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -45 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 107 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 91 -22 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -157 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 83 -21 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 18 12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -39 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 1205 -16 "Small-cap figure kerning subtable" 1204 -8 "Small-cap figure kerning subtable" 1203 -9 "Small-cap figure kerning subtable" 1202 -23 "Small-cap figure kerning subtable" 1201 -2 "Small-cap figure kerning subtable" 1200 -35 "Small-cap figure kerning subtable" 1199 -5 "Small-cap figure kerning subtable" 1198 5 "Small-cap figure kerning subtable" 1196 -28 "Small-cap figure kerning subtable" 1207 -95 "Old-style figure kerning subtable" 1206 -15 "Old-style figure kerning subtable" 1208 -36 "Old-style figure kerning subtable" 1209 -85 "Old-style figure kerning subtable" 1210 90 "Old-style figure kerning subtable" 1211 -52 "Old-style figure kerning subtable" 1212 -29 "Old-style figure kerning subtable" 1213 -130 "Old-style figure kerning subtable" 1214 -10 "Old-style figure kerning subtable" 1215 -130 "Old-style figure kerning subtable"
 Substitution2: "'c2sc' Capitals to Small Capitals in Latin subtable" K.sc
@@ -2094,7 +2092,7 @@ EndChar
 
 StartChar: R
 Encoding: 82 82 53
-Width: 1545
+Width: 1605
 GlyphClass: 2
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -2105,51 +2103,38 @@ AnchorPoint: "Anchor-4" 842 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-837 771 m 2,0,1
- 938 771 938 771 992 822 c 128,-1,2
- 1046 873 1046 873 1046 983 c 0,3,4
- 1046 1054 1046 1054 1024 1100.5 c 128,-1,5
- 1002 1147 1002 1147 950 1170.5 c 128,-1,6
- 898 1194 898 1194 806 1194 c 2,7,-1
- 598 1194 l 1,8,-1
- 598 771 l 1,9,-1
- 837 771 l 2,0,1
-598 601 m 1,10,-1
- 598 152 l 1,11,-1
- 750 102 l 1,12,-1
- 750 7.69230769231 l 1,13,-1
- 89 7.69230769231 l 1,14,-1
- 89 102 l 1,15,-1
- 253 152 l 1,16,-1
+598 529 m 1,0,-1
+ 796 529 l 1,1,-1
+ 890 400 l 1,2,-1
+ 1178 0 l 1,3,-1
+ 1610 0 l 1,4,-1
+ 1322 400 l 1,5,-1
+ 1176 600 l 1,6,7
+ 1267 654 1267 654 1311 740 c 0,8,9
+ 1361 838 1361 838 1361 964 c 0,10,11
+ 1361 1095 1361 1095 1308 1192 c 128,-1,12
+ 1255 1289 1255 1289 1138.5 1342.5 c 128,-1,13
+ 1022 1396 1022 1396 831 1396 c 2,14,-1
+ 89 1396 l 1,15,-1
+ 89 1293 l 1,16,-1
  253 1244 l 1,17,-1
- 89 1293 l 1,18,-1
- 89 1396 l 1,19,-1
- 408 1396 l 1,20,-1
- 598 1396 l 1,21,-1
- 925 1396 l 2,22,23
- 1094 1396 1094 1396 1194.5 1352 c 128,-1,24
- 1295 1308 1295 1308 1339 1229 c 128,-1,25
- 1383 1150 1383 1150 1383 1046 c 0,26,27
- 1383 948 1383 948 1342 871.5 c 128,-1,28
- 1301 795 1301 795 1217 746 c 0,29,30
- 1143 703 1143 703 1033 687 c 1,31,32
- 1130 677 1130 677 1178 656 c 0,33,34
- 1239 629 1239 629 1267.5 579.5 c 0,35,36
- 1291.25407756 538.293947082 1291.25407756 538.293947082 1310 453 c 2,37,-1
- 1350 271 l 2,38,39
- 1365 203 1365 203 1377.5 180.5 c 0,40,41
- 1393 151 1393 151 1409.5 143 c 128,-1,42
- 1426 135 1426 135 1475 135 c 1,43,-1
- 1530 7.69230769231 l 1,44,45
- 1384 -2.30769230769 1384 -2.30769230769 1277 0.692307692308 c 128,-1,46
- 1170 3.69230769231 1170 3.69230769231 1119.5 25.1923076923 c 1,47,48
- 1069 39 1069 39 1044 83 c 0,49,50
- 1021.2130246 122.629522431 1021.2130246 122.629522431 1007 197 c 2,51,-1
- 964 422 l 2,52,53
- 950 496 950 496 931.5 532.5 c 0,54,55
- 912 571 912 571 875 586 c 128,-1,56
- 838 601 838 601 769 601 c 2,57,-1
- 598 601 l 1,10,-1
+ 253 152 l 1,18,-1
+ 89 102 l 1,19,-1
+ 89 0 l 1,20,-1
+ 762 0 l 1,21,-1
+ 762 102 l 1,22,-1
+ 598 152 l 1,23,-1
+ 598 529 l 1,0,-1
+1022 960 m 0,24,25
+ 1022 879 1022 879 996 827 c 128,-1,26
+ 970 775 970 775 920 750 c 128,-1,27
+ 870 725 870 725 798 725 c 2,28,-1
+ 598 725 l 1,29,-1
+ 598 1194 l 1,30,-1
+ 763 1194 l 2,31,32
+ 862 1194 862 1194 918.5 1167.5 c 128,-1,33
+ 975 1141 975 1141 998.5 1089 c 128,-1,34
+ 1022 1037 1022 1037 1022 960 c 0,24,25
 EndSplineSet
 Kerns2: 863 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 851 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 869 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 948 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 647 -7 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 646 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 645 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 644 -25 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 643 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 642 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 641 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 640 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 639 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 638 -24 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 552 -37 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 524 -15 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 523 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -41 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 521 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 518 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 380 -17 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 342 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 341 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 318 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 294 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 186 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 178 -29 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 154 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 124 -12 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 -59 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 112 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 108 -21 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 107 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 96 -14 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -19 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 64 -16 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 63 -13 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -46 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 35 -6 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 -30 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 18 5 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 15 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -38 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 9 -10 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 1205 -6 "Small-cap figure kerning subtable" 1204 0 "Small-cap figure kerning subtable" 1203 -10 "Small-cap figure kerning subtable" 1202 -20 "Small-cap figure kerning subtable" 1201 2 "Small-cap figure kerning subtable" 1200 -23 "Small-cap figure kerning subtable" 1199 0 "Small-cap figure kerning subtable" 1198 0 "Small-cap figure kerning subtable" 1197 0 "Small-cap figure kerning subtable" 1196 -19 "Small-cap figure kerning subtable" 1206 -39 "Old-style figure kerning subtable" 1207 27 "Old-style figure kerning subtable" 1208 -19 "Old-style figure kerning subtable" 1209 -105 "Old-style figure kerning subtable" 1210 68 "Old-style figure kerning subtable" 1211 -73 "Old-style figure kerning subtable" 1212 -25 "Old-style figure kerning subtable" 1213 -26 "Old-style figure kerning subtable" 1215 -71 "Old-style figure kerning subtable"
 Substitution2: "'c2sc' Capitals to Small Capitals in Latin subtable" R.sc
@@ -8511,7 +8496,7 @@ EndChar
 
 StartChar: Racute
 Encoding: 340 340 275
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -8547,7 +8532,7 @@ EndChar
 
 StartChar: uni0156
 Encoding: 342 342 277
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -8583,7 +8568,7 @@ EndChar
 
 StartChar: Rcaron
 Encoding: 344 344 279
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -10362,7 +10347,7 @@ EndChar
 
 StartChar: uni0210
 Encoding: 528 528 359
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -10398,7 +10383,7 @@ EndChar
 
 StartChar: uni0212
 Encoding: 530 530 361
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -20659,7 +20644,7 @@ EndChar
 
 StartChar: uni1E58
 Encoding: 7768 7768 771
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -20693,7 +20678,7 @@ EndChar
 
 StartChar: uni1E5A
 Encoding: 7770 7770 773
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -20737,7 +20722,7 @@ EndChar
 
 StartChar: uni1E5C
 Encoding: 7772 7772 775
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
@@ -20773,7 +20758,7 @@ EndChar
 
 StartChar: uni1E5E
 Encoding: 7774 7774 777
-Width: 1545
+Width: 1605
 GlyphClass: 1
 Flags: MW
 AnchorPoint: "Anchor-3" 1480 0 basechar 0
