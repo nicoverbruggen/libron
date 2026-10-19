@@ -1541,7 +1541,7 @@ AnchorPoint: "Anchor-3" 972 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1106 659 m 1,0,-1
+1026 659 m 1,0,-1
  523 660 l 1,1,-1
  372 139 l 1,2,-1
  898 139 l 1,3,-1
@@ -1566,8 +1566,8 @@ SplineSet
  1231 1256 l 1,22,-1
  695 1256 l 1,23,-1
  563 797 l 1,24,-1
- 1164 794 l 1,25,-1
- 1106 659 l 1,0,-1
+ 1084 794 l 1,25,-1
+ 1026 659 l 1,0,-1
 EndSplineSet
 Kerns2: 863 -9 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 865 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 642 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 522 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 474 3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 456 4 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 352 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 233 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 121 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 89 -2 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 69 1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 59 -3 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 57 -11 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 34 0 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 13 -1 "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0" 1200 0 "Small-cap figure kerning subtable" 1213 -150 "Old-style figure kerning subtable" 1211 -150 "Old-style figure kerning subtable" 1206 14 "Old-style figure kerning subtable" 1215 -150 "Old-style figure kerning subtable" 1209 -150 "Old-style figure kerning subtable" 1207 -126 "Old-style figure kerning subtable" 1208 -49 "Old-style figure kerning subtable" 1210 26 "Old-style figure kerning subtable"
 Substitution2: "'c2sc' Capitals to Small Capitals in Latin subtable" E.sc
@@ -1603,8 +1603,8 @@ SplineSet
  1205 1256 l 1,14,-1
  695 1256 l 1,15,-1
  543 731 l 1,16,-1
- 1122 730.349609375 l 1,17,-1
- 1078 594.349609375 l 5,18,-1
+ 1027 730.349609375 l 1,17,-1
+ 983 594.349609375 l 5,18,-1
  503 594 l 1,19,-1
  369 131 l 1,0,-1
 EndSplineSet
