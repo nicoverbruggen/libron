@@ -156,11 +156,12 @@ class SVG:
         self.elements.append("</g>")
         return x
 
-    def book_paragraph(self, runs, x, y, width, leading, indent=0, bottom=None):
-        """Set mixed-size text with a first-line indent and justified lines.
+    def book_paragraph(self, runs, x, y, width, leading, indent=0, bottom=None, initial_kern=0):
+        """Set left-aligned mixed-size text with a first-line indent.
 
         Each run is (text, size, OpenType features). Runs can join without a
         space, as the enlarged initial joins the opening small capitals.
+        initial_kern adjusts the space after the first token in SVG units.
         """
         import re
 
@@ -170,18 +171,18 @@ class SVG:
             for token in re.findall(r"\S+\s*", text):
                 word = token.rstrip()
                 space = font.width(" ", run_size) if token != word else 0
-                words.append((word, run_size, features, font.width(word, run_size, features=features), space))
+                advance = font.width(word, run_size, features=features)
+                if not words:
+                    advance += initial_kern
+                words.append((word, run_size, features, advance, space))
 
-        def draw_line(line, baseline, inset, final):
-            used = sum(word[3] + word[4] for word in line) - line[-1][4]
-            spaces = sum(bool(word[4]) for word in line[:-1])
-            extra = (width - inset - used) / spaces if spaces and not final else 0
+        def draw_line(line, baseline, inset):
             cursor = x + inset
             for i, (word, run_size, features, advance, space) in enumerate(line):
                 self.text(word, cursor, baseline, run_size, features=features)
                 cursor += advance
                 if i < len(line) - 1:
-                    cursor += space + (extra if space else 0)
+                    cursor += space
 
         # Keep adjacent runs together when there is no space between them.
         # This prevents a comma or full stop wrapping away from a small cap.
@@ -203,7 +204,7 @@ class SVG:
                     raise ValueError(f"Word too wide: {group[0][0]!r}")
                 if bottom is not None and y > bottom:
                     return y
-                draw_line(line, y, inset, False)
+                draw_line(line, y, inset)
                 y += leading
                 inset = 0
                 line = group
@@ -212,7 +213,7 @@ class SVG:
         if line:
             if bottom is not None and y > bottom:
                 return y
-            draw_line(line, y, inset, True)
+            draw_line(line, y, inset)
             y += leading
         return y
 
@@ -272,7 +273,7 @@ def sample(fonts, family, version):
     y = svg.book_paragraph([
         ("T", size * 2.2, ()), ("revelyan & Co. ", size, sc),
         ("designed typefaces and, through its small-press division, published books set in them, an arrangement Mr. Trevelyan considered so obviously correct that he rarely bothered to defend it, in much the same way that he did not defend the usefulness of windows, decent tea, or the avoidance of badly spaced capitals.", size, ()),
-    ], margin, 366, text_width, 50, bottom=bottom)
+    ], margin, 366, text_width, 50, bottom=bottom, initial_kern=-size * 0.25)
     paragraphs = [
         [("The firm occupied a building whose chief architectural distinction was that no one looking at it from the street would have guessed, correctly or otherwise, what went on inside, which suited Mr. Trevelyan perfectly well.", size, ())],
         [("Within were proofs pinned to walls, drawers full of rejected alphabets, invoices of uncertain legibility, and three machines named ", size, ()),

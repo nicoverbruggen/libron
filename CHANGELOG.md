@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.32
+
+### Figures
+
+Added small-cap figures through `smcp` and `c2sc` in all four styles. Added proportional and tabular old-style figures through `onum`, with `lnum` restoring lining figures. Improved numeral kerning and refined the old-style `4`.
+
+### Adjusted letters
+
+Shortened the middle arms of `E` and `F` in all four styles.
+
+Redrew the legs of `R` and `K` in all four styles, with matching feet and subtle right-facing serifs. Widened `R` and adjusted its spacing. Added a shallow sloping shoulder to `q` in all four styles.
+
+Adapted italic `v`, `w` and `y` from Crimson Pro in Italic and Bold Italic, adjusting them to fit Libron.
+
+Corrected serifs on derived letters, including `đ ħ ĸ ŋ ŧ`, and their related forms.
+
+### Combining accents
+
+Improved combining-mark attachment and stacking, including Lithuanian stress marks and dot handling on `i` and `j`. Tightened the stacked accents on `ḕ` and `ḗ` in all four styles.
+
+Builds now check combining-accent shaping in every generated TTF style and variant.
+
+### Punctuation and spacing
+
+Lengthened the en dash and em dash in all four styles. Tightened trademark spacing and the lowercase `oy` pair in Regular.
+
+### Specimens
+
+Regenerated the specimens with the current outlines. The simulated e-reader page now uses left-aligned body text and tighter spacing after its enlarged opening `T`.
+
 ## v0.31
 
 ### Superscripts, subscripts and fractions
