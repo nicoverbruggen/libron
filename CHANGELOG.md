@@ -12,7 +12,7 @@ Shortened the middle arms of `E` and `F` in all four styles.
 
 Redrew the legs of `R` and `K` in all four styles, with matching feet and subtle right-facing serifs. Widened `R` and adjusted its spacing. Added a shallow sloping shoulder to `q` in all four styles.
 
-Adapted italic `v`, `w` and `y` from Crimson Pro in Italic and Bold Italic, adjusting them to fit Libron.
+Adapted italic `v` and `w` from Crimson Pro in Italic and Bold Italic, adjusting them to fit Libron.
 
 Corrected serifs on derived letters, including `đ ħ ĸ ŋ ŧ`, and their related forms.
 
