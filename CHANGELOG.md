@@ -2,6 +2,14 @@
 
 ## v0.32
 
+### No-op hints by default
+
+Removed the `ttfautohint` hinting from all fonts. On e-readers that apply hinting, such as Kindle, the hints moved the bottoms of round letters like `o`, `e` and `s` up onto the baseline, so these letters looked higher than letters with flat serifs. 
+
+Every glyph now has a single instruction that does nothing, which the Kobo (KF) fonts already had. This stops the e-reader from applying its own automatic hinting, so the letters keep their designed positions and Libron looks a lot better on Kindle devices.
+
+If you'd like to have a version of Libron that retains these hints for use on Linux or Windows, where such hints may be visually more appealing, simply install **Libron H**, a new variant.
+
 ### Figures
 
 Added small-cap figures through `smcp` and `c2sc` in all four styles. Added proportional and tabular old-style figures through `onum`, with `lnum` restoring lining figures. Improved numeral kerning and refined the old-style `4`.

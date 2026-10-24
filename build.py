@@ -17,9 +17,10 @@ Pipeline:
   5. Export TTFs to ./out/ttf/
   6. Post-process TTFs and check combining-accent shaping
   7. Generate relaxed (R) TTFs in ./out/relaxed/ with 35% extra line spacing
-  8. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
-  9. Generate WOFF2 webfonts in ./out/web/
-  10. Optionally generate CrossPoint Reader bundles in ./out/cpfont/
+  8. Generate hinted (H) TTFs in ./out/hinted/ with ttfautohint
+  9. Run kobo-font-fix to generate Kobo (KF) variants in ./out/kf/
+  10. Generate WOFF2 webfonts in ./out/web/
+  11. Optionally generate CrossPoint Reader bundles in ./out/cpfont/
 
 No glyph scaling, condensing, ligature edits, or other outline transforms
 are applied — the masters are already final. This is a straight export.
@@ -53,6 +54,7 @@ OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_TTF_DIR = os.path.join(OUT_DIR, "ttf")
 OUT_KF_DIR = os.path.join(OUT_DIR, "kf")
 OUT_RELAXED_DIR = os.path.join(OUT_DIR, "relaxed")
+OUT_HINTED_DIR = os.path.join(OUT_DIR, "hinted")
 OUT_WEB_DIR = os.path.join(OUT_DIR, "web")
 OUT_CPFONT_DIR = os.path.join(OUT_DIR, "cpfont")
 
@@ -94,7 +96,16 @@ RELAXED_LINE_PERCENT = 35
 
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.10/kobofix.py"
 
-# ttfautohint options, kept in sync with Readerly.
+# The fonts ship without real hinting, the same way kobofix builds the KF
+# variants. Every outline glyph gets this one-byte program, SVTCA[Y], which
+# moves no points. A TrueType font with no instructions at all makes FreeType
+# fall back to its autohinter, which flattens the overshoot of round letters
+# and makes the baseline look uneven. The no-op program stops that fallback,
+# so the outlines render unhinted even when the reader has hinting on.
+NOOP_BYTECODE = b"\x00"
+HINTING_TABLES = ("cvt ", "cvar", "fpgm", "prep", "hdmx", "LTSH", "VDMX", "gasp")
+
+# ttfautohint options for the hinted (H) variant, kept in sync with Readerly.
 AUTOHINT_OPTS = [
     "--stem-width-mode=nss",
 ]
@@ -124,7 +135,7 @@ def require_ttfautohint():
     print(
         "ERROR: ttfautohint not found.\n"
         "\n"
-        "ttfautohint is required for proper rendering on Kobo e-readers.\n"
+        "ttfautohint is required for the hinted (H) variant.\n"
         "Install it with:\n"
         "  macOS/Bazzite:      brew install ttfautohint\n"
         "  Debian/Ubuntu:      sudo apt install ttfautohint\n"
@@ -480,6 +491,44 @@ def fix_ttf_version_names(ttf_path):
     print(f"  Normalized version names to {version_string}")
 
 
+def add_noop_hints(ttf_path):
+    """Strip hinting and give every outline glyph the no-op program.
+
+    Same result as kobofix's KF preset. See NOOP_BYTECODE for why.
+    """
+    from fontTools.ttLib import TTFont
+    from fontTools.ttLib.tables import ttProgram
+
+    font = TTFont(ttf_path)
+    for tag in HINTING_TABLES:
+        if tag in font:
+            del font[tag]
+
+    glyf = font["glyf"]
+    count = 0
+    for glyph_name in font.getGlyphOrder():
+        glyph = glyf[glyph_name]
+        if glyph.numberOfContours == 0:
+            continue
+        program = ttProgram.Program()
+        program.fromBytecode(NOOP_BYTECODE)
+        glyph.program = program
+        count += 1
+
+    maxp = font["maxp"]
+    maxp.maxZones = 1
+    maxp.maxTwilightPoints = 0
+    maxp.maxStorage = 0
+    maxp.maxFunctionDefs = 0
+    maxp.maxInstructionDefs = 0
+    maxp.maxStackElements = 0
+    maxp.maxSizeOfInstructions = len(NOOP_BYTECODE)
+
+    font.save(ttf_path)
+    font.close()
+    print(f"  Set no-op hints on {count} glyphs")
+
+
 def fix_maxp_instruction_limit(ttf_path):
     """Sync maxp.maxSizeOfInstructions with the longest glyph bytecode."""
     from fontTools.ttLib import TTFont
@@ -522,7 +571,7 @@ def autohint_ttf(ttf_path):
 
     os.replace(tmp_path, ttf_path)
     fix_maxp_instruction_limit(ttf_path)
-    print("  Autohinted with ttfautohint")
+    print(f"  Autohinted {os.path.basename(ttf_path)} with ttfautohint")
 
 
 def download_kobofix(dest_path):
@@ -623,11 +672,39 @@ def build_relaxed(kobofix_path, variant_names, tmp_dir, family):
             os2.sTypoDescender = hhea.descent
             os2.sTypoLineGap = hhea.lineGap
             font.save(path)
+        # kobofix adds glyphs such as the figure dash without a program.
+        add_noop_hints(path)
     if os.path.exists(OUT_RELAXED_DIR):
         shutil.rmtree(OUT_RELAXED_DIR)
     os.makedirs(OUT_RELAXED_DIR)
     for name in outputs:
         shutil.move(os.path.join(work, name), os.path.join(OUT_RELAXED_DIR, name))
+
+
+def build_hinted(kobofix_path, variant_names, tmp_dir, family):
+    """Build the H family: the plain TTFs, renamed and hinted with ttfautohint.
+
+    Starts from the exported TTFs before they get the no-op hints, so
+    ttfautohint works on fonts without any instructions.
+    """
+    work = os.path.join(tmp_dir, "hinted")
+    input_names = [f"{name}.ttf" for name in variant_names]
+    subprocess.run(
+        [sys.executable, kobofix_path, "--prefix", "", "--name", f"{family} H",
+         "--line-percent", "0", "--kern", "skip", "--outline", "skip"] + input_names,
+        cwd=work, check=True,
+    )
+    outputs = [name for name in os.listdir(work)
+               if name.endswith(".ttf") and name not in input_names]
+    if len(outputs) != len(variant_names):
+        raise RuntimeError("kobofix did not produce all hinted styles")
+    if os.path.exists(OUT_HINTED_DIR):
+        shutil.rmtree(OUT_HINTED_DIR)
+    os.makedirs(OUT_HINTED_DIR)
+    for name in outputs:
+        path = os.path.join(OUT_HINTED_DIR, name)
+        shutil.move(os.path.join(work, name), path)
+        autohint_ttf(path)
 
 
 def main():
@@ -738,6 +815,8 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
 
     print("\n-- Step 3: Export TTFs --\n")
     os.makedirs(OUT_TTF_DIR, exist_ok=True)
+    hinted_work = os.path.join(tmp_dir, "hinted")
+    os.makedirs(hinted_work)
 
     for name, style, _source_path, _embolden in variants:
         sfd_path = os.path.join(tmp_dir, f"{name}.sfd")
@@ -746,7 +825,9 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
         run_fontforge_script(script)
         fix_ttf_style_flags(ttf_path, style)
         fix_ttf_version_names(ttf_path)
-        autohint_ttf(ttf_path)
+        # The H family starts from this copy, before the no-op hints.
+        shutil.copy2(ttf_path, os.path.join(hinted_work, f"{name}.ttf"))
+        add_noop_hints(ttf_path)
 
     print("\n-- Check combining-accent shaping --\n")
     check_combining_accents([os.path.join(OUT_TTF_DIR, name + ".ttf") for name in variant_names])
@@ -757,6 +838,11 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
     build_relaxed(kobofix_path, variant_names, tmp_dir, family)
     check_combining_accents([os.path.join(OUT_RELAXED_DIR, name)
                             for name in sorted(os.listdir(OUT_RELAXED_DIR)) if name.endswith(".ttf")])
+
+    print("\n-- Generate hinted (H) variants --\n")
+    build_hinted(kobofix_path, variant_names, tmp_dir, family)
+    check_combining_accents([os.path.join(OUT_HINTED_DIR, name)
+                            for name in sorted(os.listdir(OUT_HINTED_DIR)) if name.endswith(".ttf")])
 
     if with_kobofix:
         print("\n-- Step 4: Generate Kobo (KF) variants --\n")
@@ -781,6 +867,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
     print("  Build complete!")
     print(f"  TTF fonts are in:  {OUT_TTF_DIR}/")
     print(f"  Relaxed fonts are in: {OUT_RELAXED_DIR}/")
+    print(f"  Hinted fonts are in: {OUT_HINTED_DIR}/")
     if with_kobofix:
         print(f"  KF fonts are in:   {OUT_KF_DIR}/")
     if with_web:

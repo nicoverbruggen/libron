@@ -38,8 +38,9 @@ When a commit of Libron is tagged, a version is automatically released. The vers
 
 The following variants are generated:
 
-- **Libron** for desktop (`TTF`)
+- **Libron** for Kindle, other e-readers and desktop (`TTF`)
 - **Libron R** for [KOReader](https://koreader.rocks/) (`TTF`) with relaxed line spacing
+- **Libron H** for Linux and Windows (`TTF`) with `ttfautohint` hinting
 - **KF Libron** for [Kobo devices](https://github.com/nicoverbruggen/kobo-font-fix) (`KF TTF`)
 
 

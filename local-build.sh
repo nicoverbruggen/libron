@@ -43,11 +43,13 @@ Other arguments are passed to build.py. Set FNTBLD_IMAGE to override the image.
 Outputs:
   out/ttf/              Standard TTF fonts.
   out/relaxed/          Libron R TTF fonts with 35% extra line spacing.
+  out/hinted/           Libron H TTF fonts hinted with ttfautohint.
   out/kf/               Kobo TTF fonts processed with kobo-font-fix.
   out/web/              WOFF2 webfonts.
   out/cpfont/Libron/     CrossPoint bundles at sizes 12, 14, 16 and 18.
 
-Custom family names also change the relaxed family and CrossPoint folder.
+Custom family names also change the relaxed and hinted families and the
+CrossPoint folder.
 Relaxed fonts match ebook-fonts, with Typo, hhea and Win metrics set to the
 relaxed spacing so readers such as KOReader use it. Existing outlines and
 kerning stay the same. Missing spaces and dashes are added.
