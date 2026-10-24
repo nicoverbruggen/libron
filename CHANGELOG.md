@@ -12,7 +12,7 @@ If you'd like to have a version of Libron that retains these hints for use on Li
 
 ### Figures
 
-Added small-cap figures through `smcp` and `c2sc` in all four styles. Added proportional and tabular old-style figures through `onum`, with `lnum` restoring lining figures. Improved numeral kerning and refined the old-style `4`.
+Added small-cap figures through `smcp` and `c2sc` in all four styles. Added old-style figures through `onum`. They are tabular, the same as the default figures. Add `pnum` for proportional figures, and `lnum` to restore lining figures. Added kerning for the new old-style and small-cap figures, and refined the old-style `4`.
 
 ### Combining accents
 
@@ -38,6 +38,8 @@ Italic `v` and `w` are adapted from Crimson Pro in Italic and Bold Italic.
 | Bold | `E F K R q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
 | Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
 | Bold Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
+
+Only the small caps of `Ç` and `Ŧ` changed. The capitals are unchanged.
 
 ### Updated kerning
 
