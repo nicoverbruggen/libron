@@ -103,10 +103,7 @@ jobs:
         run: |
           {
             echo 'RELEASE_BODY<<__RELEASE_EOF__'
-            # Notes under the first "## " heading in CHANGELOG.md.
-            awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
             cat <<'EOF'
-
           ### Downloads
 
           - **If you are using a Kobo device**, download [KF_Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/KF_Libron.zip). It has been processed with `kobo-font-fix` for improved compatibility with Kobo's `kepub` renderer.
@@ -115,6 +112,10 @@ jobs:
           - **If you are using a Kindle, another e-reader or a desktop computer**, download [Libron.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron.zip).
           - **If you want hinted fonts for Linux or Windows**, download [Libron_H.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_H.zip). The family appears as `Libron H` and is hinted with `ttfautohint`.
           - **If you want to use Libron on a website**, download [Libron_Web.zip](${{ github.server_url }}/${{ github.repository }}/releases/download/${{ github.ref_name }}/Libron_Web.zip).
+          EOF
+            # Notes under the first "## " heading in CHANGELOG.md.
+            awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
+            cat <<'EOF'
 
           ### Learn more
 

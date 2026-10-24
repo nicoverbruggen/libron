@@ -14,25 +14,11 @@ If you'd like to have a version of Libron that retains these hints for use on Li
 
 Added small-cap figures through `smcp` and `c2sc` in all four styles. Added proportional and tabular old-style figures through `onum`, with `lnum` restoring lining figures. Improved numeral kerning and refined the old-style `4`.
 
-### Adjusted letters
-
-Shortened the middle arms of `E` and `F` in all four styles.
-
-Redrew the legs of `R` and `K` in all four styles, with matching feet and subtle right-facing serifs. Widened `R` and adjusted its spacing. Added a shallow sloping shoulder to `q` in all four styles.
-
-Adapted italic `v` and `w` from Crimson Pro in Italic and Bold Italic, adjusting them to fit Libron.
-
-Corrected serifs on derived letters, including `đ ħ ĸ ŋ ŧ`, and their related forms.
-
 ### Combining accents
 
-Improved combining-mark attachment and stacking, including Lithuanian stress marks and dot handling on `i` and `j`. Tightened the stacked accents on `ḕ` and `ḗ` in all four styles.
+Improved combining-mark attachment and stacking, including Lithuanian stress marks and dot handling on `i` and `j`.
 
 Builds now check combining-accent shaping in every generated TTF style and variant.
-
-### Punctuation and spacing
-
-Lengthened the en dash and em dash in all four styles. Tightened trademark spacing and the lowercase `oy` pair in Regular.
 
 ### CrossPoint Reader builds
 
@@ -41,6 +27,32 @@ The `cpfont` files now include IPA characters, so dictionary pronunciations no l
 ### Specimens
 
 Regenerated the specimens with the current outlines. The simulated e-reader page now uses left-aligned body text and tighter spacing after its enlarged opening `T`.
+
+### Adjusted outlines
+
+Italic `v` and `w` are adapted from Crimson Pro in Italic and Bold Italic.
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `E F K R b q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḃ ḕ ḗ Ḳ Ḵ Ṛ Ṟ – — ₫ ™` |
+| Bold | `E F K R q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
+| Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
+| Bold Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
+
+### Updated kerning
+
+| Weight | Retuned |
+|---|---|
+| Regular | `o→y ə→y` |
+
+### Updated spacing
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `R b ḃ Ṛ Ṟ – — ™` |
+| Bold | `R Ṛ Ṟ – — ™` |
+| Italic | `R v w Ṛ Ṟ – — ™` |
+| Bold Italic | `R v w Ṛ Ṟ – — ™` |
 
 ## v0.31
 

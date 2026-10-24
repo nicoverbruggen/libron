@@ -38,10 +38,7 @@ jobs:
         run: |
           {
             echo 'RELEASE_BODY<<__RELEASE_EOF__'
-            # Notes under the first "## " heading in CHANGELOG.md.
-            awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
             cat <<'EOF'
-
           ### Downloads
 
           - [Libron.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron.zip): standard fonts for e-readers and desktop use.
@@ -49,6 +46,10 @@ jobs:
           - [Libron_R.zip](${{ gitea.server_url }}/${{ gitea.repository }}/releases/download/${{ gitea.ref_name }}/Libron_R.zip): `Libron R` with 35% extra line spacing.
 
           CrossPoint and web fonts are available from the [GitHub releases](https://github.com/nicoverbruggen/libron/releases).
+          EOF
+            # Notes under the first "## " heading in CHANGELOG.md.
+            awk 'f && /^## /{exit} /^## /{f=1; next} f{print}' CHANGELOG.md
+            cat <<'EOF'
 
           See the [README](${{ gitea.server_url }}/${{ gitea.repository }}/src/branch/main/README.md) for installation details. Libron uses the [SIL Open Font License](${{ gitea.server_url }}/${{ gitea.repository }}/src/branch/main/LICENSE).
           EOF
