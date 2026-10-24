@@ -53,7 +53,8 @@ relaxed spacing so readers such as KOReader use it. Existing outlines and
 kerning stay the same. Missing spaces and dashes are added.
 
 Network access is required to download the image, the pinned kobo-font-fix
-script and, when enabled, the pinned CrossPoint converter.
+script and, when enabled, the pinned CrossPoint converter and its Noto Sans
+fallback font for IPA and other missing glyphs.
 Copy the CrossPoint family folder into /fonts or /.fonts on the SD card.
 To convert existing TTFs, run python3 scripts/build_cpfont.py in the container.
 

@@ -3,6 +3,10 @@
 
 Run build.py first. Each file in out/cpfont/Libron contains all four styles
 at one reading size. Copy the Libron directory into /fonts on the SD card.
+
+Like CrossPoint's own SD fonts, the bundles include IPA glyphs for dictionary
+pronunciations. Libron does not draw these, so the converter takes them, and
+any other glyph in the intervals that Libron lacks, from Noto Sans.
 """
 
 import shutil
@@ -17,19 +21,23 @@ from fontTools.ttLib import TTFont
 
 
 ROOT = Path(__file__).resolve().parent.parent
-CONVERTER_COMMIT = "2ceeeccd5ae8f2693eef71388d3f0a4137c1fcc9"
-CONVERTER_URL = (
+CONVERTER_COMMIT = "cf50ce73130323e6aac04d61b5916ec264b5edec"
+CONVERTER_BASE_URL = (
     "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/"
-    f"{CONVERTER_COMMIT}/lib/EpdFont/scripts"
+    f"{CONVERTER_COMMIT}/lib/EpdFont"
 )
+CONVERTER_URL = f"{CONVERTER_BASE_URL}/scripts"
 CONVERTER_FILES = ("fontconvert_sdcard.py", "cpfont_version.py")
+# CrossPoint's build-sd-fonts.py passes this font as the fallback for every style.
+FALLBACK_URL = f"{CONVERTER_BASE_URL}/builtinFonts/source/NotoSans/NotoSans-Regular.ttf"
+INTERVALS = "reading,ipa-chars"
 SIZES = (12, 14, 16, 18)
 LINE_PERCENT = 35
-STYLE_FLAGS = {
-    "Regular": "--regular",
-    "Bold": "--bold",
-    "Italic": "--italic",
-    "BoldItalic": "--bolditalic",
+CONVERTER_STYLES = {
+    "Regular": "regular",
+    "Bold": "bold",
+    "Italic": "italic",
+    "BoldItalic": "bolditalic",
 }
 
 
@@ -73,19 +81,23 @@ def build_crosspoint(ttf_dir, out_dir, temporary_dir, family="Libron"):
         target = converter_dir / filename
         print(f"  Downloading pinned CrossPoint converter: {filename}")
         urllib.request.urlretrieve(f"{CONVERTER_URL}/{filename}", target)
+    fallback = converter_dir / "NotoSans-Regular.ttf"
+    print("  Downloading pinned CrossPoint fallback font: NotoSans-Regular.ttf")
+    urllib.request.urlretrieve(FALLBACK_URL, fallback)
 
     # Build in temporary storage. Replace the output only after all sizes pass.
     family_dir = work / family
     command = [
         sys.executable, str(converter_dir / "fontconvert_sdcard.py"),
-        "--intervals", "reading",
+        "--intervals", INTERVALS,
         "--sizes", ",".join(map(str, SIZES)),
         "--name", family,
         "--output-dir", str(family_dir),
     ]
-    for style, flag in STYLE_FLAGS.items():
+    for style, converter_style in CONVERTER_STYLES.items():
         source = Path(ttf_dir) / f"{family}-{style}.ttf"
-        command.extend((flag, str(prepare_font(source, work))))
+        command.extend((f"--{converter_style}", str(prepare_font(source, work))))
+        command.extend((f"--fallback-{converter_style}", str(fallback)))
     result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode:
         sys.stderr.write(result.stderr)

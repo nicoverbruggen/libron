@@ -26,6 +26,10 @@ Builds now check combining-accent shaping in every generated TTF style and varia
 
 Lengthened the en dash and em dash in all four styles. Tightened trademark spacing and the lowercase `oy` pair in Regular.
 
+### CrossPoint Reader builds
+
+The `cpfont` files now include IPA characters, so dictionary pronunciations no longer show question marks. Libron does not draw these characters yet, so they come from Noto Sans, the same fallback that CrossPoint uses for its own fonts. Other characters that Libron does not have, such as Greek and Cyrillic, also use Noto Sans in the `cpfont` files.
+
 ### Specimens
 
 Regenerated the specimens with the current outlines. The simulated e-reader page now uses left-aligned body text and tighter spacing after its enlarged opening `T`.
