@@ -34,10 +34,10 @@ Italic `v` and `w` are adapted from Crimson Pro in Italic and Bold Italic.
 
 | Weight | Glyphs |
 |---|---|
-| Regular | `E F K R b q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḃ ḕ ḗ Ḳ Ḵ Ṛ Ṟ – — ₫ ™` |
-| Bold | `E F K R q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
-| Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
-| Bold Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ Ṛ Ṟ – — ₫ ™` |
+| Regular | `E F K R b q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḃ ḕ ḗ Ḳ Ḵ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
+| Bold | `E F K R q Ç đ Ę ħ ĸ ŋ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
+| Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
+| Bold Italic | `E F K R q v w Ç đ Ę ħ Ŧ ŧ Ȩ ḕ ḗ ṑ ṓ Ṛ Ṟ – — ₫ ™` |
 
 ### Updated kerning
 

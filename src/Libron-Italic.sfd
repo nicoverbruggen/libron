@@ -21395,10 +21395,10 @@ AnchorPoint: "Anchor-3" 493 0 basechar 0
 AnchorPoint: "Anchor-2" 841 1062 basechar 0
 AnchorPoint: "Anchor-1" 535 531 basechar 0
 AnchorPoint: "Anchor-4" 389 0 basechar 0
-AnchorPoint: "Anchor-0" 940 1994 basechar 0
+AnchorPoint: "Anchor-0" 892 1836 basechar 0
 LayerCount: 2
 Fore
-Refer: 392 768 N 1.02997 0 0 1.07996 668 476 2
+Refer: 392 768 N 1.02997 0 0 1.07996 620 318 2
 Refer: 396 772 N 1.02997 0 0 1.07996 534 -5 2
 Refer: 82 111 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" uni1E50.sc
@@ -21431,10 +21431,10 @@ AnchorPoint: "Anchor-3" 493 0 basechar 0
 AnchorPoint: "Anchor-2" 841 1062 basechar 0
 AnchorPoint: "Anchor-1" 535 531 basechar 0
 AnchorPoint: "Anchor-4" 389 0 basechar 0
-AnchorPoint: "Anchor-0" 938 1994 basechar 0
+AnchorPoint: "Anchor-0" 890 1836 basechar 0
 LayerCount: 2
 Fore
-Refer: 393 769 N 1.02997 0 0 1.07996 668 476 2
+Refer: 393 769 N 1.02997 0 0 1.07996 620 318 2
 Refer: 396 772 N 1.02997 0 0 1.07996 534 -5 2
 Refer: 82 111 N 1 0 0 1 0 0 2
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" uni1E52.sc
