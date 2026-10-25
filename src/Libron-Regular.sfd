@@ -90,6 +90,7 @@ Lookup: 6 0 0 "FracPass3" { "FracPass3 subtable"  } ['frac' ('latn' <'dflt' 'PLK
 Lookup: 1 0 0 "Single Substitution lookup 28" { "Single Substitution lookup 28 subtable"  } []
 Lookup: 6 0 0 "FracPass4" { "FracPass4 subtable"  } ['frac' ('latn' <'dflt' 'PLK ' 'ROM ' 'MOL ' > 'DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "Single Substitution lookup 30" { "Single Substitution lookup 30 subtable"  } []
+Lookup: 258 8 0 "oe spacing" { "oe spacing subtable"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' 'PLK ' 'ROM ' 'MOL ' > ) ]
 Lookup: 258 8 0 "'kern' Horizontal Kerning in Latin lookup 0" { "'kern' Horizontal Kerning in Latin lookup 0 per glyph data 0"  "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1" [300,0,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' 'PLK ' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin lookup 1" { "'mark' Mark Positioning in Latin lookup 1 subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' 'PLK ' > ) ]
 Lookup: 262 16 0 "'mkmk' Mark to Mark in Latin lookup 2" { "'mkmk' Mark to Mark in Latin lookup 2 subtable"  } ['mkmk' ('DFLT' <'dflt' > 'latn' <'dflt' 'PLK ' > ) ]
@@ -104,6 +105,11 @@ MarkAttachSets: 2
 "MarkSet-0" 60 dotbelowcomb uni0324 uni0326 uni0327 uni0328 uni032E uni0331
 "MarkSet-1" 379 gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 hookabovecomb uni030A uni030B uni030C uni030F uni0311 uni0312 gravecomb.case acutecomb.case uni0302.case tildecomb.case uni0304.case uni0306.case uni0307.case uni0308.case hookabovecomb.case uni030A.case uni030B.case uni030C.case uni030F.case uni0311.case uni0312.case acutecomb.loclPLK acutecomb.case.loclPLK
 DEI: 91125
+KernClass2: 2+ 2 "oe spacing subtable"
+ 0
+ 294 o oacute oacute.loclPLK obreve ocircumflex odieresis ograve ohorn ohungarumlaut omacron otilde uni01D2 uni01EB uni01ED uni020D uni020F uni022B uni022D uni022F uni0231 uni1E4D uni1E4F uni1E51 uni1E53 uni1ECD uni1ECF uni1ED1 uni1ED3 uni1ED5 uni1ED7 uni1ED9 uni1EDB uni1EDD uni1EDF uni1EE1 uni1EE3
+ 190 e eacute ebreve ecaron ecircumflex edieresis edotaccent egrave emacron eogonek uni0205 uni0207 uni0229 uni1E15 uni1E17 uni1E1D uni1EB9 uni1EBB uni1EBD uni1EBF uni1EC1 uni1EC3 uni1EC5 uni1EC7
+ 0 {} 0 {} 0 {} 32 {}
 KernClass2: 75+ 55 "'kern' Horizontal Kerning in Latin lookup 0 kerning class 1"
  221 O Q Ograve Oacute Ocircumflex Otilde Odieresis Oslash Omacron Obreve Ohungarumlaut uni018F uni01EA Oslashacute uni020C uni020E uni022A uni022C uni0230 uni1ECC uni1ECE uni1ED0 uni1ED2 uni1ED4 uni1ED6 uni1ED8 Oacute.loclPLK
  196 A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek Aringacute uni0200 uni0202 uni1EA0 uni1EA2 uni1EA4 uni1EA6 uni1EA8 uni1EAA uni1EAC uni1EAE uni1EB0 uni1EB2 uni1EB4 uni1EB6
