@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.33
+
+### Quotes and apostrophes
+
+Raised the quotes and apostrophes in all four styles, so their tops now align with the top of `l` and other ascenders instead of the cap height.
+
+### Other changes
+
+### Updated kerning
+
+| Weight | Retuned |
+|---|---|
+| Regular | `o→e` |
+
 ## v0.32
 
 ### No-op hints by default
