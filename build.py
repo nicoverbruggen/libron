@@ -364,7 +364,11 @@ def ff_rename_script():
             (style_suffix, 'Book', 400),
         )
 
-        f.fontname = f"{{FAMILY}}-{{style_suffix}}"
+        # PostScript names cannot contain spaces, so "Libron Prime" becomes
+        # "LibronPrime-Regular". The other names keep the family as given.
+        ps_name = f"{{FAMILY.replace(' ', '')}}-{{style_suffix}}"
+
+        f.fontname = ps_name
         f.familyname = FAMILY
         f.fullname = f"{{FAMILY}} {{style_display}}"
         f.weight = ps_weight
@@ -383,7 +387,7 @@ def ff_rename_script():
         f.appendSFNTName(lang, 'Family', FAMILY)
         f.appendSFNTName(lang, 'SubFamily', style_display)
         f.appendSFNTName(lang, 'Fullname', f"{{FAMILY}} {{style_display}}")
-        f.appendSFNTName(lang, 'PostScriptName', f"{{FAMILY}}-{{style_suffix}}")
+        f.appendSFNTName(lang, 'PostScriptName', ps_name)
         f.appendSFNTName(lang, 'Preferred Family', FAMILY)
         f.appendSFNTName(lang, 'Preferred Styles', style_display)
         f.appendSFNTName(lang, 'Compatible Full', f"{{FAMILY}} {{style_display}}")
@@ -603,13 +607,16 @@ def run_kobofix(kobofix_path, variant_names):
     os.makedirs(OUT_KF_DIR, exist_ok=True)
     import glob
 
-    moved = 0
+    moved = []
     for kf_file in glob.glob(os.path.join(OUT_TTF_DIR, "KF_*.ttf")):
         dest = os.path.join(OUT_KF_DIR, os.path.basename(kf_file))
         shutil.move(kf_file, dest)
-        moved += 1
+        moved.append(dest)
 
-    print(f"  Moved {moved} KF font(s) to {OUT_KF_DIR}/")
+    print(f"  Moved {len(moved)} KF font(s) to {OUT_KF_DIR}/")
+    # kobofix picks the file names (it replaces spaces with underscores),
+    # so return the files it wrote instead of predicting them.
+    return moved
 
 
 def convert_to_woff2(ttf_path, woff2_path):
@@ -846,8 +853,7 @@ def build(tmp_dir, family=DEFAULT_FAMILY, outline_fix=True, with_kobofix=False, 
 
     if with_kobofix:
         print("\n-- Step 4: Generate Kobo (KF) variants --\n")
-        run_kobofix(kobofix_path, variant_names)
-        check_combining_accents([os.path.join(OUT_KF_DIR, "KF_" + name + ".ttf") for name in variant_names])
+        check_combining_accents(sorted(run_kobofix(kobofix_path, variant_names)))
 
     if with_web:
         print("\n-- Step 5: Generate WOFF2 webfonts --\n")
