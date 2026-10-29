@@ -8,6 +8,15 @@ Raised the quotes and apostrophes in all four styles, so their tops now align wi
 
 ### Other changes
 
+Reworked the lowercase `y` in Regular and Bold. The stroke no longer bends at the baseline and the arms meet lower, so the `y` looks less like a `v` with a tail.
+
+### Adjusted outlines
+
+| Weight | Glyphs |
+|---|---|
+| Regular | `y` |
+| Bold | `y` |
+
 ### Updated kerning
 
 | Weight | Retuned |
